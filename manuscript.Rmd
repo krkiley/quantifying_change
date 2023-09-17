@@ -83,7 +83,9 @@ Third, we expect the amount of variance to be explained by each process –inter
 
 ## Data
 
-We use data from 7 nationally representative panel surveys from Australia, Germany, Great Britain, Switzerland, and the United States (summarized in Table 1), combining all the data files used in previous work [@kiley2020; @lersch2023]. These studies cover a long period of time (the range of surveys spans from 1968 to 2021), with 610 personal culture items that capture attitudes, beliefs, values, self-assessments, self-descriptions, and behaviors [@alwin2007]. We restricted the sample such that individuals between the ages of 18 and 79 are included without further elimination, and in all surveys, we used all possible cases for which respondents provided responses. In the end, the analyses that follow rely on a cross-cultural sample with a cross-domain set of items to capture the breadth of individual personal culture. Appendix A documents the list of all variables used in the upcoming analyses.
+We use data from 7 nationally representative panel surveys from Australia, Germany, Great Britain, Switzerland, and the United States (summarized in Table 1), combining all the data files used in previous work [@kiley2020; @lersch2023].[^1] These studies cover a long period of time (the range of surveys spans from 1968 to 2021), with 610 personal culture items that capture attitudes, beliefs, values, self-assessments, self-descriptions, and behaviors [@alwin2007]. We restricted the sample such that individuals between the ages of 18 and 79 are included without further elimination, and in all surveys, we used all possible cases for which respondents provided responses. In the end, the analyses that follow rely on a cross-cultural sample with a cross-domain set of items to capture the breadth of individual personal culture. Appendix A documents the list of all variables used in the upcoming analyses.
+
+[^1]: For more information on these data sources, see [@data_gss; @data_hilda; @data_bhps; @data_ukhls; @data_soep; @data_shp; @data_psid].
 
 ```{r, message = FALSE}
 
