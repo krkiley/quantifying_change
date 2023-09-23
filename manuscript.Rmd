@@ -91,31 +91,12 @@ We use data from 7 nationally representative panel surveys from Australia, Germa
 
 [^1]: For more information on these data sources, see [@data_gss; @data_hilda; @data_bhps; @data_ukhls; @data_soep; @data_shp; @data_psid].
 
-```{r, message = FALSE}
 
-library(tidyverse)
-library(knitr)
-library(kableExtra)
+\begin{center}
+<about here> 
+Table 1: The Description of the Data Sources
+\end{center}
 
-table <- tibble(
-  Country = c("Australia", "Germany", "Great Britian", "Great Britian", "Switzerland", "United States", "United States"),
-  Survey = c("Household, Income and Labor Dynamics in Australia (HILDA)",
-             "Socio-Economic Panel Study (SOEP)",
-             "British Household Panel Survey (BHPS)",
-             "Understanding Society/UK Household Longitudinal Study (UKHLS)",
-             "Swiss Household Panel (SHP)",
-             "General Social Survey (GSS)",
-             "Panel Study of Income Dynamics (PSID)"),
-  Period = c("2001-2021", "1984-2020", "1991-2008", "2009-2020", "1999-2019", "2006-2012", "1968-2019"),
-  Outcomes = c(30, 122, 83, 66, 77, 183, 48)
-)
-
-kableExtra::kable(table, 
-                  format = "latex", 
-                  caption = "The Description of the Data Sources") |> 
-  kable_styling(latex_options = c("scale_down", "HOLD_position"))
-
-```
 
 ## Life Course Adaption Model
 
@@ -153,9 +134,12 @@ Our results proceed in three parts. We first explore the overall pattern of syst
 
 Figure 1 plots the proportion of systematic variance attributable to interpersonal differences (“between”) and intrapersonal change (“within”) for each of the 609 questions analyzed, plotted separately by panel. To broadly summarize the results, all panels show a similar range of the proportion of systematic variance attributable to intrapersonal change. Across panels, the median proportion of systematic variance attributable to intrapersonal change is 0.094 (mean of 0.098), with an interquartile range of 0.053 to 0.139. All panels include questions that show essentially no systematic variance attributable to intrapersonal change and all panels include questions where more than 20 percent of systematic variance is attributable to intrapersonal change. 
 
-```{r fig1, out.width = "400px", fig.cap="Proportions of explained variance in items of personal culture; based on predictions at participants' wave mid-point."}
-knitr::include_graphics("fig/variation_share_lm_mdpnt.png")
-```
+
+\begin{center}
+<about here>
+Figure 1: Proportions of explained variance in items of personal culture; based on predictions at participants' wave mid-point.
+\end{center}
+
 
 Across all questions, interpersonal differences explain a much larger share of the systematic variance in responses than intrapersonal change. Again, this is to be expected. Interpersonal differences capture not just pre-adult socialization, but all accumulated experiences up to the start of the panel that might have a bearing on personal culture. 
 
@@ -175,9 +159,12 @@ Figure 2 plots the results from an ordinary least squares regression of proporti
 
 [^paneleffects]: KK NOTE: Can we summarize these panel fixed effects at all? 
 
-```{r fig2, out.width = "300px", fig.cap="Proportion of explained variance attributable to intrapersonal change; based on predictions at participants' wave mid-point; supressed intercept model; survey indicators not shown."}
-knitr::include_graphics("fig/meta_no_int.png")
-```
+
+\begin{center}
+<about here>
+Figure 2: Proportion of explained variance attributable to intrapersonal change; based on predictions at participants' wave mid-point; supressed intercept model; survey indicators not shown.
+\end{center}
+
 
 Figure 2 shows that the more response options respondents are given and the larger the sample, the larger the proportion of systematic variance is attributable to intrapersonal change. We interpret these coefficients as suggesting greater resolution on a question makes it easier to detect and model change. The earlier a question was asked, even net of how long it was been asked, the lower the proportion of systematic variance is attributable to intrapersonal change.
 
@@ -205,9 +192,12 @@ To test these competing propositions, we use the models presented above to calcu
 
 Figure 3 plots the distribution of differences between people with less than a bachelor's degree and people with at least a bachelor's degree at wave 1 of the panel. Values greater than 0 would indicate that intrapersonal change is more important in explaining the responses of college graduates than those of people without a college degree, while values less than 0 would indicate that intrapersonal change is less important for explaining variation among people with a college degree than those without a college degree.
 
-```{r img, out.width = "450px", fig.cap="Proportions of intrapersonal change of explained variance by college degree; based on predictions at participants' wave mid-point."}
-knitr::include_graphics("fig/FIG_college2.png")
-```
+
+\begin{center}
+<about here>
+Figure 3: Proportions of intrapersonal change of explained variance by college degree; based on predictions at participants' wave mid-point.
+\end{center}
+
 
 There is a clear pattern in [figure above]: for more than 80 percent of GSS items explored here, intrapersonal change is a larger component of systematic variance for people without a college degree than for people with a college degree (they have negative values in the figure). While most of these differences are small in absolute terms (less than 2 percentage points), several are greater than 5 percentage points. Given the distribution observed in Figure [the earlier one] showing that the systematic variance attributable to intrapersonal change averages [average across all questions], a 5 percentage point difference between groups is quite substantial. 
 
@@ -279,4 +269,58 @@ While we focused on education as a determinant of the explanatory power of intra
 
 The wide variation across questions in the proportion of systematic variation attributable to intrapersonal change also calls for a more systematic exploration for why some forms of culture are characterized by stability while others are characterized by change, and what the consequences of these differences for the organization of beliefs in the public might be.
 
+
 # References
+
+<div id="refs"></div>
+
+\newpage
+
+# Appendix
+
+## Tables
+
+```{r, message = FALSE}
+
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+
+table <- tibble(
+  Country = c("Australia", "Germany", "Great Britian", "Great Britian", "Switzerland", "United States", "United States"),
+  Survey = c("Household, Income and Labor Dynamics in Australia (HILDA)",
+             "Socio-Economic Panel Study (SOEP)",
+             "British Household Panel Survey (BHPS)",
+             "Understanding Society/UK Household Longitudinal Study (UKHLS)",
+             "Swiss Household Panel (SHP)",
+             "General Social Survey (GSS)",
+             "Panel Study of Income Dynamics (PSID)"),
+  Period = c("2001-2021", "1984-2020", "1991-2008", "2009-2020", "1999-2019", "2006-2012", "1968-2019"),
+  Outcomes = c(30, 122, 83, 66, 77, 183, 48)
+)
+
+kableExtra::kable(table, 
+                  format = "latex", 
+                  caption = "The Description of the Data Sources") |> 
+  kable_styling(latex_options = c("scale_down", "HOLD_position"))
+
+```
+
+
+\newpage
+
+## Figures
+
+```{r fig1, fig.height=2, fig.cap="Proportions of explained variance in items of personal culture; based on predictions at participants' wave mid-point."}
+knitr::include_graphics("fig/variation_share_lm_mdpnt.png")
+```
+
+\newpage
+```{r fig2, out.width = "300px", fig.cap="Proportion of explained variance attributable to intrapersonal change; based on predictions at participants' wave mid-point; supressed intercept model; survey indicators not shown."}
+knitr::include_graphics("fig/meta_no_int.png")
+```
+
+\newpage
+```{r fig3, out.width = "450px", fig.cap="Proportions of intrapersonal change of explained variance by college degree; based on predictions at participants' wave mid-point."}
+knitr::include_graphics("fig/FIG_college2.png")
+```
