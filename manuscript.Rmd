@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = F, message = F, warning = F, fig.align = "center")
 
 # Introduction
 
-A recurring focus in the sociology of culture is the question of whether people, as they move through their lives, change their personal culture –- the declarative and non-declarative attitudes, beliefs, values, practices, and dispositions [@lizardo2017; @kiley2020; @lersch2023]. 
+A recurring focus in the sociology of culture is the question of whether people, as they move through their lives and transition between social roles, change their personal culture –- the declarative and non-declarative attitudes, beliefs, values, practices, and dispositions that exist at the individual level [@lizardo2017; @kiley2020; @lersch2023]. 
 
 This seemingly simple question underlies a number of central debates across sociological subfields. For example, pragmatist theories of action claim that changes in social environments cause people to adapt their views and make new meanings [@swidler2001; @gross2009], while Bourdieusian practice theories argue that the “past conditions of production” leave a mark on people's personal culture that lasts throughout their lives [@bourdieu1990]. Similarly, models of social influence assume that people adapt their culture in the face of new information [@vaisey2010a], while the emphasis on cohort effects in models of aggregate social and cultural change requires them to be open to change while young but become fairly resistant to it as they age [@ryder1965]. Finally, life course theories posit slower but still important changes over time as people advance through important transitions in their lives [@elder2016; @bardi2011].
 
