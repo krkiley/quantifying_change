@@ -92,8 +92,6 @@ Third, we expect the variance explained by each process –interpersonal differe
 
 We use data from 7 nationally representative panel surveys from Australia, Germany, Great Britain, Switzerland, and the United States (summarized in Table 1), combining all the data files used in previous work [@kiley2020; @lersch2023].[^1] These studies cover a long period of time (the range of surveys spans from 1968 to 2021), with 609 personal culture items that capture attitudes, beliefs, values, self-assessments, self-descriptions, and behaviors [@alwin2007]. We restricted the sample such that individuals between the ages of 18 and 79 are included without further elimination, and in all surveys, we used all possible cases for which respondents provided responses. In the end, the analyses that follow rely on a cross-cultural sample with a cross-domain set of items to capture the breadth of individual personal culture. Appendix A documents the list of all variables used in the upcoming analyses.
 
-[^1]: For more information on these data sources, see [@data_gss; @data_hilda; @data_bhps; @data_ukhls; @data_soep; @data_shp; @data_psid].
-
 
 \begin{center}
 <about here> 
@@ -119,10 +117,6 @@ $$
 \frac{\delta}{\tau + \delta}
 $$
 
-[^midpoint]: We use the scale midpoint, rather than the actual difference at baseline, to better capture the differences between people independent of their age trajectories.
-
-[^explained]: This does not mean that other factors might not explain additional variance if they were included in the model. For example, peoples' responses about religious beliefs and participation might systematically vary by the day of the week or month in which they are surveyed. This variation is moved into the "random" or non-systematic component of the model for us. 
-
 We can think of this number as akin to an Intraclass Correlation Coefficient focused only on the systematic components of the model while ignoring residual variance that might be attributable to measurement error or non-persisting change [see also the variance decomposition of period and cohort by @vaisey2016]. The higher the number is, the more variance in responses is attributable to intrapersonal change during the panel. The lower the number, the less intrapersonal change seems to play a large role in explaining cultural differences during the panel. 
 
 Because this quotient summarizes variance and therefore has no natural referent, it is hard to say at which values we observe "a lot" of intrapersonal change. But summarizing questions in this way allows us to compare the relative importance of our two broad processes across a range of questions that might have very different levels of non-systematic variance, giving us a baseline sense of the relative prevalence of these two processes for each question (something not achievable under the tournament of models approach), and allowing us to compare which kinds of questions show more or less intrapersonal change relative to interpersonal differences. While the tournament of models approach allowed researchers to say whether questions in general showed evidence of updating, this approach allows us to make more specific claims about the prevalence of these theoretical processes for particular questions relative to each other.
@@ -140,8 +134,9 @@ Figure 1 plots the proportion of systematic variance attributable to interperson
 
 \begin{center}
 <about here>
-Figure 1: Proportions of explained variance in items of personal culture; based on predictions at participants' wave mid-point.
 \end{center}
+
+Figure 1: Proportions of explained variance in items of personal culture; based on predictions at participants' wave mid-point.
 
 
 Across all questions, interpersonal differences explain a much larger share of the systematic variance in responses than intrapersonal change. Again, this is to be expected. Interpersonal differences capture not just pre-adult socialization, but all accumulated experiences up to the start of the panel that might have a bearing on personal culture. 
@@ -158,16 +153,13 @@ As noted above, the substantive importance of intrapersonal change for understan
 
 ## Meta-Analysis
 
-Figure 2 plots the results from an ordinary least squares regression of proportion of systematic variance attributable to intrapersonal change as a function of question, panel, and sample features. These models also include fixed effects for panels (not shown), so coefficients reflect the association between a particular sample or question characteristic within a panel.[^paneleffects]
-
-[^paneleffects]: KK NOTE: Can we summarize these panel fixed effects at all? 
+Figure 2 plots the results from an ordinary least squares regression of proportion of systematic variance attributable to intrapersonal change as a function of question, panel, and sample features. These models also include fixed effects for panels (not shown), so coefficients reflect the association between a particular sample or question characteristic within a panel.[KK NOTE: CAN WE SUMMARIZE THESE PANEL FIXED EFFECTS AT ALL? AE: WE COULD SHOW THAT THEY DON'T CAPTURE TOPIC EFFECTS BEYOND OUR CLASSIFICATION IF WE INCLUDE THOSE / THAT THEY POSSIBLY CAPTURE UNMEASURED COUNTRY/CONTEXT DIFFERENCES OR DIFFERENCES IN SURVEY METHODOLOGY?]
 
 
 \begin{center}
 <about here>
-Figure 2: Proportion of explained variance attributable to intrapersonal change; based on predictions at participants' wave mid-point; supressed intercept model; survey indicators not shown.
 \end{center}
-
+Figure 2: Proportion of explained variance attributable to intrapersonal change; based on predictions at participants' wave mid-point; supressed intercept model; survey indicators not shown.
 
 Figure 2 shows that the more response options respondents are given and the larger the sample, the larger the proportion of systematic variance is attributable to intrapersonal change. We interpret these coefficients as suggesting greater resolution on a question makes it easier to detect and model change. The earlier a question was asked, even net of how long it was been asked, the lower the proportion of systematic variance is attributable to intrapersonal change.
 
@@ -189,24 +181,24 @@ It could be the case that education, chronic knowledge, and attention to the pol
 
 To test these competing propositions, we use the models presented above to calculate the total systematic variance for people with at least a bachelor's degree and people with less than a bachelor's degree at wave 1[^wave] of the General Social Survey's panels.[^missing] We focus on the GSS because it contains the largest number of questions tapping general political dispositions, which is the domain where education has proven particularly relevant for understanding attitude stability. The GSS also covers a particularly turbulent window of American politics from 2006 to 2014. This window covers the start of the Great Recession, debates about federal intervention in and regulation of Wall Street, the election of Barack Obama as the first black president in U.S. history, debates about the role of the federal government in the health care sector, the emergence of the Tea Party, and political realignment and clarification on the issue of gay marriage, among other topics.
 
-[^wave]: A small number of respondents report different highest degrees at wave 1, wave 2, and wave 3. Some of this is due to measurement error, and some of it is due to a small number of people obtaining a higher degree during the four years of the panel. Estimating the panel with highest at wave 1 or highest degree reported across the panel produces functionally identical results.
-
-[^missing]: We estimate the models presented in [earlier figure] using the full sample, but only use respondents who have information on their highest degree to generate the results presented in figures [these figures]. In total, ### respondents (%%% percent) reported no degree information.
-
 Figure 3 plots the distribution of differences between people with less than a bachelor's degree and people with at least a bachelor's degree at wave 1 of the panel. Values greater than 0 would indicate that intrapersonal change is more important in explaining the responses of college graduates than those of people without a college degree, while values less than 0 would indicate that intrapersonal change is less important for explaining variation among people with a college degree than those without a college degree.
 
 
 \begin{center}
 <about here>
-Figure 3: Proportions of intrapersonal change of explained variance by college degree; based on predictions at participants' wave mid-point.
 \end{center}
+Figure 3: Difference between share of intrapersonal change and share of inter-personal differences in expalined variance; based on predictions at participants' wave mid-point
 
+There is a clear pattern in Figure 4: for more than 80 percent of GSS items explored here, intrapersonal change is a larger component of systematic variance for people without a college degree than for people with a college degree (they have negative values in the figure). While most of these differences are small in absolute terms (less than 2 percentage points), several are greater than 5 percentage points. Given the distribution observed in Figure [the earlier one] showing that the systematic variance attributable to intrapersonal change averages [average across all questions], a 5 percentage point difference between groups is quite substantial. 
 
-There is a clear pattern in [figure above]: for more than 80 percent of GSS items explored here, intrapersonal change is a larger component of systematic variance for people without a college degree than for people with a college degree (they have negative values in the figure). While most of these differences are small in absolute terms (less than 2 percentage points), several are greater than 5 percentage points. Given the distribution observed in Figure [the earlier one] showing that the systematic variance attributable to intrapersonal change averages [average across all questions], a 5 percentage point difference between groups is quite substantial. 
+To more clearly illustrate some of these differences, we highlight eight questions designed to tap general political dispositions: partisan identification (Democrat vs. Republican) and ideological identification (liberal vs. conservative) on seven-point scales; four questions about the government's role in improving the condition of the poor, paying people's medical bills, giving special treatment to blacks, and doing things that private businesses could do, measured on five-point scales; a question about whether the government should do more to reduce income differences, measured on a seven-point scale; and one question about whether blacks should be given preferences in hiring, measured on a five-point scale. Estimates for the proportion of systematic variance attributable to intrapersonal change on these eight questions, for both education groups, are presented in Figure 4.
 
-To more clearly illustrate some of these differences, we highlight eight questions designed to tap general political dispositions: partisan identification (Democrat vs. Republican) and ideological identification (liberal vs. conservative) on seven-point scales; four questions about the government's role in improving the condition of the poor, paying people's medical bills, giving special treatment to blacks, and doing things that private businesses could do, measured on five-point scales; a question about whether the government should do more to reduce income differences, measured on a seven-point scale; and one question about whether blacks should be given preferences in hiring, measured on a five-point scale. Estimates for the proportion of systematic variance attributable to intrapersonal change on these eight questions, for both education groups, are presented in Figure XXX.
+\begin{center}
+<about here>
+\end{center}
+Figure 4: Proportions of intrapersonal change of explained variance by college degree; based on predictions at participants' wave mid-point.
 
-On all eight questions presented in Figure XXX, intrapersonal change explains less systematic variance for people with a college degree than for people without a college degree. There are also large differences across questions on the amount of systematic variance attributable to intrapersonal change for both groups. For example, on the question of whether the government should try to solve more problems or leave those problems to be solved by private businesses ("government do more or less"), less than one percent of the systematic variance is attributable to intrapersonal change for both groups. In other words, while people might vacillate on this question at random (37 percent of variance is residual for this question), there is functionally no evidence that people make systematic changes of opinion on this issue during the GSS panel.
+On all eight questions presented in Figure 4, intrapersonal change explains less systematic variance for people with a college degree than for people without a college degree. There are also large differences across questions on the amount of systematic variance attributable to intrapersonal change for both groups. For example, on the question of whether the government should try to solve more problems or leave those problems to be solved by private businesses ("government do more or less"), less than one percent of the systematic variance is attributable to intrapersonal change for both groups. In other words, while people might vacillate on this question at random (37 percent of variance is residual for this question), there is functionally no evidence that people make systematic changes of opinion on this issue during the GSS panel.
 
 In contrast, partisan identification and political ideology both show a larger proportion of systematic variance attributable to intrapersonal change, with quite large differences between people with a college degree and those without. Compared to the other questions explored here, change as adults (and, potentially, their experiences as adults) plays a much larger role in explaining why people report the partisan identification and political ideology they do. And this is particularly true for respondents who do not have a college degree. The amount of systematic variance in ideological identification that is attributable to intrapersonal change among non-college educated respondents is almost four times that of college-educated respondents. 
 
@@ -216,13 +208,13 @@ It is important to note here that these differences should not be interpreted as
 
 # Discussion
 
-This paper set out intervene in the debate on whether people change their personal culture -- their attitudes, beliefs, values, practices, and dispositions -- as they move through life. Instead of falling back on a "tournament of models" approach [@lersch2023: p. 228] to call victory for one or the other possible answer to this question, this paper seeks to refocus the debate to the theoretically more productive question of _how_ initial differences between and durable changes within people collectively explain the observed variation in personal culture. To do so, it proposes a new measure that quantifies the amount of systematic variance that is attributable to either interpersonal differences at baseline or intrapersonal change. 
+This paper set out intervene in the debate on whether people change their personal culture -- their attitudes, beliefs, values, practices, and dispositions -- as they move through life. Instead of falling back on a "tournament of models" approach [@lersch2023: p. 228] to call victory for one or the other possible answer to this question, it seeks to refocus the debate to the theoretically more productive issue of _how_ initial differences between and durable changes within people collectively explain the variation in personal culture that is observed. To do so, it proposes a new measure that quantifies the amount of systematic variance that is attributable to either interpersonal differences at baseline or intrapersonal change. 
 
-Applying this measure to all datasets previously discussed in this debate revealed a consistent pattern. Nearly all questions on personal culture show evidence of intrapersonal change over time, with some items showing noteably high intrapersonal change compared to interpersonal differences. For questions about factors that affect one’s life satisfaction or views on government benefits, it seems plausible that differences in adult experiences predominantly account for the observed differences between people.
+Applying this measure to all datasets previously discussed in this debate revealed a consistent pattern. Nearly all questions on personal culture show evidence of durable, intrapersonal change over time, with some items showing noteably high intrapersonal change compared to interpersonal differences. For questions about factors that affect one’s life satisfaction or views on government benefits, it seems plausible that differences in adult experiences predominantly account for the observed differences between people.
 
 Intrapersonal change is often substantially less pronounced than interpersonal differences, accounting for less than 10 percent on average across all surveys. On numerous questions, like those on civil liberties, abortion, generalized trust, and civic duty, the systematic variance explained by intrapersonal change is essentially zero. For these questions, it seems there is not enough cultural change during adulthood to warrant attributing differences in personal culture mainly to experiences and social transitions; instead, the primary source of the observed differences appears to stem from early-life experiences.
 
-More important than adjudicating past debates, however, the approach presented in this paper offers offers the possibility to pose new theoretical questions regarding when change or stability in personal culture predominates and its significance in explaining cultural variances within a population. To examplify this potential, we detailed how the proportion in cultural differences that intrapersonal change can explain not only varies substantially by survey item but also by individual characteristics such as their education. Intrapersonal change plays almost no part in explaining sentiments regarding the government's economic role but is more defining for ideological and partisan identities. Intriguingly, it is more important in explaining cultural variation among people without a college compared to college graduates in the U.S.. While age and other factors related to college completion might confound this pattern, it suggests that college may solidify personal culture to an extent that renders the effect of other adult experiences on political dispositions for graduates less influential relative to individuals without such a college experience.
+More important than adjudicating past debates, however, the approach presented in this paper unlocks new opportunities to ask when change or stability in personal culture predominates and about their role in explaining cultural variation within a population. To exemplify this, we detailed how the proportion in cultural differences that intrapersonal change can explain not only varies substantially by survey item but also by individual characteristics such as their education. Intrapersonal change plays almost no part in explaining sentiments regarding the government's economic role but is more defining for ideological and partisan identities. Intriguingly, it is more important in explaining cultural variation among non-college graduates compared to college graduates in the U.S.. While age and other factors related to college completion might confound this pattern, this suggests that experiencing college may solidify personal culture to an extent that renders the effect of other adult experiences on political dispositions for graduates less influential relative to individuals without a college experience.
 
 ## Implications for Cultural Sociology
 
@@ -271,6 +263,18 @@ We believe the approach outlined here can push past the “needless dichotomy”
 While we focused on education as a determinant of the explanatory power of intrapersonal change, our approach can readily be extended to other socio-demographic categories that might affect intrapersonal change --race/ethnicity, religiosity, social class, gender, and political affiliation, for example-- or their intersections. Researchers with different data might be able to evaluate the relative importance of intrapersonal change and interpersonal differences across contexts as well, either national contexts if the same questions are administered across countries, or organizational contexts if data traces students within schools, workers within workplaces, or congregation members within congregations.
 
 The wide variation across questions in the proportion of systematic variation attributable to intrapersonal change also calls for a more systematic exploration for why some forms of culture are characterized by stability while others are characterized by change, and what the consequences of these differences for the organization of beliefs in the public might be.
+
+# Endnotes
+
+[^1]: For more information on these data sources, see [@data_gss; @data_hilda; @data_bhps; @data_ukhls; @data_soep; @data_shp; @data_psid].
+
+[^midpoint]: We use the scale midpoint, rather than the actual difference at baseline, to better capture the differences between people independent of their age trajectories.
+
+[^explained]: This does not mean that other factors might not explain additional variance if they were included in the model. For example, peoples' responses about religious beliefs and participation might systematically vary by the day of the week or month in which they are surveyed. This variation is moved into the "random" or non-systematic component of the model for us. 
+
+[^wave]: A small number of respondents report different highest degrees at wave 1, wave 2, and wave 3. Some of this is due to measurement error, and some of it is due to a small number of people obtaining a higher degree during the four years of the panel. Estimating the panel with highest at wave 1 or highest degree reported across the panel produces functionally identical results.
+
+[^missing]: We estimate the models presented in Figures 1 and 2 using the full sample, but only use respondents who have information on their highest degree to generate the results presented in Figures 3 and 4. In total, ### respondents (%%% percent) reported no degree information.
 
 
 # References
@@ -324,6 +328,11 @@ knitr::include_graphics("fig/meta_no_int.png")
 ```
 
 \newpage
-```{r fig3, out.width = "450px", fig.cap="Proportions of intrapersonal change of explained variance by college degree; based on predictions at participants' wave mid-point."}
+```{r fig3, out.width = "450px", fig.cap="Difference between share of intrapersonal change and share of inter-personal differences in expalined variance; based on predictions at participants' wave mid-point."}
+knitr::include_graphics("fig/FIG_college1.png")
+```
+
+\newpage
+```{r fig4, out.width = "450px", fig.cap="Proportions of intrapersonal change of explained variance by college degree; based on predictions at participants' wave mid-point."}
 knitr::include_graphics("fig/FIG_college2.png")
 ```
