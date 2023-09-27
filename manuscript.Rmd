@@ -121,7 +121,7 @@ $$
 \tau = \frac{V(C)}{V(C) + V(D)}
 $$
 
-[TK Note: \phi taken in Kiley & Vaisey, \delta taken in Vaisey & Lizardo. I think using a Greek letter without strong associations (something like alpha, beta, or mu or whatever) is not good. So I settled on \tau. Feel free to change it.]
+[TK Note: \\phi taken in Kiley & Vaisey, \\delta taken in Vaisey & Lizardo. I think using a Greek letter without strong associations (something like alpha, beta, or mu or whatever) is not good. So I settled on \\tau. Feel free to change it.]
 
 We can think of this number, $\tau$ as akin to an Intraclass Correlation Coefficient focused only on the systematic components of the model while ignoring residual variance that might be attributable to measurement error or non-persisting change [see also the variance decomposition of period and cohort by @vaisey2016]. The higher the number is, the more variance in responses is attributable to intrapersonal change during the panel. The lower the number, the less intrapersonal change seems to play a large role in explaining cultural differences during the panel. Moving forward, we use $\tau$ as a placeholder for *systematic variance attributable to intrapersonal change*.
 
