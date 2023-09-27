@@ -327,21 +327,54 @@ kableExtra::kable(table,
 
 ## Figures
 
-```{r fig1, fig.height=2, fig.cap="Proportions of explained variance in items of personal culture; based on predictions at participants' wave mid-point."}
+```{=latex}
+\begin{figure}[ht]
+\caption{Proportions of Systematic Variance in Personal Culture}
+```
+```{r fig1, fig.height=2}
 knitr::include_graphics("fig/variation_share_lm_mdpnt.png")
 ```
+```{=latex}
+\textit{Notes:} The figure shows $\tau$ and 1 - $\tau$ as the proportion of systematic variance attributable to intrapersonal change and interpersonal differences, respectively. See Appendix A for the full set of item values. 
+\end{figure}
+```
 
 \newpage
-```{r fig2, out.width = "300px", fig.cap="Proportion of explained variance attributable to intrapersonal change; based on predictions at participants' wave mid-point; supressed intercept model; survey indicators not shown."}
+```{=latex}
+\begin{figure}[h]
+\caption{Regression Model Estimating $\tau$}
+
+```
+```{r fig2, out.width = "300px"}
 knitr::include_graphics("fig/meta_no_int.png")
 ```
-
-\newpage
-```{r fig3, out.width = "450px", fig.cap="Difference between share of intrapersonal change and share of inter-personal differences in expalined variance; based on predictions at participants' wave mid-point."}
-knitr::include_graphics("fig/FIG_college1.png")
+```{=latex}
+\textit{Notes:} The model estimates the proportion of systematic variance attributable to intrapersonal change. It includes the log of the number of participants, the number of waves the variable was asked (ceiled at t = 10 for each item), the date of the first wave (measured as the year minus 1968 divided by 10), number of waves the question was asked averaged across participants, duration in years per item averaged across participants, and panel and topic fixed effects. Coefficients are estimated from suppressed intercept model based on predictions at participants' wave mid-point. Survey indicators and item topics not shown. See Appendix B for the full set of coefficients.
+\end{figure}
 ```
 
 \newpage
-```{r fig4, out.width = "450px", fig.cap="Proportions of intrapersonal change of explained variance by college degree; based on predictions at participants' wave mid-point."}
+```{=latex}
+\begin{figure}[h]
+\caption{Difference in $\tau$ Across College Graduates and Non-Graduates}
+```
+```{r fig3, out.width = "450px"}
+knitr::include_graphics("fig/FIG_college1.png")
+```
+```{=latex}
+\textit{Notes:} The figure shows the difference in $\tau$ values across college graduates and college non-graduates. Values above (below) 0 means that those with college degree have higher (lower) variance of intrapersonal change. The dashed red line marks 0 difference.
+\end{figure}
+```
+
+\newpage
+```{=latex}
+\begin{figure}[h]
+\caption{Difference in $\tau$ Across College Graduates and Non-Graduates on Political Culture}
+```
+```{r fig4, out.width = "450px"}
 knitr::include_graphics("fig/FIG_college2.png")
+```
+```{=latex}
+\textit{Notes:} $\tau$ values across college graduates and college non-graduates on 8 political culture items from the General Social Survey (2006-2014).
+\end{figure}
 ```
