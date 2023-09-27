@@ -1,0 +1,825 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  12pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[]{Times New Roman}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{fontspec} \usepackage{longtable} \usepackage{multirow} \usepackage{array} \usepackage{booktabs} \usepackage{dcolumn} \usepackage{lscape} \usepackage{caption} \newcommand{\blandscape}{\begin{landscape}} \newcommand{\elandscape}{\end{landscape}}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Supplemental Materials for\\
+Quantifying Stability and Change in Personal Culture Using Panel Data}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\newpage
+\begin{landscape}
+
+\hypertarget{supplemental-materials-a}{%
+\section{Supplemental Materials A}\label{supplemental-materials-a}}
+
+In Table A1, we present the survey items, corresponding labels and topic
+indicators, as well as the variances calculated from our estimations:
+V(C) refers to intraindividual change, V(D) refers to interindividual
+differences, and V(R) refers to residual variance. We also present the
+\(\omega\) values.
+
+\begin{scriptsize}
+\begin{longtable}{|p{1.75in}|p{0.3in}|p{0.3in}|p{0.3in}|p{0.3in}|p{2.5in}|p{2.5in}}
+\caption*{Table A1: The Descriptives of Variables Used}
+\\
+\toprule
+\multicolumn{1}{l}{} & \emph{\textbf{ω}} & \textbf{V(C)} & \textbf{V(D)} & \textbf{V(R)} & \textbf{Label} & \textbf{Topic} \\ 
+\midrule
+\multicolumn{7}{l}{\textbf{BHPS}} \\ 
+\midrule
+cohadv & 0.09 & 0.05 & 0.53 & 0.42 & Advantages In Living As Couple & Gender \& Family \\ 
+cohdis & 0.00 & 0.00 & 0.57 & 0.43 & Disadvantages In Living As Couple & Gender \& Family \\ 
+crwora & 0.06 & 0.04 & 0.60 & 0.37 & Worry About Being Affected By Crime & Social Life, Social Cohesion \& Trust \\ 
+crworb & 0.10 & 0.07 & 0.61 & 0.32 & Extent Of Concern About Crime & Social Life, Social Cohesion \& Trust \\ 
+dfwld & 0.03 & 0.02 & 0.54 & 0.44 & Different World In Future For Young & Gender \& Family \\ 
+lfimpa & 0.13 & 0.08 & 0.59 & 0.32 & Importance Of: Health & Health \& Morale \\ 
+lfimpb & 0.19 & 0.16 & 0.67 & 0.16 & Importance Of: Money & Health \& Morale \\ 
+lfimpc & 0.10 & 0.09 & 0.79 & 0.13 & Importance Of: Having Children & Health \& Morale \\ 
+lfimpd & 0.20 & 0.15 & 0.60 & 0.25 & Importance Of: Having A Good Job & Health \& Morale \\ 
+lfimpe & 0.16 & 0.12 & 0.63 & 0.25 & Importance Of: Being Independent & Health \& Morale \\ 
+lfimpf & 0.19 & 0.17 & 0.70 & 0.13 & Importance Of: Owning Own Home & Health \& Morale \\ 
+lfimpg & 0.14 & 0.11 & 0.69 & 0.19 & Importance Of: Good Partnership & Health \& Morale \\ 
+lfimph & 0.20 & 0.16 & 0.66 & 0.17 & Importance Of: Good Friends & Health \& Morale \\ 
+opchd1\_1 & 0.02 & 0.01 & 0.48 & 0.51 & Quality Best Prep. Child: Well Liked & Gender \& Family \\ 
+opchd1\_2 & 0.02 & 0.01 & 0.61 & 0.38 & Quality Best Prep. Child: Think For Self & Gender \& Family \\ 
+opchd1\_3 & 0.14 & 0.09 & 0.53 & 0.38 & Quality Best Prep. Child: Work Hard & Gender \& Family \\ 
+opchd1\_4 & 0.00 & 0.00 & 0.54 & 0.46 & Quality Best Prep. Child: Help Others & Gender \& Family \\ 
+opchd1\_5 & 0.01 & 0.00 & 0.58 & 0.41 & Quality Best Prep. Child: Obey Parents & Gender \& Family \\ 
+opcls1 & 0.16 & 0.11 & 0.55 & 0.34 & Sees Self As Belonging To Social Class & Subjective Ses \\ 
+opcls2 & 0.10 & 0.08 & 0.73 & 0.19 & Subjective Social Class Membership & Subjective Ses \\ 
+opcls3 & 0.16 & 0.10 & 0.52 & 0.38 & Social Class Affects Opportunities & Subjective Ses \\ 
+opeur1 & 0.13 & 0.11 & 0.70 & 0.19 & Opinion: Uk Membership Of Eu & Politics, Government \& Economy \\ 
+opeur2 & 0.13 & 0.10 & 0.71 & 0.19 & Uk Benefited From Being In Eu & Politics, Government \& Economy \\ 
+opeur3 & 0.05 & 0.03 & 0.65 & 0.32 & Uk Long Term Policy Re. Eu Should Be & Politics, Government \& Economy \\ 
+opfama & 0.10 & 0.07 & 0.63 & 0.30 & Pre-School Child Suffers If Mother Works & Gender \& Family \\ 
+opfamb & 0.09 & 0.07 & 0.64 & 0.29 & Family Suffers If Mother Works Full-Time & Gender \& Family \\ 
+opfamc & 0.14 & 0.07 & 0.46 & 0.47 & Woman And Family Happier If She Works & Gender \& Family \\ 
+opfamd & 0.12 & 0.07 & 0.54 & 0.39 & Husband And Wife Should Both Contribute & Gender \& Family \\ 
+opfame & 0.12 & 0.07 & 0.53 & 0.40 & Full Time Job Makes Woman Independent & Gender \& Family \\ 
+opfamf & 0.07 & 0.05 & 0.68 & 0.27 & Husband Should Earn, Wife Stay At Home & Gender \& Family \\ 
+opfamg & 0.12 & 0.07 & 0.52 & 0.42 & Children Need Father As Much As Mother & Gender \& Family \\ 
+opfamh & 0.11 & 0.07 & 0.59 & 0.34 & Employers Should Help With Childcare & Gender \& Family \\ 
+opfami & 0.07 & 0.05 & 0.66 & 0.29 & Single Parents Are As Good As Couples & Gender \& Family \\ 
+opfamj & 0.15 & 0.13 & 0.75 & 0.12 & Cohabiting Is Always Wrong & Gender \& Family \\ 
+opfamk & 0.11 & 0.06 & 0.52 & 0.42 & Adult Children Should Care For Parents & Gender \& Family \\ 
+opfaml & 0.11 & 0.07 & 0.56 & 0.37 & Divorce Better Than Unhappy Marriage & Gender \& Family \\ 
+opfamm & 0.12 & 0.11 & 0.77 & 0.13 & The Man Should Be Head Of Household & Gender \& Family \\ 
+opfamn & 0.08 & 0.07 & 0.82 & 0.11 & Bible Gods Word And True & Religion \& Spirituality \\ 
+opfamo & 0.07 & 0.06 & 0.76 & 0.19 & Co-Habiting Is Alright & Gender \& Family \\ 
+opfamp & 0.11 & 0.08 & 0.64 & 0.28 & Parents Ought Stay Together For Children & Gender \& Family \\ 
+opfamq & 0.11 & 0.07 & 0.61 & 0.32 & Marital Status Is Irrelevant To Children & Gender \& Family \\ 
+opfamr & 0.05 & 0.04 & 0.76 & 0.19 & Homosexual Relationships Are Wrong & Gender \& Family \\ 
+ophla & 0.15 & 0.09 & 0.54 & 0.37 & All Health Care Should Be Free & Politics, Government \& Economy \\ 
+ophlb & 0.12 & 0.08 & 0.59 & 0.34 & Compulsory Private Insurance If Can Pay & Politics, Government \& Economy \\ 
+ophlc & 0.17 & 0.11 & 0.52 & 0.38 & Unfair That Wealth Buys Medical Priority & Politics, Government \& Economy \\ 
+opiss1 & 0.07 & 0.05 & 0.68 & 0.28 & Rising Prices Are A Cause For Concern & Politics, Government \& Economy \\ 
+opiss2 & 0.05 & 0.03 & 0.71 & 0.26 & Ozone Layer Is A Cause For Concern & Environment \& Climate \\ 
+opiss3 & 0.10 & 0.07 & 0.62 & 0.31 & Unemployment Is A Cause For Concern & Politics, Government \& Economy \\ 
+opiss4 & 0.01 & 0.00 & 0.71 & 0.29 & Threat To Nature Is A Cause For Concern & Environment \& Climate \\ 
+opiss5 & 0.08 & 0.06 & 0.70 & 0.24 & Moral Standards Are A Cause For Concern & Gender \& Family \\ 
+opnata & 0.18 & 0.13 & 0.56 & 0.31 & Britain Has Much To Learn & Politics, Government \& Economy \\ 
+opnatb & 0.14 & 0.11 & 0.63 & 0.26 & British Citizenship Best & Politics, Government \& Economy \\ 
+opnatc & 0.15 & 0.10 & 0.55 & 0.36 & Some Shameful Things About Britain & Politics, Government \& Economy \\ 
+opnatd & 0.24 & 0.17 & 0.52 & 0.32 & People Too Ready To Criticise Britain & Politics, Government \& Economy \\ 
+opnate & 0.17 & 0.12 & 0.60 & 0.28 & Britain Should Stay Single State & Politics, Government \& Economy \\ 
+opnatf & 0.12 & 0.08 & 0.62 & 0.30 & Co-Operation Better Than Independence & Politics, Government \& Economy \\ 
+opngbha & 0.17 & 0.13 & 0.65 & 0.22 & Belong To Neighbourhood & Social Life, Social Cohesion \& Trust \\ 
+opngbhb & 0.20 & 0.16 & 0.66 & 0.18 & Local Friends Mean A Lot & Social Life, Social Cohesion \& Trust \\ 
+opngbhc & 0.15 & 0.11 & 0.63 & 0.26 & Advice Obtainable Locally & Social Life, Social Cohesion \& Trust \\ 
+opngbhd & 0.21 & 0.16 & 0.63 & 0.21 & Can Borrow Things From Neighbours & Social Life, Social Cohesion \& Trust \\ 
+opngbhe & 0.20 & 0.15 & 0.59 & 0.26 & Willing To Improve Neighbourhood & Social Life, Social Cohesion \& Trust \\ 
+opngbhf & 0.10 & 0.07 & 0.59 & 0.34 & Plan To Stay In Neighbourhood & Social Life, Social Cohesion \& Trust \\ 
+opngbhg & 0.18 & 0.14 & 0.66 & 0.20 & Am Similar To Others In Neighbourhood & Social Life, Social Cohesion \& Trust \\ 
+opngbhh & 0.19 & 0.15 & 0.65 & 0.20 & Talk Regularly To Neighbours & Social Life, Social Cohesion \& Trust \\ 
+oppola & 0.19 & 0.11 & 0.48 & 0.41 & Government Reflects People's Wishes & Politics, Government \& Economy \\ 
+oppolb & 0.17 & 0.09 & 0.47 & 0.44 & People Can't Influence Govt. Policy & Politics, Government \& Economy \\ 
+oppolc & 0.06 & 0.04 & 0.60 & 0.36 & Should Be Max. Limit On Income & Politics, Government \& Economy \\ 
+oppold & 0.18 & 0.10 & 0.47 & 0.43 & Govt. Puts Nation's Interests First & Politics, Government \& Economy \\ 
+oprlg3 & 0.08 & 0.06 & 0.76 & 0.17 & Religion Makes Difference To Life & Religion \& Spirituality \\ 
+opsoca & 0.13 & 0.08 & 0.54 & 0.38 & Ordinary People Share Nations Wealth & Politics, Government \& Economy \\ 
+opsocb & 0.11 & 0.07 & 0.58 & 0.34 & One Law For Rich And One For Poor & Politics, Government \& Economy \\ 
+opsocc & 0.09 & 0.06 & 0.58 & 0.36 & Private Enterprise Solves Economic Probs & Politics, Government \& Economy \\ 
+opsocd & 0.12 & 0.07 & 0.53 & 0.40 & Public Services Ought To Be State Owned & Politics, Government \& Economy \\ 
+opsoce & 0.10 & 0.07 & 0.64 & 0.29 & Govt. Has Obligation To Provide Jobs & Politics, Government \& Economy \\ 
+opsocf & 0.09 & 0.06 & 0.65 & 0.28 & Strong Trade Unions Protect Employees & Politics, Government \& Economy \\ 
+trust & 0.12 & 0.08 & 0.61 & 0.31 & Trustworthiness Of Others & Social Life, Social Cohesion \& Trust \\ 
+vote1 & 0.10 & 0.06 & 0.54 & 0.40 & Supports A Particular Political Party & Politics, Government \& Economy \\ 
+vote2 & 0.14 & 0.07 & 0.44 & 0.50 & Closer To One Political Party Than Other & Politics, Government \& Economy \\ 
+vote4\_1 & 0.05 & 0.04 & 0.88 & 0.08 & Party Affinity: Conservative & Politics, Government \& Economy \\ 
+vote4\_2 & 0.05 & 0.04 & 0.85 & 0.11 & Party Affinity: Labour & Politics, Government \& Economy \\ 
+vote4\_3 & 0.08 & 0.07 & 0.72 & 0.21 & Party Affinity: Liberal Democrat/Lib/Sdp & Politics, Government \& Economy \\ 
+vote5 & 0.10 & 0.06 & 0.54 & 0.41 & Strength Of Support For Stated Party & Politics, Government \& Economy \\ 
+vote6 & 0.06 & 0.04 & 0.70 & 0.25 & Level Of Interest In Politics & Politics, Government \& Economy \\ 
+\midrule
+\multicolumn{7}{l}{\textbf{GSS}} \\ 
+\midrule
+abany & 0.03 & 0.02 & 0.76 & 0.22 & Abortion: Any Reason & Gender \& Family \\ 
+abdefect & 0.10 & 0.08 & 0.75 & 0.17 & Abortion: Birth Defect & Gender \& Family \\ 
+abhlth & 0.14 & 0.12 & 0.72 & 0.16 & Abortion: Mother's Health & Gender \& Family \\ 
+abnomore & 0.10 & 0.08 & 0.76 & 0.16 & Abortion: Birth Control & Gender \& Family \\ 
+abpoor & 0.09 & 0.08 & 0.77 & 0.15 & Abortion: Too Poor & Gender \& Family \\ 
+abrape & 0.12 & 0.11 & 0.77 & 0.13 & Abortion: Rape & Gender \& Family \\ 
+abscale6 & 0.08 & 0.07 & 0.84 & 0.09 & Abortion Scale (6 Items) & Gender \& Family \\ 
+abscale7 & 0.07 & 0.06 & 0.84 & 0.10 & Abortion Scale (7 Items) & Gender \& Family \\ 
+absingle & 0.05 & 0.04 & 0.77 & 0.19 & Abortion: Unmarried & Gender \& Family \\ 
+affrmact & 0.12 & 0.09 & 0.68 & 0.22 & Hiring Preferences & National Identity, Ethnicity \& Immigration \\ 
+aged & 0.01 & 0.00 & 0.60 & 0.40 & Seniors Should Live With Family & Gender \& Family \\ 
+athscale & 0.00 & 0.00 & 0.74 & 0.26 & Athiest: Scale & Politics, Government \& Economy \\ 
+attend & 0.08 & 0.08 & 0.85 & 0.07 & Attend Religious Services & Religion \& Spirituality \\ 
+bible & 0.10 & 0.09 & 0.80 & 0.12 & View Of Bible & Religion \& Spirituality \\ 
+cappun & 0.12 & 0.11 & 0.76 & 0.13 & Death Penalty & Politics, Government \& Economy \\ 
+chldidel & 0.15 & 0.12 & 0.71 & 0.17 & Ideal \# Of Children & Gender \& Family \\ 
+class & 0.09 & 0.07 & 0.73 & 0.20 & Social Class & Subjective Ses \\ 
+closeblk & 0.11 & 0.09 & 0.71 & 0.20 & Feel Close To Blacks & National Identity, Ethnicity \& Immigration \\ 
+closewht & 0.04 & 0.03 & 0.61 & 0.36 & Feel Close To Whites & National Identity, Ethnicity \& Immigration \\ 
+colath & 0.00 & 0.00 & 0.64 & 0.36 & Athiest: Teach At College & Politics, Government \& Economy \\ 
+colcom & 0.09 & 0.06 & 0.63 & 0.31 & Red: Teach At College & Politics, Government \& Economy \\ 
+colhomo & 0.00 & 0.00 & 0.67 & 0.32 & Gay: Teach At College & Politics, Government \& Economy \\ 
+colmil & 0.03 & 0.02 & 0.61 & 0.37 & Militarist: Teach At College & Politics, Government \& Economy \\ 
+colmslm & 0.00 & 0.00 & 0.70 & 0.30 & Islamist: Teach At College & Politics, Government \& Economy \\ 
+colrac & 0.00 & 0.00 & 0.60 & 0.40 & Racist: Teach At College & Politics, Government \& Economy \\ 
+comscale & 0.03 & 0.02 & 0.76 & 0.22 & Red: Scale & Politics, Government \& Economy \\ 
+conarmy & 0.12 & 0.08 & 0.63 & 0.29 & Military & Social Life, Social Cohesion \& Trust \\ 
+conbus & 0.11 & 0.07 & 0.60 & 0.33 & Major Companies & Social Life, Social Cohesion \& Trust \\ 
+conclerg & 0.05 & 0.03 & 0.66 & 0.31 & Organized Religion & Social Life, Social Cohesion \& Trust \\ 
+coneduc & 0.02 & 0.01 & 0.60 & 0.38 & Education & Social Life, Social Cohesion \& Trust \\ 
+confed & 0.24 & 0.17 & 0.56 & 0.27 & Executive Branch & Social Life, Social Cohesion \& Trust \\ 
+confinan & 0.10 & 0.06 & 0.56 & 0.38 & Banks \& Finance & Social Life, Social Cohesion \& Trust \\ 
+conjudge & 0.09 & 0.06 & 0.63 & 0.31 & Supreme Court & Social Life, Social Cohesion \& Trust \\ 
+conlabor & 0.14 & 0.10 & 0.62 & 0.28 & Organized Labor & Social Life, Social Cohesion \& Trust \\ 
+conlegis & 0.02 & 0.01 & 0.61 & 0.37 & Congress & Social Life, Social Cohesion \& Trust \\ 
+conmedia & 0.17 & 0.13 & 0.66 & 0.21 & Tv \& Press & Social Life, Social Cohesion \& Trust \\ 
+conmedic & 0.13 & 0.09 & 0.59 & 0.32 & Medicine & Social Life, Social Cohesion \& Trust \\ 
+conpress & 0.16 & 0.12 & 0.62 & 0.26 & Press & Social Life, Social Cohesion \& Trust \\ 
+consci & 0.04 & 0.02 & 0.61 & 0.36 & Scientific Community & Social Life, Social Cohesion \& Trust \\ 
+contv & 0.18 & 0.13 & 0.59 & 0.27 & Television & Social Life, Social Cohesion \& Trust \\ 
+courts & 0.06 & 0.04 & 0.65 & 0.32 & Courts Deal With Criminals & Politics, Government \& Economy \\ 
+discaff & 0.00 & 0.00 & 0.56 & 0.44 & Affirm. Action Hurt Whites & National Identity, Ethnicity \& Immigration \\ 
+discaffm & 0.09 & 0.06 & 0.55 & 0.40 & Affirm. Action Hurt Men & Gender \& Family \\ 
+discaffw & 0.03 & 0.02 & 0.56 & 0.42 & Affirm. Action Hurt Women & Gender \& Family \\ 
+divlaw & 0.00 & 0.00 & 0.71 & 0.29 & Divorce Laws Too Lenient & Politics, Government \& Economy \\ 
+eqwlth & 0.05 & 0.04 & 0.68 & 0.28 & Government Reduce Inequality & Politics, Government \& Economy \\ 
+fair & 0.04 & 0.03 & 0.68 & 0.30 & People Try To Be Fair & Social Life, Social Cohesion \& Trust \\ 
+fear & 0.06 & 0.04 & 0.66 & 0.30 & Afraid To Walk At Night & Politics, Government \& Economy \\ 
+fechld & 0.13 & 0.10 & 0.65 & 0.25 & Working Moms Warm & Gender \& Family \\ 
+fefam & 0.02 & 0.01 & 0.69 & 0.30 & Better For Man To Work & Gender \& Family \\ 
+fehire & 0.00 & 0.00 & 0.62 & 0.38 & Hire \& Promote Women & Gender \& Family \\ 
+fejobaff & 0.16 & 0.13 & 0.69 & 0.18 & Preferences For Hiring Women & Gender \& Family \\ 
+fepol & 0.00 & 0.00 & 0.64 & 0.36 & Men Better For Politics & Gender \& Family \\ 
+fepresch & 0.02 & 0.01 & 0.66 & 0.33 & Pre-Ks Suffer If Mom Works & Gender \& Family \\ 
+finalter & 0.20 & 0.14 & 0.54 & 0.32 & Finances Better Or Worse & Subjective Ses \\ 
+finrela & 0.10 & 0.08 & 0.70 & 0.22 & Relative Income & Subjective Ses \\ 
+fund & 0.08 & 0.07 & 0.84 & 0.09 & Fundamentalist & Religion \& Spirituality \\ 
+genderscale & 0.03 & 0.02 & 0.76 & 0.22 & Scale Of Gender Role Attitudes & Gender \& Family \\ 
+getahead & 0.19 & 0.13 & 0.56 & 0.31 & Work To Get Ahead & Subjective Ses \\ 
+god & 0.05 & 0.04 & 0.82 & 0.14 & Belief About God & Religion \& Spirituality \\ 
+goodlife & 0.05 & 0.03 & 0.60 & 0.37 & Finances Will Improve & Subjective Ses \\ 
+grass & 0.03 & 0.03 & 0.78 & 0.20 & Legalize Marijuana & Politics, Government \& Economy \\ 
+gunlaw & 0.00 & 0.00 & 0.63 & 0.37 & Require Gun Permits & Politics, Government \& Economy \\ 
+hapmar & 0.08 & 0.06 & 0.70 & 0.24 & Happiness: Marriage & Health \& Morale \\ 
+happy & 0.19 & 0.15 & 0.62 & 0.23 & Happiness: General & Health \& Morale \\ 
+health & 0.10 & 0.08 & 0.75 & 0.17 & Health: Self-Rated & Health \& Morale \\ 
+helpblk & 0.04 & 0.03 & 0.70 & 0.27 & Government Help Blacks & Politics, Government \& Economy \\ 
+helpful & 0.01 & 0.01 & 0.65 & 0.34 & People Try To Be Helpful & Social Life, Social Cohesion \& Trust \\ 
+helpnot & 0.00 & 0.00 & 0.62 & 0.37 & Government Do More Or Less & Politics, Government \& Economy \\ 
+helpoth & 0.10 & 0.07 & 0.59 & 0.34 & Child Should Help Others & Gender \& Family \\ 
+helppoor & 0.01 & 0.01 & 0.65 & 0.35 & Government Help Poor & Politics, Government \& Economy \\ 
+helpsick & 0.02 & 0.01 & 0.66 & 0.33 & Government Pay Medical & Politics, Government \& Economy \\ 
+homoscale & 0.00 & 0.00 & 0.74 & 0.26 & Gay: Scale & Politics, Government \& Economy \\ 
+homosex & 0.04 & 0.04 & 0.83 & 0.13 & Morality: Same-Sex Sex & Gender \& Family \\ 
+intlblks & 0.23 & 0.14 & 0.48 & 0.37 & Blacks Intelligent Or Not & National Identity, Ethnicity \& Immigration \\ 
+intlwhts & 0.01 & 0.01 & 0.49 & 0.50 & Whites Intelligent Or Not & National Identity, Ethnicity \& Immigration \\ 
+jobfind & 0.16 & 0.12 & 0.65 & 0.23 & Find A Good Job & Subjective Ses \\ 
+joblose & 0.01 & 0.00 & 0.56 & 0.44 & Likely To Lose Job & Subjective Ses \\ 
+kidssol & 0.04 & 0.03 & 0.69 & 0.28 & Mobility Next Generation & Subjective Ses \\ 
+letdie1 & 0.14 & 0.12 & 0.72 & 0.17 & Let Die: Incurable & Health \& Morale \\ 
+letin1a & 0.02 & 0.01 & 0.70 & 0.29 & How Many Immigrants? & National Identity, Ethnicity \& Immigration \\ 
+libath & 0.00 & 0.00 & 0.61 & 0.39 & Athiest: Library Book & Politics, Government \& Economy \\ 
+libcom & 0.05 & 0.04 & 0.65 & 0.31 & Red: Library Book & Politics, Government \& Economy \\ 
+libhomo & 0.00 & 0.00 & 0.65 & 0.35 & Gay: Library Book & Politics, Government \& Economy \\ 
+libmil & 0.02 & 0.01 & 0.60 & 0.38 & Militarist: Library Book & Politics, Government \& Economy \\ 
+libmslm & 0.00 & 0.00 & 0.68 & 0.32 & Islamist: Library Book & Politics, Government \& Economy \\ 
+librac & 0.00 & 0.00 & 0.59 & 0.40 & Racist: Library Book & Politics, Government \& Economy \\ 
+life & 0.04 & 0.03 & 0.67 & 0.30 & Life: Exciting Or Dull & Health \& Morale \\ 
+liveblks & 0.20 & 0.14 & 0.58 & 0.27 & Neighborhood Half Black & National Identity, Ethnicity \& Immigration \\ 
+livewhts & 0.13 & 0.07 & 0.49 & 0.44 & Neighborhood Half White & National Identity, Ethnicity \& Immigration \\ 
+marblk & 0.06 & 0.04 & 0.69 & 0.27 & Relative Marry Black & National Identity, Ethnicity \& Immigration \\ 
+marhomo & 0.05 & 0.04 & 0.82 & 0.14 & Gay Marriage & Gender \& Family \\ 
+marwht & 0.00 & 0.00 & 0.55 & 0.45 & Relative Marry White & National Identity, Ethnicity \& Immigration \\ 
+meovrwrk & 0.03 & 0.02 & 0.58 & 0.40 & Men Hurt Family When Overwork & Gender \& Family \\ 
+milscale & 0.03 & 0.02 & 0.69 & 0.29 & Militarist: Scale & Politics, Government \& Economy \\ 
+misanthropy & 0.07 & 0.06 & 0.77 & 0.17 & Misanthropy Scale & Social Life, Social Cohesion \& Trust \\ 
+mslmscale & 0.00 & 0.00 & 0.77 & 0.23 & Islamist: Scale & Politics, Government \& Economy \\ 
+nataid & 0.07 & 0.05 & 0.65 & 0.30 & Foreign Aid & Politics, Government \& Economy \\ 
+natarms & 0.08 & 0.06 & 0.67 & 0.28 & Defense & Politics, Government \& Economy \\ 
+natchld & 0.05 & 0.04 & 0.63 & 0.34 & Child Care & Politics, Government \& Economy \\ 
+natcity & 0.05 & 0.03 & 0.63 & 0.34 & Problems Of Cities & Politics, Government \& Economy \\ 
+natcrime & 0.12 & 0.08 & 0.62 & 0.29 & Fighting Crime & Politics, Government \& Economy \\ 
+natdrug & 0.12 & 0.08 & 0.60 & 0.32 & Dealing With Drugs & Politics, Government \& Economy \\ 
+nateduc & 0.16 & 0.13 & 0.66 & 0.21 & Education & Politics, Government \& Economy \\ 
+natenvir & 0.01 & 0.01 & 0.67 & 0.32 & Protect Environment & Politics, Government \& Economy \\ 
+natfare & 0.08 & 0.06 & 0.75 & 0.19 & Welfare & Politics, Government \& Economy \\ 
+natheal & 0.02 & 0.01 & 0.57 & 0.41 & Improving Health & Politics, Government \& Economy \\ 
+natmass & 0.05 & 0.03 & 0.62 & 0.35 & Mass Transit & Politics, Government \& Economy \\ 
+natpark & 0.19 & 0.14 & 0.58 & 0.28 & Parks \& Recreation & Politics, Government \& Economy \\ 
+natrace & 0.13 & 0.11 & 0.72 & 0.18 & Improve Life For Blacks & Politics, Government \& Economy \\ 
+natroad & 0.01 & 0.01 & 0.61 & 0.39 & Highways \& Bridges & Politics, Government \& Economy \\ 
+natsci & 0.12 & 0.08 & 0.60 & 0.32 & Scientific Research & Politics, Government \& Economy \\ 
+natsoc & 0.01 & 0.00 & 0.63 & 0.36 & Social Security & Politics, Government \& Economy \\ 
+natspac & 0.10 & 0.07 & 0.70 & 0.23 & Space Exploration & Politics, Government \& Economy \\ 
+neverrelact & 0.12 & 0.09 & 0.65 & 0.27 & Never Active In Religion & Religion \& Spirituality \\ 
+news & 0.08 & 0.06 & 0.77 & 0.16 & Read Newspaper & Social Life, Social Cohesion \& Trust \\ 
+obey & 0.08 & 0.07 & 0.72 & 0.22 & Child Should Obey & Gender \& Family \\ 
+owngun & 0.08 & 0.08 & 0.86 & 0.06 & Gun Owner & Politics, Government \& Economy \\ 
+parsol & 0.01 & 0.01 & 0.71 & 0.28 & Mobility & Subjective Ses \\ 
+partyid & 0.07 & 0.06 & 0.88 & 0.05 & Political Party & Politics, Government \& Economy \\ 
+pillok & 0.10 & 0.07 & 0.70 & 0.23 & Birth Control 14-16 Year Olds & Gender \& Family \\ 
+polabuse & 0.00 & 0.00 & 0.50 & 0.50 & Police Hit Person Cursing & Politics, Government \& Economy \\ 
+polattak & 0.00 & 0.00 & 0.54 & 0.46 & Police Hit Person Punching & Politics, Government \& Economy \\ 
+polescap & 0.16 & 0.11 & 0.59 & 0.30 & Police Hit Person Fleeing & Politics, Government \& Economy \\ 
+polhitok & 0.00 & 0.00 & 0.71 & 0.29 & Police Can Hit Citizens & Politics, Government \& Economy \\ 
+polmurdr & 0.00 & 0.00 & 0.53 & 0.47 & Police Hit Murder Suspect & Politics, Government \& Economy \\ 
+polviews & 0.08 & 0.07 & 0.75 & 0.18 & Political Views & Politics, Government \& Economy \\ 
+polviolent & 0.01 & 0.01 & 0.62 & 0.38 & Police Hit: Scale & Politics, Government \& Economy \\ 
+popespks & 0.15 & 0.12 & 0.70 & 0.19 & Pope Infallible & Religion \& Spirituality \\ 
+popular & 0.23 & 0.17 & 0.55 & 0.28 & Child Should Be Popular & Gender \& Family \\ 
+pornlaw & 0.04 & 0.02 & 0.66 & 0.32 & Restrict Pornography & Gender \& Family \\ 
+postlife & 0.09 & 0.07 & 0.78 & 0.15 & Life After Death & Religion \& Spirituality \\ 
+pray & 0.08 & 0.07 & 0.86 & 0.07 & Pray & Religion \& Spirituality \\ 
+prayer & 0.13 & 0.10 & 0.68 & 0.22 & Bible Prayer In Schools & Politics, Government \& Economy \\ 
+premarsx & 0.07 & 0.06 & 0.79 & 0.15 & Morality: Premarital Sex & Gender \& Family \\ 
+racdif1 & 0.09 & 0.07 & 0.65 & 0.28 & Racial Diff.: Discrimination & National Identity, Ethnicity \& Immigration \\ 
+racdif2 & 0.00 & 0.00 & 0.57 & 0.43 & Racial Diff.: Inborn & National Identity, Ethnicity \& Immigration \\ 
+racdif3 & 0.08 & 0.05 & 0.64 & 0.30 & Racial Diff.: Lack Education & National Identity, Ethnicity \& Immigration \\ 
+racdif4 & 0.06 & 0.04 & 0.64 & 0.32 & Racial Diff.: Lack Will & National Identity, Ethnicity \& Immigration \\ 
+racopen & 0.13 & 0.09 & 0.61 & 0.30 & Open Housing Law & National Identity, Ethnicity \& Immigration \\ 
+racscale & 0.01 & 0.01 & 0.69 & 0.31 & Racist: Scale & Politics, Government \& Economy \\ 
+reborn & 0.07 & 0.06 & 0.81 & 0.13 & Born Again & Religion \& Spirituality \\ 
+relactiv & 0.13 & 0.11 & 0.76 & 0.13 & Do Religious Activities & Religion \& Spirituality \\ 
+relexp & 0.14 & 0.12 & 0.76 & 0.12 & Had Religious Experience & Religion \& Spirituality \\ 
+relexper & 0.03 & 0.02 & 0.74 & 0.24 & Religious Turning Point & Religion \& Spirituality \\ 
+reliten & 0.10 & 0.09 & 0.80 & 0.11 & Strength Of Affiliation & Religion \& Spirituality \\ 
+relpersn & 0.06 & 0.05 & 0.81 & 0.14 & Religious Person & Religion \& Spirituality \\ 
+richwork & 0.11 & 0.08 & 0.66 & 0.26 & Would Work If Rich & Health \& Morale \\ 
+satfin & 0.17 & 0.14 & 0.68 & 0.18 & Satisfied With Finances & Health \& Morale \\ 
+satjob & 0.20 & 0.15 & 0.60 & 0.25 & Satisfied With Work & Health \& Morale \\ 
+selfhunt & 0.02 & 0.02 & 0.80 & 0.18 & Hunter: Self & Politics, Government \& Economy \\ 
+sexeduc & 0.00 & 0.00 & 0.69 & 0.31 & Sex-Ed. In Public Schools & Gender \& Family \\ 
+socbar & 0.11 & 0.10 & 0.80 & 0.10 & Meet Friends At Bar & Social Life, Social Cohesion \& Trust \\ 
+socfrend & 0.09 & 0.06 & 0.65 & 0.28 & Meet Friends & Social Life, Social Cohesion \& Trust \\ 
+socialscale & 0.09 & 0.07 & 0.74 & 0.18 & Social Life Scale & Social Life, Social Cohesion \& Trust \\ 
+socommun & 0.16 & 0.12 & 0.64 & 0.25 & Meet Neighbors & Social Life, Social Cohesion \& Trust \\ 
+socrel & 0.13 & 0.10 & 0.67 & 0.23 & Meet Relatives & Social Life, Social Cohesion \& Trust \\ 
+spanking & 0.07 & 0.06 & 0.73 & 0.21 & Spank Children & Gender \& Family \\ 
+spkath & 0.03 & 0.02 & 0.66 & 0.32 & Athiest: Make Speech & Politics, Government \& Economy \\ 
+spkcom & 0.01 & 0.01 & 0.71 & 0.28 & Red: Make Speech & Politics, Government \& Economy \\ 
+spkhomo & 0.07 & 0.05 & 0.65 & 0.30 & Gay: Make Speech & Politics, Government \& Economy \\ 
+spkmil & 0.00 & 0.00 & 0.63 & 0.36 & Militarist: Make Speech & Politics, Government \& Economy \\ 
+spkmslm & 0.02 & 0.01 & 0.73 & 0.26 & Islamist: Make Speech & Politics, Government \& Economy \\ 
+spkrac & 0.06 & 0.04 & 0.63 & 0.33 & Racist: Make Speech & Politics, Government \& Economy \\ 
+sprtprsn & 0.10 & 0.09 & 0.78 & 0.13 & Spiritual Person & Religion \& Spirituality \\ 
+suicide1 & 0.01 & 0.00 & 0.73 & 0.27 & Suicide: Incurable & Health \& Morale \\ 
+suicide2 & 0.08 & 0.06 & 0.65 & 0.29 & Suicide: Bankruptcy & Health \& Morale \\ 
+suicide3 & 0.03 & 0.02 & 0.66 & 0.32 & Suicide: Dishonor & Health \& Morale \\ 
+suicide4 & 0.08 & 0.06 & 0.68 & 0.26 & Suicide: Tired Of Living & Health \& Morale \\ 
+suicidescale & 0.03 & 0.03 & 0.75 & 0.23 & Suicide Scale & Health \& Morale \\ 
+teensex & 0.11 & 0.08 & 0.66 & 0.26 & Morality: Sex 14-16 Year Olds & Gender \& Family \\ 
+thnkself & 0.10 & 0.07 & 0.65 & 0.27 & Child Should Think For Self & Gender \& Family \\ 
+trust & 0.00 & 0.00 & 0.72 & 0.28 & People Can Be Trusted & Social Life, Social Cohesion \& Trust \\ 
+tvhours & 0.15 & 0.13 & 0.75 & 0.13 & Watch Television & Social Life, Social Cohesion \& Trust \\ 
+uswary & 0.04 & 0.03 & 0.67 & 0.30 & Us At War Next 10 Years & Politics, Government \& Economy \\ 
+wlthblks & 0.02 & 0.01 & 0.52 & 0.47 & Blacks Rich Or Poor & National Identity, Ethnicity \& Immigration \\ 
+wlthwhts & 0.23 & 0.16 & 0.53 & 0.30 & Whites Rich Or Poor & National Identity, Ethnicity \& Immigration \\ 
+workblks & 0.00 & 0.00 & 0.56 & 0.44 & Blacks Work Hard & National Identity, Ethnicity \& Immigration \\ 
+workhard & 0.01 & 0.00 & 0.57 & 0.42 & Child Should Work Hard & Gender \& Family \\ 
+workwhts & 0.23 & 0.16 & 0.55 & 0.29 & Whites Work Hard & National Identity, Ethnicity \& Immigration \\ 
+wrkwayup & 0.12 & 0.09 & 0.69 & 0.21 & No Racial Favors & National Identity, Ethnicity \& Immigration \\ 
+xmarsex & 0.18 & 0.14 & 0.64 & 0.22 & Morality: Extramarital Affair & Gender \& Family \\ 
+xmovie & 0.07 & 0.06 & 0.71 & 0.23 & Watch X-Rated Movie & Social Life, Social Cohesion \& Trust \\ 
+\midrule
+\multicolumn{7}{l}{\textbf{HILDA}} \\ 
+\midrule
+atwkadc & 0.13 & 0.09 & 0.58 & 0.33 & Fine For Child Under 3 To Be In All-Day Care & Gender \& Family \\ 
+atwkbmw & 0.07 & 0.05 & 0.69 & 0.25 & Better If Man Earns Money, Woman Cares For Children & Gender \& Family \\ 
+atwkcdw & 0.13 & 0.09 & 0.58 & 0.33 & As Well For Child If Mother Earns Money, Father Cares For Children & Gender \& Family \\ 
+atwkcs & 0.12 & 0.08 & 0.59 & 0.33 & Children Suffer Bc Father Works Too Much & Gender \& Family \\ 
+atwkdcm & 0.14 & 0.10 & 0.64 & 0.25 & Better For Child To Stay With Mother In Case Of Divorce & Gender \& Family \\ 
+atwkfhi & 0.17 & 0.11 & 0.55 & 0.33 & Father Should Be As Involved As Mother & Gender \& Family \\ 
+atwkmmf & 0.08 & 0.05 & 0.61 & 0.34 & Bad For Relationship If Woman Earns More & Gender \& Family \\ 
+atwkmpl & 0.02 & 0.01 & 0.66 & 0.33 & Men Make Better Political Leaders & Gender \& Family \\ 
+atwkmrl & 0.11 & 0.08 & 0.59 & 0.34 & Most Important Role For Men To Be Father & Gender \& Family \\ 
+atwkmsw & 0.08 & 0.05 & 0.62 & 0.33 & Mothers Who Don't Need Money Shouldn't Work & Gender \& Family \\ 
+atwkpsc & 0.08 & 0.06 & 0.63 & 0.32 & Pre-School Child Suffers If Mother Works Ft & Gender \& Family \\ 
+atwkseh & 0.16 & 0.10 & 0.53 & 0.37 & If Both Partners Work They Should Share Domestic Tasks & Gender \& Family \\ 
+atwkwfr & 0.12 & 0.07 & 0.52 & 0.41 & Working Father Can Have As Good Relationship To Child & Gender \& Family \\ 
+atwkwfs & 0.15 & 0.09 & 0.52 & 0.39 & Working Fathers Care More About Success Than Needs Of Children & Gender \& Family \\ 
+atwkwmr & 0.11 & 0.07 & 0.58 & 0.36 & Working Mother Can Have As Good Relationship To Child & Gender \& Family \\ 
+atwkwms & 0.15 & 0.10 & 0.56 & 0.34 & Working Mothers Care More About Success Than Needs Of Children & Gender \& Family \\ 
+atwkwrl & 0.10 & 0.07 & 0.60 & 0.33 & Most Important Role For Women To Be Mother & Gender \& Family \\ 
+lskeep & 0.07 & 0.04 & 0.55 & 0.41 & Most People You Meet Keep Their Word & Social Life, Social Cohesion \& Trust \\ 
+lssop & 0.13 & 0.08 & 0.58 & 0.34 & Most People You Meet Succeed By Stepping On Others & Social Life, Social Cohesion \& Trust \\ 
+mcchmf & 0.12 & 0.09 & 0.66 & 0.25 & Children Happier With Both Father And Mother & Gender \& Family \\ 
+mcdef & 0.06 & 0.05 & 0.80 & 0.15 & Cohabitation Alright Even Without Marriage Intention & Gender \& Family \\ 
+mcdiv & 0.08 & 0.05 & 0.62 & 0.32 & Divorce Alright Even With Children & Gender \& Family \\ 
+mchscr & 0.09 & 0.07 & 0.76 & 0.16 & Same Rights For Homosexual Couples & Gender \& Family \\ 
+mcindpc & 0.15 & 0.11 & 0.63 & 0.26 & Child Should Start Living Independently By 18-20 & Gender \& Family \\ 
+mcmhc & 0.18 & 0.14 & 0.66 & 0.20 & A Man Has To Have Children In Order To Be Fulfilled & Gender \& Family \\ 
+mcmoi & 0.13 & 0.09 & 0.64 & 0.27 & Marriage Is Outdated & Gender \& Family \\ 
+mcnodiv & 0.08 & 0.07 & 0.70 & 0.23 & Marriage Should Never Be Ended & Gender \& Family \\ 
+mcsingp & 0.07 & 0.05 & 0.69 & 0.26 & Alright For Woman To Have Children As Single Parent & Gender \& Family \\ 
+mcwhc & 0.16 & 0.12 & 0.67 & 0.21 & A Woman Has To Have Children In Order To Be Fulfilled & Gender \& Family \\ 
+relimp & 0.05 & 0.05 & 0.87 & 0.08 & Importance Of Religion & Religion \& Spirituality \\ 
+\midrule
+\multicolumn{7}{l}{\textbf{PSID}} \\ 
+\midrule
+cds\_bothparentscare & 0.06 & 0.04 & 0.55 & 0.42 & Dad Should Be As Involved As Mom & Gender \& Family \\ 
+cds\_daddevelopment & 0.08 & 0.05 & 0.53 & 0.42 & Dad Large Role In Child Development & Gender \& Family \\ 
+cds\_dadoldkidbetter & 0.15 & 0.11 & 0.59 & 0.30 & Dad Able To Enjoy Older Children More & Gender \& Family \\ 
+cds\_dadtooinvolved & 0.19 & 0.13 & 0.55 & 0.31 & Dad Too Involved If Keeps From Better Job & Gender \& Family \\ 
+cds\_daycareok & 0.16 & 0.12 & 0.63 & 0.25 & Ok To Have Child Under 3 In All-Day Care & Gender \& Family \\ 
+cds\_fatherhoodfulfill & 0.00 & 0.00 & 0.57 & 0.43 & Dadhood Most Fulfilling Experience & Gender \& Family \\ 
+cds\_fatherinteractchild & 0.01 & 0.00 & 0.56 & 0.44 & Dads Should Interact With Child & Gender \& Family \\ 
+cds\_firstyears & 0.01 & 0.00 & 0.59 & 0.40 & First 4 Years Most Import. In Child's Develop. & Gender \& Family \\ 
+cds\_girlboyequal & 0.05 & 0.03 & 0.59 & 0.38 & Encourage As Much Independence In Daughters And Sons & Gender \& Family \\ 
+cds\_husbandcareerimport & 0.13 & 0.09 & 0.61 & 0.30 & Better Wife Helps Husband Career & Gender \& Family \\ 
+cds\_mostimportantchild\_1 & 0.10 & 0.06 & 0.55 & 0.39 & Importance For Child: Obey & Gender \& Family \\ 
+cds\_mostimportantchild\_3 & 0.00 & 0.00 & 0.57 & 0.43 & Importance For Child: Think For Herself & Gender \& Family \\ 
+cds\_motherfatherequal & 0.19 & 0.13 & 0.56 & 0.31 & Dad And Mom Equally Good Meeting Kid's Needs & Gender \& Family \\ 
+cds\_motherhoodfulfill & 0.00 & 0.00 & 0.59 & 0.41 & Momhood Most Fulfilling Experience & Gender \& Family \\ 
+cds\_mothernotft & 0.12 & 0.10 & 0.67 & 0.24 & Mom With Child Under 5 Shouldn't Work Full-Time & Gender \& Family \\ 
+cds\_preschoolsuffer & 0.13 & 0.09 & 0.65 & 0.26 & Preschool Child Suffers If Mom Employed & Gender \& Family \\ 
+cds\_sharehousehold & 0.00 & 0.00 & 0.48 & 0.52 & Husband And Wife In Both Ft Should Share Household & Gender \& Family \\ 
+cds\_traditionalbest & 0.10 & 0.07 & 0.66 & 0.27 & Better If Man Earns Living & Gender \& Family \\ 
+cds\_workingmotherssame & 0.05 & 0.03 & 0.55 & 0.42 & Working Mom As Warm As Nonworking Mom & Gender \& Family \\ 
+gettingbetter & 0.18 & 0.11 & 0.50 & 0.38 & Life Getting Better & Health \& Morale \\ 
+lifesatis & 0.17 & 0.11 & 0.53 & 0.35 & Life Satisfaction & Health \& Morale \\ 
+likejobormoney & 0.17 & 0.09 & 0.46 & 0.44 & Satisfaction About Income Important In Job & Occupation \& Education \\ 
+opinionimport & 0.17 & 0.12 & 0.56 & 0.32 & How Much Does It Matter What Other People Think About You? & Social Life, Social Cohesion \& Trust \\ 
+satisfiedself & 0.22 & 0.14 & 0.50 & 0.36 & Are You More Often Satisfied Or Dissatisfied With Yourself? & Health \& Morale \\ 
+savingspending & 0.20 & 0.12 & 0.49 & 0.38 & Spend Or Save Money & Health \& Morale \\ 
+tas\_belongcommunity & 0.14 & 0.09 & 0.56 & 0.36 & Freq. Of Feeling Belonging To Communty & Social Life, Social Cohesion \& Trust \\ 
+tas\_contributesociety & 0.14 & 0.09 & 0.53 & 0.38 & Freq. Of Feeling Contrib To Society & Social Life, Social Cohesion \& Trust \\ 
+tas\_divorcehurts & 0.10 & 0.05 & 0.49 & 0.45 & Divorce Hurts Kids & Gender \& Family \\ 
+tas\_divorcesuccess & 0.15 & 0.08 & 0.47 & 0.45 & Child From Divorced Family Can Be Successful & Gender \& Family \\ 
+tas\_fathertimeoff & 0.20 & 0.13 & 0.52 & 0.36 & Dads Should Take Time With Young Child & Gender \& Family \\ 
+tas\_importrel & 0.10 & 0.08 & 0.73 & 0.19 & Importance Of Religion & Religion \& Spirituality \\ 
+tas\_importspirit & 0.13 & 0.10 & 0.67 & 0.24 & Importance Of Spirituality & Religion \& Spirituality \\ 
+tas\_lifesatisfact & 0.19 & 0.14 & 0.61 & 0.25 & How Satisfied With Life As A Whole & Health \& Morale \\ 
+tas\_mothersnodemanding & 0.17 & 0.11 & 0.55 & 0.34 & Moms Should Have Demandng Job & Gender \& Family \\ 
+tas\_peoplearegood & 0.15 & 0.10 & 0.54 & 0.36 & Freq. Of Feeling People Basically Good & Social Life, Social Cohesion \& Trust \\ 
+tas\_religpref0509\_2 & 0.04 & 0.03 & 0.76 & 0.21 & Religion: Protestant [2005-09] & Religion \& Spirituality \\ 
+tas\_religpref0509\_3 & 0.07 & 0.06 & 0.89 & 0.05 & Religion: Catholic [2005-09] & Religion \& Spirituality \\ 
+tas\_religpref1115\_2 & 0.11 & 0.10 & 0.83 & 0.07 & Religion: Protestant [2011-15] & Religion \& Spirituality \\ 
+tas\_religpref1115\_3 & 0.03 & 0.02 & 0.87 & 0.11 & Religion: Catholic [2011-15] & Religion \& Spirituality \\ 
+tas\_singleparentsok & 0.15 & 0.09 & 0.50 & 0.41 & Child From Single-Parent Family Can Do As Well & Gender \& Family \\ 
+tas\_singleparentsuffer & 0.14 & 0.10 & 0.60 & 0.30 & Single Parent Hurts Kids & Gender \& Family \\ 
+tas\_singlewomenkids & 0.12 & 0.07 & 0.51 & 0.42 & Single Women Should Have Kids & Gender \& Family \\ 
+tas\_societybetter & 0.17 & 0.11 & 0.52 & 0.37 & Freq. Of Feeling Society Gettng Better & Social Life, Social Cohesion \& Trust \\ 
+tas\_societymakessense & 0.14 & 0.09 & 0.53 & 0.38 & Feeling Way Society Works Makes Sense & Social Life, Social Cohesion \& Trust \\ 
+tas\_spritual & 0.14 & 0.10 & 0.63 & 0.27 & Spiritual Person & Religion \& Spirituality \\ 
+thinkfuture & 0.21 & 0.13 & 0.50 & 0.37 & Think About Future & Health \& Morale \\ 
+trustothers & 0.13 & 0.10 & 0.65 & 0.26 & Trust Most Others & Social Life, Social Cohesion \& Trust \\ 
+undeserved & 0.19 & 0.13 & 0.55 & 0.32 & Are There A Lot Of People Who Have Good Things They Don't Deserve? & Social Life, Social Cohesion \& Trust \\ 
+\midrule
+\multicolumn{7}{l}{\textbf{SHP}} \\ 
+\midrule
+pc70 & 0.05 & 0.03 & 0.56 & 0.40 & Self-Perception : Incapacity To Make Plans Because Of Unpredictability & Health \& Morale \\ 
+pc71 & 0.16 & 0.10 & 0.55 & 0.35 & Self-Perception : Little Influence On Life Events & Health \& Morale \\ 
+pc72 & 0.00 & 0.00 & 0.54 & 0.46 & Self-Perception : Capacity To Overcome Unexpected Problems & Health \& Morale \\ 
+pc73 & 0.03 & 0.02 & 0.59 & 0.39 & Self-Perception : Capacity To Choose Between Two Possibilities & Health \& Morale \\ 
+pc74 & 0.13 & 0.09 & 0.63 & 0.27 & Self-Perception : Feeling Of Uselessness & Health \& Morale \\ 
+pc75 & 0.00 & 0.00 & 0.64 & 0.36 & Self-Perception : Feeling Of Selfsatisfaction & Health \& Morale \\ 
+pl101 & 0.14 & 0.10 & 0.63 & 0.27 & Feeling Of Security (Victimization) & Health \& Morale \\ 
+pn56 & 0.21 & 0.17 & 0.63 & 0.20 & Values: Lying In Own Interest & Social Life, Social Cohesion \& Trust \\ 
+pn57 & 0.20 & 0.15 & 0.63 & 0.22 & Values: Cheating On Tax Declaration & Social Life, Social Cohesion \& Trust \\ 
+pn58 & 0.20 & 0.16 & 0.64 & 0.20 & Values: Avoiding A Fare On A Public Transport & Social Life, Social Cohesion \& Trust \\ 
+pn59 & 0.05 & 0.02 & 0.50 & 0.47 & Values: Claiming State Benefits Not Entitled To & Social Life, Social Cohesion \& Trust \\ 
+pn60 & 0.11 & 0.08 & 0.67 & 0.25 & Values: Keeping Found Money & Social Life, Social Cohesion \& Trust \\ 
+pn61 & 0.00 & 0.00 & 0.50 & 0.50 & Values: Failing To Report Damage To Parked Vehicle & Social Life, Social Cohesion \& Trust \\ 
+pp01 & 0.04 & 0.03 & 0.79 & 0.17 & Interest In Politics & Politics, Government \& Economy \\ 
+pp02 & 0.08 & 0.05 & 0.59 & 0.35 & Overall Satisfaction With Democracy & Politics, Government \& Economy \\ 
+pp03 & 0.08 & 0.05 & 0.56 & 0.40 & Feeling About Political Influence & Politics, Government \& Economy \\ 
+pp04 & 0.08 & 0.06 & 0.63 & 0.31 & Trust In Federal Government & Politics, Government \& Economy \\ 
+pp07 & 0.06 & 0.04 & 0.67 & 0.28 & Future: Active In Boycott & Politics, Government \& Economy \\ 
+pp08 & 0.06 & 0.05 & 0.70 & 0.25 & Future: Active In Strike & Politics, Government \& Economy \\ 
+pp09 & 0.06 & 0.04 & 0.72 & 0.23 & Future: Active In Demonstration & Politics, Government \& Economy \\ 
+pp10 & 0.05 & 0.04 & 0.74 & 0.21 & Political Position: Left, Right & Politics, Government \& Economy \\ 
+pp12 & 0.06 & 0.05 & 0.71 & 0.24 & Opinion On Swiss Army: Direction & Politics, Government \& Economy \\ 
+pp13 & 0.09 & 0.06 & 0.55 & 0.40 & Opinion On Social Expenses: Direction & Politics, Government \& Economy \\ 
+pp14 & 0.15 & 0.12 & 0.65 & 0.24 & Opinion On Joining The Eu: Direction & Politics, Government \& Economy \\ 
+pp15 & 0.08 & 0.05 & 0.59 & 0.35 & Opinion On Chances For Foreigners: Direction & National Identity, Ethnicity \& Immigration \\ 
+pp16 & 0.09 & 0.05 & 0.52 & 0.43 & Opinion On Environmental Protection: Direction & Environment \& Climate \\ 
+pp17 & 0.10 & 0.05 & 0.51 & 0.43 & Opinion On Taxes On High Income: Direction & Politics, Government \& Economy \\ 
+pp18 & 0.09 & 0.06 & 0.62 & 0.32 & Opinion On Nuclear Energy: Direction & Environment \& Climate \\ 
+pp19\_1 & 0.08 & 0.05 & 0.55 & 0.40 & Party Support: Swiss Radical-Democratic Party & Politics, Government \& Economy \\ 
+pp19\_3 & 0.08 & 0.05 & 0.66 & 0.28 & Party Support: Pss Swiss Socialist Party & Politics, Government \& Economy \\ 
+pp19\_4 & 0.08 & 0.06 & 0.67 & 0.28 & Party Support: Udc Democratic Union Of The Centre & Politics, Government \& Economy \\ 
+pp20 & 0.09 & 0.05 & 0.53 & 0.42 & Gender: Women In General Penalized & Gender \& Family \\ 
+pp21 & 0.11 & 0.06 & 0.51 & 0.42 & Gender: Personnally Penalized & Gender \& Family \\ 
+pp22 & 0.07 & 0.04 & 0.62 & 0.34 & Gender: In Favour Of Measures & Gender \& Family \\ 
+pp23 & 0.15 & 0.07 & 0.38 & 0.55 & Gender: Personal Action & Gender \& Family \\ 
+pp45 & 0.06 & 0.04 & 0.65 & 0.31 & General Trust In People & Social Life, Social Cohesion \& Trust \\ 
+pp50 & 0.14 & 0.10 & 0.61 & 0.30 & Class Identification: Yes-No & Subjective Ses \\ 
+pp51 & 0.11 & 0.10 & 0.79 & 0.11 & Class Identification (Spontanously): Which & Subjective Ses \\ 
+pp52 & 0.17 & 0.15 & 0.70 & 0.15 & Class Identification (Non Spontaneously): Which & Subjective Ses \\ 
+pp53 & 0.00 & 0.00 & 0.68 & 0.32 & Public Expenses: Protection Of The Environment & Politics, Government \& Economy \\ 
+pp54 & 0.15 & 0.11 & 0.65 & 0.24 & Public Expenses: Health & Politics, Government \& Economy \\ 
+pp55 & 0.09 & 0.07 & 0.72 & 0.21 & Public Expenses: Day Nursery & Politics, Government \& Economy \\ 
+pp56 & 0.01 & 0.01 & 0.64 & 0.36 & Public Expenses: Police And Public Order & Politics, Government \& Economy \\ 
+pp57 & 0.13 & 0.08 & 0.59 & 0.33 & Public Expenses: Research And Education & Politics, Government \& Economy \\ 
+pp58 & 0.06 & 0.05 & 0.74 & 0.22 & Public Expenses: Military And Defense & Politics, Government \& Economy \\ 
+pp59 & 0.09 & 0.06 & 0.63 & 0.31 & Public Expenses: Retirement & Politics, Government \& Economy \\ 
+pp60 & 0.08 & 0.07 & 0.72 & 0.21 & Public Expenses: Culture And Art & Politics, Government \& Economy \\ 
+pp61 & 0.03 & 0.02 & 0.62 & 0.35 & Public Expenses: Unemployment Benefit & Politics, Government \& Economy \\ 
+pp62 & 0.11 & 0.09 & 0.69 & 0.22 & Public Expenses: Aid To Developing Countries & Politics, Government \& Economy \\ 
+pp63 & 0.00 & 0.00 & 0.67 & 0.33 & Public Expenses: Social Aid & Politics, Government \& Economy \\ 
+pp64 & 0.09 & 0.06 & 0.62 & 0.31 & Opinion On Joining The Eu: Joining Or Bilateral Agreements & Politics, Government \& Economy \\ 
+pp65 & 0.18 & 0.15 & 0.70 & 0.14 & Opinion On Joining The Eu: Continuation Or Dissolution Of Bilateral Agreements & Politics, Government \& Economy \\ 
+pp66 & 0.17 & 0.15 & 0.72 & 0.13 & Party Identification: Yes-No & Politics, Government \& Economy \\ 
+pp67\_2 & 0.04 & 0.04 & 0.93 & 0.03 & Party Identification: Swiss Christian-Democrat Party & Politics, Government \& Economy \\ 
+pp67\_3 & 0.06 & 0.06 & 0.90 & 0.04 & Party Identification: Pss Swiss Socialist Party & Politics, Government \& Economy \\ 
+pp67\_4 & 0.04 & 0.04 & 0.93 & 0.03 & Party Identification: Udc Democratic Union Of The Centre & Politics, Government \& Economy \\ 
+pp68 & 0.00 & 0.00 & 0.65 & 0.35 & Party Identification: Proximity & Politics, Government \& Economy \\ 
+pp69 & 0.11 & 0.09 & 0.76 & 0.15 & Sympathy Political Party: Liberal Party & Politics, Government \& Economy \\ 
+pp70 & 0.11 & 0.09 & 0.76 & 0.15 & Sympathy Political Party: Christian Democrats & Politics, Government \& Economy \\ 
+pp71 & 0.08 & 0.08 & 0.83 & 0.09 & Sympathy Political Party: Social Democrats & Politics, Government \& Economy \\ 
+pp72 & 0.09 & 0.08 & 0.85 & 0.07 & Sympathy Political Party: Swiss People's Party & Politics, Government \& Economy \\ 
+pp73 & 0.09 & 0.08 & 0.80 & 0.12 & Sympathy Political Party: Green Party & Politics, Government \& Economy \\ 
+pp74 & 0.07 & 0.05 & 0.64 & 0.31 & Opinion On Federalism: Direction & Politics, Government \& Economy \\ 
+pp76 & 0.03 & 0.02 & 0.75 & 0.23 & Protection Of Environment: Importance & Environment \& Climate \\ 
+pp77 & 0.13 & 0.10 & 0.65 & 0.26 & Protection Of Environment: Recycling & Environment \& Climate \\ 
+pp78 & 0.21 & 0.19 & 0.69 & 0.13 & Protection Of Environment: Bin Bag Fees & Environment \& Climate \\ 
+pp79 & 0.08 & 0.07 & 0.76 & 0.17 & Protection Of Environment: Organic And Ecological Products & Environment \& Climate \\ 
+pp80 & 0.10 & 0.08 & 0.72 & 0.20 & Protection Of Environment: Purchase Of Fruits And Vegetables & Environment \& Climate \\ 
+pr16 & 0.03 & 0.03 & 0.89 & 0.08 & Belief In God Or Something Divine & Religion \& Spirituality \\ 
+pr20 & 0.11 & 0.10 & 0.81 & 0.09 & Feeling Of Spirituality & Religion \& Spirituality \\ 
+pr21 & 0.05 & 0.05 & 0.84 & 0.11 & Feeling Of Religiosity & Religion \& Spirituality \\ 
+pr23 & 0.11 & 0.10 & 0.79 & 0.12 & Attitude Towards Christianism & Religion \& Spirituality \\ 
+pr24 & 0.13 & 0.12 & 0.76 & 0.12 & Attitude Towards Islam & Religion \& Spirituality \\ 
+pr25 & 0.11 & 0.09 & 0.73 & 0.18 & Attitude Towards Hinduism & Religion \& Spirituality \\ 
+pr26 & 0.12 & 0.10 & 0.77 & 0.13 & Attitude Towards Buddhism & Religion \& Spirituality \\ 
+pr27 & 0.10 & 0.08 & 0.75 & 0.17 & Attitude Towards Judaism & Religion \& Spirituality \\ 
+pr28 & 0.10 & 0.08 & 0.72 & 0.20 & Attitude Towards Atheism & Religion \& Spirituality \\ 
+\midrule
+\multicolumn{7}{l}{\textbf{SOEP}} \\ 
+\midrule
+plb0104\_h & 0.23 & 0.16 & 0.55 & 0.29 & Importance Of Employment & Occupation \& Education \\ 
+plb0528\_h & 0.16 & 0.12 & 0.64 & 0.24 & Priority In Career Choice: Income & Occupation \& Education \\ 
+plb0530\_h & 0.06 & 0.04 & 0.62 & 0.34 & Priority In Career Choice: Status & Occupation \& Education \\ 
+plb0531\_h & 0.06 & 0.04 & 0.67 & 0.28 & Priority In Career Choice: Social Contact & Occupation \& Education \\ 
+plb0532\_h & 0.12 & 0.08 & 0.60 & 0.31 & Priority In Career Choice: Compatibility Of Family And Work & Occupation \& Education \\ 
+plc0115 & 0.10 & 0.06 & 0.58 & 0.35 & Social Security Contributions & Politics, Government \& Economy \\ 
+pld0043 & 0.13 & 0.09 & 0.64 & 0.27 & Freq. Lend Friends Pers. Belongings & Social Life, Social Cohesion \& Trust \\ 
+pld0044 & 0.16 & 0.12 & 0.64 & 0.24 & Freq. Lend Friends Money & Social Life, Social Cohesion \& Trust \\ 
+pld0045 & 0.09 & 0.06 & 0.62 & 0.32 & Freq. Leave Door Unlocked & Social Life, Social Cohesion \& Trust \\ 
+plh0001 & 0.17 & 0.13 & 0.63 & 0.24 & Democratic Ideal & Politics, Government \& Economy \\ 
+plh0004 & 0.10 & 0.08 & 0.69 & 0.23 & Political Attitude & Politics, Government \& Economy \\ 
+plh0007 & 0.05 & 0.03 & 0.69 & 0.28 & Interest In Politics & Politics, Government \& Economy \\ 
+plh0011\_h & 0.08 & 0.05 & 0.53 & 0.42 & Party Preference: Yes & Politics, Government \& Economy \\ 
+plh0012\_h1 & 0.05 & 0.04 & 0.81 & 0.15 & Party Preference: Spd & Politics, Government \& Economy \\ 
+plh0012\_h2 & 0.04 & 0.04 & 0.80 & 0.16 & Party Preference: Cdu & Politics, Government \& Economy \\ 
+plh0012\_h3 & 0.04 & 0.03 & 0.76 & 0.21 & Party Preference: Csu & Politics, Government \& Economy \\ 
+plh0012\_h4 & 0.09 & 0.06 & 0.66 & 0.28 & Party Preference: Fdp & Politics, Government \& Economy \\ 
+plh0012\_h5 & 0.06 & 0.05 & 0.76 & 0.19 & Party Preference: The Greens & Politics, Government \& Economy \\ 
+plh0012\_h6 & 0.06 & 0.05 & 0.78 & 0.17 & Party Preference: The Left & Politics, Government \& Economy \\ 
+plh0013\_h & 0.09 & 0.05 & 0.49 & 0.46 & Party Preference: Intensity & Politics, Government \& Economy \\ 
+plh0014 & 0.24 & 0.17 & 0.54 & 0.29 & Government Interference & Politics, Government \& Economy \\ 
+plh0015 & 0.00 & 0.00 & 0.46 & 0.54 & Extent And Type Of State Powers & Politics, Government \& Economy \\ 
+plh0016 & 0.03 & 0.02 & 0.56 & 0.42 & Financial Security For Family & Politics, Government \& Economy \\ 
+plh0017 & 0.03 & 0.02 & 0.53 & 0.45 & Care For Pre-School Children & Politics, Government \& Economy \\ 
+plh0018 & 0.01 & 0.00 & 0.49 & 0.50 & Care For School Children & Politics, Government \& Economy \\ 
+plh0019 & 0.14 & 0.09 & 0.55 & 0.36 & Financial Security When Unemployed & Politics, Government \& Economy \\ 
+plh0020 & 0.00 & 0.00 & 0.59 & 0.41 & Job Creation Schemes & Politics, Government \& Economy \\ 
+plh0021 & 0.15 & 0.10 & 0.57 & 0.34 & Financial Security When Sick & Politics, Government \& Economy \\ 
+plh0022 & 0.08 & 0.05 & 0.51 & 0.44 & Help For The Sick & Politics, Government \& Economy \\ 
+plh0023 & 0.19 & 0.13 & 0.57 & 0.30 & Financial Security In Old-Age & Politics, Government \& Economy \\ 
+plh0024 & 0.05 & 0.03 & 0.52 & 0.45 & Help For The Elderly & Politics, Government \& Economy \\ 
+plh0025 & 0.09 & 0.05 & 0.55 & 0.40 & Financial Security When Requiring Care & Politics, Government \& Economy \\ 
+plh0026 & 0.07 & 0.04 & 0.53 & 0.43 & Help For Those Requiring Care & Politics, Government \& Economy \\ 
+plh0030 & 0.16 & 0.10 & 0.51 & 0.39 & Worried About Childcare & Gender \& Family \\ 
+plh0031 & 0.10 & 0.07 & 0.58 & 0.35 & Worried About Consequences Of Eu- Enlargement & Politics, Government \& Economy \\ 
+plh0032 & 0.11 & 0.05 & 0.38 & 0.57 & Worried About Economic Development & Politics, Government \& Economy \\ 
+plh0033 & 0.09 & 0.05 & 0.50 & 0.46 & Worried About Finances & Health \& Morale \\ 
+plh0034 & 0.07 & 0.04 & 0.53 & 0.43 & Worried About Stability Of Financial Markets & Politics, Government \& Economy \\ 
+plh0035 & 0.09 & 0.05 & 0.55 & 0.40 & Worried About Own Health & Health \& Morale \\ 
+plh0036 & 0.11 & 0.05 & 0.45 & 0.49 & Worried About Environment & Environment \& Climate \\ 
+plh0037 & 0.09 & 0.06 & 0.56 & 0.38 & Worried About Consequences From Climate Change & Environment \& Climate \\ 
+plh0038 & 0.09 & 0.04 & 0.42 & 0.54 & Worried About Peace & Politics, Government \& Economy \\ 
+plh0039 & 0.08 & 0.05 & 0.58 & 0.37 & Worried About Global Terrorism & Politics, Government \& Economy \\ 
+plh0040 & 0.08 & 0.04 & 0.52 & 0.44 & Worried About Crime In Germany & Politics, Government \& Economy \\ 
+plh0041 & 0.10 & 0.06 & 0.54 & 0.40 & Worried About Introduction Of Euro & Politics, Government \& Economy \\ 
+plh0042 & 0.10 & 0.05 & 0.48 & 0.46 & Worried About Job Security & Politics, Government \& Economy \\ 
+plh0054 & 0.07 & 0.04 & 0.52 & 0.44 & Peace And Order & Politics, Government \& Economy \\ 
+plh0054\_1 & 0.12 & 0.06 & 0.48 & 0.46 & Political Goals: Prority Peace And Order & Politics, Government \& Economy \\ 
+plh0056 & 0.07 & 0.04 & 0.48 & 0.48 & Citizen Influence & Politics, Government \& Economy \\ 
+plh0056\_1 & 0.09 & 0.05 & 0.46 & 0.49 & Political Goals: Prority Citizen Influence & Politics, Government \& Economy \\ 
+plh0058 & 0.05 & 0.02 & 0.47 & 0.50 & Fight Against Inflation & Politics, Government \& Economy \\ 
+plh0058\_1 & 0.01 & 0.00 & 0.38 & 0.62 & Political Goals: Prority Rising Prices & Politics, Government \& Economy \\ 
+plh0061 & 0.08 & 0.04 & 0.51 & 0.44 & Freedom Of Speech & Politics, Government \& Economy \\ 
+plh0061\_1 & 0.15 & 0.08 & 0.48 & 0.44 & Political Goals: Prority Freedom Of Speech & Politics, Government \& Economy \\ 
+plh0090 & 0.19 & 0.15 & 0.66 & 0.19 & Importance Of Circle Of Friends & Social Life, Social Cohesion \& Trust \\ 
+plh0091\_v2 & 0.16 & 0.14 & 0.69 & 0.18 & Importance For Satisfaction: Work & Health \& Morale \\ 
+plh0092\_v2 & 0.21 & 0.17 & 0.64 & 0.20 & Importance For Satisfaction: Family & Health \& Morale \\ 
+plh0093\_v2 & 0.20 & 0.16 & 0.65 & 0.19 & Importance For Satisfaction: Friends & Health \& Morale \\ 
+plh0094\_v2 & 0.21 & 0.17 & 0.64 & 0.19 & Importance For Satisfaction: Income & Health \& Morale \\ 
+plh0095\_v2 & 0.24 & 0.19 & 0.59 & 0.23 & Importance For Satisfaction: Dwelling & Health \& Morale \\ 
+plh0096\_v2 & 0.20 & 0.15 & 0.62 & 0.22 & Importance For Satisfaction: Political Influence & Health \& Morale \\ 
+plh0097\_v2 & 0.14 & 0.12 & 0.74 & 0.14 & Importance For Satisfaction: Professional Success & Health \& Morale \\ 
+plh0098\_v2 & 0.25 & 0.19 & 0.60 & 0.21 & Importance For Satisfaction: Leisure & Health \& Morale \\ 
+plh0099\_v2 & 0.26 & 0.20 & 0.57 & 0.23 & Importance For Satisfaction: Health & Health \& Morale \\ 
+plh0100\_v2 & 0.11 & 0.08 & 0.62 & 0.30 & Importance For Satisfaction: Protection Of Environment & Health \& Morale \\ 
+plh0101 & 0.09 & 0.08 & 0.82 & 0.09 & Import.-Rlgion, Belief For Satisfaction & Health \& Morale \\ 
+plh0104 & 0.08 & 0.05 & 0.57 & 0.38 & Importance: To Be Able To Afford Sth. & Subjective Ses \\ 
+plh0105 & 0.07 & 0.04 & 0.54 & 0.42 & Importance: To Help Others & Social Life, Social Cohesion \& Trust \\ 
+plh0106 & 0.09 & 0.06 & 0.59 & 0.35 & Importance: To Fulfil Once Potential & Health \& Morale \\ 
+plh0107 & 0.13 & 0.09 & 0.62 & 0.29 & Importance: To Have Success In The Job & Occupation \& Education \\ 
+plh0108 & 0.08 & 0.06 & 0.71 & 0.23 & Importance: To Have An Own House & Subjective Ses \\ 
+plh0109 & 0.12 & 0.08 & 0.61 & 0.31 & Importance: To Have A Happy Marriage & Gender \& Family \\ 
+plh0110 & 0.08 & 0.06 & 0.70 & 0.23 & Importance: To Have Children & Gender \& Family \\ 
+plh0111 & 0.05 & 0.03 & 0.62 & 0.34 & Importance: To Be Socially And Politically Active & Social Life, Social Cohesion \& Trust \\ 
+plh0112 & 0.09 & 0.07 & 0.64 & 0.29 & Importance: To Be Able To Travel And See The World & Health \& Morale \\ 
+plh0113 & 0.24 & 0.20 & 0.62 & 0.19 & Entitlement Received Are Deserved & Politics, Government \& Economy \\ 
+plh0114 & 0.27 & 0.19 & 0.53 & 0.28 & German Citizen Benefits Are Equitable & Politics, Government \& Economy \\ 
+plh0152\_v1 & 0.09 & 0.06 & 0.60 & 0.33 & Satisfaction With Democracy [1987-1989] & Politics, Government \& Economy \\ 
+plh0152\_v2 & 0.09 & 0.07 & 0.70 & 0.23 & Satisfaction With Democracy [2005,2010,2016] & Politics, Government \& Economy \\ 
+plh0188 & 0.07 & 0.04 & 0.46 & 0.51 & Confident About Future & Health \& Morale \\ 
+plh0192 & 0.02 & 0.02 & 0.61 & 0.37 & On The Whole Trust People & Social Life, Social Cohesion \& Trust \\ 
+plh0193 & 0.05 & 0.03 & 0.60 & 0.37 & Nowadays Can't Trust Anyone & Social Life, Social Cohesion \& Trust \\ 
+plh0194 & 0.11 & 0.07 & 0.57 & 0.35 & Caution Towards Foreigners & Social Life, Social Cohesion \& Trust \\ 
+plh0195 & 0.08 & 0.05 & 0.61 & 0.34 & Most People Are Exploitive, Fair & Social Life, Social Cohesion \& Trust \\ 
+plh0196 & 0.08 & 0.05 & 0.57 & 0.39 & Most People Are Helpful, Act In Own Interest & Social Life, Social Cohesion \& Trust \\ 
+plh0197 & 0.06 & 0.04 & 0.71 & 0.24 & Willingness To Take Risks While Driving & Health \& Morale \\ 
+plh0198 & 0.11 & 0.08 & 0.66 & 0.26 & Willingness To Take Risks In Financial Matters & Health \& Morale \\ 
+plh0199 & 0.02 & 0.01 & 0.70 & 0.28 & Willingness To Take Risks In Leisure And Sports & Health \& Morale \\ 
+plh0200 & 0.06 & 0.04 & 0.67 & 0.29 & Willingness To Take Risks In Occupation & Occupation \& Education \\ 
+plh0201 & 0.18 & 0.14 & 0.64 & 0.22 & Willingness To Take Health Risks & Health \& Morale \\ 
+plh0202 & 0.21 & 0.17 & 0.64 & 0.19 & Willingness To Take Risks In Trusting Other People & Social Life, Social Cohesion \& Trust \\ 
+plh0204\_h & 0.06 & 0.04 & 0.58 & 0.38 & Self-Evaluation: Risk & Health \& Morale \\ 
+plh0212 & 0.11 & 0.08 & 0.62 & 0.31 & Thorough Worker & Health \& Morale \\ 
+plh0213 & 0.10 & 0.08 & 0.70 & 0.22 & Am Communicative & Health \& Morale \\ 
+plh0214 & 0.12 & 0.09 & 0.63 & 0.28 & Am Sometimes Too Coarse With Others & Health \& Morale \\ 
+plh0215 & 0.12 & 0.09 & 0.64 & 0.27 & Am Original & Health \& Morale \\ 
+plh0216 & 0.07 & 0.05 & 0.64 & 0.31 & Worry A Lot & Health \& Morale \\ 
+plh0217 & 0.11 & 0.08 & 0.58 & 0.35 & Able To Forgive & Health \& Morale \\ 
+plh0218 & 0.08 & 0.06 & 0.65 & 0.29 & Tend To Be Lazy & Health \& Morale \\ 
+plh0219 & 0.11 & 0.08 & 0.67 & 0.24 & Am Sociable & Health \& Morale \\ 
+plh0220 & 0.09 & 0.07 & 0.70 & 0.23 & Value Artistic Experiences & Health \& Morale \\ 
+plh0221 & 0.11 & 0.08 & 0.64 & 0.28 & Somewhat Nervous & Health \& Morale \\ 
+plh0222 & 0.14 & 0.09 & 0.58 & 0.33 & Carry Out Tasks Efficiently & Health \& Morale \\ 
+plh0223 & 0.12 & 0.08 & 0.63 & 0.29 & Reserved & Health \& Morale \\ 
+plh0224 & 0.14 & 0.09 & 0.58 & 0.32 & Friendly With Others & Health \& Morale \\ 
+plh0225 & 0.11 & 0.08 & 0.65 & 0.27 & Have Lively Imagination & Health \& Morale \\ 
+plh0226 & 0.12 & 0.09 & 0.63 & 0.28 & Deal Well With Stress & Health \& Morale \\ 
+plh0244 & 0.00 & 0.00 & 0.58 & 0.42 & Attitude Towards Future & Health \& Morale \\ 
+plh0253 & 0.11 & 0.08 & 0.70 & 0.22 & Personal Patience & Health \& Morale \\ 
+plh0254 & 0.10 & 0.07 & 0.65 & 0.28 & Personal Impulsivness & Health \& Morale \\ 
+plh0255 & 0.14 & 0.11 & 0.67 & 0.22 & Inquisitive & Health \& Morale \\ 
+plh0332 & 0.06 & 0.04 & 0.60 & 0.35 & Concerns Child Health & Health \& Morale \\ 
+plh0335 & 0.10 & 0.07 & 0.65 & 0.28 & Worried About Own Retirement Pension & Politics, Government \& Economy \\ 
+plh0336 & 0.17 & 0.10 & 0.51 & 0.39 & Worried About Cohesion In Society & Social Life, Social Cohesion \& Trust \\ 
+plj0040 & 0.12 & 0.08 & 0.60 & 0.31 & Ties To Local Area & National Identity, Ethnicity \& Immigration \\ 
+plj0043 & 0.09 & 0.07 & 0.70 & 0.23 & Ties To Local Area & National Identity, Ethnicity \& Immigration \\ 
+plj0046 & 0.09 & 0.05 & 0.54 & 0.41 & Worried About Immigration To Germany & National Identity, Ethnicity \& Immigration \\ 
+plj0047 & 0.10 & 0.05 & 0.44 & 0.51 & Worried About Hostility To Foreigners & National Identity, Ethnicity \& Immigration \\ 
+plj0078 & 0.03 & 0.02 & 0.74 & 0.24 & Feel German & National Identity, Ethnicity \& Immigration \\ 
+plj0081 & 0.14 & 0.09 & 0.59 & 0.32 & Connected With Country Of Origin & National Identity, Ethnicity \& Immigration \\ 
+plj0082 & 0.08 & 0.03 & 0.41 & 0.55 & Feeling Of Not Belonging & National Identity, Ethnicity \& Immigration \\ 
+plj0083 & 0.11 & 0.06 & 0.53 & 0.40 & Feel At Home In Country Of Origin & National Identity, Ethnicity \& Immigration \\ 
+\midrule
+\multicolumn{7}{l}{\textbf{UKHLS}} \\ 
+\midrule
+ahvwell & 0.07 & 0.05 & 0.62 & 0.33 & Importance Of Doing Well In Quals & Occupation \& Education \\ 
+apvocimp & 0.18 & 0.14 & 0.61 & 0.25 & Importance Of Apprenticeship/Vocational & Occupation \& Education \\ 
+carbuy1 & 0.20 & 0.12 & 0.51 & 0.37 & Comfort & Environment \& Climate \\ 
+carbuy10 & 0.23 & 0.15 & 0.50 & 0.34 & Safety & Environment \& Climate \\ 
+carbuy11 & 0.20 & 0.14 & 0.59 & 0.26 & Speed/Performance & Environment \& Climate \\ 
+carbuy12 & 0.12 & 0.08 & 0.56 & 0.36 & Features - Sat-Nav, Cd Player, Music System, Power Steering Etc... & Environment \& Climate \\ 
+carbuy2 & 0.18 & 0.10 & 0.47 & 0.43 & Costs - Purchase/Running/Resale Value/Tax/Insurance & Environment \& Climate \\ 
+carbuy3 & 0.19 & 0.13 & 0.57 & 0.30 & Small Engine & Environment \& Climate \\ 
+carbuy4 & 0.22 & 0.15 & 0.55 & 0.30 & Large Engine & Environment \& Climate \\ 
+carbuy5 & 0.22 & 0.16 & 0.56 & 0.29 & Environmentally Friendly/Low Co2 Emissions & Environment \& Climate \\ 
+carbuy6 & 0.25 & 0.11 & 0.34 & 0.55 & Electric Car/Van - One That's Plugged Directly Into An Electricity Supply & Environment \& Climate \\ 
+carbuy7 & 0.17 & 0.12 & 0.59 & 0.29 & Style/Design/Image Of Brand/Model & Environment \& Climate \\ 
+carbuy8 & 0.23 & 0.15 & 0.52 & 0.32 & Interior Space/Functionality/Boot Size & Environment \& Climate \\ 
+carbuy9 & 0.17 & 0.09 & 0.44 & 0.47 & Reliability & Environment \& Climate \\ 
+civicduty & 0.03 & 0.02 & 0.73 & 0.24 & Sense Of Civic Duty & Politics, Government \& Economy \\ 
+colbens1 & 0.15 & 0.13 & 0.75 & 0.12 & Party Sympathy: Conservative & Politics, Government \& Economy \\ 
+colbens2 & 0.15 & 0.13 & 0.74 & 0.13 & Party Sympathy: Labour & Politics, Government \& Economy \\ 
+colbens3 & 0.17 & 0.14 & 0.68 & 0.18 & Party Sympathy: Liberal Democrats & Politics, Government \& Economy \\ 
+demorient & 0.22 & 0.17 & 0.62 & 0.20 & Democratic Orientation & Politics, Government \& Economy \\ 
+eumem & 0.12 & 0.12 & 0.85 & 0.03 & Should Uk Remain A Member Of The Eu & Politics, Government \& Economy \\ 
+ocimpa & 0.05 & 0.04 & 0.62 & 0.34 & Occupation: Important: Job Security & Occupation \& Education \\ 
+ocimpb & 0.08 & 0.06 & 0.69 & 0.26 & Occupation: Important: High Income & Occupation \& Education \\ 
+ocimpe & 0.01 & 0.00 & 0.61 & 0.38 & Occupation: Important: Lot Leisure Time & Occupation \& Education \\ 
+ocimpf & 0.00 & 0.00 & 0.63 & 0.37 & Occupation: Important: Interesting Job & Occupation \& Education \\ 
+ocimpi & 0.06 & 0.04 & 0.69 & 0.27 & Occupation: Important: Contribute To Soc. & Occupation \& Education \\ 
+ocimpk & 0.05 & 0.03 & 0.62 & 0.34 & Occupation: Important: Time For Family & Occupation \& Education \\ 
+ocimpl & 0.08 & 0.06 & 0.71 & 0.23 & Occupation: Important: Job Help Others & Occupation \& Education \\ 
+oprlg & 0.11 & 0.10 & 0.81 & 0.09 & Whether Belong To A Religion & Religion \& Spirituality \\ 
+oprlg1\_1 & 0.01 & 0.01 & 0.89 & 0.10 & Religion: Church Of England/Anglican & Religion \& Spirituality \\ 
+oprlg1\_11 & 0.01 & 0.01 & 0.98 & 0.01 & Religion: Muslim/Islam & Religion \& Spirituality \\ 
+oprlg1\_2 & 0.00 & 0.00 & 0.95 & 0.05 & Religion: Roman Catholic & Religion \& Spirituality \\ 
+oprlg3 & 0.07 & 0.06 & 0.84 & 0.10 & Religion Makes A Difference To Life & Religion \& Spirituality \\ 
+scenv\_ftst & 0.21 & 0.17 & 0.61 & 0.22 & How Feel About Current Lifestyle And The Environment & Environment \& Climate \\ 
+scenv\_grn & 0.00 & 0.00 & 0.65 & 0.35 & Being Green Is An Alternative Lifestyle & Environment \& Climate \\ 
+scfannoy & 0.14 & 0.10 & 0.60 & 0.31 & Friends Get On My Nerves & Social Life, Social Cohesion \& Trust \\ 
+scfcritic & 0.01 & 0.01 & 0.61 & 0.38 & Friends Criticise Me & Social Life, Social Cohesion \& Trust \\ 
+scopecl200 & 0.06 & 0.03 & 0.52 & 0.45 & Affected By Climate Change Next 200 Years & Environment \& Climate \\ 
+scopecl30 & 0.04 & 0.02 & 0.58 & 0.40 & Affected By Climate Change Next 30 Years & Environment \& Climate \\ 
+scopfamb & 0.07 & 0.05 & 0.72 & 0.23 & Family Suffers If Mother Works Full-Time & Gender \& Family \\ 
+scopfamd & 0.03 & 0.02 & 0.61 & 0.37 & Husband And Wife Should Contribute To Hh Income & Gender \& Family \\ 
+scopfamf & 0.03 & 0.02 & 0.71 & 0.27 & Husband Should Earn, Wife Should Stay At Home & Gender \& Family \\ 
+scopngbha & 0.19 & 0.15 & 0.64 & 0.22 & Belong To Neighbourhood & Social Life, Social Cohesion \& Trust \\ 
+scopngbhb & 0.16 & 0.13 & 0.65 & 0.23 & Local Friends Mean A Lot & Social Life, Social Cohesion \& Trust \\ 
+scopngbhc & 0.18 & 0.14 & 0.63 & 0.23 & Advice Obtainable Locally & Social Life, Social Cohesion \& Trust \\ 
+scopngbhd & 0.17 & 0.13 & 0.63 & 0.24 & Can Borrow Things From Neighbours & Social Life, Social Cohesion \& Trust \\ 
+scopngbhe & 0.11 & 0.07 & 0.57 & 0.36 & Willing To Improve Neighbourhood & Social Life, Social Cohesion \& Trust \\ 
+scopngbhf & 0.20 & 0.15 & 0.60 & 0.24 & Plan To Stay In Neighbourhood & Social Life, Social Cohesion \& Trust \\ 
+scopngbhg & 0.19 & 0.15 & 0.63 & 0.23 & Am Similar To Others In Neighbourhood & Social Life, Social Cohesion \& Trust \\ 
+scopngbhh & 0.18 & 0.14 & 0.65 & 0.21 & Talk Regularly To Neighbours & Social Life, Social Cohesion \& Trust \\ 
+scpundstnd & 0.09 & 0.06 & 0.65 & 0.28 & Spouse/Partner Understands Way I Feel & Gender \& Family \\ 
+scrannoy & 0.20 & 0.16 & 0.63 & 0.21 & Family Gets On My Nerves & Gender \& Family \\ 
+scrcritic & 0.05 & 0.04 & 0.63 & 0.34 & Family Criticises Me & Gender \& Family \\ 
+scrletdwn & 0.21 & 0.15 & 0.59 & 0.26 & Family Lets Me Down & Gender \& Family \\ 
+scrrely & 0.18 & 0.14 & 0.63 & 0.22 & Can Rely On Family & Gender \& Family \\ 
+vote1 & 0.13 & 0.08 & 0.57 & 0.34 & Supports A Particular Political Party & Politics, Government \& Economy \\ 
+vote2 & 0.15 & 0.09 & 0.51 & 0.40 & Closer To One Political Party Than Others & Politics, Government \& Economy \\ 
+vote3\_1 & 0.20 & 0.13 & 0.53 & 0.34 & Party Support: Conservatives & Politics, Government \& Economy \\ 
+vote3\_2 & 0.14 & 0.09 & 0.55 & 0.36 & Party Support: Labour & Politics, Government \& Economy \\ 
+vote3\_3 & 0.22 & 0.13 & 0.48 & 0.39 & Party Support: Liberal Democrat & Politics, Government \& Economy \\ 
+vote4\_1 & 0.05 & 0.05 & 0.88 & 0.07 & Party Affinity: Conservatives & Politics, Government \& Economy \\ 
+vote4\_2 & 0.06 & 0.05 & 0.86 & 0.09 & Party Affinity: Labour & Politics, Government \& Economy \\ 
+vote4\_3 & 0.12 & 0.10 & 0.73 & 0.18 & Party Affinity: Liberal Democrat & Politics, Government \& Economy \\ 
+vote5 & 0.12 & 0.08 & 0.57 & 0.35 & Strength Of Support For Stated Party & Politics, Government \& Economy \\ 
+vote6 & 0.06 & 0.04 & 0.73 & 0.23 & Level Of Interest In Politics & Politics, Government \& Economy \\ 
+voteintent & 0.06 & 0.04 & 0.76 & 0.20 & Voting Intention & Politics, Government \& Economy \\ 
+votenorm & 0.03 & 0.02 & 0.56 & 0.42 & Voting As A Social Norm & Politics, Government \& Economy \\ 
+\bottomrule
+\end{longtable}
+\end{scriptsize}
+
+\end{landscape}
+\newpage
+
+\hypertarget{supplemental-materials-b}{%
+\section{Supplemental Materials B}\label{supplemental-materials-b}}
+
+Table B1 presents the full set of coefficients from an OLS model
+regressing \(\omega\) on multiple covariates, described in Figure 2 in
+the main manuscript.
+
+\begin{table}[ht]
+\begin{center}
+\caption*{Table B1: Regression Model} 
+\label{tab:sometab}
+\begin{tabular}{l c c}
+\hline
+ & Estimates & SE \\
+\hline
+N Part. (log)                                       & $0.01$        
+                                                    & $(0.01)$      \\
+Duration                                            & $-0.00$ 
+                                                    & $(0.00)^{***}$ \\
+N Waves (Part.)                                     & $0.00$        
+                                                    & $(0.00)$      \\
+N Waves (Survey)                                    & $-0.00$       
+                                                    & $(0.00)$      \\
+Wave 1 (Decade)                                     & $-0.01$  
+                                                    & $(0.00)^{**}$  \\
+Panels: BHPS                                        & $0.08$        
+                                                    & $(0.05)$      \\
+Panels: GSS                                         & $0.04$        
+                                                    & $(0.05)$      \\
+Panels: HILDA                                       & $0.08$        
+                                                    & $(0.05)$      \\
+Panels: PSID                                        & $0.09$    
+                                                    & $(0.04)^{*}$  \\
+Panels: SHP                                         & $0.06$        
+                                                    & $(0.05)$      \\
+Panels: SOEP                                        & $0.06$        
+                                                    & $(0.05)$      \\
+Panels: UKHLS                                       & $0.09$        
+                                                    & $(0.06)$      \\
+Topics: Environment and Climate                     & $0.04$   
+                                                    & $(0.01)^{**}$      \\
+Topics: Gender and Family                           & $0.00$        
+                                                    & $(0.01)$      \\
+Topics: Health and Morale                           & $0.03$   
+                                                    & $(0.01)^{**}$      \\
+Topics: National Identity, Ethnicity, Immigration   & $0.02$        
+                                                    & $(0.01)$      \\
+Topics: Occupation and Education                    & $-0.02$       
+                                                    & $(0.02)$      \\
+Topics: Religion and Spirituality                   & $-0.00$       
+                                                    & $(0.01)$      \\
+Topics: Social Life, Social Cohesion and Trust      & $0.03$  
+                                                    & $(0.01)^{***}$      \\
+Topics: Subjective SES                              & $0.03$    
+                                                    & $(0.01)^{*}$      \\
+\hline
+Adjusted R$^2$                                      & $0.77$     &   \\
+N                                                   & $609$      &  \\
+\hline
+\multicolumn{2}{l}{\scriptsize{$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$}}
+\end{tabular}
+\end{center}
+\end{table}
+
+\newpage
+
+\hypertarget{supplemental-materials-c}{%
+\section{Supplemental Materials C}\label{supplemental-materials-c}}
+
+Figure C1 presents the alternative strategy we used to understand the
+effects of duration on intraindividual change. First, we restricted the
+sample such that we have at least 4 waves of observations for all
+participants. This reduced the number of items to 249. We then fitted
+the Life Course Adaption models to this sample. Second, we removed the
+last wave from all the observations, and refit the same models once
+more. In the final step, we calculated the \(\omega\) values for each
+item. The Figure C1 shows a scatterplot for these two sets of
+observations.
+
+\begin{figure}[ht]
+\begin{center}
+\caption*{Figure C1: Difference in $\omega$ Across Two Sample Specifications} 
+
+\begin{center}\includegraphics[width=5in]{../figures/figure_S3} \end{center}
+
+\end{center}
+\end{figure}
+
+\end{document}
