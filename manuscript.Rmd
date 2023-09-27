@@ -114,8 +114,8 @@ $$
 
 $$
 u_{1,i} \sim \mathcal{N}(0,\sigma_{u_1}^2)
-
 $$
+
 [KKNOTE: Is that right? I forget how to do that exactly.]
 
 where $\beta_0$ is the average intercept, $u_{0, i}$ is the random intercept for individuals, $\beta_1 x_t$ is the average slope, $u_{1, i} x_{i, t}$ is the random slope for individuals, and $\epsilon_{i, t}$ is the random error term that captures transitory disturbances.
@@ -341,7 +341,7 @@ knitr::include_graphics("fig/variation_share_lm_mdpnt.png")
 
 \newpage
 ```{=latex}
-\begin{figure}[h]
+\begin{figure}[ht]
 \caption{Regression Model Estimating $\tau$}
 
 ```
@@ -355,7 +355,7 @@ knitr::include_graphics("fig/meta_no_int.png")
 
 \newpage
 ```{=latex}
-\begin{figure}[h]
+\begin{figure}[ht]
 \caption{Difference in $\tau$ Across College Graduates and Non-Graduates}
 ```
 ```{r fig3, out.width = "450px"}
@@ -368,7 +368,7 @@ knitr::include_graphics("fig/FIG_college1.png")
 
 \newpage
 ```{=latex}
-\begin{figure}[h]
+\begin{figure}[ht]
 \caption{Difference in $\tau$ Across College Graduates and Non-Graduates on Political Culture}
 ```
 ```{r fig4, out.width = "450px"}
