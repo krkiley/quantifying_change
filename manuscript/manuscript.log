@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.23)  27 SEP 2023 11:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.23)  27 SEP 2023 14:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -605,62 +605,62 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [1
 
-{c:/Users/turgu/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/Users/turgu/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}] [2] [3] [4] [5]
+{c:/Users/turgu/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/Users/turgu/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}] [2] [3] [4] [5] [6]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 333.
+(Font)              <12> on input line 336.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 333.
+(Font)              <8> on input line 336.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 333.
-[6] [7{c:/Users/turgu/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/Users/turgu/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/Users/turgu/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}] [8] [9] [10] [11] [12]
+(Font)              <6> on input line 336.
+[7{c:/Users/turgu/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/Users/turgu/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/Users/turgu/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}] [8] [9] [10] [11]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 560.
-[13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36] [37] [38]
-<fig/variation_share_lm_mdpnt.png, id=382, 361.35pt x 578.16pt>
-File: fig/variation_share_lm_mdpnt.png Graphic file (type png)
-<use fig/variation_share_lm_mdpnt.png>
-Package pdftex.def Info: fig/variation_share_lm_mdpnt.png  used on input line 1630.
+(Font)              <5> on input line 546.
+[12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36]
+<../figures/figure_1_bw.png, id=369, 361.35pt x 578.16pt>
+File: ../figures/figure_1_bw.png Graphic file (type png)
+<use ../figures/figure_1_bw.png>
+Package pdftex.def Info: ../figures/figure_1_bw.png  used on input line 1567.
 (pdftex.def)             Requested size: 361.36566pt x 578.18504pt.
 
-LaTeX Warning: Float too large for page by 18.85483pt on input line 1633.
+LaTeX Warning: Float too large for page by 18.85483pt on input line 1570.
 
-[39]
-<fig/meta_no_int.png, id=388, 505.89pt x 433.62pt>
-File: fig/meta_no_int.png Graphic file (type png)
-<use fig/meta_no_int.png>
-Package pdftex.def Info: fig/meta_no_int.png  used on input line 1640.
-(pdftex.def)             Requested size: 301.12793pt x 258.10965pt.
-<fig/FIG_college1.png, id=390, 578.16pt x 361.35pt>
-File: fig/FIG_college1.png Graphic file (type png)
-<use fig/FIG_college1.png>
-Package pdftex.def Info: fig/FIG_college1.png  used on input line 1650.
+[37]
+<../figures/figure_2.png, id=376, 722.7pt x 722.7pt>
+File: ../figures/figure_2.png Graphic file (type png)
+<use ../figures/figure_2.png>
+Package pdftex.def Info: ../figures/figure_2.png  used on input line 1577.
+(pdftex.def)             Requested size: 301.12793pt x 301.12793pt.
+<../figures/figure_3_bw.png, id=378, 578.16pt x 361.35pt>
+File: ../figures/figure_3_bw.png Graphic file (type png)
+<use ../figures/figure_3_bw.png>
+Package pdftex.def Info: ../figures/figure_3_bw.png  used on input line 1587.
 (pdftex.def)             Requested size: 451.68639pt x 282.304pt.
-<fig/FIG_college2.png, id=391, 722.7pt x 433.62pt>
-File: fig/FIG_college2.png Graphic file (type png)
-<use fig/FIG_college2.png>
-Package pdftex.def Info: fig/FIG_college2.png  used on input line 1660.
+<../figures/figure_4_bw.png, id=379, 722.7pt x 433.62pt>
+File: ../figures/figure_4_bw.png Graphic file (type png)
+<use ../figures/figure_4_bw.png>
+Package pdftex.def Info: ../figures/figure_4_bw.png  used on input line 1597.
 (pdftex.def)             Requested size: 451.68639pt x 271.01183pt.
-[40 <./fig/variation_share_lm_mdpnt.png>] [41 <./fig/meta_no_int.png>] [42 <./fig/FIG_college1.png>] [43 <./fig/FIG_college2.png>] (./manuscript.aux)
+[38 <../figures/figure_1_bw.png>] [39 <../figures/figure_2.png>] [40 <../figures/figure_3_bw.png>] [41 <../figures/figure_4_bw.png>] (./manuscript.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: 6F3AD2B2E9C3632B6B3DC6731A85AD67;3325.
+(rerunfilecheck)             Checksum: D7B467B5B8107B14465652EA71923867;3381.
  ) 
 Here is how much of TeX's memory you used:
- 14851 strings out of 476894
- 235105 string characters out of 5807539
- 1925785 words of memory out of 5000000
- 35549 multiletter control sequences out of 15000+600000
- 633246 words of font info for 179 fonts, out of 8000000 for 9000
+ 14855 strings out of 476894
+ 235308 string characters out of 5807539
+ 1926785 words of memory out of 5000000
+ 35551 multiletter control sequences out of 15000+600000
+ 636581 words of font info for 183 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,10n,79p,1007b,478s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/turgu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/Users/turgu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/turgu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/Users/turgu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/Users/turgu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/turgu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/turgu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/turgu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/Users/turgu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Users/turgu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/turgu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/Users/turgu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on manuscript.pdf (43 pages, 946507 bytes).
+Output written on manuscript.pdf (41 pages, 1019731 bytes).
 PDF statistics:
- 512 PDF objects out of 1000 (max. 8388607)
- 429 compressed objects within 5 object streams
- 150 named destinations out of 1000 (max. 500000)
- 39117 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 499 PDF objects out of 1000 (max. 8388607)
+ 418 compressed objects within 5 object streams
+ 146 named destinations out of 1000 (max. 500000)
+ 41165 words of extra memory for PDF output out of 42996 (max. 10000000)
 

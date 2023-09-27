@@ -1,0 +1,610 @@
+surveys,variable,bvar_int_slp,wvar_int_slp,evar_int_slp,label
+bhps,cohadv,0.52963091,0.050486839,0.419882251,Advantages In Living As Couple
+bhps,cohdis,0.571938063,2.42E-05,0.428037694,Disadvantages In Living As Couple
+bhps,crwora,0.59596684,0.035446255,0.368586905,Worry About Being Affected By Crime
+bhps,crworb,0.612042194,0.065857263,0.322100543,Extent Of Concern About Crime
+bhps,dfwld,0.540162971,0.01753254,0.442304489,Different World In Future For Young
+bhps,lfimpa,0.591285104,0.084846235,0.323868661,Importance Of: Health
+bhps,lfimpb,0.673337017,0.162237753,0.16442523,Importance Of: Money
+bhps,lfimpc,0.787937646,0.085595224,0.126467131,Importance Of: Having Children
+bhps,lfimpd,0.600432231,0.148877957,0.250689813,Importance Of: Having A Good Job
+bhps,lfimpe,0.625530897,0.120085293,0.254383809,Importance Of: Being Independent
+bhps,lfimpf,0.704163867,0.1653843,0.130451834,Importance Of: Owning Own Home
+bhps,lfimpg,0.69385166,0.11460816,0.19154018,Importance Of: Good Partnership
+bhps,lfimph,0.662106592,0.16289355,0.174999858,Importance Of: Good Friends
+bhps,opchd1_1,0.481729435,0.007847282,0.510423284,Quality Best Prep. Child: Well Liked
+bhps,opchd1_2,0.605331509,0.01359344,0.38107505,Quality Best Prep. Child: Think For Self
+bhps,opchd1_3,0.527773626,0.088016098,0.384210276,Quality Best Prep. Child: Work Hard
+bhps,opchd1_4,0.542528058,0.002330342,0.4551416,Quality Best Prep. Child: Help Others
+bhps,opchd1_5,0.583193348,0.004514946,0.412291706,Quality Best Prep. Child: Obey Parents
+bhps,opcls1,0.553517636,0.107158909,0.339323456,Sees Self As Belonging To Social Class
+bhps,opcls2,0.730434126,0.083169236,0.186396638,Subjective Social Class Membership
+bhps,opcls3,0.522464386,0.098102243,0.379433371,Social Class Affects Opportunities
+bhps,opeur1,0.703891112,0.109167456,0.186941432,Opinion: Uk Membership Of Eu
+bhps,opeur2,0.707594007,0.101443613,0.19096238,Uk Benefited From Being In Eu
+bhps,opeur3,0.645436836,0.032893939,0.321669224,Uk Long Term Policy Re. Eu Should Be
+bhps,opfama,0.629974319,0.066819297,0.303206384,Pre-School Child Suffers If Mother Works
+bhps,opfamb,0.643634383,0.067349136,0.289016481,Family Suffers If Mother Works Full-Time
+bhps,opfamc,0.460483721,0.072839279,0.466677,Woman And Family Happier If She Works
+bhps,opfamd,0.537440448,0.072163402,0.390396149,Husband And Wife Should Both Contribute
+bhps,opfame,0.527197055,0.07002337,0.402779575,Full Time Job Makes Woman Independent
+bhps,opfamf,0.678616484,0.049208588,0.272174928,"Husband Should Earn, Wife Stay At Home"
+bhps,opfamg,0.515020569,0.069544538,0.415434893,Children Need Father As Much As Mother
+bhps,opfamh,0.585721657,0.074203009,0.340075335,Employers Should Help With Childcare
+bhps,opfami,0.657329287,0.051678346,0.290992367,Single Parents Are As Good As Couples
+bhps,opfamj,0.754209512,0.129988217,0.115802271,Cohabiting Is Always Wrong
+bhps,opfamk,0.518252779,0.060867978,0.420879243,Adult Children Should Care For Parents
+bhps,opfaml,0.560424818,0.0704369,0.369138281,Divorce Better Than Unhappy Marriage
+bhps,opfamm,0.769339399,0.105482349,0.125178252,The Man Should Be Head Of Household
+bhps,opfamn,0.819991344,0.073570218,0.106438438,Bible Gods Word And True
+bhps,opfamo,0.755785808,0.057351314,0.186862878,Co-Habiting Is Alright
+bhps,opfamp,0.641053088,0.078168852,0.28077806,Parents Ought Stay Together For Children
+bhps,opfamq,0.606557731,0.072841533,0.320600736,Marital Status Is Irrelevant To Children
+bhps,opfamr,0.763490538,0.04322164,0.193287822,Homosexual Relationships Are Wrong
+bhps,ophla,0.537108504,0.094237252,0.368654244,All Health Care Should Be Free
+bhps,ophlb,0.586506161,0.07632472,0.337169119,Compulsory Private Insurance If Can Pay
+bhps,ophlc,0.516217523,0.108436635,0.375345842,Unfair That Wealth Buys Medical Priority
+bhps,opiss1,0.675699432,0.048632944,0.275667625,Rising Prices Are A Cause For Concern
+bhps,opiss2,0.706394142,0.033676896,0.259928962,Ozone Layer Is A Cause For Concern
+bhps,opiss3,0.623597209,0.065750523,0.310652268,Unemployment Is A Cause For Concern
+bhps,opiss4,0.705252874,0.004119151,0.290627975,Threat To Nature Is A Cause For Concern
+bhps,opiss5,0.695046914,0.062541412,0.242411674,Moral Standards Are A Cause For Concern
+bhps,opnata,0.560734959,0.125119837,0.314145204,Britain Has Much To Learn
+bhps,opnatb,0.634158497,0.106584336,0.259257167,British Citizenship Best
+bhps,opnatc,0.545675307,0.095169052,0.35915564,Some Shameful Things About Britain
+bhps,opnatd,0.515649928,0.165550958,0.318799114,People Too Ready To Criticise Britain
+bhps,opnate,0.598062707,0.122828977,0.279108315,Britain Should Stay Single State
+bhps,opnatf,0.616945415,0.081242384,0.301812201,Co-Operation Better Than Independence
+bhps,opngbha,0.650376625,0.129590078,0.220033297,Belong To Neighbourhood
+bhps,opngbhb,0.65695926,0.16334265,0.17969809,Local Friends Mean A Lot
+bhps,opngbhc,0.6283967,0.112380539,0.259222761,Advice Obtainable Locally
+bhps,opngbhd,0.626238731,0.164560466,0.209200803,Can Borrow Things From Neighbours
+bhps,opngbhe,0.59463103,0.150279151,0.255089819,Willing To Improve Neighbourhood
+bhps,opngbhf,0.592476972,0.066295651,0.341227377,Plan To Stay In Neighbourhood
+bhps,opngbhg,0.656767017,0.144832514,0.198400469,Am Similar To Others In Neighbourhood
+bhps,opngbhh,0.648132632,0.153677288,0.19819008,Talk Regularly To Neighbours
+bhps,oppola,0.476725237,0.111911347,0.411363416,Government Reflects People's Wishes
+bhps,oppolb,0.466762363,0.0943117,0.438925937,People Can't Influence Govt. Policy
+bhps,oppolc,0.601435431,0.04122586,0.357338709,Should Be Max. Limit On Income
+bhps,oppold,0.470556544,0.103721457,0.425722,Govt. Puts Nation's Interests First
+bhps,oprlg3,0.761898007,0.064929069,0.173172923,Religion Makes Difference To Life
+bhps,opsoca,0.541334201,0.079997655,0.378668144,Ordinary People Share Nations Wealth
+bhps,opsocb,0.582876002,0.073692039,0.343431959,One Law For Rich And One For Poor
+bhps,opsocc,0.57951173,0.055589524,0.364898746,Private Enterprise Solves Economic Probs
+bhps,opsocd,0.529760891,0.073356656,0.396882453,Public Services Ought To Be State Owned
+bhps,opsoce,0.641144742,0.068891023,0.289964236,Govt. Has Obligation To Provide Jobs
+bhps,opsocf,0.651935984,0.063914843,0.284149173,Strong Trade Unions Protect Employees
+bhps,trust,0.608253865,0.079254861,0.312491274,Trustworthiness Of Others
+bhps,vote1,0.536014943,0.062487946,0.401497111,Supports A Particular Political Party
+bhps,vote2,0.435442981,0.068843385,0.495713634,Closer To One Political Party Than Other
+bhps,vote4_1,0.875470742,0.042872752,0.081656507,Party Affinity: Conservative
+bhps,vote4_2,0.847871298,0.043390943,0.108737759,Party Affinity: Labour
+bhps,vote4_3,0.722493558,0.065582778,0.211923664,Party Affinity: Liberal Democrat/Lib/Sdp
+bhps,vote5,0.535180547,0.057835215,0.406984238,Strength Of Support For Stated Party
+bhps,vote6,0.702995941,0.04382408,0.253179979,Level Of Interest In Politics
+gss,abany,0.759787042,0.022418171,0.217794787,Abortion: Any Reason
+gss,abdefect,0.748464513,0.079103481,0.172432006,Abortion: Birth Defect
+gss,abhlth,0.721111023,0.122147165,0.156741813,Abortion: Mother's Health
+gss,abnomore,0.761306804,0.080198141,0.158495055,Abortion: Birth Control
+gss,abpoor,0.767809343,0.079251421,0.152939236,Abortion: Too Poor
+gss,abrape,0.766682452,0.106381642,0.126935906,Abortion: Rape
+gss,abscale6,0.836346343,0.06907672,0.094576937,Abortion Scale (6 Items)
+gss,abscale7,0.839550486,0.063615614,0.0968339,Abortion Scale (7 Items)
+gss,absingle,0.770641827,0.037782191,0.191575982,Abortion: Unmarried
+gss,affrmact,0.682443145,0.094306234,0.223250621,Hiring Preferences
+gss,aged,0.59800454,0.003386983,0.398608477,Seniors Should Live With Family
+gss,athscale,0.736499102,0.001315594,0.262185304,Athiest: Scale
+gss,attend,0.851091488,0.076977545,0.071930966,Attend Religious Services
+gss,bible,0.797514617,0.08726022,0.115225163,View Of Bible
+gss,cappun,0.761917846,0.105613418,0.132468736,Death Penalty
+gss,chldidel,0.710589652,0.12077532,0.168635028,Ideal # Of Children
+gss,class,0.727187817,0.07252215,0.200290033,Social Class
+gss,closeblk,0.711094172,0.086809657,0.202096171,Feel Close To Blacks
+gss,closewht,0.61494344,0.025558697,0.359497864,Feel Close To Whites
+gss,colath,0.641611681,0.000777262,0.357611056,Athiest: Teach At College
+gss,colcom,0.625131152,0.060040034,0.314828814,Red: Teach At College
+gss,colhomo,0.673297305,0.002350922,0.324351773,Gay: Teach At College
+gss,colmil,0.614100965,0.016070208,0.369828827,Militarist: Teach At College
+gss,colmslm,0.70332272,0.001445256,0.295232025,Islamist: Teach At College
+gss,colrac,0.598556796,0.002656844,0.39878636,Racist: Teach At College
+gss,comscale,0.75619112,0.019887214,0.223921665,Red: Scale
+gss,conarmy,0.628054933,0.083267348,0.288677719,Military
+gss,conbus,0.598797388,0.074303353,0.326899259,Major Companies
+gss,conclerg,0.656644423,0.03382723,0.309528346,Organized Religion
+gss,coneduc,0.602628028,0.014627192,0.382744781,Education
+gss,confed,0.555559856,0.173971276,0.270468867,Executive Branch
+gss,confinan,0.558514031,0.060452122,0.381033847,Banks & Finance
+gss,conjudge,0.625028216,0.062660397,0.312311386,Supreme Court
+gss,conlabor,0.620756024,0.100726337,0.278517638,Organized Labor
+gss,conlegis,0.611671421,0.013607628,0.374720951,Congress
+gss,conmedia,0.656194359,0.13036618,0.213439461,Tv & Press
+gss,conmedic,0.593819383,0.088382342,0.317798274,Medicine
+gss,conpress,0.618934875,0.121246875,0.259818249,Press
+gss,consci,0.613252069,0.024728213,0.362019718,Scientific Community
+gss,contv,0.594694457,0.133695439,0.271610104,Television
+gss,courts,0.64553052,0.038684338,0.315785142,Courts Deal With Criminals
+gss,discaff,0.563985118,0.000957596,0.435057287,Affirm. Action Hurt Whites
+gss,discaffm,0.545279622,0.056156892,0.398563486,Affirm. Action Hurt Men
+gss,discaffw,0.56239512,0.02038906,0.417215819,Affirm. Action Hurt Women
+gss,divlaw,0.705551977,0.00143997,0.293008053,Divorce Laws Too Lenient
+gss,eqwlth,0.68013885,0.036021004,0.283840146,Government Reduce Inequality
+gss,fair,0.677263763,0.026788453,0.295947784,People Try To Be Fair
+gss,fear,0.664243829,0.040099203,0.295656969,Afraid To Walk At Night
+gss,fechld,0.648787448,0.096307795,0.254904757,Working Moms Warm
+gss,fefam,0.689648387,0.013652187,0.296699426,Better For Man To Work
+gss,fehire,0.623251532,0.000503453,0.376245015,Hire & Promote Women
+gss,fejobaff,0.687445519,0.128590791,0.18396369,Preferences For Hiring Women
+gss,fepol,0.641455164,0.001685456,0.35685938,Men Better For Politics
+gss,fepresch,0.656368526,0.014401992,0.329229481,Pre-Ks Suffer If Mom Works
+gss,finalter,0.542408361,0.138274991,0.319316648,Finances Better Or Worse
+gss,finrela,0.697076787,0.079214404,0.22370881,Relative Income
+gss,fund,0.841385325,0.073329343,0.085285332,Fundamentalist
+gss,genderscale,0.756893144,0.024811472,0.218295384,Scale Of Gender Role Attitudes
+gss,getahead,0.558272816,0.130290562,0.311436622,Work To Get Ahead
+gss,god,0.821130899,0.042593097,0.136276004,Belief About God
+gss,goodlife,0.596726793,0.031556601,0.371716606,Finances Will Improve
+gss,grass,0.775985693,0.02718387,0.196830437,Legalize Marijuana
+gss,gunlaw,0.632916257,0.00160842,0.365475323,Require Gun Permits
+gss,hapmar,0.698297628,0.057357561,0.244344811,Happiness: Marriage
+gss,happy,0.62048416,0.146657184,0.232858657,Happiness: General
+gss,health,0.749713493,0.081629982,0.168656524,Health: Self-Rated
+gss,helpblk,0.702731928,0.028691793,0.268576279,Government Help Blacks
+gss,helpful,0.647985951,0.007954942,0.344059107,People Try To Be Helpful
+gss,helpnot,0.623353687,0.002768775,0.373877537,Government Do More Or Less
+gss,helpoth,0.5915713,0.067718697,0.340710003,Child Should Help Others
+gss,helppoor,0.649351646,0.005391176,0.345257179,Government Help Poor
+gss,helpsick,0.660753951,0.014134307,0.325111742,Government Pay Medical
+gss,homoscale,0.740033637,0.001256835,0.258709527,Gay: Scale
+gss,homosex,0.830838708,0.036124901,0.133036391,Morality: Same-Sex Sex
+gss,intlblks,0.483245056,0.14354115,0.373213794,Blacks Intelligent Or Not
+gss,intlwhts,0.489413465,0.007271324,0.503315211,Whites Intelligent Or Not
+gss,jobfind,0.646242334,0.120834789,0.232922878,Find A Good Job
+gss,joblose,0.561514286,0.003000462,0.435485252,Likely To Lose Job
+gss,kidssol,0.685534051,0.032178419,0.282287529,Mobility Next Generation
+gss,letdie1,0.71960824,0.115075279,0.165316481,Let Die: Incurable
+gss,letin1a,0.695166532,0.014866281,0.289967187,How Many Immigrants?
+gss,libath,0.611915886,0.001163056,0.386921058,Athiest: Library Book
+gss,libcom,0.650712331,0.035323397,0.313964273,Red: Library Book
+gss,libhomo,0.648864648,0.000613841,0.350521511,Gay: Library Book
+gss,libmil,0.604394734,0.01410891,0.381496356,Militarist: Library Book
+gss,libmslm,0.677266922,0.002476283,0.320256795,Islamist: Library Book
+gss,librac,0.594589087,0.001088113,0.404322799,Racist: Library Book
+gss,life,0.669339879,0.030432639,0.300227482,Life: Exciting Or Dull
+gss,liveblks,0.584372273,0.143878872,0.271748855,Neighborhood Half Black
+gss,livewhts,0.487952315,0.073453462,0.438594224,Neighborhood Half White
+gss,marblk,0.690669345,0.043364486,0.265966169,Relative Marry Black
+gss,marhomo,0.820047832,0.039791056,0.140161113,Gay Marriage
+gss,marwht,0.549368078,0.001180326,0.449451596,Relative Marry White
+gss,meovrwrk,0.582921978,0.015974995,0.401103027,Men Hurt Family When Overwork
+gss,milscale,0.692579498,0.021678499,0.285742003,Militarist: Scale
+gss,misanthropy,0.771463752,0.061617546,0.166918702,Misanthropy Scale
+gss,mslmscale,0.769015179,0.002802793,0.228182028,Islamist: Scale
+gss,nataid,0.651285824,0.048503776,0.300210401,Foreign Aid
+gss,natarms,0.66669638,0.058092169,0.275211451,Defense
+gss,natchld,0.626740885,0.035782826,0.337476289,Child Care
+gss,natcity,0.628137399,0.030560245,0.341302356,Problems Of Cities
+gss,natcrime,0.62078027,0.084408516,0.294811213,Fighting Crime
+gss,natdrug,0.59809729,0.077874024,0.324028687,Dealing With Drugs
+gss,nateduc,0.66283478,0.129216556,0.207948663,Education
+gss,natenvir,0.669200261,0.008200968,0.322598771,Protect Environment
+gss,natfare,0.746402009,0.064132852,0.189465138,Welfare
+gss,natheal,0.574994523,0.013422993,0.411582484,Improving Health
+gss,natmass,0.620269906,0.030964282,0.348765813,Mass Transit
+gss,natpark,0.584812149,0.1396062,0.275581651,Parks & Recreation
+gss,natrace,0.71688437,0.108062417,0.175053214,Improve Life For Blacks
+gss,natroad,0.608739248,0.005877078,0.385383674,Highways & Bridges
+gss,natsci,0.599076441,0.083223024,0.317700535,Scientific Research
+gss,natsoc,0.6335752,0.003369701,0.363055099,Social Security
+gss,natspac,0.700671397,0.074269384,0.22505922,Space Exploration
+gss,neverrelact,0.646788691,0.088045721,0.265165587,Never Active In Religion
+gss,news,0.771026102,0.064392096,0.164581802,Read Newspaper
+gss,obey,0.715836338,0.066471285,0.217692376,Child Should Obey
+gss,owngun,0.86258455,0.076699507,0.060715943,Gun Owner
+gss,parsol,0.705221044,0.010358097,0.284420859,Mobility
+gss,partyid,0.882359474,0.063443218,0.054197308,Political Party
+gss,pillok,0.697077788,0.074490498,0.228431714,Birth Control 14-16 Year Olds
+gss,polabuse,0.496121946,0.000962635,0.50291542,Police Hit Person Cursing
+gss,polattak,0.536371004,0.000406374,0.463222623,Police Hit Person Punching
+gss,polescap,0.594846067,0.109931064,0.295222869,Police Hit Person Fleeing
+gss,polhitok,0.705196243,0.001665267,0.29313849,Police Can Hit Citizens
+gss,polmurdr,0.531478808,0.000784616,0.467736576,Police Hit Murder Suspect
+gss,polviews,0.748969919,0.068614058,0.182416022,Political Views
+gss,polviolent,0.617193118,0.005125708,0.377681175,Police Hit: Scale
+gss,popespks,0.695118179,0.119624108,0.185257713,Pope Infallible
+gss,popular,0.551599707,0.166159182,0.282241111,Child Should Be Popular
+gss,pornlaw,0.657709209,0.024487242,0.31780355,Restrict Pornography
+gss,postlife,0.780924948,0.072561,0.146514053,Life After Death
+gss,pray,0.857808501,0.072745154,0.069446345,Pray
+gss,prayer,0.68092527,0.103456474,0.215618255,Bible Prayer In Schools
+gss,premarsx,0.78968656,0.060751387,0.149562052,Morality: Premarital Sex
+gss,racdif1,0.651985986,0.068157578,0.279856436,Racial Diff.: Discrimination
+gss,racdif2,0.5677127,0.000686232,0.431601068,Racial Diff.: Inborn
+gss,racdif3,0.641155031,0.054455623,0.304389346,Racial Diff.: Lack Education
+gss,racdif4,0.641688533,0.042601661,0.315709806,Racial Diff.: Lack Will
+gss,racopen,0.605389359,0.091337292,0.303273349,Open Housing Law
+gss,racscale,0.686010174,0.006024116,0.307965709,Racist: Scale
+gss,reborn,0.809161907,0.056742279,0.134095814,Born Again
+gss,relactiv,0.76265799,0.110153026,0.127188983,Do Religious Activities
+gss,relexp,0.761895987,0.120005242,0.118098771,Had Religious Experience
+gss,relexper,0.735880845,0.023402363,0.240716792,Religious Turning Point
+gss,reliten,0.798020554,0.089372703,0.112606743,Strength Of Affiliation
+gss,relpersn,0.812101851,0.048176741,0.139721408,Religious Person
+gss,richwork,0.659166205,0.077841102,0.262992693,Would Work If Rich
+gss,satfin,0.683467013,0.137748087,0.1787849,Satisfied With Finances
+gss,satjob,0.602115583,0.152436455,0.245447963,Satisfied With Work
+gss,selfhunt,0.804097934,0.015103639,0.180798427,Hunter: Self
+gss,sexeduc,0.687001158,0.000153093,0.312845748,Sex-Ed. In Public Schools
+gss,socbar,0.798226309,0.102087918,0.099685773,Meet Friends At Bar
+gss,socfrend,0.651645764,0.063478303,0.284875933,Meet Friends
+gss,socialscale,0.742791623,0.074410203,0.182798174,Social Life Scale
+gss,socommun,0.63744735,0.117549806,0.245002844,Meet Neighbors
+gss,socrel,0.669021234,0.099674897,0.231303869,Meet Relatives
+gss,spanking,0.732251877,0.0564984,0.211249724,Spank Children
+gss,spkath,0.655589589,0.019864736,0.324545675,Athiest: Make Speech
+gss,spkcom,0.712255455,0.010050442,0.277694103,Red: Make Speech
+gss,spkhomo,0.654780899,0.048752552,0.29646655,Gay: Make Speech
+gss,spkmil,0.634645476,0.001858595,0.363495929,Militarist: Make Speech
+gss,spkmslm,0.725061993,0.013129388,0.261808619,Islamist: Make Speech
+gss,spkrac,0.633879948,0.03964574,0.326474312,Racist: Make Speech
+gss,sprtprsn,0.779451406,0.090056876,0.130491717,Spiritual Person
+gss,suicide1,0.727220122,0.004726975,0.268052903,Suicide: Incurable
+gss,suicide2,0.652009705,0.059892205,0.28809809,Suicide: Bankruptcy
+gss,suicide3,0.661315811,0.023191688,0.315492501,Suicide: Dishonor
+gss,suicide4,0.678989824,0.057148639,0.263861537,Suicide: Tired Of Living
+gss,suicidescale,0.748018211,0.025347149,0.22663464,Suicide Scale
+gss,teensex,0.660776167,0.080204371,0.259019463,Morality: Sex 14-16 Year Olds
+gss,thnkself,0.651283428,0.074826033,0.273890539,Child Should Think For Self
+gss,trust,0.717241449,0.003557347,0.279201204,People Can Be Trusted
+gss,tvhours,0.745288838,0.127619404,0.127091758,Watch Television
+gss,uswary,0.671538324,0.028061311,0.300400364,Us At War Next 10 Years
+gss,wlthblks,0.521366837,0.008883617,0.469749547,Blacks Rich Or Poor
+gss,wlthwhts,0.533805296,0.16197236,0.304222343,Whites Rich Or Poor
+gss,workblks,0.56018084,0.001726725,0.438092434,Blacks Work Hard
+gss,workhard,0.574966319,0.004991564,0.420042117,Child Should Work Hard
+gss,workwhts,0.54509061,0.164012985,0.290896405,Whites Work Hard
+gss,wrkwayup,0.693188093,0.092794765,0.214017143,No Racial Favors
+gss,xmarsex,0.636652338,0.142557299,0.220790363,Morality: Extramarital Affair
+gss,xmovie,0.711095996,0.057090171,0.231813833,Watch X-Rated Movie
+hilda,atwkadc,0.584952081,0.085486366,0.329561553,Fine For Child Under 3 To Be In All-Day Care
+hilda,atwkbmw,0.694200754,0.054401673,0.251397573,"Better If Man Earns Money, Woman Cares For Children"
+hilda,atwkcdw,0.582913212,0.089149519,0.327937269,"As Well For Child If Mother Earns Money, Father Cares For Children"
+hilda,atwkcs,0.588061946,0.081238431,0.330699623,Children Suffer Bc Father Works Too Much
+hilda,atwkdcm,0.642471143,0.104179346,0.253349511,Better For Child To Stay With Mother In Case Of Divorce
+hilda,atwkfhi,0.55370351,0.114262058,0.332034432,Father Should Be As Involved As Mother
+hilda,atwkmmf,0.608361874,0.053094556,0.33854357,Bad For Relationship If Woman Earns More
+hilda,atwkmpl,0.65888747,0.012135581,0.328976948,Men Make Better Political Leaders
+hilda,atwkmrl,0.585775955,0.075713644,0.338510401,Most Important Role For Men To Be Father
+hilda,atwkmsw,0.621148129,0.053438388,0.325413483,Mothers Who Don't Need Money Shouldn't Work
+hilda,atwkpsc,0.625813606,0.057349828,0.316836566,Pre-School Child Suffers If Mother Works Ft
+hilda,atwkseh,0.527012641,0.103224174,0.369763185,If Both Partners Work They Should Share Domestic Tasks
+hilda,atwkwfr,0.517361996,0.071155667,0.411482337,Working Father Can Have As Good Relationship To Child
+hilda,atwkwfs,0.520542421,0.088901119,0.39055646,Working Fathers Care More About Success Than Needs Of Children
+hilda,atwkwmr,0.575251857,0.068775295,0.355972848,Working Mother Can Have As Good Relationship To Child
+hilda,atwkwms,0.559227218,0.097470746,0.343302036,Working Mothers Care More About Success Than Needs Of Children
+hilda,atwkwrl,0.604925155,0.067520549,0.327554296,Most Important Role For Women To Be Mother
+hilda,lskeep,0.548930911,0.038322023,0.412747066,Most People You Meet Keep Their Word
+hilda,lssop,0.575041345,0.0844794,0.340479255,Most People You Meet Succeed By Stepping On Others
+hilda,mcchmf,0.664374732,0.087148113,0.248477154,Children Happier With Both Father And Mother
+hilda,mcdef,0.802661857,0.049800144,0.147538,Cohabitation Alright Even Without Marriage Intention
+hilda,mcdiv,0.620510005,0.054495131,0.324994863,Divorce Alright Even With Children
+hilda,mchscr,0.76085529,0.074618664,0.164526046,Same Rights For Homosexual Couples
+hilda,mcindpc,0.625361738,0.11006,0.264578263,Child Should Start Living Independently By 18-20
+hilda,mcmhc,0.658555954,0.141853281,0.199590765,A Man Has To Have Children In Order To Be Fulfilled
+hilda,mcmoi,0.637708517,0.091374344,0.270917139,Marriage Is Outdated
+hilda,mcnodiv,0.70309026,0.06508265,0.23182709,Marriage Should Never Be Ended
+hilda,mcsingp,0.693146816,0.0483134,0.258539783,Alright For Woman To Have Children As Single Parent
+hilda,mcwhc,0.669212679,0.123614006,0.207173316,A Woman Has To Have Children In Order To Be Fulfilled
+hilda,relimp,0.874625043,0.045693942,0.079681015,Importance Of Religion
+psid,cds_bothparentscare,0.545366135,0.036972163,0.417661702,Dad Should Be As Involved As Mom
+psid,cds_daddevelopment,0.533440672,0.048968411,0.417590917,Dad Large Role In Child Development
+psid,cds_dadoldkidbetter,0.593613632,0.106369711,0.300016657,Dad Able To Enjoy Older Children More
+psid,cds_dadtooinvolved,0.55494465,0.133832717,0.311222633,Dad Too Involved If Keeps From Better Job
+psid,cds_daycareok,0.629182078,0.121832296,0.248985625,Ok To Have Child Under 3 In All-Day Care
+psid,cds_fatherhoodfulfill,0.573253392,0.001574474,0.425172134,Dadhood Most Fulfilling Experience
+psid,cds_fatherinteractchild,0.561104538,0.003435731,0.435459731,Dads Should Interact With Child
+psid,cds_firstyears,0.594087418,0.003772963,0.402139619,First 4 Years Most Import. In Child's Develop.
+psid,cds_girlboyequal,0.588713344,0.029953171,0.381333485,Encourage As Much Independence In Daughters And Sons
+psid,cds_husbandcareerimport,0.612194066,0.092306626,0.295499308,Better Wife Helps Husband Career
+psid,cds_mostimportantchild_1,0.550440752,0.062047078,0.38751217,Importance For Child: Obey
+psid,cds_mostimportantchild_3,0.571242934,0.000715663,0.428041403,Importance For Child: Think For Herself
+psid,cds_motherfatherequal,0.559729568,0.132992706,0.307277726,Dad And Mom Equally Good Meeting Kid's Needs
+psid,cds_motherhoodfulfill,0.587255448,0.000342512,0.41240204,Momhood Most Fulfilling Experience
+psid,cds_mothernotft,0.66857624,0.095473134,0.235950627,Mom With Child Under 5 Shouldn't Work Full-Time
+psid,cds_preschoolsuffer,0.650216019,0.093058237,0.256725744,Preschool Child Suffers If Mom Employed
+psid,cds_sharehousehold,0.478537111,0.000991342,0.520471547,Husband And Wife In Both Ft Should Share Household
+psid,cds_traditionalbest,0.657973667,0.072655435,0.269370898,Better If Man Earns Living
+psid,cds_workingmotherssame,0.547924096,0.029502008,0.422573896,Working Mom As Warm As Nonworking Mom
+psid,gettingbetter,0.503579506,0.112123398,0.384297097,Life Getting Better
+psid,lifesatis,0.533082927,0.112719538,0.354197535,Life Satisfaction
+psid,likejobormoney,0.462703593,0.094954028,0.442342378,Satisfaction About Income Important In Job
+psid,opinionimport,0.561679411,0.116052763,0.322267826,How Much Does It Matter What Other People Think About You?
+psid,satisfiedself,0.504894454,0.138553443,0.356552102,Are You More Often Satisfied Or Dissatisfied With Yourself?
+psid,savingspending,0.493344937,0.124710466,0.381944596,Spend Or Save Money
+psid,tas_belongcommunity,0.55539531,0.088323888,0.356280802,Freq. Of Feeling Belonging To Communty
+psid,tas_contributesociety,0.530111115,0.089281301,0.380607584,Freq. Of Feeling Contrib To Society
+psid,tas_divorcehurts,0.491839755,0.054159886,0.454000359,Divorce Hurts Kids
+psid,tas_divorcesuccess,0.468080498,0.07948418,0.452435321,Child From Divorced Family Can Be Successful
+psid,tas_fathertimeoff,0.518032506,0.125875324,0.35609217,Dads Should Take Time With Young Child
+psid,tas_importrel,0.73453959,0.079423698,0.186036713,Importance Of Religion
+psid,tas_importspirit,0.667808786,0.097068209,0.235123004,Importance Of Spirituality
+psid,tas_lifesatisfact,0.609907863,0.140636427,0.24945571,How Satisfied With Life As A Whole
+psid,tas_mothersnodemanding,0.548875459,0.110591312,0.340533228,Moms Should Have Demandng Job
+psid,tas_peoplearegood,0.542892853,0.096495533,0.360611614,Freq. Of Feeling People Basically Good
+psid,tas_religpref0509_2,0.758256049,0.034839935,0.206904016,Religion: Protestant [2005-09]
+psid,tas_religpref0509_3,0.885832968,0.062001053,0.052165979,Religion: Catholic [2005-09]
+psid,tas_religpref1115_2,0.831089262,0.101670256,0.067240483,Religion: Protestant [2011-15]
+psid,tas_religpref1115_3,0.867066944,0.024205043,0.108728013,Religion: Catholic [2011-15]
+psid,tas_singleparentsok,0.497364517,0.089906576,0.412728907,Child From Single-Parent Family Can Do As Well
+psid,tas_singleparentsuffer,0.600556036,0.100414306,0.299029658,Single Parent Hurts Kids
+psid,tas_singlewomenkids,0.505201766,0.071825599,0.422972635,Single Women Should Have Kids
+psid,tas_societybetter,0.521341151,0.108646346,0.370012503,Freq. Of Feeling Society Gettng Better
+psid,tas_societymakessense,0.529095019,0.086377064,0.384527917,Feeling Way Society Works Makes Sense
+psid,tas_spritual,0.627454225,0.102365805,0.27017997,Spiritual Person
+psid,thinkfuture,0.495573025,0.131905689,0.372521286,Think About Future
+psid,trustothers,0.645045605,0.098075764,0.256878631,Trust Most Others
+psid,undeserved,0.547406403,0.128355763,0.324237834,Are There A Lot Of People Who Have Good Things They Don't Deserve?
+shp,pc70,0.564081454,0.031719302,0.404199244,Self-Perception : Incapacity To Make Plans Because Of Unpredictability
+shp,pc71,0.545404309,0.103544633,0.351051058,Self-Perception : Little Influence On Life Events
+shp,pc72,0.541936596,0.002286236,0.455777168,Self-Perception : Capacity To Overcome Unexpected Problems
+shp,pc73,0.594705604,0.018027893,0.387266503,Self-Perception : Capacity To Choose Between Two Possibilities
+shp,pc74,0.631368162,0.093754784,0.274877054,Self-Perception : Feeling Of Uselessness
+shp,pc75,0.635013268,0.001281828,0.363704904,Self-Perception : Feeling Of Selfsatisfaction
+shp,pl101,0.63270848,0.099650646,0.267640873,Feeling Of Security (Victimization)
+shp,pn56,0.627340029,0.171589804,0.201070167,Values: Lying In Own Interest
+shp,pn57,0.627159951,0.154203562,0.218636487,Values: Cheating On Tax Declaration
+shp,pn58,0.642958797,0.157326408,0.199714796,Values: Avoiding A Fare On A Public Transport
+shp,pn59,0.502635387,0.024593752,0.472770861,Values: Claiming State Benefits Not Entitled To
+shp,pn60,0.668024323,0.083553901,0.248421777,Values: Keeping Found Money
+shp,pn61,0.496056785,1.84E-05,0.5039248,Values: Failing To Report Damage To Parked Vehicle
+shp,pp01,0.792297877,0.034740644,0.172961479,Interest In Politics
+shp,pp02,0.593885467,0.051130687,0.354983845,Overall Satisfaction With Democracy
+shp,pp03,0.555298854,0.049081094,0.395620052,Feeling About Political Influence
+shp,pp04,0.634743908,0.056669908,0.308586184,Trust In Federal Government
+shp,pp07,0.672157466,0.04284478,0.284997754,Future: Active In Boycott
+shp,pp08,0.700765353,0.046206775,0.253027872,Future: Active In Strike
+shp,pp09,0.723253662,0.042319156,0.234427182,Future: Active In Demonstration
+shp,pp10,0.744691075,0.041625219,0.213683706,"Political Position: Left, Right"
+shp,pp12,0.706841478,0.048785706,0.244372816,Opinion On Swiss Army: Direction
+shp,pp13,0.547559008,0.05674355,0.395697442,Opinion On Social Expenses: Direction
+shp,pp14,0.649060807,0.115466811,0.235472382,Opinion On Joining The Eu: Direction
+shp,pp15,0.593157419,0.053235903,0.353606678,Opinion On Chances For Foreigners: Direction
+shp,pp16,0.516770963,0.052960232,0.430268805,Opinion On Environmental Protection: Direction
+shp,pp17,0.51196334,0.053949158,0.434087502,Opinion On Taxes On High Income: Direction
+shp,pp18,0.621929132,0.062199999,0.315870869,Opinion On Nuclear Energy: Direction
+shp,pp19_1,0.546935632,0.050722594,0.402341774,Party Support: Swiss Radical-Democratic Party
+shp,pp19_3,0.660495684,0.054901238,0.284603077,Party Support: Pss Swiss Socialist Party
+shp,pp19_4,0.666264671,0.055555786,0.278179544,Party Support: Udc Democratic Union Of The Centre
+shp,pp20,0.533025615,0.049962003,0.417012382,Gender: Women In General Penalized
+shp,pp21,0.513273467,0.063526283,0.42320025,Gender: Personnally Penalized
+shp,pp22,0.617668263,0.043084657,0.33924708,Gender: In Favour Of Measures
+shp,pp23,0.378408893,0.068951085,0.552640022,Gender: Personal Action
+shp,pp45,0.645195715,0.040813326,0.31399096,General Trust In People
+shp,pp50,0.606453337,0.095137852,0.298408811,Class Identification: Yes-No
+shp,pp51,0.789985426,0.097869777,0.112144797,Class Identification (Spontanously): Which
+shp,pp52,0.70331858,0.145225278,0.151456142,Class Identification (Non Spontaneously): Which
+shp,pp53,0.680057275,0.00257089,0.317371834,Public Expenses: Protection Of The Environment
+shp,pp54,0.653018156,0.110752253,0.236229591,Public Expenses: Health
+shp,pp55,0.720225915,0.07161415,0.208159935,Public Expenses: Day Nursery
+shp,pp56,0.638879059,0.005183846,0.355937095,Public Expenses: Police And Public Order
+shp,pp57,0.586528409,0.084452521,0.32901907,Public Expenses: Research And Education
+shp,pp58,0.736473403,0.047980918,0.215545679,Public Expenses: Military And Defense
+shp,pp59,0.628761361,0.063451388,0.307787251,Public Expenses: Retirement
+shp,pp60,0.720309606,0.065006875,0.21468352,Public Expenses: Culture And Art
+shp,pp61,0.623119025,0.022307443,0.354573532,Public Expenses: Unemployment Benefit
+shp,pp62,0.68743899,0.087603426,0.224957584,Public Expenses: Aid To Developing Countries
+shp,pp63,0.667466885,0.003287495,0.32924562,Public Expenses: Social Aid
+shp,pp64,0.624094347,0.063085124,0.312820529,Opinion On Joining The Eu: Joining Or Bilateral Agreements
+shp,pp65,0.702437845,0.1532555,0.144306655,Opinion On Joining The Eu: Continuation Or Dissolution Of Bilateral Agreements
+shp,pp66,0.721902342,0.14799564,0.130102018,Party Identification: Yes-No
+shp,pp67_2,0.930136078,0.036690925,0.033172997,Party Identification: Swiss Christian-Democrat Party
+shp,pp67_3,0.899568449,0.058664497,0.041767054,Party Identification: Pss Swiss Socialist Party
+shp,pp67_4,0.928229428,0.041597533,0.030173039,Party Identification: Udc Democratic Union Of The Centre
+shp,pp68,0.651127948,0.001105854,0.347766198,Party Identification: Proximity
+shp,pp69,0.756404834,0.094103296,0.149491869,Sympathy Political Party: Liberal Party
+shp,pp70,0.761088785,0.090771189,0.148140026,Sympathy Political Party: Christian Democrats
+shp,pp71,0.83473375,0.077107907,0.088158343,Sympathy Political Party: Social Democrats
+shp,pp72,0.846071838,0.081251832,0.07267633,Sympathy Political Party: Swiss People's Party
+shp,pp73,0.799582505,0.083083341,0.117334154,Sympathy Political Party: Green Party
+shp,pp74,0.642978758,0.050132588,0.306888654,Opinion On Federalism: Direction
+shp,pp76,0.74975701,0.023200469,0.227042522,Protection Of Environment: Importance
+shp,pp77,0.647874517,0.095733588,0.256391895,Protection Of Environment: Recycling
+shp,pp78,0.687874884,0.186172598,0.125952517,Protection Of Environment: Bin Bag Fees
+shp,pp79,0.759184081,0.068996962,0.171818957,Protection Of Environment: Organic And Ecological Products
+shp,pp80,0.719879641,0.080483991,0.199636368,Protection Of Environment: Purchase Of Fruits And Vegetables
+shp,pr16,0.886721259,0.030825885,0.082452855,Belief In God Or Something Divine
+shp,pr20,0.809469337,0.097589361,0.092941302,Feeling Of Spirituality
+shp,pr21,0.840938272,0.045683493,0.113378235,Feeling Of Religiosity
+shp,pr23,0.785281346,0.096543772,0.118174883,Attitude Towards Christianism
+shp,pr24,0.759731487,0.116995823,0.12327269,Attitude Towards Islam
+shp,pr25,0.730521479,0.09379631,0.175682211,Attitude Towards Hinduism
+shp,pr26,0.765762519,0.100621068,0.133616414,Attitude Towards Buddhism
+shp,pr27,0.751296758,0.079123962,0.16957928,Attitude Towards Judaism
+shp,pr28,0.72157733,0.075777434,0.202645235,Attitude Towards Atheism
+soep,plb0104_h,0.548021381,0.163234073,0.288744546,Importance Of Employment
+soep,plb0528_h,0.6377983,0.124994503,0.237207197,Priority In Career Choice: Income
+soep,plb0530_h,0.622613158,0.037063297,0.340323545,Priority In Career Choice: Status
+soep,plb0531_h,0.674203917,0.04476676,0.281029323,Priority In Career Choice: Social Contact
+soep,plb0532_h,0.600288275,0.084757598,0.314954127,Priority In Career Choice: Compatibility Of Family And Work
+soep,plc0115,0.582380425,0.063472717,0.354146858,Social Security Contributions
+soep,pld0043,0.638574858,0.091884,0.269541142,Freq. Lend Friends Pers. Belongings
+soep,pld0044,0.642653215,0.120867559,0.236479226,Freq. Lend Friends Money
+soep,pld0045,0.621131842,0.058681826,0.320186332,Freq. Leave Door Unlocked
+soep,plh0001,0.625251544,0.130221649,0.244526807,Democratic Ideal
+soep,plh0004,0.688171366,0.077133623,0.234695011,Political Attitude
+soep,plh0007,0.685209251,0.033983963,0.280806786,Interest In Politics
+soep,plh0011_h,0.529981555,0.046257178,0.423761267,Party Preference: Yes
+soep,plh0012_h1,0.81150204,0.0410957,0.147402259,Party Preference: Spd
+soep,plh0012_h2,0.798919855,0.036090933,0.164989212,Party Preference: Cdu
+soep,plh0012_h3,0.757727078,0.03223468,0.210038243,Party Preference: Csu
+soep,plh0012_h4,0.655689676,0.061395175,0.282915149,Party Preference: Fdp
+soep,plh0012_h5,0.755955653,0.04979536,0.194248987,Party Preference: The Greens
+soep,plh0012_h6,0.775220237,0.051952441,0.172827322,Party Preference: The Left
+soep,plh0013_h,0.489899879,0.04957354,0.460526581,Party Preference: Intensity
+soep,plh0014,0.540262606,0.166327736,0.293409658,Government Interference
+soep,plh0015,0.457966566,0.001272466,0.540760968,Extent And Type Of State Powers
+soep,plh0016,0.564442078,0.017281867,0.418276055,Financial Security For Family
+soep,plh0017,0.530150257,0.01522786,0.454621883,Care For Pre-School Children
+soep,plh0018,0.494979869,0.003895433,0.501124698,Care For School Children
+soep,plh0019,0.54912695,0.092041026,0.358832023,Financial Security When Unemployed
+soep,plh0020,0.588818476,0.00120839,0.409973134,Job Creation Schemes
+soep,plh0021,0.565939375,0.096881689,0.337178936,Financial Security When Sick
+soep,plh0022,0.513458247,0.047658765,0.438882988,Help For The Sick
+soep,plh0023,0.567994127,0.133663275,0.298342598,Financial Security In Old-Age
+soep,plh0024,0.524420856,0.029927698,0.445651446,Help For The Elderly
+soep,plh0025,0.550694564,0.05335648,0.395948957,Financial Security When Requiring Care
+soep,plh0026,0.532801627,0.041791408,0.425406965,Help For Those Requiring Care
+soep,plh0030,0.510632734,0.096321429,0.393045837,Worried About Childcare
+soep,plh0031,0.582063667,0.068070951,0.349865382,Worried About Consequences Of Eu- Enlargement
+soep,plh0032,0.378286089,0.048144039,0.573569871,Worried About Economic Development
+soep,plh0033,0.496242167,0.046783121,0.456974712,Worried About Finances
+soep,plh0034,0.531325978,0.042167847,0.426506175,Worried About Stability Of Financial Markets
+soep,plh0035,0.548109109,0.051806511,0.40008438,Worried About Own Health
+soep,plh0036,0.452812258,0.053710199,0.493477543,Worried About Environment
+soep,plh0037,0.56167822,0.055031786,0.383289995,Worried About Consequences From Climate Change
+soep,plh0038,0.421310491,0.043274122,0.535415387,Worried About Peace
+soep,plh0039,0.57514896,0.052346347,0.372504693,Worried About Global Terrorism
+soep,plh0040,0.518184466,0.042033574,0.439781961,Worried About Crime In Germany
+soep,plh0041,0.539926311,0.060740212,0.399333477,Worried About Introduction Of Euro
+soep,plh0042,0.482431062,0.054527969,0.463040969,Worried About Job Security
+soep,plh0054,0.520931377,0.038545496,0.440523127,Peace And Order
+soep,plh0054_1,0.477465881,0.064981843,0.457552276,Political Goals: Prority Peace And Order
+soep,plh0056,0.484491832,0.036959314,0.478548854,Citizen Influence
+soep,plh0056_1,0.459621485,0.045742889,0.494635626,Political Goals: Prority Citizen Influence
+soep,plh0058,0.471576023,0.023900281,0.504523696,Fight Against Inflation
+soep,plh0058_1,0.378423864,0.003874913,0.617701223,Political Goals: Prority Rising Prices
+soep,plh0061,0.514302801,0.044412563,0.441284636,Freedom Of Speech
+soep,plh0061_1,0.481004529,0.083769032,0.435226439,Political Goals: Prority Freedom Of Speech
+soep,plh0090,0.658770989,0.152508273,0.188720737,Importance Of Circle Of Friends
+soep,plh0091_v2,0.685092729,0.135056538,0.179850733,Importance For Satisfaction: Work
+soep,plh0092_v2,0.637266518,0.167695726,0.195037756,Importance For Satisfaction: Family
+soep,plh0093_v2,0.651389668,0.158339901,0.190270431,Importance For Satisfaction: Friends
+soep,plh0094_v2,0.6374028,0.17216298,0.19043422,Importance For Satisfaction: Income
+soep,plh0095_v2,0.585316691,0.189126664,0.225556645,Importance For Satisfaction: Dwelling
+soep,plh0096_v2,0.623927749,0.152292407,0.223779844,Importance For Satisfaction: Political Influence
+soep,plh0097_v2,0.737825653,0.122892605,0.139281742,Importance For Satisfaction: Professional Success
+soep,plh0098_v2,0.599642891,0.194952788,0.205404321,Importance For Satisfaction: Leisure
+soep,plh0099_v2,0.569875361,0.203237814,0.226886825,Importance For Satisfaction: Health
+soep,plh0100_v2,0.624583031,0.075360007,0.300056962,Importance For Satisfaction: Protection Of Environment
+soep,plh0101,0.824776097,0.084253538,0.090970366,"Import.-Rlgion, Belief For Satisfaction"
+soep,plh0104,0.565999484,0.051994505,0.382006011,Importance: To Be Able To Afford Sth.
+soep,plh0105,0.539952898,0.041398518,0.418648584,Importance: To Help Others
+soep,plh0106,0.591147741,0.060412138,0.348440121,Importance: To Fulfil Once Potential
+soep,plh0107,0.616302447,0.092678901,0.291018653,Importance: To Have Success In The Job
+soep,plh0108,0.706915145,0.059744571,0.233340284,Importance: To Have An Own House
+soep,plh0109,0.61232458,0.08028476,0.30739066,Importance: To Have A Happy Marriage
+soep,plh0110,0.701560496,0.064915962,0.233523542,Importance: To Have Children
+soep,plh0111,0.624668884,0.031646343,0.343684773,Importance: To Be Socially And Politically Active
+soep,plh0112,0.64394765,0.065092228,0.290960122,Importance: To Be Able To Travel And See The World
+soep,plh0113,0.61514458,0.197120771,0.187734649,Entitlement Received Are Deserved
+soep,plh0114,0.525978602,0.192421311,0.281600088,German Citizen Benefits Are Equitable
+soep,plh0152_v1,0.604252445,0.062047036,0.333700518,Satisfaction With Democracy [1987-1989]
+soep,plh0152_v2,0.703347602,0.066060272,0.230592126,"Satisfaction With Democracy [2005,2010,2016]"
+soep,plh0188,0.456015715,0.035783921,0.508200364,Confident About Future
+soep,plh0192,0.61065988,0.015358477,0.373981643,On The Whole Trust People
+soep,plh0193,0.601173665,0.032162071,0.366664264,Nowadays Can't Trust Anyone
+soep,plh0194,0.574201426,0.072272288,0.353526286,Caution Towards Foreigners
+soep,plh0195,0.609858703,0.053726035,0.336415263,"Most People Are Exploitive, Fair"
+soep,plh0196,0.565282986,0.047091527,0.387625488,"Most People Are Helpful, Act In Own Interest"
+soep,plh0197,0.71256655,0.044931928,0.242501522,Willingness To Take Risks While Driving
+soep,plh0198,0.660739946,0.079512485,0.259747569,Willingness To Take Risks In Financial Matters
+soep,plh0199,0.704440541,0.011894928,0.283664532,Willingness To Take Risks In Leisure And Sports
+soep,plh0200,0.667372873,0.038901465,0.293725661,Willingness To Take Risks In Occupation
+soep,plh0201,0.635151622,0.140579156,0.224269222,Willingness To Take Health Risks
+soep,plh0202,0.640769279,0.172974164,0.186256558,Willingness To Take Risks In Trusting Other People
+soep,plh0204_h,0.579907894,0.035977193,0.384114913,Self-Evaluation: Risk
+soep,plh0212,0.615461027,0.075781123,0.30875785,Thorough Worker
+soep,plh0213,0.699221622,0.076952703,0.223825675,Am Communicative
+soep,plh0214,0.634419563,0.088541854,0.277038583,Am Sometimes Too Coarse With Others
+soep,plh0215,0.637661653,0.088648982,0.273689364,Am Original
+soep,plh0216,0.644207598,0.050713883,0.305078519,Worry A Lot
+soep,plh0217,0.579591532,0.07514591,0.345262559,Able To Forgive
+soep,plh0218,0.645974449,0.059509282,0.294516269,Tend To Be Lazy
+soep,plh0219,0.673451493,0.081976066,0.244572441,Am Sociable
+soep,plh0220,0.698939172,0.066555196,0.234505631,Value Artistic Experiences
+soep,plh0221,0.639719523,0.078188051,0.282092426,Somewhat Nervous
+soep,plh0222,0.575826248,0.09121697,0.332956783,Carry Out Tasks Efficiently
+soep,plh0223,0.629709949,0.081918601,0.28837145,Reserved
+soep,plh0224,0.580526263,0.094627946,0.324845792,Friendly With Others
+soep,plh0225,0.653013785,0.079324538,0.267661677,Have Lively Imagination
+soep,plh0226,0.627554834,0.088473463,0.283971703,Deal Well With Stress
+soep,plh0244,0.582058301,0.001045258,0.416896441,Attitude Towards Future
+soep,plh0253,0.699978743,0.08306572,0.216955537,Personal Patience
+soep,plh0254,0.652929892,0.070655496,0.276414613,Personal Impulsivness
+soep,plh0255,0.671335091,0.10854912,0.220115789,Inquisitive
+soep,plh0332,0.604090236,0.04121173,0.354698034,Concerns Child Health
+soep,plh0335,0.646742163,0.07222878,0.281029056,Worried About Own Retirement Pension
+soep,plh0336,0.507890284,0.101954779,0.390154937,Worried About Cohesion In Society
+soep,plj0040,0.604818519,0.080527968,0.314653513,Ties To Local Area
+soep,plj0043,0.695738547,0.069691674,0.234569779,Ties To Local Area
+soep,plj0046,0.537787245,0.050313207,0.411899548,Worried About Immigration To Germany
+soep,plj0047,0.444723069,0.047342032,0.507934898,Worried About Hostility To Foreigners
+soep,plj0078,0.740770824,0.022720625,0.23650855,Feel German
+soep,plj0081,0.586026883,0.094964355,0.319008762,Connected With Country Of Origin
+soep,plj0082,0.411660999,0.033861986,0.554477015,Feeling Of Not Belonging
+soep,plj0083,0.534767762,0.064580928,0.400651311,Feel At Home In Country Of Origin
+ukhls,ahvwell,0.616805045,0.048196067,0.334998888,Importance Of Doing Well In Quals
+ukhls,apvocimp,0.610861056,0.135474376,0.253664568,Importance Of Apprenticeship/Vocational
+ukhls,carbuy1,0.510063982,0.124730606,0.365205412,Comfort
+ukhls,carbuy10,0.504632339,0.150991979,0.344375682,Safety
+ukhls,carbuy11,0.591896475,0.14354847,0.264555055,Speed/Performance
+ukhls,carbuy12,0.559597617,0.078027042,0.362375341,"Features - Sat-Nav, Cd Player, Music System, Power Steering Etc..."
+ukhls,carbuy2,0.469809776,0.100621002,0.429569222,Costs - Purchase/Running/Resale Value/Tax/Insurance
+ukhls,carbuy3,0.571034141,0.132482045,0.296483814,Small Engine
+ukhls,carbuy4,0.546020465,0.149960334,0.304019201,Large Engine
+ukhls,carbuy5,0.558528844,0.155142887,0.286328268,Environmentally Friendly/Low Co2 Emissions
+ukhls,carbuy6,0.337971559,0.113352597,0.548675844,Electric Car/Van - One That's Plugged Directly Into An Electricity Supply
+ukhls,carbuy7,0.588598666,0.116876656,0.294524678,Style/Design/Image Of Brand/Model
+ukhls,carbuy8,0.522403048,0.153802556,0.323794396,Interior Space/Functionality/Boot Size
+ukhls,carbuy9,0.437053828,0.089991837,0.472954334,Reliability
+ukhls,civicduty,0.733749231,0.024664107,0.241586662,Sense Of Civic Duty
+ukhls,colbens1,0.750600638,0.131021796,0.118377566,Party Sympathy: Conservative
+ukhls,colbens2,0.74248188,0.127587053,0.129931067,Party Sympathy: Labour
+ukhls,colbens3,0.679653404,0.142662631,0.177683965,Party Sympathy: Liberal Democrats
+ukhls,demorient,0.62387994,0.172059483,0.204060577,Democratic Orientation
+ukhls,eumem,0.850351532,0.118501109,0.031147359,Should Uk Remain A Member Of The Eu
+ukhls,ocimpa,0.622670705,0.036081714,0.341247581,Occupation: Important: Job Security
+ukhls,ocimpb,0.686119282,0.05656528,0.257315437,Occupation: Important: High Income
+ukhls,ocimpe,0.614943759,0.004566513,0.380489729,Occupation: Important: Lot Leisure Time
+ukhls,ocimpf,0.626684816,0.000126079,0.373189105,Occupation: Important: Interesting Job
+ukhls,ocimpi,0.688483251,0.040904009,0.27061274,Occupation: Important: Contribute To Soc.
+ukhls,ocimpk,0.624982948,0.031758096,0.343258956,Occupation: Important: Time For Family
+ukhls,ocimpl,0.706026239,0.05974881,0.234224951,Occupation: Important: Job Help Others
+ukhls,oprlg,0.811377416,0.100508483,0.088114101,Whether Belong To A Religion
+ukhls,oprlg1_1,0.885741248,0.009673433,0.104585319,Religion: Church Of England/Anglican
+ukhls,oprlg1_11,0.984935854,0.007209234,0.007854912,Religion: Muslim/Islam
+ukhls,oprlg1_2,0.949779934,9.45E-09,0.050220057,Religion: Roman Catholic
+ukhls,oprlg3,0.836599654,0.060693735,0.102706611,Religion Makes A Difference To Life
+ukhls,scenv_ftst,0.612796773,0.166982846,0.220220381,How Feel About Current Lifestyle And The Environment
+ukhls,scenv_grn,0.645251516,0.00160853,0.353139953,Being Green Is An Alternative Lifestyle
+ukhls,scfannoy,0.595438109,0.096170567,0.308391324,Friends Get On My Nerves
+ukhls,scfcritic,0.612564683,0.006394271,0.381041046,Friends Criticise Me
+ukhls,scopecl200,0.52232869,0.031582626,0.446088685,Affected By Climate Change Next 200 Years
+ukhls,scopecl30,0.577425863,0.021128776,0.401445361,Affected By Climate Change Next 30 Years
+ukhls,scopfamb,0.718774545,0.050459899,0.230765556,Family Suffers If Mother Works Full-Time
+ukhls,scopfamd,0.611545601,0.016796798,0.371657601,Husband And Wife Should Contribute To Hh Income
+ukhls,scopfamf,0.713134767,0.019083266,0.267781967,"Husband Should Earn, Wife Should Stay At Home"
+ukhls,scopngbha,0.637650698,0.145670033,0.21667927,Belong To Neighbourhood
+ukhls,scopngbhb,0.647134597,0.127784323,0.22508108,Local Friends Mean A Lot
+ukhls,scopngbhc,0.633849645,0.139197998,0.226952356,Advice Obtainable Locally
+ukhls,scopngbhd,0.627178808,0.129855132,0.24296606,Can Borrow Things From Neighbours
+ukhls,scopngbhe,0.56874676,0.070672604,0.360580635,Willing To Improve Neighbourhood
+ukhls,scopngbhf,0.601720288,0.153449612,0.2448301,Plan To Stay In Neighbourhood
+ukhls,scopngbhg,0.62510535,0.146921881,0.227972769,Am Similar To Others In Neighbourhood
+ukhls,scopngbhh,0.654420114,0.139559194,0.206020692,Talk Regularly To Neighbours
+ukhls,scpundstnd,0.654233108,0.063082209,0.282684683,Spouse/Partner Understands Way I Feel
+ukhls,scrannoy,0.63294645,0.160623978,0.206429572,Family Gets On My Nerves
+ukhls,scrcritic,0.626332003,0.035468519,0.338199478,Family Criticises Me
+ukhls,scrletdwn,0.589128691,0.153925768,0.256945542,Family Lets Me Down
+ukhls,scrrely,0.634286885,0.143835472,0.221877644,Can Rely On Family
+ukhls,vote1,0.572920612,0.08371442,0.343364968,Supports A Particular Political Party
+ukhls,vote2,0.50917582,0.09218464,0.39863954,Closer To One Political Party Than Others
+ukhls,vote3_1,0.525385748,0.131245465,0.343368786,Party Support: Conservatives
+ukhls,vote3_2,0.547368883,0.088187774,0.364443343,Party Support: Labour
+ukhls,vote3_3,0.480398135,0.13364952,0.385952345,Party Support: Liberal Democrat
+ukhls,vote4_1,0.880877338,0.046808029,0.072314633,Party Affinity: Conservatives
+ukhls,vote4_2,0.861821435,0.052936919,0.085241647,Party Affinity: Labour
+ukhls,vote4_3,0.726457998,0.097909969,0.175632033,Party Affinity: Liberal Democrat
+ukhls,vote5,0.568748781,0.076840651,0.354410567,Strength Of Support For Stated Party
+ukhls,vote6,0.729305586,0.042508161,0.228186254,Level Of Interest In Politics
+ukhls,voteintent,0.758541639,0.044590426,0.196867935,Voting Intention
+ukhls,votenorm,0.561294605,0.017087942,0.421617453,Voting As A Social Norm
