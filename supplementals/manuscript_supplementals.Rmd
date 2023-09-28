@@ -20,6 +20,7 @@ header-includes:
   \usepackage{booktabs}
   \usepackage{dcolumn}
   \usepackage{lscape}
+  \usepackage{siunitx}
   \usepackage{caption}
   \newcommand{\blandscape}{\begin{landscape}}
   \newcommand{\elandscape}{\end{landscape}}
@@ -683,65 +684,67 @@ votenorm & 0.03 & 0.02 & 0.56 & 0.42 & Voting As A Social Norm & Politics, Gover
 
 # Supplemental Materials B
 
-Table B1 presents the full set of coefficients from an OLS model regressing $\omega$ on multiple covariates, described in Figure 2 in the main manuscript.
+Table B1 presents the full set of coefficients from an OLS model regressing $\omega$ on multiple covariates, described in Figure 2. We multiplied the covariates by 100 to increase legibility.
 
 ```{=latex}
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+\newcommand\mc[1]{\multicolumn{1}{c}{#1}} % handy shortcut macro
 \begin{table}[ht]
 \begin{center}
-\caption*{Table B1: Regression Model} 
+\caption*{Table B1: Regression Model Estimating $\omega$}
 \label{tab:sometab}
-\begin{tabular}{l c c}
+\begin{tabular}{l *{4}{d{1.2}} }
 \hline
- & Estimates & SE \\
+ & \mc{Estimates} & \mc{SE} \\
 \hline
-N Part. (log)                                       & $0.01$        
-                                                    & $(0.01)$      \\
-Duration                                            & $-0.00$ 
-                                                    & $(0.00)^{***}$ \\
-N Waves (Part.)                                     & $0.00$        
-                                                    & $(0.00)$      \\
-N Waves (Survey)                                    & $-0.00$       
-                                                    & $(0.00)$      \\
-Wave 1 (Decade)                                     & $-0.01$  
-                                                    & $(0.00)^{**}$  \\
-Panels: BHPS                                        & $0.08$        
-                                                    & $(0.05)$      \\
-Panels: GSS                                         & $0.04$        
-                                                    & $(0.05)$      \\
-Panels: HILDA                                       & $0.08$        
-                                                    & $(0.05)$      \\
-Panels: PSID                                        & $0.09$    
-                                                    & $(0.04)^{*}$  \\
-Panels: SHP                                         & $0.06$        
-                                                    & $(0.05)$      \\
-Panels: SOEP                                        & $0.06$        
-                                                    & $(0.05)$      \\
-Panels: UKHLS                                       & $0.09$        
-                                                    & $(0.06)$      \\
-Topics: Environment and Climate                     & $0.04$   
-                                                    & $(0.01)^{**}$      \\
-Topics: Gender and Family                           & $0.00$        
-                                                    & $(0.01)$      \\
-Topics: Health and Morale                           & $0.03$   
-                                                    & $(0.01)^{**}$      \\
-Topics: National Identity, Ethnicity, Immigration   & $0.02$        
-                                                    & $(0.01)$      \\
-Topics: Occupation and Education                    & $-0.02$       
-                                                    & $(0.02)$      \\
-Topics: Religion and Spirituality                   & $-0.00$       
-                                                    & $(0.01)$      \\
-Topics: Social Life, Social Cohesion and Trust      & $0.03$  
-                                                    & $(0.01)^{***}$      \\
-Topics: Subjective SES                              & $0.03$    
-                                                    & $(0.01)^{*}$      \\
+Number of Participants (Logged)                       & 0.99        
+                                                      & 0.53      \\
+Duration                                              & -0.49^{***} 
+                                                      & 0.13      \\
+Average Number of Waves Across Participants           & 0.09        
+                                                      & 0.20      \\
+Average Number of Waves per Item                      & -0.20       
+                                                      & 0.23      \\
+Wave 1 (Decade)                                       & -1.17^{**}  
+                                                      & 0.44      \\
+Panels: BHPS                                          & 0.08        
+                                                      & 0.05      \\
+Panels: GSS                                           & 0.04        
+                                                      & 0.05      \\
+Panels: HILDA                                         & 0.08        
+                                                      & 0.05      \\
+Panels: PSID                                          & 0.09^{*}    
+                                                      & 0.04      \\
+Panels: SHP                                           & 0.06        
+                                                      & 0.05      \\
+Panels: SOEP                                          & 0.06        
+                                                      & 0.05      \\
+Panels: UKHLS                                         & 0.09        
+                                                      & 0.06      \\
+Topics: Environment and Climate                       & 0.04^{**}   
+                                                      & 0.01      \\
+Topics: Gender and Family                             & 0.00        
+                                                      & 0.01      \\
+Topics: Health and Morale                             & 0.03^{**}   
+                                                      & 0.01      \\
+Topics: National Identity, Ethnicity and Immigration  & 0.02        
+                                                      & 0.01      \\
+Topics: Occupation and Education                      & -0.02       
+                                                      & 0.02      \\
+Topics: Religion and Spirituality                     & -0.00       
+                                                      & 0.01      \\
+Topics: Social Life, Social Cohesion and Trust        & 0.03^{***}  
+                                                      & 0.01      \\
+Topics: Subjective SES                                & 0.03^{*}    
+                                                      & 0.01      \\
 \hline
-Adjusted R$^2$                                      & $0.77$     &   \\
-N                                                   & $609$      &  \\
+Adjusted R-Squared                                    & 0.77 &    \\
 \hline
-\multicolumn{2}{l}{\scriptsize{$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$}}
+\multicolumn{3}{l}{\scriptsize{$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$}. N = 609.}
 \end{tabular}
 \end{center}
 \end{table}
+
 ```
 
 \newpage
