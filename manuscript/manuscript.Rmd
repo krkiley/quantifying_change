@@ -203,7 +203,7 @@ Figure 2 plots the results from an ordinary least squares regression of $\omega$
 \begin{center}
 \caption{Regression Model Estimating $\omega$}
 ```
-```{r fig2, out.width = "450px"}
+```{r fig2, out.width = "350px"}
 knitr::include_graphics("../figures/figure_2.png")
 ```
 ```{=latex}
