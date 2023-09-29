@@ -44,7 +44,7 @@ Taken together, the goal of this paper is to advance---and, hopefully, transcend
 
 # Background
 
-## Change and Stability in Personal Culture
+## Stability and Change in Personal Culture
 
 Recent debates about whether adults undergo intrapersonal cultural change emerged in part because theories of cultural change at the aggregate level tend to implicitly invoke one of two models of individual behavior. The first, what Kiley and Vaisey [-@kiley2020] call a "Settled Dispositions Model" (SDM), assumes that peoples' personal culture is relatively fixed by the time they are adults. While they might make temporary changes in their declarative culture in reaction to their environments, this model assumes that people return to a settled baseline over a short period of time. This model underlies theories of cultural change that suggest people are imprinted by early socialization experiences such as the "past conditions of production" a Bourdieusian practice theory [@bourdieu1990], cohort replacement theories of aggregate change [@mannheim1952; @ryder1965], and control theories in social psychology [@smith-lovin1988; @robinson2007].
 
