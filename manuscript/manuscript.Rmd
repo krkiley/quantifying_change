@@ -9,6 +9,7 @@ geometry: margin=1in
 mainfont: Times New Roman
 fontsize: 12pt
 header-includes:
+  \usepackage{caption}
   \usepackage{setspace}\doublespacing
   \usepackage{endnotes}
   \renewcommand{\enotesize}{\normalsize}
@@ -211,7 +212,7 @@ While there are some differences between panels, these differences are small com
 
 In contrast to the tournament of models approach, quantifying change this way allows us to explore variation in the relative importance of intrapersonal change across questions that all show evidence of change. For example, Kiley and Vaisey [-@kiley2020] found that confidence in the press and confidence in religious leaders were both characterized by active updating. Our results show that intrapersonal change is much more important for explaining variance in confidence in the press (0.164) than confidence in religion (0.049), even though both are updating.
 
-Supplemental Materials A presents the estimated proportion of variance attributable to interpersonal differences and intrapersonal change, the estimated values of $\omega$, and the proportion of residual variance for each question. Interpersonal differences are almost always the largest component of the total variance and tend to account for between 55 and 70 percent of total variance, while intrapersonal change is always the smallest, typically accounting for between 3 and 8 percent of total variance. Residual variance tends to account for between 22 and 37 percent of variance, though on several questions residual variance is greater than 50 percent. This might indicate survey items with low reliability or ones that capture genuinely rapid fluctuations. 
+Appendix A shows the distribution of $V(D)$ and $V(C)$ across panels, and Supplemental Materials A presents the estimated proportion of variance attributable to interpersonal differences and intrapersonal change, the estimated values of $\omega$, and the proportion of residual variance for each question. Interpersonal differences are almost always the largest component of the total variance and tend to account for between 55 and 70 percent of total variance, while intrapersonal change is always the smallest, typically accounting for between 3 and 8 percent of total variance. Residual variance tends to account for between 22 and 37 percent of variance, though on several questions residual variance is greater than 50 percent. This might indicate survey items with low reliability or ones that capture genuinely rapid fluctuations. 
 
 As we noted above, the substantive importance of a given amount of intrapersonal change depends on a range of factors, including how long the panel runs, whether assumptions about linear change hold, and whether the panel is capturing a distinctly turbulent period or a distinctly stable period for the relevant item. However, if we assume that the period under observation is "typical" for a question---not a time of extremely heightened (or lowered) sensitivity or change---then it does not seem realistic for that intrapersonal change accounts for a large share of the cultural differences we see in the world.
 
@@ -239,7 +240,7 @@ Although we did not state expectations for how question content would relate to 
 
 The most notable result in the meta analysis is the negative coefficient attached to the duration of years covered by the question. The longer a question is observed, the less is the value of $\omega$. Theories of personal cultural change that link changes in personal culture to social experiences, including the LCAM, suggest that the longer we observe respondents, the more likely people are to undergo potentially transformative experiences and therefore the more variance would be attributable to  intrapersonal change. Finding a negative coefficient here seems to challenge that assumption.
 
-As a further test of this finding, we compared the $\omega$ values when using the full duration of a panel compared to when we dropped the final wave and therefore reduced the total duration of observation for the question. If the coefficient reflects a true negative effect of duration on $\omega$, we should see that same effect within questions. Results from this analysis are presented in Supplemental Materials C and contradict the coefficient from the regression model; with a few exceptions, we found that the longer we observe the same question, the higher $\omega$ is. We interpret this combination of findings as suggesting that the kinds of questions asked for a longer time period tend to demonstrate less intrapersonal change than questions asked over shorter periods, rather than a true function of time. This supports the conclusion that the GSS shows less intrapersonal change because of its shorter duration.
+As a further test of this finding, we compared the $\omega$ values when using the full duration of a panel compared to when we dropped the final wave and therefore reduced the total duration of observation for the question. If the coefficient reflects a true negative effect of duration on $\omega$, we should see that same effect within questions. Results from this analysis are presented in Appendix B and contradict the coefficient from the regression model; with a few exceptions, we found that the longer we observe the same question, the higher $\omega$ is. We interpret this combination of findings as suggesting that the kinds of questions asked for a longer time period tend to demonstrate less intrapersonal change than questions asked over shorter periods, rather than a true function of time. This supports the conclusion that the GSS shows less intrapersonal change because of its shorter duration.
 
 ## College and Change in Political Culture
 
@@ -347,8 +348,43 @@ Perhaps most important, we need more panel studies on youth. It is very likely t
 
 We believe the approach we outlined here can push past the "needless dichotomy" implicit in the question of whether people change or not [@lersch2023]. Characterizing questions as displaying change or not can only take researchers so far, but the question of whether some questions demonstrate more change than others, or whether some groups are characterized by more stability than others, has the potential to weigh in on a broader range of theoretical debates. We hope researchers find our approach useful as they investigate these questions.
 
-
 \theendnotes
+
+# Appendix
+
+## Appendix A: The Distribution of Variation Components
+
+Figure A1 shows the distribution of $V(D)$ and $V(C)$ across all panels.
+
+```{=latex}
+\begin{figure}[htp]
+\begin{center}
+\caption*{Figure A1: The Distribution of V(D) and V(C)}
+```
+```{r figA1, out.width = "350px"}
+knitr::include_graphics("../figures/figure_A1.png")
+```
+```{=latex}
+\end{center}
+\end{figure}
+```
+
+## Appendix B: $\omega$ Values When the Last Wave Removed
+
+Figure A2 presents the alternative strategy we used to understand the effects of duration on intraindividual change. First, we restricted the sample such that we have at least 4 waves of observations for all participants. This reduced the number of items to 249. We then fitted the Life Course Adaption models to this sample. Second, we removed the last wave from all the observations, and refit the same models once more. In the final step, we calculated the $\omega$ values for each item. The Figure C1 shows a scatterplot for these two sets of observations.
+
+```{=latex}
+\begin{figure}[tb]
+\begin{center}
+\caption*{Figure A2: Difference in $\omega$ Across Two Sample Specifications} 
+```
+```{r figA2, out.width = "400px"}
+knitr::include_graphics("../figures/figure_A2.png")
+```
+```{=latex}
+\end{center}
+\end{figure}
+```
 
 # References
 

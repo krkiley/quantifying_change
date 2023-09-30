@@ -746,22 +746,3 @@ Adjusted R-Squared                                    & 0.77 &    \\
 \end{table}
 
 ```
-
-\newpage
-
-# Supplemental Materials C
-
-Figure C1 presents the alternative strategy we used to understand the effects of duration on intraindividual change. First, we restricted the sample such that we have at least 4 waves of observations for all participants. This reduced the number of items to 249. We then fitted the Life Course Adaption models to this sample. Second, we removed the last wave from all the observations, and refit the same models once more. In the final step, we calculated the $\omega$ values for each item. The Figure C1 shows a scatterplot for these two sets of observations.
-
-```{=latex}
-\begin{figure}[ht]
-\begin{center}
-\caption*{Figure C1: Difference in $\omega$ Across Two Sample Specifications} 
-```
-```{r fig3, out.width = "5in"}
-knitr::include_graphics("../figures/figure_S3.png")
-```
-```{=latex}
-\end{center}
-\end{figure}
-```
