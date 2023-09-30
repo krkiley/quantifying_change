@@ -152,9 +152,9 @@ where $\beta_0$ is the average intercept, $\alpha_{0i}$ is the random intercept 
 
 As a first step in our analysis, we fit this LCAM to each of the 609 measures of personal culture outlined above. We then use these models to derive two measures of the components we outlined above: pre-existing interpersonal differences and intrapersonal change over time. 
 
-We estimate these using a form of variance decomposition. First, to measure stable interpersonal differences, we calculate $V(D)$ according to the equation below.[^2] 
+We estimate these using a form of variance decomposition. First, to measure stable interpersonal differences, we calculate $V(D)$ according to the equation below, where $\widetilde{year_i}$ is the midpoint of the observed years for each respondent for that particular item.[^2] 
 $$
-V(D) = 1 - \frac{\sum_{i=1}^N \sum_{t=1}^T [y_{it} - (\hat{\beta}_0 + \hat{\alpha}_{0i} + (\hat{\beta}_1 + \hat{\alpha}_{1i}) \overline{\text{year}}_{it})]^2}{\sum_{i=1}^N \sum_{t=1}^T [y_{it} - \bar{y}_{it}]^2}
+V(D) = 1 - \frac{\sum_{i=1}^N \sum_{t=1}^T [y_{it} - (\hat{\beta}_0 + \hat{\alpha}_{0i} + (\hat{\beta}_1 + \hat{\alpha}_{1i}) \widetilde{\text{year}}_{i})]^2}{\sum_{i=1}^N \sum_{t=1}^T [y_{it} - \bar{y}_{it}]^2}
 $$
 
 [^2]: We use the model estimate from the midpoint year, rather than the value at the first wave, because this is the best measure of "baseline" available under the assumption that the person does not change. The first wave measure alone contains an unknown amount of measurement error and transient fluctuations.
