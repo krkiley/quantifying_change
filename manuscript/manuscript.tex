@@ -19,7 +19,6 @@
 \usepackage{lmodern}
 \ifPDFTeX\else
   % xetex/luatex font selection
-  \setmainfont[]{Times New Roman}
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -79,7 +78,7 @@
 \newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
-\usepackage{caption} \usepackage{setspace}\doublespacing \usepackage{endnotes} \renewcommand{\enotesize}{\normalsize} \let\footnote=\endnote
+\usepackage{fontspec} \setmainfont{Times New Roman} \setlength{\parindent}{3em} \usepackage{caption} \usepackage{setspace}\doublespacing \usepackage{endnotes} \renewcommand{\enotesize}{\normalsize} \let\footnote=\endnote \pagenumbering{gobble}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -544,26 +543,9 @@ cross-domain set of items to capture a broad range of individual
 personal culture. Supplemental Materials A documents the list of all
 variables used in the upcoming analyses.
 
-\begin{table}[H]
-
-\caption{\label{tab:unnamed-chunk-1}The Description of the Data Sources}
-\centering
-\resizebox{\linewidth}{!}{
-\begin{tabular}[t]{llcc}
-\toprule
-Country & Survey & Period & Outcomes\\
-\midrule
-Australia & Household, Income and Labor Dynamics in Australia (HILDA) & 2001-2021 & 30\\
-Germany & Socio-Economic Panel Study (SOEP) & 1984-2020 & 122\\
-Great Britian & British Household Panel Survey (BHPS) & 1991-2008 & 83\\
-Great Britian & Understanding Society/UK Household Longitudinal Study (UKHLS) & 2009-2020 & 66\\
-Switzerland & Swiss Household Panel (SHP) & 1999-2019 & 77\\
-\addlinespace
-United States & General Social Survey (GSS) & 2006-2012 & 183\\
-United States & Panel Study of Income Dynamics (PSID) & 1968-2019 & 48\\
-\bottomrule
-\end{tabular}}
-\end{table}
+\begin{center}
+<Table 1 about here>
+\end{center}
 
 \hypertarget{life-course-adaption-model}{%
 \subsection{Life Course Adaption
@@ -702,15 +684,9 @@ range of 0.053 to 0.139. All panels include questions where \(\omega\)
 is essentially 0, and all panels include questions with \(\omega\)
 values greater than 0.20. The maximum \(\omega\) value is 0.26.
 
-\begin{figure}[htp]
 \begin{center}
-\caption{Proportions of Systematic Variance in Personal Culture}
-
-\includegraphics[width=1\linewidth]{../figures/figure_1}
-
+<Figure 1 about here>
 \end{center}
-\footnotesize{\textit{Notes:} The figure shows $\omega$ and 1 - $\omega$ as the proportion of systematic variance attributable to intrapersonal change and interpersonal differences. See Supplemental Materials A for the full set of item values.}
-\end{figure}
 
 Across all questions, interpersonal differences account for a much
 larger share of the systematic variance in responses than intrapersonal
@@ -785,15 +761,9 @@ function of question, panel, and sample features. These models also
 include fixed effects for panels and topics, so coefficients reflect the
 association within a panel and topical domain.
 
-\begin{figure}[htp]
 \begin{center}
-\caption{Regression Model Estimating $\omega$}
-
-\includegraphics[width=350px]{../figures/figure_2}
-
+<Figure 2 about here>
 \end{center}
-\footnotesize{\textit{Notes:} The model estimates the proportion of systematic variance attributable to intrapersonal change. It includes the log of the number of participants, the number of waves the variable was asked (capped at t = 10 for each item), the date of the first wave (measured as the year minus 1968 divided by 10), number of waves the question was asked averaged across participants, duration in years per item averaged across participants, and panel and topic fixed effects. Coefficients are estimated from suppressed intercept model based on predictions at participants' wave mid-point. Survey indicators and item topics not shown. See Supplemental Materials B for the full set of coefficients.}
-\end{figure}
 
 Figure 2 shows that the more response options respondents are given and
 the larger the sample, the larger the values of \(\omega\). We interpret
@@ -916,15 +886,9 @@ more systematic variance among college graduates than among those
 without a college degree, while values less than 0 indicate the
 opposite.
 
-\begin{figure}[hbt]
 \begin{center}
-\caption{Difference in $\omega$ Across College Graduates and Non-Graduates}
-
-\includegraphics[width=450px]{../figures/figure_3}
-
+<Figure 3 about here>
 \end{center}
-\footnotesize{\textit{Notes:} The figure shows the difference in $\omega$ values across college graduates and college non-graduates. Values above (below) 0 means that those with college degree have higher (lower) variance of intrapersonal change. The dashed red line marks 0 difference.}
-\end{figure}
 
 There is a clear pattern in Figure 3: for more than 80 percent of these
 GSS items, intrapersonal change is a larger component of systematic
@@ -948,15 +912,9 @@ about whether black people should be given preferences in hiring,
 measured on a five-point scale. We present estimates of \(\omega\) for
 these eight questions, for both education groups, in Figure 4.
 
-\begin{figure}[hbt]
 \begin{center}
-\caption{Difference in $\omega$ Across College Graduates and Non-Graduates on Political Culture}
-
-\includegraphics[width=450px]{../figures/figure_4}
-
+<Figure 4 about here>
 \end{center}
-\footnotesize{\textit{Notes:} $\omega$ values across college graduates and college non-graduates on 8 political culture items from the General Social Survey (2006-2014).}
-\end{figure}
 
 On all eight questions presented in Figure 4, \(\omega\) values are
 smaller for people with a college degree, meaning intrapersonal change
@@ -1541,6 +1499,8 @@ Zaller, John. 1992.
 
 \end{CSLReferences}
 
+\newpage
+
 \hypertarget{appendix}{%
 \section{Appendix}\label{appendix}}
 
@@ -1551,14 +1511,9 @@ Components}\label{appendix-a-the-distribution-of-variation-components}}
 Figure A1 shows the distribution of \(V(D)\) and \(V(C)\) across all
 panels.
 
-\begin{figure}[htp]
 \begin{center}
-\caption*{Figure A1: The Distribution of V(D) and V(C)}
-
-\includegraphics[width=350px]{../figures/figure_A1}
-
+<Figure A1 about here>
 \end{center}
-\end{figure}
 
 \hypertarget{appendix-b-omega-values-when-the-last-wave-removed}{%
 \subsection{\texorpdfstring{Appendix B: \(\omega\) Values When the Last
@@ -1574,11 +1529,102 @@ unrestricted data. In the final step, we calculated the \(\omega\)
 values for each item. The Figure A2 shows a scatterplot for these two
 sets of observations.
 
-\begin{figure}[tb]
+\begin{center}
+<Figure B1 about here>
+\end{center}
+
+\newpage
+
+\hypertarget{tables-and-figures}{%
+\section{Tables and Figures}\label{tables-and-figures}}
+
+\begin{table}[H]
+
+\caption{\label{tab:unnamed-chunk-1}The Description of the Data Sources}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{tabular}[t]{llcc}
+\toprule
+Country & Survey & Period & Outcomes\\
+\midrule
+Australia & Household, Income and Labor Dynamics in Australia (HILDA) & 2001-2021 & 30\\
+Germany & Socio-Economic Panel Study (SOEP) & 1984-2020 & 122\\
+Great Britian & British Household Panel Survey (BHPS) & 1991-2008 & 83\\
+Great Britian & Understanding Society/UK Household Longitudinal Study (UKHLS) & 2009-2020 & 66\\
+Switzerland & Swiss Household Panel (SHP) & 1999-2019 & 77\\
+\addlinespace
+United States & General Social Survey (GSS) & 2006-2012 & 183\\
+United States & Panel Study of Income Dynamics (PSID) & 1968-2019 & 48\\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\newpage
+
+\begin{figure}[ht]
+\begin{center}
+\caption{Proportions of Systematic Variance in Personal Culture}
+
+\includegraphics[width=1\linewidth]{../figures/figure_1}
+
+\end{center}
+\footnotesize{\textit{Notes:} The figure shows $\omega$ and 1 - $\omega$ as the proportion of systematic variance attributable to intrapersonal change and interpersonal differences. See Supplemental Materials A for the full set of item values.}
+\end{figure}
+
+\newpage
+
+\begin{figure}[ht]
+\begin{center}
+\caption{Regression Model Estimating $\omega$}
+
+\includegraphics{../figures/figure_2.png}
+
+\end{center}
+\footnotesize{\textit{Notes:} The model estimates the proportion of systematic variance attributable to intrapersonal change. It includes the log of the number of participants, the number of waves the variable was asked (capped at t = 10 for each item), the date of the first wave (measured as the year minus 1968 divided by 10), number of waves the question was asked averaged across participants, duration in years per item averaged across participants, and panel and topic fixed effects. Coefficients are estimated from suppressed intercept model based on predictions at participants' wave mid-point. Survey indicators and item topics not shown. See Supplemental Materials B for the full set of coefficients.}
+\end{figure}
+
+\newpage
+
+\begin{figure}[ht]
+\begin{center}
+\caption{Difference in $\omega$ Across College Graduates and Non-Graduates}
+
+\includegraphics{../figures/figure_3.png}
+
+\end{center}
+\footnotesize{\textit{Notes:} The figure shows the difference in $\omega$ values across college graduates and college non-graduates. Values above (below) 0 means that those with college degree have higher (lower) variance of intrapersonal change. The dashed red line marks 0 difference.}
+\end{figure}
+
+\newpage
+
+\begin{figure}[ht]
+\begin{center}
+\caption{Difference in $\omega$ Across College Graduates and Non-Graduates on Political Culture}
+
+\includegraphics{../figures/figure_4.png}
+
+\end{center}
+\footnotesize{\textit{Notes:} $\omega$ values across college graduates and college non-graduates on 8 political culture items from the General Social Survey (2006-2014).}
+\end{figure}
+
+\newpage
+
+\begin{figure}[htp]
+\begin{center}
+\caption*{Figure A1: The Distribution of V(D) and V(C)}
+
+\includegraphics{../figures/figure_A1.png}
+
+\end{center}
+\end{figure}
+
+\newpage
+
+\begin{figure}[htp]
 \begin{center}
 \caption*{Figure A2: Difference in $\omega$ Across Two Sample Specifications} 
 
-\includegraphics[width=400px]{../figures/figure_A2}
+\includegraphics{../figures/figure_A2.png}
 
 \end{center}
 \end{figure}

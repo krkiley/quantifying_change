@@ -4,16 +4,20 @@ author:
 - 
 output:
   pdf_document:
+    latex_engine: xelatex
     keep_tex: true
 geometry: margin=1in 
-mainfont: Times New Roman
 fontsize: 12pt
 header-includes:
+  \usepackage{fontspec}
+  \setmainfont{Times New Roman}
+  \setlength{\parindent}{3em}
   \usepackage{caption}
   \usepackage{setspace}\doublespacing
   \usepackage{endnotes}
   \renewcommand{\enotesize}{\normalsize}
   \let\footnote=\endnote
+  \pagenumbering{gobble}
 bibliography: kileybib.bib
 csl: asa.csl
 abstract: "Does personal culture---a person's attitudes, beliefs, values, and practices---change over the life course, or is it largely fixed by adulthood? Recent work has reached substantially different conclusions on this question. We argue that this disagreement is an unintended consequence of the \"tournament of models\" approach researchers have used. We introduce a new measure for quantifying the proportion of systematic variance in panel data attributable to intrapersonal change versus stable interpersonal differences. Applying this measure to 609 items from seven surveys in five countries, we find that although intrapersonal change is common, it is generally small in magnitude. We also demonstrate that this measure is useful for comparing social groups by showing that intrapersonal change is less common among U.S. college graduates than among those without a college degree. Overall, we believe this new measure will be a useful methodological tool and help reconcile an important theoretical debate."
@@ -103,32 +107,10 @@ We use data from seven nationally representative panel surveys from Australia, G
 
 [^1]: For more information on these data sources, see [@data_gss; @data_hilda; @data_bhps; @data_ukhls; @data_soep; @data_shp; @data_psid].
 
-```{r, message = FALSE}
-
-library(tidyverse)
-library(knitr)
-library(kableExtra)
-
-table <- tibble(
-  Country = c("Australia", "Germany", "Great Britian", "Great Britian", "Switzerland", "United States", "United States"),
-  Survey = c("Household, Income and Labor Dynamics in Australia (HILDA)",
-             "Socio-Economic Panel Study (SOEP)",
-             "British Household Panel Survey (BHPS)",
-             "Understanding Society/UK Household Longitudinal Study (UKHLS)",
-             "Swiss Household Panel (SHP)",
-             "General Social Survey (GSS)",
-             "Panel Study of Income Dynamics (PSID)"),
-  Period = c("2001-2021", "1984-2020", "1991-2008", "2009-2020", "1999-2019", "2006-2012", "1968-2019"),
-  Outcomes = c(30, 122, 83, 66, 77, 183, 48)
-)
-
-kableExtra::kable(table,
-                  booktabs = TRUE,
-                  format = "latex",
-                  align = "llcc",
-                  caption = "The Description of the Data Sources") |> 
-  kable_styling(latex_options = c("scale_down", "HOLD_position"))
-
+```{=tex}
+\begin{center}
+<Table 1 about here>
+\end{center}
 ```
 
 ## Life Course Adaption Model
@@ -191,20 +173,12 @@ As a second step in our analysis, we use linear regression to conduct a meta-ana
 
 Figure 1 plots the proportion of systematic variance attributable to interpersonal differences and intrapersonal change for each of the 609 questions, plotted separately by panel. To broadly summarize the results, all panels show a similar range of the proportion of systematic variance attributable to intrapersonal change. Across panels, the median value of $\omega$ is 0.094 (mean of 0.098), with an interquartile range of 0.053 to 0.139. All panels include questions where $\omega$ is essentially 0, and all panels include questions with $\omega$ values greater than 0.20. The maximum $\omega$ value is 0.26.
 
-```{=latex}
-\begin{figure}[htp]
+```{=tex}
 \begin{center}
-\caption{Proportions of Systematic Variance in Personal Culture}
-```
-```{r fig1, out.width = "100%", fig.pos = "H"}
-knitr::include_graphics("../figures/figure_1.png")
+<Figure 1 about here>
+\end{center}
 ```
 
-```{=latex}
-\end{center}
-\footnotesize{\textit{Notes:} The figure shows $\omega$ and 1 - $\omega$ as the proportion of systematic variance attributable to intrapersonal change and interpersonal differences. See Supplemental Materials A for the full set of item values.}
-\end{figure}
-```
 Across all questions, interpersonal differences account for a much larger share of the systematic variance in responses than intrapersonal change. Again, this is to be expected. Interpersonal differences capture not just pre-adult socialization, but all accumulated experiences up to the start of the panel that might influence personal culture.
 
 To the extent that there are differences across the panels, the PSID has the highest $\omega$ values with mean .120 and median .135. While we cannot disentangle features of the sample from features of the questions asked to each sample, the specific samples for many PSID questions have lower average ages than those from other panels. To the extent that younger respondents might be more likely to make durable changes of opinion, these higher estimates of intrapersonal change might reflect the distinct age profile of respondents in this sample. At the other end, the GSS has the lowest range of $\omega$ with mean .073 and median .069. This potentially reflects the fact that the GSS observes people for a shorter duration, on average, than the other panels. If, consistent with life course adaption theories, people are more likely to make significant cultural changes the longer we observe them, then duration likely affects the range of $\omega$ (a point we explore more below). However, the GSS results are still consistent with results from the other panels.
@@ -221,20 +195,12 @@ As we noted above, the substantive importance of a given amount of intrapersonal
 
 Figure 2 plots the results from a linear regression of $\omega$ as a function of question, panel, and sample features. These models also include fixed effects for panels and topics, so coefficients reflect the association within a panel and topical domain.
 
-```{=latex}
-\begin{figure}[htp]
+```{=tex}
 \begin{center}
-\caption{Regression Model Estimating $\omega$}
-```
-```{r fig2, out.width = "350px"}
-knitr::include_graphics("../figures/figure_2.png")
+<Figure 2 about here>
+\end{center}
 ```
 
-```{=latex}
-\end{center}
-\footnotesize{\textit{Notes:} The model estimates the proportion of systematic variance attributable to intrapersonal change. It includes the log of the number of participants, the number of waves the variable was asked (capped at t = 10 for each item), the date of the first wave (measured as the year minus 1968 divided by 10), number of waves the question was asked averaged across participants, duration in years per item averaged across participants, and panel and topic fixed effects. Coefficients are estimated from suppressed intercept model based on predictions at participants' wave mid-point. Survey indicators and item topics not shown. See Supplemental Materials B for the full set of coefficients.}
-\end{figure}
-```
 Figure 2 shows that the more response options respondents are given and the larger the sample, the larger the values of $\omega$. We interpret these coefficients as suggesting greater resolution on a question makes it easier to detect and model change. The earlier a question was asked, even net of how long it was been asked, the lower $\omega$.
 
 Although we did not state expectations for how question content would relate to $\omega$, some of the associations between question structure, panel duration, and panels themselves might be driven by differences in the topics addressed by each panel. To address this, we followed Hout et al. [-@hout2016] and Lersch [-@lersch2023] in coding each question as falling into one of nine different topical domains and included these as indicator variables in the meta analysis. Supplemental Materials B presents the estimates for these topic indicators. They show some associations with $\omega$, with questions about subjective SES; social life, social cohesion, and trust; environment and climate; and health and morale showing larger $\omega$ values than questions about religion and spirituality; politics, government and the economy; and gender and family.
@@ -259,38 +225,22 @@ To compare these competing propositions, we calculate $\omega$ values separately
 
 Figure 3 plots the distribution of differences in $\omega$ values between people with at least a bachelor's degree and people with less than a bachelor's degree at wave 1 of the panel for 183 GSS items. Values greater than 0 indicate that intrapersonal change accounts for more systematic variance among college graduates than among those without a college degree, while values less than 0 indicate the opposite.
 
-```{=latex}
-\begin{figure}[hbt]
+```{=tex}
 \begin{center}
-\caption{Difference in $\omega$ Across College Graduates and Non-Graduates}
-```
-```{r fig3, out.width = "450px"}
-knitr::include_graphics("../figures/figure_3.png")
+<Figure 3 about here>
+\end{center}
 ```
 
-```{=latex}
-\end{center}
-\footnotesize{\textit{Notes:} The figure shows the difference in $\omega$ values across college graduates and college non-graduates. Values above (below) 0 means that those with college degree have higher (lower) variance of intrapersonal change. The dashed red line marks 0 difference.}
-\end{figure}
-```
 There is a clear pattern in Figure 3: for more than 80 percent of these GSS items, intrapersonal change is a larger component of systematic variance for people without a college degree. While most of these differences are small in absolute terms (less than 2 percentage points), several are greater than 5 percentage points. Given the distribution observed in Figure 1 showing that the systematic variance attributable to intrapersonal change averages around 0.09, a 5 percentage point difference between groups is quite substantial.
 
 To more clearly illustrate some of these differences, we highlight eight questions designed to tap general political dispositions: partisan identification (Democrat vs. Republican) and ideological identification (liberal vs. conservative) on seven-point scales; four questions about the government's role in improving the condition of the poor, paying people's medical bills, giving special treatment to black people, and doing things that private businesses could do, measured on five-point scales; a question about whether the government should do more to reduce income differences, measured on a seven-point scale; and one question about whether black people should be given preferences in hiring, measured on a five-point scale. We present estimates of $\omega$ for these eight questions, for both education groups, in Figure 4.
 
-```{=latex}
-\begin{figure}[hbt]
+```{=tex}
 \begin{center}
-\caption{Difference in $\omega$ Across College Graduates and Non-Graduates on Political Culture}
-```
-```{r fig4, out.width = "450px"}
-knitr::include_graphics("../figures/figure_4.png")
+<Figure 4 about here>
+\end{center}
 ```
 
-```{=latex}
-\end{center}
-\footnotesize{\textit{Notes:} $\omega$ values across college graduates and college non-graduates on 8 political culture items from the General Social Survey (2006-2014).}
-\end{figure}
-```
 On all eight questions presented in Figure 4, $\omega$ values are smaller for people with a college degree, meaning intrapersonal change is less common among them. There are also large differences in $\omega$ values across questions for both groups. For example, on the question of whether the government should try to solve more problems or leave those problems to be solved by private businesses ("government do more or less"), less than 1 percent of the systematic variance is attributable to intrapersonal change for both groups. In other words, while people might vacillate on this question at random (37 percent of variance is residual for this question), there is functionally no evidence that people make systematic changes of opinion on this issue during the GSS panel.
 
 In contrast, partisan identification and political ideology both show larger values of $\omega$ than most other questions, as well as a larger absolute difference by degree status. Compared to the other questions, intrapersonal change plays a much larger role in accounting for partisan identification and political ideology. And this is particularly true for respondents who do not have a college degree; the $\omega$ value for ideological identification among non-college educated respondents is almost four times that of college-educated respondents.
@@ -356,18 +306,138 @@ We believe the approach we outlined here can push past the "needless dichotomy" 
 ::: {#refs}
 :::
 
+\newpage
+
 # Appendix
 
 ## Appendix A: The Distribution of Variation Components
 
 Figure A1 shows the distribution of $V(D)$ and $V(C)$ across all panels.
 
+```{=tex}
+\begin{center}
+<Figure A1 about here>
+\end{center}
+```
+
+## Appendix B: $\omega$ Values When the Last Wave Removed
+
+Figure A2 presents the alternative strategy we used to understand the effects of duration on intraindividual change. First, we removed the last wave from all the observations and fitted the Life Course Adaption models. This effectively reduced the number of items to 249. We then refitted the model for all participants in this sample using the unrestricted data. In the final step, we calculated the $\omega$ values for each item. The Figure A2 shows a scatterplot for these two sets of observations.
+
+```{=tex}
+\begin{center}
+<Figure B1 about here>
+\end{center}
+```
+
+\newpage
+
+# Tables and Figures
+
+```{r, message = FALSE}
+
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+
+table <- tibble(
+  Country = c("Australia", "Germany", "Great Britian", "Great Britian", "Switzerland", "United States", "United States"),
+  Survey = c("Household, Income and Labor Dynamics in Australia (HILDA)",
+             "Socio-Economic Panel Study (SOEP)",
+             "British Household Panel Survey (BHPS)",
+             "Understanding Society/UK Household Longitudinal Study (UKHLS)",
+             "Swiss Household Panel (SHP)",
+             "General Social Survey (GSS)",
+             "Panel Study of Income Dynamics (PSID)"),
+  Period = c("2001-2021", "1984-2020", "1991-2008", "2009-2020", "1999-2019", "2006-2012", "1968-2019"),
+  Outcomes = c(30, 122, 83, 66, 77, 183, 48)
+)
+
+kableExtra::kable(table,
+                  booktabs = TRUE,
+                  format = "latex",
+                  align = "llcc",
+                  caption = "The Description of the Data Sources") |> 
+  kable_styling(latex_options = c("scale_down", "HOLD_position"))
+
+```
+
+\newpage
+
+```{=latex}
+\begin{figure}[ht]
+\begin{center}
+\caption{Proportions of Systematic Variance in Personal Culture}
+```
+```{r fig1, out.width = "100%", fig.pos = "H"}
+knitr::include_graphics("../figures/figure_1.png")
+```
+
+```{=latex}
+\end{center}
+\footnotesize{\textit{Notes:} The figure shows $\omega$ and 1 - $\omega$ as the proportion of systematic variance attributable to intrapersonal change and interpersonal differences. See Supplemental Materials A for the full set of item values.}
+\end{figure}
+```
+
+\newpage
+
+```{=latex}
+\begin{figure}[ht]
+\begin{center}
+\caption{Regression Model Estimating $\omega$}
+```
+```{r fig2}
+knitr::include_graphics("../figures/figure_2.png")
+```
+
+```{=latex}
+\end{center}
+\footnotesize{\textit{Notes:} The model estimates the proportion of systematic variance attributable to intrapersonal change. It includes the log of the number of participants, the number of waves the variable was asked (capped at t = 10 for each item), the date of the first wave (measured as the year minus 1968 divided by 10), number of waves the question was asked averaged across participants, duration in years per item averaged across participants, and panel and topic fixed effects. Coefficients are estimated from suppressed intercept model based on predictions at participants' wave mid-point. Survey indicators and item topics not shown. See Supplemental Materials B for the full set of coefficients.}
+\end{figure}
+```
+
+\newpage
+
+```{=latex}
+\begin{figure}[ht]
+\begin{center}
+\caption{Difference in $\omega$ Across College Graduates and Non-Graduates}
+```
+```{r fig3}
+knitr::include_graphics("../figures/figure_3.png")
+```
+
+```{=latex}
+\end{center}
+\footnotesize{\textit{Notes:} The figure shows the difference in $\omega$ values across college graduates and college non-graduates. Values above (below) 0 means that those with college degree have higher (lower) variance of intrapersonal change. The dashed red line marks 0 difference.}
+\end{figure}
+```
+
+\newpage
+
+```{=latex}
+\begin{figure}[ht]
+\begin{center}
+\caption{Difference in $\omega$ Across College Graduates and Non-Graduates on Political Culture}
+```
+```{r fig4}
+knitr::include_graphics("../figures/figure_4.png")
+```
+
+```{=latex}
+\end{center}
+\footnotesize{\textit{Notes:} $\omega$ values across college graduates and college non-graduates on 8 political culture items from the General Social Survey (2006-2014).}
+\end{figure}
+```
+
+\newpage
+
 ```{=latex}
 \begin{figure}[htp]
 \begin{center}
 \caption*{Figure A1: The Distribution of V(D) and V(C)}
 ```
-```{r figA1, out.width = "350px"}
+```{r figA1}
 knitr::include_graphics("../figures/figure_A1.png")
 ```
 ```{=latex}
@@ -375,20 +445,17 @@ knitr::include_graphics("../figures/figure_A1.png")
 \end{figure}
 ```
 
-## Appendix B: $\omega$ Values When the Last Wave Removed
-
-Figure A2 presents the alternative strategy we used to understand the effects of duration on intraindividual change. First, we removed the last wave from all the observations and fitted the Life Course Adaption models. This effectively reduced the number of items to 249. We then refitted the model for all participants in this sample using the unrestricted data. In the final step, we calculated the $\omega$ values for each item. The Figure A2 shows a scatterplot for these two sets of observations.
+\newpage
 
 ```{=latex}
-\begin{figure}[tb]
+\begin{figure}[htp]
 \begin{center}
 \caption*{Figure A2: Difference in $\omega$ Across Two Sample Specifications} 
 ```
-```{r figA2, out.width = "400px"}
+```{r figA2}
 knitr::include_graphics("../figures/figure_A2.png")
 ```
 ```{=latex}
 \end{center}
 \end{figure}
 ```
-
