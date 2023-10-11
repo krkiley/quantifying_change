@@ -1,5 +1,5 @@
 ---
-title: "Quantifying Stability and Change in Personal Culture Using Panel Data"
+title: "Quantifying The Importance of Change for Understanding Differences in Personal Culture"
 author: 
 - 
 output:
@@ -20,7 +20,7 @@ header-includes:
   \pagenumbering{gobble}
 bibliography: kileybib.bib
 csl: asa.csl
-abstract: "Does personal culture---a person's attitudes, beliefs, values, and practices---change over the life course, or is it largely fixed by adulthood? Recent work has reached substantially different conclusions on this question. We argue that this disagreement is an unintended consequence of the \"tournament of models\" approach researchers have used. We introduce a new measure for quantifying the proportion of systematic variance in panel data attributable to intrapersonal change versus stable interpersonal differences. Applying this measure to 609 items from seven surveys in five countries, we find that although intrapersonal change is common, it is generally small in magnitude. We also demonstrate that this measure is useful for comparing social groups by showing that intrapersonal change is less common among U.S. college graduates than among those without a college degree. Overall, we believe this new measure will be a useful methodological tool and help reconcile an important theoretical debate."
+abstract: "When researchers want to understand differences in personal culture---a person's attitudes, beliefs, values, and practices--how much attention should they pay to adult experience? Recent work has reached substantially different conclusions on this question. We argue that this disagreement is an unintended consequence of the \"tournament of models\" approach researchers have used, which focuses on whether people change and not how much they change. To advance the theoretical debate, we refocus attention on the relative importance of personal change over time for explaining differences between people. We introduce a new measure for quantifying the proportion of systematic variance in panel data attributable to intrapersonal change. Applying this measure to 609 items from seven surveys in five countries, we find that although intrapersonal change is common, it is generally small in magnitude. As an extension of the theoretical debate, we demonstrate that this measure provides new insights when comparing social groups, showing that intrapersonal change is less common among U.S. college graduates than among those without a college degree. Our findings provide a new perspective on several important theoretical debates, as well as a tool to address new questions."
 ---
 
 ```{r setup, include=FALSE}
