@@ -1,7 +1,11 @@
 ---
 title: "Quantifying The Importance of Change for Understanding Differences in Personal Culture"
 author: 
-- 
+  - Achim Edelmann^[médialab, Science Po]
+  - Kevin Kiley^[Department of Sociology and Anthropology, North Carolina State University]
+  - Turgut Keskintürk^[Department of Sociology, Duke University]
+  - Isabella Bouklas^[Department of Sociology, Duke University]
+  - Stephen Vaisey^[Department of Sociology, Duke University]
 output:
   pdf_document:
     latex_engine: xelatex
@@ -17,7 +21,6 @@ header-includes:
   \usepackage{endnotes}
   \renewcommand{\enotesize}{\normalsize}
   \let\footnote=\endnote
-  \pagenumbering{gobble}
 bibliography: kileybib.bib
 csl: asa.csl
 abstract: "When researchers want to understand differences in personal culture---a person's attitudes, beliefs, values, and practices--how much attention should they pay to adult experience? Recent work has reached substantially different conclusions on this question. We argue that this disagreement is an unintended consequence of the \"tournament of models\" approach researchers have used, which focuses on whether people change and not how much they change. To advance the theoretical debate, we refocus attention on the relative importance of personal change over time for explaining differences between people. We introduce a new measure for quantifying the proportion of systematic variance in panel data attributable to intrapersonal change. Applying this measure to 609 items from seven surveys in five countries, we find that although intrapersonal change is common, it is generally small in magnitude. As an extension of the theoretical debate, we demonstrate that this measure provides new insights when comparing social groups, showing that intrapersonal change is less common among U.S. college graduates than among those without a college degree. Our findings provide a new perspective on several important theoretical debates, as well as a tool to address new questions."
@@ -26,6 +29,7 @@ abstract: "When researchers want to understand differences in personal culture--
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = F, message = F, warning = F)
 ```
+
 
 # Introduction
 
