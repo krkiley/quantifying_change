@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.5.8)  14 MAR 2024 16:05
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.5.8)  15 MAR 2024 11:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1306,69 +1306,67 @@ LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 (Font)              scaled to size 17.28pt on input line 144.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/bx/n' will be
 (Font)              scaled to size 17.28pt on input line 144.
-LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/bx/n' will be
-(Font)              scaled to size 12.0pt on input line 150.
 [1
 
 ] [2] [3]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/bx/n' will be
-(Font)              scaled to size 14.4pt on input line 236.
+(Font)              scaled to size 14.4pt on input line 239.
 [4] [5]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.71696pt on input line 320.
+(Font)              scaled to size 8.71696pt on input line 323.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.22641pt on input line 320.
+(Font)              scaled to size 6.22641pt on input line 323.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.4541pt on input line 320.
+(Font)              scaled to size 12.4541pt on input line 323.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.71785pt on input line 320.
+(Font)              scaled to size 8.71785pt on input line 323.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.22705pt on input line 320.
+(Font)              scaled to size 6.22705pt on input line 323.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 12.45172pt on input line 320.
+(Font)              scaled to size 12.45172pt on input line 323.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.71619pt on input line 320.
+(Font)              scaled to size 8.71619pt on input line 323.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.22586pt on input line 320.
+(Font)              scaled to size 6.22586pt on input line 323.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 8.4pt on input line 320.
+(Font)              scaled to size 8.4pt on input line 323.
 \openout3 = `manuscript.ent'.
 
 [6]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 388.
+(Font)              scaled to size 12.0pt on input line 391.
 [7] [8] [9]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 504.
+(Font)              scaled to size 6.0pt on input line 508.
 [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25]
-[26] [27] (./manuscript.ent) [28]
-Underfull \hbox (badness 1248) in paragraph at lines 1317--1322
+[26] (./manuscript.ent) [27]
+Underfull \hbox (badness 1248) in paragraph at lines 1284--1289
 []\TU/TimesNewRoman(0)/m/n/12 Gelman, Andrew, and Yotam Margalit. 2021. “Social
  Penumbras Predict Political Atti-
  []
 
 
-Underfull \hbox (badness 1515) in paragraph at lines 1317--1322
+Underfull \hbox (badness 1515) in paragraph at lines 1284--1289
 \TU/TimesNewRoman(0)/m/n/12 tudes.” \TU/TimesNewRoman(0)/m/it/12 Proceedings of
  the National Academy of Sciences \TU/TimesNewRoman(0)/m/n/12 118(6):e201937511
 8. doi:
  []
 
-[29]
-Overfull \hbox (15.56621pt too wide) in paragraph at lines 1358--1363
+[28]
+Overfull \hbox (15.56621pt too wide) in paragraph at lines 1325--1330
 \TU/TimesNewRoman(0)/m/n/12 ing Panel Data.” \TU/TimesNewRoman(0)/m/it/12 Ameri
 can Sociological Review \TU/TimesNewRoman(0)/m/n/12 85(3):477–506. doi: []10.11
 77/0003122420921538[]. 
  []
 
-
-Underfull \hbox (badness 1082) in paragraph at lines 1433--1438
+[29]
+Underfull \hbox (badness 1082) in paragraph at lines 1408--1413
 []\TU/TimesNewRoman(0)/m/n/12 Slothuus, Rune, and Martin Bisgaard. 2021. “How P
 olitical Parties Shape Public Opin-
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 1433--1438
+Underfull \hbox (badness 1365) in paragraph at lines 1408--1413
 \TU/TimesNewRoman(0)/m/n/12 ion in the Real World.” \TU/TimesNewRoman(0)/m/it/1
 2 American Journal of Political Science \TU/TimesNewRoman(0)/m/n/12 65(4):896–9
 11. doi:
@@ -1378,7 +1376,7 @@ Underfull \hbox (badness 1365) in paragraph at lines 1433--1438
 File: ../figures/figure_1.png Graphic file (type bmp)
 <../figures/figure_1.png>
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 1597.
+(Font)              scaled to size 10.0pt on input line 1572.
 File: ../figures/figure_2.png Graphic file (type bmp)
 <../figures/figure_2.png>
 File: ../figures/figure_3.png Graphic file (type bmp)
@@ -1388,23 +1386,23 @@ File: ../figures/figure_4.png Graphic file (type bmp)
 File: ../figures/figure_A1.png Graphic file (type bmp)
 <../figures/figure_A1.png>
 
-LaTeX Warning: Float too large for page by 24.50868pt on input line 1645.
+LaTeX Warning: Float too large for page by 24.50868pt on input line 1620.
 
 File: ../figures/figure_A2.png Graphic file (type bmp)
 <../figures/figure_A2.png>
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1658.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1633.
 [34] [35] [36] [37] [38] [39]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1658.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1633.
 (./manuscript.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1658.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1658.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1633.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1633.
  ) 
 Here is how much of TeX's memory you used:
- 30065 strings out of 492916
- 544297 string characters out of 6133346
- 774887 words of memory out of 5000000
- 33773 multiletter control sequences out of 15000+600000
- 539919 words of font info for 99 fonts, out of 8000000 for 9000
+ 30060 strings out of 492916
+ 544150 string characters out of 6133346
+ 774851 words of memory out of 5000000
+ 33769 multiletter control sequences out of 15000+600000
+ 539911 words of font info for 98 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  59i,12n,118p,809b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 

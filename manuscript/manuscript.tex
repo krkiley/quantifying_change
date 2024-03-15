@@ -144,10 +144,10 @@ to address new questions.
 \section{Introduction}\label{introduction}}
 
 An important contemporary debate in sociology centers on the importance
-of intrapersonal change for understanding differences in ``personal
-culture'' -- attitudes, beliefs, values, and practices (Kiley and Vaisey
-2020; Lersch 2023; Lizardo 2017; Vaisey and Lizardo 2016;
-\textbf{underwood2021?}). This question has deep roots in seemingly
+of individual change over time for understanding differences in
+``personal culture''---attitudes, beliefs, values, and practices (Kiley
+and Vaisey 2020; Lersch 2023; Lizardo 2017; Underwoood et al. 2022;
+Vaisey and Lizardo 2016). This question has deep roots in seemingly
 contradictory theoretical perspectives. For example, pragmatist theories
 of action claim that changes in social environments cause people to
 adapt their views and make new cultural meanings (Gross 2009; Swidler
@@ -167,15 +167,15 @@ Recent work on this topic has converged on a general conclusion that
 people do sometimes make substantial shifts in their personal culture
 over time but that most elements of personal culture are characterized
 by low rates of persistent change during adulthood (Kiley and Vaisey
-2020; Lersch 2023). Until recently, this work has adopted a ``tournament
-of models'' approach to adjudicating different theoretical perspectives
-(Lersch 2023: p.~228). In this framework, researchers formalized
-different models of change over time and relied on model selection
-criteria---primarily the Bayesian Information Criterion (Raftery
-1995)---to classify different questions as demonstrating either ``no
-change'' or ``any change.'' The size of these piles then serves as the
-primary evidence for the truth of different arguments (Kiley and Vaisey
-2020; Vaisey and Kiley 2021).
+2020; Lersch 2023). Work leading to this conclusion adopted a
+``tournament of models'' approach to adjudicating different theoretical
+perspectives (Lersch 2023: p.~228). In this framework, researchers
+formalized different models of change over time and relied on model
+selection criteria---primarily the Bayesian Information Criterion
+(Raftery 1995)---to classify different questions as demonstrating either
+``no change'' or ``any change.'' The size of these piles then serves as
+the primary evidence for the truth of different arguments (Kiley and
+Vaisey 2020; Vaisey and Kiley 2021).
 
 However, as consensus in the overall picture emerges, researchers are
 now turning toward understanding the conditions that produce persistent
@@ -196,18 +196,21 @@ LCAM lets researchers address a broader range of questions than the
 single question of whether a measure is characterized by stability or
 change. However, because the LCAM produces so many different measures,
 it is not obvious how to use these components to understand the relative
-importance of change, espeically when change is measured in non-linear
-ways.
+importance of within-person change, especially when change is measured
+in non-linear ways.
 
 In this paper, we build on the LCAM by outlining a single metric that
-combines diverse components of the LCAM to quantify the relative
-importance of intrapersonal change and interpersonal difference for
-explaining variation in a population for a variable over time. Our
-approach isolates the ``systematic'' components of variance (i.e., it
-removes random change and measurement error), to provide a single
-succinct summary of how much systematic variation can reasonably be
-attributed to people making persistent changes over time. We demonstrate
-the utility of this quantity in two ways.
+combines components of the LCAM to quantify the relative importance of
+intrapersonal change and interpersonal difference for explaining
+variation in a population for a variable over time. Our approach
+isolates the ``systematic'' components of variance (i.e., it removes
+random change and measurement error), to provide a single succinct
+summary of how much systematic variation can reasonably be attributed to
+people making persistent changes over time. This quantity can then be
+used as a quick diagnostic to compare across questions, groups, periods,
+or samples to isolate where within-person change is more or less useful
+for explaining variation. We demonstrate the utility of this quantity in
+two ways.
 
 First, we use 609 items from seven panel surveys from five countries to
 quantify the proportion of variance that is attributable to systematic
@@ -343,10 +346,10 @@ cultural difference, allowing researchers to ask a more varied set of
 questions than simply whether people change. For example, researchers
 can use the LCAM framework to quantify the magnitude of change in a
 measure of culture over time (i.e., how much do people change on
-average), the variance in age-based slopes over time (i.e., do people
-tend to change in similar ways as they age), or how much personal
-culture tends to fluctuate around these age-based trends (how consistent
-are responses over time).
+average?), the variance in age-based slopes over time (i.e., do people
+tend to change in similar ways as they age?), or how much personal
+culture tends to fluctuate around these age-based trends (i.e., how
+consistent are responses over time?).
 
 When Lersch compared the LCAM to the AUM and SDM on data from five
 countries, 198 of the 428 questions he analyzed preferred the LCAM and
@@ -464,20 +467,21 @@ every 10 years, but the variance of starting points at age 18 is very
 high, then change over time will not produce significant differences
 among people, even over a long time frame. If, on the other hand, people
 tend to start at very similar positions and change at a rate of .07
-standard deviations, then that change is very useful for understanding
-difference. What is important for the theoretical debate is the relative
-contribution of these two components in explaining cultural differences
-in a population. In other words, when we look at a population of adults
-over some time frame, is there enough intrapersonal change relative to
-interpersonal difference to view it as an important process for why
-people differ from each other? Only through quantifying the two
-components we can get closer to a true answer to this question.
+standard deviations for every 10 years, then that change is very useful
+for understanding difference later in life. What is important for the
+theoretical debate is the relative contribution of these two components
+in explaining cultural differences in a population. In other words, when
+we look at a population of adults over some time frame, is there enough
+intrapersonal change relative to interpersonal difference to view it as
+an important process for why people differ from each other? Only through
+quantifying the two components we can get closer to a true answer to
+this question.
 
 Yet the true utility of the proposed quantification goes beyond settling
-past debates; it allows researchers to ask new questions. For example,
-classifying survey items based on whether they show durable change
-overlooks possibly important differences among those that do show such
-change. By quantifying the relative contributions of interpersonal
+past debates; it allows researchers to identify new questions. For
+example, classifying survey items based on whether they show durable
+change overlooks possibly important differences among those that do show
+such change. By quantifying the relative contributions of interpersonal
 differences and intrapersonal change, researchers can gauge their
 relative importance in explaining differences among survey items,
 between groups within a given population, across time, and across
@@ -537,8 +541,11 @@ item.\footnote{We use the model estimate from the midpoint year, rather
 V(D) = 1 - \frac{\sum_{i=1}^N \sum_{t=1}^T [y_{it} - (\hat{\beta}_0 + \hat{\alpha}_{0i} + (\hat{\beta}_1 + \hat{\alpha}_{1i}) \widetilde{\text{year}}_{i})]^2}{\sum_{i=1}^N \sum_{t=1}^T [y_{it} - \bar{y}_{it}]^2}
 \]
 
-This gives us the proportion of total variance in an item attributable
-to stable interpersonal differences.
+This effectively models respondents' culture under the assumption that
+they make no systematic change over time, or that the expected value at
+any time point is the same as the expected value at any other. This
+gives us the proportion of total variance in an item attributable to
+stable interpersonal differences.
 
 To calculate the second component, which is the variance attributable to
 systematic intrapersonal change, we calculate \(V(C)\) as follows:
@@ -596,54 +603,13 @@ Intervals}\label{bootstrapping-for-confidence-intervals}}
 
 {[}Explain how we do that here{]}
 
-\hypertarget{expectations}{%
-\subsection{Expectations}\label{expectations}}
+\hypertarget{example-1-cross-question-comparisons}{%
+\section{Example 1: Cross-Question
+Comparisons}\label{example-1-cross-question-comparisons}}
 
-By shifting the question and adjusting the approach, we expect
-consistent patterns across datasets. First, because previous work found
-evidence of durable change on most measures of personal culture, we
-expect that we will find some intrapersonal change in most items. But
-because these earlier studies also found many questions (between 25 and
-35 percent) lacking evidence of \emph{any} durable change, we expect
-considerable variation in the proportion of variance accounted for by
-intrapersonal change, with some questions indicating essentially none at
-all.
-
-Second, we expect the variance attributable to intrapersonal change to
-be modest compared to pre-existing interpersonal differences. This
-expectation should be uncontroversial, regardless of the theoretical
-process assumed to be most relevant for a particular question. Panel
-surveys do not encompass individuals' entire lifetimes. Thus, even if
-intrapersonal change during adulthood is the major driver of cultural
-differences, the change detected in a panel covering 20 years probably
-will not fully account for the entire variance of interpersonal
-differences.
-
-Our expectations so far largely echo what was observed in previous
-studies. However, theoretical perspectives differ in how much change
-they expect, enabling quantification to provide a new perspective on
-existing questions. ``Formative period'' and cohort theories, which
-emphasize early-life socialization as a strong influence on adult
-personal culture, imply low amounts of intrapersonal change, even when
-we account for the duration of observation. Conversely, other
-theoretical perspectives emphasizing the importance of people's
-contemporaneous social environment might expect a larger degree of
-intrapersonal change, even in a relatively short panel.
-
-Third, we expect the variance explained by each process---interpersonal
-differences and intrapersonal change---to depend on specific attributes
-of the question and panel. First, the higher the response resolution for
-a given question and the larger the sample, the greater the variance
-attributed to intrapersonal change should be, as smaller changes in
-intrapersonal change will be easier to detect. Second, life course
-theories posit that social transitions drive changes in personal
-culture. Since the probability that any person experiences such a
-transition goes up the longer we observe them, we expect panel duration
-to be positively related to the proportion of variation explained by
-intrapersonal change.
-
-\hypertarget{analytic-strategy}{%
-\section{Analytic Strategy}\label{analytic-strategy}}
+To demonstrate the utility of this metric, we provide two examples. In
+the first, we compare the proportion of systematic variance explained by
+intrapersonal change across a broad array of questions.
 
 \hypertarget{data}{%
 \subsection{Data}\label{data}}
@@ -670,27 +636,22 @@ variables used in the upcoming analyses.
 <Table 1 about here>
 \end{center}
 
-\hypertarget{analysis-steps}{%
-\subsection{Analysis Steps}\label{analysis-steps}}
+\hypertarget{analysis}{%
+\subsection{Analysis}\label{analysis}}
 
 As a first step in our analysis, we fit this LCAM to each of the 609
 measures of personal culture outlined above. We then derive \(\omega\)
-for each of these items.
-
-As a second step in our analysis, we use linear regression to model
-\(\omega\) as a function of features of the question and panel. This
-allows us to explore how these features are associated with the degree
-of intrapersonal change. These covariates include the number of response
-options (measured as 2, 3-5, and more than 5), the specific survey, the
-log of the number of participants, the number of waves observed, the
-time period (i.e., decade) the question was first asked, and the total
-duration of time the question was asked.
+for each of these items. As a second step, we use linear regression to
+model \(\omega\) as a function of features of the question and panel.
+This allows us to explore how these features are associated with the
+degree of intrapersonal change. These covariates include the number of
+response options (measured as 2, 3-5, and more than 5), the specific
+survey, the log of the number of participants, the number of waves
+observed, the time period (i.e., decade) the question was first asked,
+and the total duration of time the question was asked.
 
 \hypertarget{results}{%
-\section{Results}\label{results}}
-
-\hypertarget{variance-decomposition}{%
-\subsection{Variance Decomposition}\label{variance-decomposition}}
+\subsection{Results}\label{results}}
 
 Figure 1 plots the proportion of systematic variance attributable to
 interpersonal differences and intrapersonal change for each of the 609
@@ -771,9 +732,6 @@ time of extremely heightened (or lowered) sensitivity or change---then
 it does not seem realistic that intrapersonal change accounts for a
 large share of the cultural differences we see in the world.
 
-\hypertarget{meta-analysis}{%
-\subsection{Meta-Analysis}\label{meta-analysis}}
-
 Figure 2 plots the results from a linear regression of \(\omega\) as a
 function of question, panel, and sample features. These models also
 include fixed effects for panels and topics, so coefficients reflect the
@@ -828,16 +786,16 @@ asked over shorter periods, rather than a true function of time. This
 supports the conclusion that the GSS shows less intrapersonal change
 because of its shorter duration.
 
-\hypertarget{college-and-change-in-political-culture}{%
-\subsection{College and Change in Political
-Culture}\label{college-and-change-in-political-culture}}
+\hypertarget{example-2-college-and-change-in-political-culture}{%
+\section{Example 2: College and Change in Political
+Culture}\label{example-2-college-and-change-in-political-culture}}
 
 These results mostly re-frame and align previous findings, but the value
 of our approach lies in its ability to extend the debate to a broader
-set of theoretical questions. To show this potential, we turn to a
-specific empirical example: the relative importance of intrapersonal
-change and interpersonal difference for explaining cultural variation by
-level of education.
+set of theoretical questions. As a second empirical application of
+\(\omega\), we explore the relative importance of intrapersonal change
+and interpersonal difference for explaining cultural variation by level
+of education.
 
 Previous work has established a positive relationship between education
 and attitude stability, especially on issues related to American
@@ -861,20 +819,28 @@ fact that the amount of interpersonal differences and intrapersonal
 change might also differ across these groups.
 
 There are theoretical reasons to believe that education might be
-associated with either more or less intrapersonal change. On one hand,
-because college graduates are more connected to mainstream discourse and
-elite signals, they might be more likely to make durable changes in
-response to the emergence of new information, new issues, or political
-realignments, while those without chronic information might display more
-variance around an unchanging baseline (Zaller 1992). Conversely, it
-could be that the observed stability of the college educated reflects
-the fact that they have already formed durable opinions and are
+associated with either more or less intrapersonal change over time. On
+one hand, because college graduates are more connected to mainstream
+discourse and elite signals, they might be more likely to make durable
+changes in response to the emergence of new information, new issues, or
+political realignments, while those without chronic information might
+display more variance around an unchanging baseline (Zaller 1992).
+Conversely, because people with less education appear more likely to
+engage in automatic cognition in social situations (including survey
+interviews) than people with more education (Brett and Miles 2021), they
+might be more influenced by changes in the social environment, producing
+more temporary change and more durable change. It could be that the
+observed stability of the college educated also reflects the fact that
+they have already formed durable opinions across various issues and are
 relatively closed off to new information. If this is true, college could
 be understood as a formative experience that solidifies some dimensions
 of personal culture. Perhaps for those who do not attend college, later
 life experiences might prove more important in forming or changing
 personal culture, as these experiences potentially provide information
 that college-educated peers have already received.
+
+\hypertarget{data-1}{%
+\subsection{Data}\label{data-1}}
 
 To compare these competing propositions, we calculate \(\omega\) values
 separately for people with at least a bachelor's degree and people with
@@ -895,6 +861,9 @@ Barack Obama as the first black U.S. president, debates about the role
 of the federal government in the health care sector, the emergence of
 the Tea Party, and political realignment and clarification on the issue
 of gay marriage, among other topics.
+
+\hypertarget{results-1}{%
+\subsection{Results}\label{results-1}}
 
 Figure 3 plots the distribution of differences in \(\omega\) values
 between people with at least a bachelor's degree and people with less
@@ -936,26 +905,26 @@ these eight questions, for both education groups, in Figure 4.
 
 On all eight questions presented in Figure 4, \(\omega\) values are
 smaller for people with a college degree, meaning intrapersonal change
-is less common among them. There are also large differences in
-\(\omega\) values across questions for both groups. For example, on the
-question of whether the government should try to solve more problems or
-leave those problems to be solved by private businesses (``government do
-more or less''), less than 1 percent of the systematic variance is
-attributable to intrapersonal change for both groups. In other words,
-while people might vacillate on this question at random (37 percent of
-variance is residual for this question), there is functionally no
-evidence that people make systematic changes of opinion on this issue
-during the GSS panel.
+is less important for explaining variation among them. There are also
+large differences in \(\omega\) values across questions for both groups.
+For example, on the question of whether the government should try to
+solve more problems or leave those problems to be solved by private
+businesses (``government do more or less''), less than 1 percent of the
+systematic variance is attributable to intrapersonal change for both
+groups. In other words, while people might vacillate on this question at
+random (37 percent of variance is residual for this question), there is
+functionally no evidence that people make systematic changes of opinion
+on this issue during the GSS panel.
 
 In contrast, partisan identification and political ideology both show
 larger values of \(\omega\) than most other questions, as well as a
 larger absolute difference by degree status. Compared to the other
 questions, intrapersonal change plays a much larger role in accounting
-for partisan identification and political ideology. And this is
-particularly true for respondents who do not have a college degree; the
-\(\omega\) value for ideological identification among non-college
-educated respondents is almost four times that of college-educated
-respondents.
+for variation in partisan identification and political ideology. And
+this is particularly true for respondents who do not have a college
+degree; the \(\omega\) value for ideological identification among
+non-college educated respondents is almost four times that of
+college-educated respondents.
 
 It is worth pointing out that this meaningful difference in \(\omega\)
 values across education groups and across questions would not have been
@@ -973,11 +942,14 @@ action than on questions of government aid to black Americans.
 
 We believe these patterns shed new light on the mechanisms underlying
 differences in attitudes and behavior across groups. Something about
-college attendance seems to crystallize personal culture. While these
-results should not be interpreted as causal effects of attending college
--- they are potentially confounded by age, social class, race, gender,
-and other factors that explain selection into higher education -- they
-open up a set of new questions and dynamics to explore.
+college attendance seems to affect the role played by change in
+explaining variance. It could to this in either two ways: by creating
+greater variation in baseline views or by reducing change over time
+relative to people without college degrees. While these results should
+not be interpreted as causal effects of attending college -- they are
+potentially confounded by age, social class, race, gender, and other
+factors that explain selection into higher education -- they open up a
+set of new questions and dynamics to explore.
 
 \hypertarget{discussion-and-conclusion}{%
 \section{Discussion and Conclusion}\label{discussion-and-conclusion}}
@@ -986,46 +958,54 @@ The primary objective of this paper is to introduce a new quantity that
 can advance debate on whether people change their personal culture --
 their attitudes, beliefs, values, and practices -- as they move through
 their adult life. Instead of falling back on a ``tournament of models''
-approach (Lersch 2023: p.~228) to proclaim victory for a particular
-answer to this question, our goal is to refocus the debate to the
-theoretically more productive question of the relative importance of
-intrapersonal change for explaining differences in personal culture. We
-propose a new approach that quantifies the amount of observed systematic
-variance that is attributable to either interpersonal differences at
-baseline or intrapersonal change over the duration of a panel.
+approach (Lersch 2023: p.~228) to proclaim a yes or no answer to this
+question, or only quantifying individual components of cultural
+difference to show how much people change, our metric contextualizes the
+amount of observed systematic variance that is attributable to
+intrapersonal change over the duration of a panel. In doing so, it
+provides a tool to identify questions, groups, or periods where change
+is a more meaningful explanation of cultural difference.
 
-Applying our proposed measure, \(\omega\), to 609 survey items from all
-of the panel datasets previously discussed in this debate revealed a
-consistent pattern. Nearly all questions show evidence of people making
-some durable, intrapersonal change over time. Some show notably high
-amounts of intrapersonal change. For some questions about life
-satisfaction or views on government benefits, it seems plausible that
-differences in adult experiences predominantly account for observed
-differences between people.
+We demonstrated the utility of this measure in two ways. First, applying
+our proposed measure, \(\omega\), to 609 survey items from the panel
+datasets previously studied in this debate revealed a consistent
+pattern. Nearly all questions show evidence of people making some
+durable, intrapersonal change over time. Some show notably high amounts
+of intrapersonal change. For some questions about life satisfaction or
+views on government benefits, it seems plausible that differences in
+adult experiences predominantly account for observed differences between
+people. However, intrapersonal change is often substantially less
+pronounced than interpersonal differences, accounting for less than 10
+percent of systematic variance on average across all datasets. On
+questions related to civil liberties, abortion, generalized trust, and
+civic duty, systematic variance attributable to intrapersonal change is
+essentially zero. For these questions, it seems there is not enough
+cultural change during adulthood to warrant attributing the differences
+we observe to experiences and social transitions; instead, the primary
+source of the observed differences appears to stem from experiences in
+childhood, adolescence, and early adulthood.
 
-However, intrapersonal change is often substantially less pronounced
-than interpersonal differences, accounting for less than 10 percent of
-systematic variance on average across all datasets. On numerous
-questions, like those on civil liberties, abortion, generalized trust,
-and civic duty, the systematic variance attributable to intrapersonal
-change is essentially zero. For these questions, it seems there is not
-enough cultural change during adulthood to warrant attributing the
-differences we observe to experiences and social transitions; instead,
-the primary source of the observed differences appears to stem from
-experiences in childhood, adolescence, and early adulthood.
+While these findings generally echo the general consensus that has
+emerged from previous work, it adds two dimensions. First, it quantifies
+the relative importance of change across these questions, providing more
+resolution within what were mainly piles of questions either showing
+evidence of change or no evidence of change. This allows for greater
+comparison across questions and it provides a benchmark for researchers
+exploring new questions. Second, our metric can help contextualize the
+quantities identified in the LCAM. Is .07 standard deviations of change
+every 10 years a lot of change? For some questions, our metric will say
+this change explains a large component of variance, and for others it
+will not.
 
-More than adjudicating past positions in this debate, the approach we
-presented in this paper will enable researchers to explore more
-precisely the relative contributions of change and stability in
-explaining variation in personal culture, as well as how these
-contributions might differ across populations. To illustrate this, we
-showed how the amount of cultural difference explained by intrapersonal
-change varies substantially by survey item but also by individuals'
-characteristics such as their education. While age and other factors
-related to college completion might confound this pattern, it suggests
-that college completion may crystallize personal culture to an extent
-that renders later adult experiences on political dispositions less
-influential.
+In a second application of the quantity, we showed how it can open up
+new lines of inquiry. We showed how the amount of cultural difference
+explained by intrapersonal change varies substantially not just by
+survey item but also by individuals' characteristics such as their
+education. While age and other factors related to college completion
+might confound this pattern, it suggests that college completion may
+crystallize personal culture to an extent that renders later adult
+experiences on political dispositions less influential in explaining
+overall differences.
 
 \hypertarget{limitations}{%
 \subsection{Limitations}\label{limitations}}
@@ -1051,6 +1031,12 @@ However, our overall approach does not require modeling change as a
 linear function of age. Change can be modeled in non-linear forms, such
 as the splines used by Lersch (2023), and accordingly incorporated into
 the calculation of variance explained.
+
+This is in fact one of the strengths of our approach. When change over
+time is modeled non-linearly, it can be difficult to summarize its
+relative importance. With our metric, researchers can quantify the
+additional explanatory power of modeling change using splies,
+polynomials, or other non-linear approaches relative to a linear trend.
 
 Similarly, our approach assumes that durable change is unidirectional.
 This is a sensible assumption on short panels where classifying change
@@ -1082,10 +1068,10 @@ tastes, leisure activities, and time use.
 Sociology}\label{implications-for-cultural-sociology}}
 
 Despite these limitations, we believe our method and findings have
-important implications for social science research. Sociologists
-interested in understanding cultural differences have largely asked
-about the \emph{existence} of cultural change in adults (e.g., Kiley and
-Vaisey 2020; Lersch 2023; Vaisey and Kiley 2021). In any population,
+implications for social science research. Sociologists interested in
+understanding cultural differences have largely asked about the
+\emph{existence} of cultural change in adults (e.g., Kiley and Vaisey
+2020; Lersch 2023; Vaisey and Kiley 2021). In any population,
 \emph{some} degree of adult cultural change is inevitable. Although
 ideal types like the settled dispositions and active updating models are
 useful, no theoretical perspective would expect either early life
@@ -1093,22 +1079,15 @@ socialization or adult intrapersonal change to be the sole source of
 one's personal culture. Our results reinforce this point, showing the
 relevance of both factors and allowing their precise quantification.
 
-This and other recent findings (Quinn et al. 2023; Stewart and Berkman
-2023; \textbf{quinn2024?}) suggest that it is theoretically more
-productive to measure the relative importance of these two components in
-concrete, substantive cases. Drawing a unified conclusion from survey
-items measuring various cultural forms on different scales and across
+This and other recent findings (Quinn et al. 2023, 2024; Stewart and
+Berkman 2023) suggest that it is theoretically more productive to
+measure the relative importance of these two components in concrete,
+substantive cases. Drawing a unified conclusion from survey items
+measuring various cultural forms on different scales and across
 different time frames is challenging. Nevertheless, the general pattern
 suggests that, for most items, intrapersonal change in adulthood is not
 the primary reason for the differences we see between people in the
 world.
-
-We are not claiming that adults remain static or that their changes are
-inconsequential. Even quantitatively minor shifts, such as a 2
-percentage-point change in support for gay marriage, can have massive
-ramifications. While the majority may remain consistent in their views,
-understanding the underlying mechanisms of even such numerically minor
-shifts remains a crucial task for the sociology of culture.
 
 Our findings suggest that understanding variation in personal culture
 requires examining the conditions and experiences of early life. While
@@ -1153,23 +1132,6 @@ than the former in this regard. In trying to understand differences in
 personal culture, sociologists should therefore pay more attention to
 the heterogeneous effects that various factors including social events,
 encounters, and situations can have.
-
-Our findings also have implications for understanding cultural change at
-the aggregate level. Given that intrapersonal change accounts for a
-relatively small amount of variance among adults, many forms of cultural
-change at the aggregate level are necessarily more likely driven cohort
-replacement than by contemporaneous social conditions (Underwoood et al.
-2022; Vaisey and Lizardo 2016). This likely holds true for cultural
-change at the macro societal level as well as the micro level such as
-within organizations, political parties, and professions. Our findings
-also indicate that the impact of formative experiences, as opposed to
-contemporaneous social factors, on cultural change is contingent upon an
-individuals' level of education. The weight of these two factors might
-thus change as the prominence of education shifts in the life course. If
-scholars find similar differences across other social categorizations
-like class or race, it might necessitate a more thorough integration of
-demographic processes into the analysis of cultural change at the
-population level.
 
 \hypertarget{implications-for-survey-research}{%
 \subsection{Implications for Survey
@@ -1262,6 +1224,11 @@ Boutyline, Andrei, and Stephen Vaisey. 2017. {``Belief {Network}
 {Structure} of {Attitudes}.''} \emph{American Journal of Sociology}
 122(5):1371--1447. doi:
 \href{https://doi.org/10.1086/691274}{10.1086/691274}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-brett2021}{}}%
+Brett, Gordon, and Andrew Miles. 2021. {``Who {Thinks} {How}? {Social}
+{Patterns} in {Reliance} on {Automatic} and {Deliberate} {Cognition}.''}
+\emph{Sociological Science} 8.
 
 \leavevmode\vadjust pre{\hypertarget{ref-brocic2021}{}}%
 Broćić, Miloš, and Andrew Miles. 2021. {``College and the {`{Culture}
@@ -1401,6 +1368,14 @@ Mewes, Jan, Malcolm Fairbrother, Giuseppe Nicola Giordano, Cary Wu, and
 Rima Wilkes. 2021. {``Experiences Matter: A Longitudinal Study of
 Individual-Level Sources of Declining Social Trust in the United
 States.''} \emph{Social Science Research} 95:102537.
+
+\leavevmode\vadjust pre{\hypertarget{ref-quinn2024}{}}%
+Quinn, Joseph M., Robert E. Freeland, E. K. Maloney, Kimberly B. Rogers,
+and Lynn Smith-Lovin. 2024. {``Meaning {Change} in {U}.{S}.
+{Occupational} {Identities} During the {COVID}-19 {Pandemic}: {Was} {It}
+{Temporary} or {Durable}?''} \emph{Social Psychology Quarterly}
+01902725241228529. doi:
+\href{https://doi.org/10.1177/01902725241228529}{10.1177/01902725241228529}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-quinn2023}{}}%
 Quinn, Joseph M., Robert E. Freeland, Kimberly B. Rogers, Jesse Hoey,
