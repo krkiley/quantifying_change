@@ -1,0 +1,620 @@
+% latex table generated in R 4.4.1 by xtable 1.8-4 package
+% Wed Aug 21 22:41:46 2024
+\begin{longtable}{lllrrr}
+  \hline
+Survey & Item & Label & VD & VC & Omega \\ 
+  \hline
+bhps & opcls1 & Sees self as belonging to social class & 0.47 & 0.03 & 0.05 \\ 
+  bhps & opcls2 & Subjective social class membership & 0.70 & 0.03 & 0.04 \\ 
+  bhps & opcls3 & Social class affects opportunities & 0.43 & 0.03 & 0.07 \\ 
+  bhps & opfama & Pre-school child suffers if mother works & 0.62 & 0.05 & 0.08 \\ 
+  bhps & opfamb & Family suffers if mother works full-time & 0.63 & 0.05 & 0.07 \\ 
+  bhps & opfamc & Woman and family happier if she works & 0.43 & 0.03 & 0.07 \\ 
+  bhps & opfamd & Husband and wife should both contribute & 0.52 & 0.04 & 0.08 \\ 
+  bhps & opfame & Full time job makes woman independent & 0.51 & 0.04 & 0.08 \\ 
+  bhps & opfamf & Husband should earn, wife stay at home & 0.67 & 0.03 & 0.04 \\ 
+  bhps & opfamg & Children need father as much as mother & 0.49 & 0.05 & 0.09 \\ 
+  bhps & opfamh & Employers should help with childcare & 0.57 & 0.05 & 0.09 \\ 
+  bhps & opfami & Single parents are as good as couples & 0.65 & 0.03 & 0.05 \\ 
+  bhps & ophla & All health care should be free & 0.51 & 0.03 & 0.05 \\ 
+  bhps & ophlb & Compulsory private insurance if can pay & 0.57 & 0.03 & 0.06 \\ 
+  bhps & ophlc & Unfair that wealth buys medical priority & 0.49 & 0.04 & 0.08 \\ 
+  bhps & oprlg3 & Religion makes difference to life & 0.75 & 0.03 & 0.03 \\ 
+  bhps & opsoca & Ordinary people share nations wealth & 0.51 & 0.05 & 0.09 \\ 
+  bhps & opsocb & One law for rich and one for poor & 0.55 & 0.05 & 0.08 \\ 
+  bhps & opsocc & Private enterprise solves economic probs & 0.55 & 0.04 & 0.06 \\ 
+  bhps & opsocd & Public services ought to be state owned & 0.49 & 0.04 & 0.07 \\ 
+  bhps & opsoce & Govt. has obligation to provide jobs & 0.62 & 0.04 & 0.06 \\ 
+  bhps & opsocf & Strong trade unions protect employees & 0.63 & 0.05 & 0.07 \\ 
+  bhps & vote1 & Supports a particular political party & 0.53 & 0.06 & 0.10 \\ 
+  bhps & vote2 & Closer to one political party than other & 0.42 & 0.06 & 0.13 \\ 
+  bhps & vote5 & Strength of support for stated party & 0.53 & 0.05 & 0.08 \\ 
+  bhps & vote6 & Level of interest in politics & 0.70 & 0.04 & 0.05 \\ 
+  bhps & vote4\_1 & Party affinity: Conservative & 0.87 & 0.04 & 0.05 \\ 
+  bhps & vote4\_2 & Party affinity: Labour & 0.85 & 0.04 & 0.05 \\ 
+  bhps & vote4\_3 & Party affinity: Liberal Democrat/Lib/SDP & 0.72 & 0.06 & 0.08 \\ 
+  bhps & opfamj & Cohabiting is always wrong & 0.73 & 0.03 & 0.04 \\ 
+  bhps & opfamk & Adult children should care for parents & 0.49 & 0.03 & 0.06 \\ 
+  bhps & opfaml & Divorce better than unhappy marriage & 0.54 & 0.04 & 0.07 \\ 
+  bhps & opfamm & The man should be head of household & 0.75 & 0.02 & 0.03 \\ 
+  bhps & opfamn & Bible Gods word and true & 0.81 & 0.02 & 0.03 \\ 
+  bhps & opiss1 & Rising prices are a cause for concern & 0.63 & 0.03 & 0.05 \\ 
+  bhps & opiss2 & Ozone layer is a cause for concern & 0.67 & 0.02 & 0.03 \\ 
+  bhps & opiss3 & Unemployment is a cause for concern & 0.58 & 0.06 & 0.10 \\ 
+  bhps & opiss4 & Threat to nature is a cause for concern & 0.67 & 0.00 & 0.00 \\ 
+  bhps & opiss5 & Moral standards are a cause for concern & 0.66 & 0.04 & 0.06 \\ 
+  bhps & oppola & Government reflects people's wishes & 0.43 & 0.07 & 0.15 \\ 
+  bhps & oppolb & People can't influence govt. policy & 0.41 & 0.05 & 0.10 \\ 
+  bhps & oppolc & Should be max. limit on income & 0.58 & 0.02 & 0.04 \\ 
+  bhps & oppold & govt. puts nation's interests first & 0.42 & 0.06 & 0.13 \\ 
+  bhps & opchd1\_1 & Quality best prep. child: well liked & 0.33 & 0.01 & 0.03 \\ 
+  bhps & opchd1\_2 & Quality best prep. child: think for self & 0.53 & 0.01 & 0.02 \\ 
+  bhps & opchd1\_3 & Quality best prep. child: work hard & 0.41 & 0.03 & 0.06 \\ 
+  bhps & opchd1\_4 & Quality best prep. child: help others & 0.43 & 0.00 & 0.01 \\ 
+  bhps & opchd1\_5 & Quality best prep. child: obey parents & 0.50 & 0.00 & 0.00 \\ 
+  bhps & lfimpa & Importance of: Health & 0.48 & 0.02 & 0.05 \\ 
+  bhps & lfimpb & Importance of: Money & 0.61 & 0.04 & 0.06 \\ 
+  bhps & lfimpc & Importance of: Having children & 0.77 & 0.04 & 0.05 \\ 
+  bhps & lfimpd & Importance of: Having a good job & 0.52 & 0.09 & 0.14 \\ 
+  bhps & lfimpe & Importance of: Being independent & 0.54 & 0.05 & 0.08 \\ 
+  bhps & lfimpf & Importance of: Owning own home & 0.66 & 0.07 & 0.09 \\ 
+  bhps & lfimpg & Importance of: Good partnership & 0.65 & 0.06 & 0.09 \\ 
+  bhps & lfimph & Importance of: Good friends & 0.60 & 0.05 & 0.07 \\ 
+  bhps & opfamo & Co-habiting is alright & 0.75 & 0.02 & 0.03 \\ 
+  bhps & opfamp & Parents ought stay together for children & 0.62 & 0.02 & 0.04 \\ 
+  bhps & opfamq & Marital status is irrelevant to children & 0.58 & 0.03 & 0.05 \\ 
+  bhps & opfamr & Homosexual relationships are wrong & 0.76 & 0.02 & 0.03 \\ 
+  bhps & opngbha & Belong to neighbourhood & 0.59 & 0.06 & 0.10 \\ 
+  bhps & opngbhb & Local friends mean a lot & 0.59 & 0.06 & 0.09 \\ 
+  bhps & opngbhc & Advice obtainable locally & 0.55 & 0.04 & 0.07 \\ 
+  bhps & opngbhd & Can borrow things from neighbours & 0.54 & 0.05 & 0.08 \\ 
+  bhps & opngbhe & Willing to improve neighbourhood & 0.48 & 0.02 & 0.03 \\ 
+  bhps & opngbhf & Plan to stay in neighbourhood & 0.49 & 0.05 & 0.08 \\ 
+  bhps & opngbhg & Am similar to others in neighbourhood & 0.60 & 0.07 & 0.10 \\ 
+  bhps & opngbhh & Talk regularly to neighbours & 0.58 & 0.04 & 0.07 \\ 
+  bhps & trust & Trustworthiness of others & 0.58 & 0.03 & 0.04 \\ 
+  bhps & opeur1 & Opinion: UK membership of EU & 0.67 & 0.06 & 0.08 \\ 
+  bhps & opeur2 & UK benefited from being in EU & 0.66 & 0.04 & 0.06 \\ 
+  bhps & opeur3 & UK long term policy re. EU should be & 0.57 & 0.02 & 0.04 \\ 
+  bhps & opnata & Britain has much to learn & 0.51 & 0.04 & 0.07 \\ 
+  bhps & opnatb & British citizenship best & 0.60 & 0.06 & 0.09 \\ 
+  bhps & opnatc & Some shameful things about Britain & 0.49 & 0.05 & 0.10 \\ 
+  bhps & opnatd & People too ready to criticise Britain & 0.44 & 0.04 & 0.08 \\ 
+  bhps & opnate & Britain should stay single state & 0.56 & 0.04 & 0.07 \\ 
+  bhps & opnatf & Co-operation better than independence & 0.58 & 0.04 & 0.06 \\ 
+  bhps & dfwld & Different world in future for young & 0.39 & 0.02 & 0.06 \\ 
+  bhps & crwora & Worry about being affected by crime & 0.49 & 0.03 & 0.06 \\ 
+  bhps & crworb & Extent of concern about crime & 0.49 & 0.03 & 0.06 \\ 
+  bhps & cohadv & Advantages in living as couple & 0.40 & 0.06 & 0.13 \\ 
+  bhps & cohdis & Disadvantages in living as couple & 0.38 & 0.00 & 0.00 \\ 
+  gss & abany & Abortion: any reason & 0.74 & 0.01 & 0.01 \\ 
+  gss & abdefect & Abortion: birth defect & 0.72 & 0.01 & 0.02 \\ 
+  gss & abhlth & Abortion: mother's health & 0.69 & 0.03 & 0.04 \\ 
+  gss & abnomore & Abortion: birth control & 0.74 & 0.02 & 0.03 \\ 
+  gss & abpoor & Abortion: too poor & 0.75 & 0.03 & 0.04 \\ 
+  gss & abrape & Abortion: rape & 0.75 & 0.03 & 0.04 \\ 
+  gss & abscale6 & Abortion scale (6 items) & 0.83 & 0.02 & 0.02 \\ 
+  gss & abscale7 & Abortion scale (7 items) & 0.83 & 0.02 & 0.02 \\ 
+  gss & absingle & Abortion: unmarried & 0.75 & 0.01 & 0.01 \\ 
+  gss & affrmact & Hiring preferences & 0.64 & 0.03 & 0.05 \\ 
+  gss & athscale & Athiest: scale & 0.71 & 0.01 & 0.02 \\ 
+  gss & attend & Attend religious services & 0.85 & 0.04 & 0.04 \\ 
+  gss & bible & View of bible & 0.78 & 0.04 & 0.04 \\ 
+  gss & cappun & Death penalty & 0.74 & 0.03 & 0.04 \\ 
+  gss & chldidel & Ideal \# of children & 0.68 & 0.04 & 0.05 \\ 
+  gss & class & Social class & 0.70 & 0.01 & 0.02 \\ 
+  gss & closeblk & Feel close to blacks & 0.68 & 0.04 & 0.05 \\ 
+  gss & closewht & Feel close to whites & 0.54 & 0.02 & 0.04 \\ 
+  gss & colath & Athiest: Teach at college & 0.58 & 0.01 & 0.02 \\ 
+  gss & colcom & Red: Teach at college & 0.56 & 0.03 & 0.06 \\ 
+  gss & colhomo & Gay: Teach at college & 0.64 & 0.00 & 0.00 \\ 
+  gss & colmil & Militarist: Teach at college & 0.55 & 0.03 & 0.05 \\ 
+  gss & colrac & Racist: Teach at college & 0.52 & 0.03 & 0.05 \\ 
+  gss & comscale & Red: scale & 0.73 & 0.02 & 0.03 \\ 
+  gss & courts & Courts deal with criminals & 0.59 & 0.04 & 0.06 \\ 
+  gss & discaff & Affirm. action hurt whites & 0.46 & 0.00 & 0.00 \\ 
+  gss & discaffm & Affirm. action hurt men & 0.43 & 0.01 & 0.03 \\ 
+  gss & divlaw & Divorce laws too lenient & 0.67 & 0.00 & 0.00 \\ 
+  gss & fear & Afraid to walk at night & 0.62 & 0.03 & 0.04 \\ 
+  gss & fechld & Working moms warm & 0.60 & 0.04 & 0.06 \\ 
+  gss & fefam & Better for man to work & 0.66 & 0.03 & 0.05 \\ 
+  gss & fejobaff & Preferences for hiring women & 0.64 & 0.04 & 0.05 \\ 
+  gss & fepol & Men better for politics & 0.58 & 0.00 & 0.01 \\ 
+  gss & fepresch & Pre-Ks suffer if mom works & 0.61 & 0.02 & 0.03 \\ 
+  gss & finalter & Finances better or worse & 0.45 & 0.08 & 0.15 \\ 
+  gss & finrela & Relative income & 0.66 & 0.02 & 0.03 \\ 
+  gss & fund & Fundamentalist & 0.83 & 0.02 & 0.02 \\ 
+  gss & genderscale & Scale of gender role attitudes & 0.74 & 0.02 & 0.03 \\ 
+  gss & getahead & Work to get ahead & 0.46 & 0.02 & 0.05 \\ 
+  gss & god & Belief about God & 0.81 & 0.02 & 0.03 \\ 
+  gss & gunlaw & Require gun permits & 0.57 & 0.00 & 0.00 \\ 
+  gss & happy & Happiness: general & 0.56 & 0.03 & 0.06 \\ 
+  gss & health & Health: self-rated & 0.73 & 0.04 & 0.06 \\ 
+  gss & homoscale & Gay: scale & 0.72 & 0.00 & 0.00 \\ 
+  gss & homosex & Morality: Same-sex sex & 0.82 & 0.02 & 0.03 \\ 
+  gss & intlblks & Blacks intelligent or not & 0.34 & 0.03 & 0.09 \\ 
+  gss & intlwhts & Whites intelligent or not & 0.34 & 0.00 & 0.00 \\ 
+  gss & jobfind & Find a good job & 0.60 & 0.09 & 0.13 \\ 
+  gss & joblose & Likely to lose job & 0.45 & 0.06 & 0.11 \\ 
+  gss & letdie1 & Let die: incurable & 0.69 & 0.03 & 0.04 \\ 
+  gss & libath & Athiest: Library book & 0.54 & 0.00 & 0.01 \\ 
+  gss & libcom & Red: Library book & 0.60 & 0.04 & 0.06 \\ 
+  gss & libhomo & Gay: Library book & 0.60 & 0.01 & 0.01 \\ 
+  gss & librac & Racist: Library book & 0.51 & 0.00 & 0.00 \\ 
+  gss & life & Life: exciting or dull & 0.62 & 0.02 & 0.03 \\ 
+  gss & liveblks & Neighborhood half black & 0.50 & 0.01 & 0.02 \\ 
+  gss & livewhts & Neighborhood half white & 0.34 & 0.02 & 0.06 \\ 
+  gss & marblk & Relative marry black & 0.66 & 0.02 & 0.03 \\ 
+  gss & marhomo & Gay marriage & 0.81 & 0.04 & 0.04 \\ 
+  gss & marwht & Relative marry white & 0.45 & 0.02 & 0.04 \\ 
+  gss & meovrwrk & Men hurt family when overwork & 0.50 & 0.03 & 0.05 \\ 
+  gss & nataid & Foreign aid & 0.60 & 0.03 & 0.04 \\ 
+  gss & natarms & Defense & 0.63 & 0.04 & 0.06 \\ 
+  gss & natchld & Child care & 0.56 & 0.03 & 0.06 \\ 
+  gss & natcity & Problems of cities & 0.56 & 0.02 & 0.03 \\ 
+  gss & natcrime & Fighting crime & 0.56 & 0.05 & 0.09 \\ 
+  gss & natdrug & Dealing with drugs & 0.52 & 0.04 & 0.08 \\ 
+  gss & nateduc & Education & 0.62 & 0.04 & 0.06 \\ 
+  gss & natenvir & Protect environment & 0.63 & 0.06 & 0.08 \\ 
+  gss & natfare & Welfare & 0.72 & 0.04 & 0.05 \\ 
+  gss & natheal & Improving health & 0.51 & 0.05 & 0.09 \\ 
+  gss & natmass & Mass transit & 0.55 & 0.04 & 0.07 \\ 
+  gss & natpark & Parks \& recreation & 0.50 & 0.03 & 0.05 \\ 
+  gss & natrace & Improve life for blacks & 0.68 & 0.03 & 0.05 \\ 
+  gss & natroad & Highways \& bridges & 0.54 & 0.04 & 0.07 \\ 
+  gss & natsci & Scientific research & 0.52 & 0.04 & 0.07 \\ 
+  gss & natsoc & Social security & 0.57 & 0.03 & 0.04 \\ 
+  gss & natspac & Space exploration & 0.67 & 0.05 & 0.07 \\ 
+  gss & neverrelact & Never active in religion & 0.60 & 0.03 & 0.05 \\ 
+  gss & news & Read newspaper & 0.76 & 0.05 & 0.07 \\ 
+  gss & owngun & Gun owner & 0.86 & 0.04 & 0.05 \\ 
+  gss & partyid & Political Party & 0.88 & 0.03 & 0.03 \\ 
+  gss & pillok & Birth control 14-16 year olds & 0.65 & 0.01 & 0.02 \\ 
+  gss & polviews & Political views & 0.72 & 0.02 & 0.03 \\ 
+  gss & postlife & Life after death & 0.77 & 0.02 & 0.03 \\ 
+  gss & pray & Pray & 0.85 & 0.03 & 0.03 \\ 
+  gss & prayer & Bible prayer in schools & 0.64 & 0.03 & 0.04 \\ 
+  gss & premarsx & Morality: Premarital sex & 0.77 & 0.02 & 0.03 \\ 
+  gss & racdif1 & Racial diff.: discrimination & 0.60 & 0.03 & 0.04 \\ 
+  gss & racdif2 & Racial diff.: inborn & 0.50 & 0.03 & 0.06 \\ 
+  gss & racdif3 & Racial diff.: lack education & 0.59 & 0.03 & 0.05 \\ 
+  gss & racdif4 & Racial diff.: lack will & 0.58 & 0.03 & 0.04 \\ 
+  gss & racopen & Open housing law & 0.53 & 0.03 & 0.05 \\ 
+  gss & racscale & Racist: scale & 0.64 & 0.03 & 0.04 \\ 
+  gss & reborn & Born again & 0.80 & 0.02 & 0.03 \\ 
+  gss & relactiv & Do religious activities & 0.74 & 0.04 & 0.05 \\ 
+  gss & relexp & Had religious experience & 0.73 & 0.01 & 0.02 \\ 
+  gss & relexper & Religious turning point & 0.69 & 0.00 & 0.00 \\ 
+  gss & reliten & Strength of affiliation & 0.79 & 0.03 & 0.04 \\ 
+  gss & relpersn & Religious person & 0.80 & 0.02 & 0.03 \\ 
+  gss & richwork & Would work if rich & 0.61 & 0.04 & 0.06 \\ 
+  gss & satfin & Satisfied with finances & 0.65 & 0.05 & 0.07 \\ 
+  gss & satjob & Satisfied with work & 0.52 & 0.04 & 0.07 \\ 
+  gss & selfhunt & Hunter: self & 0.79 & 0.00 & 0.00 \\ 
+  gss & sexeduc & Sex-ed. in public schools & 0.65 & 0.01 & 0.01 \\ 
+  gss & socbar & Meet friends at bar & 0.79 & 0.06 & 0.07 \\ 
+  gss & socfrend & Meet friends & 0.60 & 0.04 & 0.06 \\ 
+  gss & socialscale & Social life scale & 0.72 & 0.04 & 0.05 \\ 
+  gss & socommun & Meet neighbors & 0.59 & 0.04 & 0.07 \\ 
+  gss & socrel & Meet relatives & 0.63 & 0.04 & 0.06 \\ 
+  gss & spanking & Spank children & 0.71 & 0.02 & 0.03 \\ 
+  gss & spkath & Athiest: Make speech & 0.61 & 0.03 & 0.05 \\ 
+  gss & spkcom & Red: Make speech & 0.68 & 0.02 & 0.03 \\ 
+  gss & spkhomo & Gay: Make speech & 0.61 & 0.04 & 0.06 \\ 
+  gss & spkmil & Militarist: Make speech & 0.57 & 0.01 & 0.01 \\ 
+  gss & spkrac & Racist: Make speech & 0.57 & 0.05 & 0.08 \\ 
+  gss & sprtprsn & Spiritual person & 0.76 & 0.03 & 0.04 \\ 
+  gss & suicide1 & Suicide: incurable & 0.69 & 0.00 & 0.01 \\ 
+  gss & suicide2 & Suicide: bankruptcy & 0.60 & 0.04 & 0.07 \\ 
+  gss & suicide3 & Suicide: dishonor & 0.61 & 0.02 & 0.03 \\ 
+  gss & suicide4 & Suicide: tired of living & 0.64 & 0.02 & 0.03 \\ 
+  gss & suicidescale & Suicide scale & 0.72 & 0.02 & 0.03 \\ 
+  gss & tvhours & Watch television & 0.73 & 0.07 & 0.09 \\ 
+  gss & uswary & US at war next 10 years & 0.61 & 0.03 & 0.05 \\ 
+  gss & wlthblks & Blacks rich or poor & 0.40 & 0.03 & 0.06 \\ 
+  gss & wlthwhts & Whites rich or poor & 0.42 & 0.04 & 0.09 \\ 
+  gss & workblks & Blacks work hard & 0.46 & 0.00 & 0.00 \\ 
+  gss & workwhts & Whites work hard & 0.44 & 0.05 & 0.09 \\ 
+  gss & wrkwayup & No racial favors & 0.65 & 0.03 & 0.04 \\ 
+  gss & xmarsex & Morality: Extramarital affair & 0.58 & 0.03 & 0.04 \\ 
+  gss & aged & Seniors should live with family & 0.53 & 0.03 & 0.05 \\ 
+  gss & conarmy & Military & 0.57 & 0.03 & 0.05 \\ 
+  gss & conbus & Major companies & 0.52 & 0.02 & 0.04 \\ 
+  gss & conclerg & Organized religion & 0.61 & 0.03 & 0.05 \\ 
+  gss & coneduc & Education & 0.53 & 0.00 & 0.00 \\ 
+  gss & confed & Executive branch & 0.49 & 0.13 & 0.21 \\ 
+  gss & confinan & Banks \& finance & 0.49 & 0.09 & 0.15 \\ 
+  gss & conjudge & Supreme Court & 0.57 & 0.04 & 0.07 \\ 
+  gss & conlabor & Organized labor & 0.56 & 0.03 & 0.06 \\ 
+  gss & conlegis & Congress & 0.55 & 0.04 & 0.06 \\ 
+  gss & conmedia & TV \& press & 0.61 & 0.06 & 0.09 \\ 
+  gss & conmedic & Medicine & 0.52 & 0.03 & 0.05 \\ 
+  gss & conpress & Press & 0.56 & 0.04 & 0.07 \\ 
+  gss & consci & Scientific community & 0.55 & 0.02 & 0.03 \\ 
+  gss & contv & Television & 0.53 & 0.06 & 0.11 \\ 
+  gss & eqwlth & Government reduce inequality & 0.64 & 0.04 & 0.05 \\ 
+  gss & fair & People try to be fair & 0.64 & 0.02 & 0.04 \\ 
+  gss & goodlife & Finances will improve & 0.53 & 0.05 & 0.09 \\ 
+  gss & grass & Legalize marijuana & 0.76 & 0.04 & 0.05 \\ 
+  gss & hapmar & Happiness: marriage & 0.66 & 0.04 & 0.06 \\ 
+  gss & helpblk & Government help blacks & 0.66 & 0.01 & 0.02 \\ 
+  gss & helpful & People try to be helpful & 0.60 & 0.02 & 0.03 \\ 
+  gss & helpnot & Government do more or less & 0.56 & 0.02 & 0.03 \\ 
+  gss & helpoth & Child should help others & 0.50 & 0.02 & 0.03 \\ 
+  gss & helppoor & Government help poor & 0.60 & 0.02 & 0.04 \\ 
+  gss & helpsick & Government pay medical & 0.62 & 0.05 & 0.07 \\ 
+  gss & kidssol & Mobility next generation & 0.65 & 0.06 & 0.08 \\ 
+  gss & misanthropy & Misanthropy scale & 0.76 & 0.04 & 0.05 \\ 
+  gss & obey & Child should obey & 0.68 & 0.03 & 0.04 \\ 
+  gss & parsol & Mobility & 0.67 & 0.03 & 0.05 \\ 
+  gss & polabuse & Police hit person cursing & 0.35 & 0.00 & 0.01 \\ 
+  gss & polattak & Police hit person punching & 0.41 & 0.00 & 0.00 \\ 
+  gss & polescap & Police hit person fleeing & 0.51 & 0.02 & 0.03 \\ 
+  gss & polhitok & Police can hit citizens & 0.66 & 0.00 & 0.00 \\ 
+  gss & polmurdr & Police hit murder suspect & 0.41 & 0.00 & 0.00 \\ 
+  gss & polviolent & Police hit: scale & 0.55 & 0.01 & 0.01 \\ 
+  gss & popular & Child should be popular & 0.45 & 0.06 & 0.12 \\ 
+  gss & pornlaw & Restrict pornography & 0.61 & 0.02 & 0.03 \\ 
+  gss & thnkself & Child should think for self & 0.60 & 0.03 & 0.05 \\ 
+  gss & trust & People can be trusted & 0.68 & 0.02 & 0.03 \\ 
+  gss & workhard & Child should work hard & 0.48 & 0.02 & 0.05 \\ 
+  gss & xmovie & Watch X-rated movie & 0.68 & 0.04 & 0.06 \\ 
+  gss & libmil & Militarist: Library book & 0.54 & 0.04 & 0.07 \\ 
+  gss & milscale & Militarist: scale & 0.66 & 0.03 & 0.05 \\ 
+  gss & discaffw & Affirm. action hurt women & 0.47 & 0.01 & 0.03 \\ 
+  gss & fehire & Hire \& promote women & 0.56 & 0.00 & 0.00 \\ 
+  gss & teensex & Morality: Sex 14-16 year olds & 0.62 & 0.04 & 0.06 \\ 
+  gss & popespks & Pope infallible & 0.66 & 0.03 & 0.04 \\ 
+  gss & letin1a & How many immigrants? & 0.64 & 0.01 & 0.01 \\ 
+  gss & colmslm & Islamist: Teach at college & 0.67 & 0.00 & 0.00 \\ 
+  gss & libmslm & Islamist: Library book & 0.64 & 0.00 & 0.01 \\ 
+  gss & mslmscale & Islamist: Scale & 0.75 & 0.00 & 0.00 \\ 
+  gss & spkmslm & Islamist: Make speech & 0.70 & 0.01 & 0.02 \\ 
+  hilda & atwkadc & Fine for child under 3 to be in all-day care & 0.55 & 0.06 & 0.10 \\ 
+  hilda & atwkbmw & Better if man earns money, woman cares for children & 0.68 & 0.03 & 0.05 \\ 
+  hilda & atwkcdw & As well for child if mother earns money, father cares for children & 0.54 & 0.04 & 0.07 \\ 
+  hilda & atwkfhi & Father should be as involved as mother & 0.51 & 0.04 & 0.07 \\ 
+  hilda & atwkmrl & Most important role for men to be father & 0.54 & 0.03 & 0.05 \\ 
+  hilda & atwkmsw & Mothers who don't need money shouldn't work & 0.59 & 0.04 & 0.06 \\ 
+  hilda & atwkseh & If both partners work they should share domestic tasks & 0.47 & 0.04 & 0.09 \\ 
+  hilda & atwkwfr & Working father can have as good relationship to child & 0.46 & 0.04 & 0.09 \\ 
+  hilda & atwkwfs & Working fathers care more about success than needs of children & 0.46 & 0.05 & 0.11 \\ 
+  hilda & atwkwmr & Working mother can have as good relationship to child & 0.54 & 0.05 & 0.09 \\ 
+  hilda & atwkwms & Working mothers care more about success than needs of children & 0.52 & 0.06 & 0.10 \\ 
+  hilda & atwkwrl & Most important role for women to be mother & 0.57 & 0.03 & 0.05 \\ 
+  hilda & relimp & Importance of religion & 0.87 & 0.03 & 0.04 \\ 
+  hilda & atwkcs & Children suffer bc father works too much & 0.53 & 0.04 & 0.07 \\ 
+  hilda & atwkdcm & Better for child to stay with mother in case of divorce & 0.60 & 0.03 & 0.04 \\ 
+  hilda & atwkmmf & Bad for relationship if woman earns more & 0.56 & 0.02 & 0.03 \\ 
+  hilda & atwkmpl & Men make better political leaders & 0.62 & 0.01 & 0.02 \\ 
+  hilda & atwkpsc & Pre-school child suffers if mother works FT & 0.58 & 0.03 & 0.05 \\ 
+  hilda & mcchmf & Children happier with both father and mother & 0.64 & 0.07 & 0.09 \\ 
+  hilda & mcdef & Cohabitation alright even without marriage intention & 0.79 & 0.03 & 0.04 \\ 
+  hilda & mcdiv & Divorce alright even with children & 0.57 & 0.03 & 0.06 \\ 
+  hilda & mchscr & Same rights for homosexual couples & 0.75 & 0.07 & 0.08 \\ 
+  hilda & mcindpc & Child should start living independently by 18-20 & 0.58 & 0.04 & 0.06 \\ 
+  hilda & mcmhc & A man has to have children in order to be fulfilled & 0.60 & 0.02 & 0.03 \\ 
+  hilda & mcmoi & Marriage is outdated & 0.60 & 0.03 & 0.05 \\ 
+  hilda & mcnodiv & Marriage should never be ended & 0.68 & 0.05 & 0.06 \\ 
+  hilda & mcsingp & Alright for woman to have children as single parent & 0.67 & 0.04 & 0.06 \\ 
+  hilda & mcwhc & A woman has to have children in order to be fulfilled & 0.62 & 0.02 & 0.03 \\ 
+  hilda & lskeep & Most people you meet keep their word & 0.52 & 0.01 & 0.03 \\ 
+  hilda & lssop & Most people you meet succeed by stepping on others & 0.55 & 0.02 & 0.03 \\ 
+  psid & gettingbetter & Life getting better & 0.46 & 0.05 & 0.10 \\ 
+  psid & likejobormoney & Satisfaction about income important in job & 0.42 & 0.06 & 0.12 \\ 
+  psid & opinionimport & How much does it matter what other people think about you? & 0.53 & 0.04 & 0.07 \\ 
+  psid & satisfiedself & Are you more often satisfied or dissatisfied with yourself? & 0.47 & 0.05 & 0.10 \\ 
+  psid & savingspending & Spend or save money & 0.45 & 0.05 & 0.11 \\ 
+  psid & thinkfuture & Think about future & 0.46 & 0.04 & 0.09 \\ 
+  psid & trustothers & Trust most others & 0.63 & 0.05 & 0.07 \\ 
+  psid & undeserved & Are there a lot of people who have good things they don't deserve? & 0.51 & 0.05 & 0.09 \\ 
+  psid & lifesatis & Life satisfaction & 0.51 & 0.06 & 0.10 \\ 
+  psid & cds\_bothparentscare & Dad should be as involved as mom & 0.42 & 0.03 & 0.08 \\ 
+  psid & cds\_daddevelopment & Dad large role in child development & 0.40 & 0.04 & 0.08 \\ 
+  psid & cds\_dadoldkidbetter & Dad able to enjoy older children more & 0.48 & 0.04 & 0.08 \\ 
+  psid & cds\_dadtooinvolved & Dad too involved if keeps from better job & 0.43 & 0.06 & 0.12 \\ 
+  psid & cds\_daycareok & OK to have child under 3 in all-day care & 0.55 & 0.03 & 0.05 \\ 
+  psid & cds\_fatherhoodfulfill & Dadhood most fulfilling experience & 0.42 & 0.00 & 0.01 \\ 
+  psid & cds\_fatherinteractchild & Dads should interact with child & 0.44 & 0.01 & 0.01 \\ 
+  psid & cds\_firstyears & First 4 years most import. in child's develop. & 0.46 & 0.00 & 0.01 \\ 
+  psid & cds\_girlboyequal & Encourage as much independence in daughters and sons & 0.49 & 0.01 & 0.02 \\ 
+  psid & cds\_husbandcareerimport & Better wife helps husband career & 0.52 & 0.03 & 0.05 \\ 
+  psid & cds\_motherfatherequal & Dad and mom equally good meeting kid's needs & 0.42 & 0.06 & 0.12 \\ 
+  psid & cds\_motherhoodfulfill & Momhood most fulfilling experience & 0.45 & 0.02 & 0.05 \\ 
+  psid & cds\_mothernotft & Mom with child under 5 shouldn't work full-time & 0.62 & 0.05 & 0.07 \\ 
+  psid & cds\_preschoolsuffer & Preschool child suffers if mom employed & 0.58 & 0.03 & 0.04 \\ 
+  psid & cds\_sharehousehold & Husband and wife in both FT should share household & 0.28 & 0.00 & 0.00 \\ 
+  psid & cds\_traditionalbest & Better if man earns living & 0.60 & 0.03 & 0.05 \\ 
+  psid & cds\_workingmotherssame & Working mom as warm as nonworking mom & 0.41 & 0.01 & 0.02 \\ 
+  psid & cds\_mostimportantchild\_1 & Importance for child: obey & 0.43 & 0.04 & 0.09 \\ 
+  psid & cds\_mostimportantchild\_3 & Importance for child: think for herself & 0.45 & 0.00 & 0.00 \\ 
+  psid & cds\_mostimportantchild\_4 & Importance for child: work hard & 0.30 & 0.01 & 0.02 \\ 
+  psid & tas\_belongcommunity & Freq. of feeling belonging to communty & 0.51 & 0.02 & 0.05 \\ 
+  psid & tas\_contributesociety & Freq. of feeling contrib to society & 0.48 & 0.06 & 0.12 \\ 
+  psid & tas\_divorcehurts & Divorce hurts kids & 0.42 & 0.04 & 0.09 \\ 
+  psid & tas\_divorcesuccess & Child from divorced family can be successful & 0.39 & 0.05 & 0.11 \\ 
+  psid & tas\_fathertimeoff & Dads should take time with young child & 0.45 & 0.05 & 0.10 \\ 
+  psid & tas\_importrel & Importance of religion & 0.72 & 0.05 & 0.06 \\ 
+  psid & tas\_importspirit & Importance of spirituality & 0.65 & 0.06 & 0.09 \\ 
+  psid & tas\_mothersnodemanding & Moms should have demandng job & 0.50 & 0.05 & 0.09 \\ 
+  psid & tas\_peoplearegood & Freq. of feeling people basically good & 0.50 & 0.05 & 0.09 \\ 
+  psid & tas\_singleparentsok & Child from single-parent family can do as well & 0.44 & 0.07 & 0.14 \\ 
+  psid & tas\_singleparentsuffer & Single parent hurts kids & 0.57 & 0.06 & 0.10 \\ 
+  psid & tas\_singlewomenkids & Single women should have kids & 0.44 & 0.04 & 0.08 \\ 
+  psid & tas\_societybetter & Freq. of feeling society gettng better & 0.47 & 0.05 & 0.09 \\ 
+  psid & tas\_societymakessense & Feeling way society works makes sense & 0.47 & 0.02 & 0.05 \\ 
+  psid & tas\_spritual & Spiritual person & 0.60 & 0.06 & 0.09 \\ 
+  psid & tas\_religpref0509\_2 & Religion: Protestant [2005-09] & 0.73 & 0.01 & 0.01 \\ 
+  psid & tas\_religpref0509\_3 & Religion: Catholic [2005-09] & 0.88 & 0.02 & 0.02 \\ 
+  psid & tas\_lifesatisfact & How satisfied with life as a whole & 0.55 & 0.04 & 0.07 \\ 
+  psid & tas\_religpref1115\_2 & Religion: Protestant [2011-15] & 0.82 & 0.06 & 0.07 \\ 
+  psid & tas\_religpref1115\_3 & Religion: Catholic [2011-15] & 0.86 & 0.01 & 0.01 \\ 
+  shp & pl101 & Feeling of security (victimization) & 0.61 & 0.04 & 0.06 \\ 
+  shp & pp01 & Interest in politics & 0.81 & 0.03 & 0.03 \\ 
+  shp & pp02 & Overall satisfaction with democracy & 0.61 & 0.05 & 0.07 \\ 
+  shp & pp03 & Feeling about political influence & 0.59 & 0.03 & 0.06 \\ 
+  shp & pp04 & Trust in Federal Government & 0.66 & 0.06 & 0.08 \\ 
+  shp & pp07 & Future: Active in boycott & 0.74 & 0.03 & 0.04 \\ 
+  shp & pp08 & Future: Active in strike & 0.76 & 0.02 & 0.03 \\ 
+  shp & pp09 & Future: Active in demonstration & 0.79 & 0.02 & 0.02 \\ 
+  shp & pp10 & Political position: Left, right & 0.77 & 0.03 & 0.04 \\ 
+  shp & pp12 & Opinion on Swiss army: Direction & 0.74 & 0.04 & 0.06 \\ 
+  shp & pp13 & Opinion on social expenses: Direction & 0.59 & 0.04 & 0.07 \\ 
+  shp & pp14 & Opinion on joining the EU: Direction & 0.65 & 0.12 & 0.16 \\ 
+  shp & pp15 & Opinion on chances for foreigners: Direction & 0.63 & 0.04 & 0.05 \\ 
+  shp & pp16 & Opinion on environmental protection: Direction & 0.55 & 0.03 & 0.06 \\ 
+  shp & pp17 & Opinion on taxes on high income: Direction & 0.53 & 0.04 & 0.07 \\ 
+  shp & pp18 & Opinion on nuclear energy: Direction & 0.63 & 0.07 & 0.09 \\ 
+  shp & pp20 & Gender: Women in general penalized & 0.55 & 0.03 & 0.05 \\ 
+  shp & pp21 & Gender: Personnally penalized & 0.54 & 0.04 & 0.07 \\ 
+  shp & pp22 & Gender: In favour of measures & 0.64 & 0.02 & 0.04 \\ 
+  shp & pp23 & Gender: Personal action & 0.41 & 0.04 & 0.08 \\ 
+  shp & pp45 & General trust in people & 0.66 & 0.03 & 0.04 \\ 
+  shp & pp19\_1 & Party support: Swiss Radical-Democratic Party & 0.56 & 0.04 & 0.07 \\ 
+  shp & pp19\_3 & Party support: PSS Swiss Socialist Party & 0.68 & 0.05 & 0.06 \\ 
+  shp & pp19\_4 & Party support: UDC Democratic Union of the Centre & 0.70 & 0.05 & 0.06 \\ 
+  shp & pc70 & Self-Perception : incapacity to make plans because of unpredictability & 0.49 & 0.01 & 0.01 \\ 
+  shp & pc71 & Self-Perception : little influence on life events & 0.46 & 0.02 & 0.05 \\ 
+  shp & pc72 & Self-Perception : capacity to overcome unexpected problems & 0.45 & 0.00 & 0.01 \\ 
+  shp & pc73 & Self-Perception : capacity to choose between two possibilities & 0.53 & 0.01 & 0.01 \\ 
+  shp & pc74 & Self-Perception : feeling of uselessness & 0.58 & 0.02 & 0.04 \\ 
+  shp & pc75 & Self-Perception : feeling of selfsatisfaction & 0.59 & 0.00 & 0.00 \\ 
+  shp & pn56 & Values: Lying in own interest & 0.56 & 0.03 & 0.05 \\ 
+  shp & pn57 & Values: Cheating on tax declaration & 0.56 & 0.03 & 0.05 \\ 
+  shp & pn58 & Values: Avoiding a fare on a public transport & 0.57 & 0.02 & 0.04 \\ 
+  shp & pn59 & Values: Claiming state benefits not entitled to & 0.34 & 0.00 & 0.01 \\ 
+  shp & pn60 & Values: Keeping found money & 0.61 & 0.02 & 0.03 \\ 
+  shp & pn61 & Values: Failing to report damage to parked vehicle & 0.32 & 0.00 & 0.00 \\ 
+  shp & pp50 & Class identification: yes-no & 0.52 & 0.01 & 0.03 \\ 
+  shp & pp51 & Class identification (spontanously): Which & 0.76 & 0.02 & 0.02 \\ 
+  shp & pp53 & Public expenses: Protection of the environment & 0.63 & 0.00 & 0.01 \\ 
+  shp & pp54 & Public expenses: Health & 0.59 & 0.03 & 0.05 \\ 
+  shp & pp55 & Public expenses: Day nursery & 0.69 & 0.02 & 0.03 \\ 
+  shp & pp56 & Public expenses: Police and public order & 0.57 & 0.01 & 0.02 \\ 
+  shp & pp57 & Public expenses: Research and education & 0.49 & 0.01 & 0.03 \\ 
+  shp & pp58 & Public expenses: Military and defense & 0.71 & 0.04 & 0.05 \\ 
+  shp & pp59 & Public expenses: Retirement & 0.56 & 0.03 & 0.05 \\ 
+  shp & pp60 & Public expenses: Culture and art & 0.68 & 0.01 & 0.01 \\ 
+  shp & pp61 & Public expenses: Unemployment benefit & 0.55 & 0.02 & 0.03 \\ 
+  shp & pp62 & Public expenses: Aid to developing countries & 0.64 & 0.03 & 0.05 \\ 
+  shp & pp63 & Public expenses: Social aid & 0.61 & 0.00 & 0.00 \\ 
+  shp & pp64 & Opinion on joining the EU: Joining or bilateral agreements & 0.54 & 0.05 & 0.08 \\ 
+  shp & pp66 & Party identification: yes-no & 0.69 & 0.05 & 0.06 \\ 
+  shp & pp69 & Sympathy political party: Liberal party & 0.73 & 0.05 & 0.06 \\ 
+  shp & pp70 & Sympathy political party: Christian democrats & 0.74 & 0.03 & 0.03 \\ 
+  shp & pp71 & Sympathy political party: Social Democrats & 0.82 & 0.03 & 0.03 \\ 
+  shp & pp72 & Sympathy political party: Swiss people's party & 0.84 & 0.03 & 0.03 \\ 
+  shp & pp73 & Sympathy political party: Green party & 0.78 & 0.03 & 0.03 \\ 
+  shp & pp74 & Opinion on federalism: Direction & 0.58 & 0.02 & 0.04 \\ 
+  shp & pp76 & Protection of environment: Importance & 0.72 & 0.01 & 0.01 \\ 
+  shp & pp77 & Protection of environment: Recycling & 0.59 & 0.04 & 0.07 \\ 
+  shp & pp78 & Protection of environment: Bin bag fees & 0.67 & 0.16 & 0.19 \\ 
+  shp & pp79 & Protection of environment: Organic and ecological products & 0.74 & 0.04 & 0.06 \\ 
+  shp & pp80 & Protection of environment: Purchase of fruits and vegetables & 0.69 & 0.03 & 0.05 \\ 
+  shp & pr16 & Belief in God or something divine & 0.88 & 0.02 & 0.02 \\ 
+  shp & pr20 & Feeling of spirituality & 0.79 & 0.02 & 0.03 \\ 
+  shp & pr21 & Feeling of religiosity & 0.83 & 0.02 & 0.02 \\ 
+  shp & pr23 & Attitude towards Christianism & 0.76 & 0.02 & 0.02 \\ 
+  shp & pr24 & Attitude towards Islam & 0.73 & 0.02 & 0.03 \\ 
+  shp & pr25 & Attitude towards Hinduism & 0.69 & 0.03 & 0.04 \\ 
+  shp & pr26 & Attitude towards Buddhism & 0.74 & 0.02 & 0.03 \\ 
+  shp & pr27 & Attitude towards Judaism & 0.71 & 0.01 & 0.02 \\ 
+  shp & pr28 & Attitude towards atheism & 0.68 & 0.03 & 0.05 \\ 
+  shp & pp68 & Party identification: Proximity & 0.57 & 0.00 & 0.00 \\ 
+  shp & pp67\_2 & Party identification: Swiss Christian-Democrat Party & 0.93 & 0.01 & 0.01 \\ 
+  shp & pp67\_3 & Party identification: PSS Swiss Socialist Party & 0.89 & 0.02 & 0.03 \\ 
+  shp & pp67\_4 & Party identification: UDC Democratic Union of the Centre & 0.93 & 0.01 & 0.01 \\ 
+  shp & pp52 & Class identification (non spontaneously): Which & 0.65 & 0.02 & 0.02 \\ 
+  shp & pp65 & Opinion on joining the EU: Continuation or dissolution of bilateral agreements & 0.66 & 0.05 & 0.07 \\ 
+  soep & plh0011\_h & Party preference: yes & 0.52 & 0.05 & 0.09 \\ 
+  soep & plh0014 & Government Interference & 0.43 & 0.02 & 0.04 \\ 
+  soep & plh0032 & Worried About Economic Development & 0.37 & 0.05 & 0.13 \\ 
+  soep & plh0033 & Worried About Finances & 0.49 & 0.05 & 0.10 \\ 
+  soep & plh0036 & Worried About Environment & 0.45 & 0.06 & 0.12 \\ 
+  soep & plh0038 & Worried About Peace & 0.41 & 0.05 & 0.10 \\ 
+  soep & plh0054 & Peace And Order & 0.44 & 0.04 & 0.08 \\ 
+  soep & plh0056 & Citizen Influence & 0.40 & 0.04 & 0.10 \\ 
+  soep & plh0058 & Fight Against Inflation & 0.38 & 0.04 & 0.09 \\ 
+  soep & plh0061 & Freedom Of Speech & 0.42 & 0.03 & 0.07 \\ 
+  soep & plh0054\_1 & Political goals: prority peace and order & 0.37 & 0.04 & 0.09 \\ 
+  soep & plh0056\_1 & Political goals: prority citizen influence & 0.34 & 0.05 & 0.13 \\ 
+  soep & plh0058\_1 & Political goals: prority rising prices & 0.26 & 0.01 & 0.05 \\ 
+  soep & plh0061\_1 & Political goals: prority freedom of speech & 0.37 & 0.04 & 0.10 \\ 
+  soep & plb0104\_h & Importance of employment & 0.49 & 0.07 & 0.12 \\ 
+  soep & plh0007 & Interest in politics & 0.68 & 0.03 & 0.05 \\ 
+  soep & plh0042 & Worried About Job Security & 0.47 & 0.07 & 0.12 \\ 
+  soep & plh0013\_h & Party preference: intensity & 0.48 & 0.05 & 0.10 \\ 
+  soep & plh0012\_h1 & Party preference: SPD & 0.81 & 0.04 & 0.05 \\ 
+  soep & plh0012\_h2 & Party preference: CDU & 0.80 & 0.04 & 0.05 \\ 
+  soep & plh0012\_h3 & Party preference: CSU & 0.76 & 0.04 & 0.05 \\ 
+  soep & plh0012\_h4 & Party preference: FDP & 0.65 & 0.07 & 0.10 \\ 
+  soep & plh0012\_h5 & Party preference: The Greens & 0.75 & 0.05 & 0.07 \\ 
+  soep & plh0012\_h6 & Party preference: The Left & 0.77 & 0.06 & 0.07 \\ 
+  soep & plh0001 & Democratic Ideal & 0.56 & 0.02 & 0.04 \\ 
+  soep & plh0015 & Extent And Type Of State Powers & 0.37 & 0.00 & 0.00 \\ 
+  soep & plh0113 & Entitlement Received Are Deserved & 0.56 & 0.06 & 0.09 \\ 
+  soep & plh0114 & German Citizen Benefits Are Equitable & 0.42 & 0.06 & 0.12 \\ 
+  soep & plh0152\_v1 & Satisfaction with democracy [1987-1989] & 0.54 & 0.05 & 0.08 \\ 
+  soep & plh0090 & Importance Of Circle Of Friends & 0.59 & 0.03 & 0.04 \\ 
+  soep & plh0104 & Importance: To Be Able To Afford Sth. & 0.50 & 0.03 & 0.06 \\ 
+  soep & plh0105 & Importance: To help Others & 0.47 & 0.03 & 0.06 \\ 
+  soep & plh0106 & Importance: To Fulfil Once Potential & 0.54 & 0.04 & 0.07 \\ 
+  soep & plh0107 & Importance: To Have Success In The job & 0.58 & 0.08 & 0.12 \\ 
+  soep & plh0108 & Importance: To Have An Own House & 0.69 & 0.04 & 0.06 \\ 
+  soep & plh0109 & Importance: To have a happy marriage & 0.57 & 0.06 & 0.10 \\ 
+  soep & plh0110 & Importance: To have children & 0.68 & 0.05 & 0.07 \\ 
+  soep & plh0111 & Importance: To be socially and politically active & 0.58 & 0.03 & 0.04 \\ 
+  soep & plh0112 & Importance: To be able to travel and see the world & 0.61 & 0.05 & 0.07 \\ 
+  soep & plj0040 & Ties To Local Area & 0.59 & 0.05 & 0.08 \\ 
+  soep & plh0188 & Confident About Future & 0.41 & 0.03 & 0.07 \\ 
+  soep & plh0040 & worried about crime in germany & 0.51 & 0.04 & 0.08 \\ 
+  soep & plh0091\_v2 & Importance for satisfaction: work & 0.64 & 0.07 & 0.10 \\ 
+  soep & plh0092\_v2 & Importance for satisfaction: family & 0.58 & 0.05 & 0.08 \\ 
+  soep & plh0093\_v2 & Importance for satisfaction: friends & 0.60 & 0.05 & 0.08 \\ 
+  soep & plh0094\_v2 & Importance for satisfaction: income & 0.58 & 0.05 & 0.08 \\ 
+  soep & plh0095\_v2 & Importance for satisfaction: dwelling & 0.50 & 0.06 & 0.11 \\ 
+  soep & plh0096\_v2 & Importance for satisfaction: political influence & 0.56 & 0.04 & 0.07 \\ 
+  soep & plh0097\_v2 & Importance for satisfaction: professional success & 0.71 & 0.07 & 0.09 \\ 
+  soep & plh0098\_v2 & Importance for satisfaction: leisure & 0.52 & 0.07 & 0.12 \\ 
+  soep & plh0099\_v2 & Importance for satisfaction: health & 0.48 & 0.06 & 0.11 \\ 
+  soep & plh0100\_v2 & Importance for satisfaction: protection of environment & 0.56 & 0.06 & 0.09 \\ 
+  soep & plh0101 & Import.-Rlgion, Belief For Satisfaction & 0.81 & 0.03 & 0.04 \\ 
+  soep & plj0047 & Worried About Hostility To Foreigners & 0.43 & 0.04 & 0.09 \\ 
+  soep & plh0016 & Financial Security For Family & 0.36 & 0.01 & 0.02 \\ 
+  soep & plh0017 & Care For Pre-School Children & 0.32 & 0.01 & 0.03 \\ 
+  soep & plh0018 & Care For School Children & 0.22 & 0.01 & 0.03 \\ 
+  soep & plh0019 & Financial Security When Unemployed & 0.33 & 0.03 & 0.09 \\ 
+  soep & plh0020 & Job Creation Schemes & 0.41 & 0.01 & 0.01 \\ 
+  soep & plh0021 & Financial Security When Sick & 0.37 & 0.03 & 0.08 \\ 
+  soep & plh0022 & Help For The Sick & 0.28 & 0.02 & 0.08 \\ 
+  soep & plh0023 & Financial Security In Old-Age & 0.38 & 0.04 & 0.10 \\ 
+  soep & plh0024 & Help For The Elderly & 0.30 & 0.02 & 0.06 \\ 
+  soep & plh0025 & Financial Security When Requiring Care & 0.33 & 0.02 & 0.04 \\ 
+  soep & plh0026 & Help For Those Requiring Care & 0.32 & 0.03 & 0.08 \\ 
+  soep & plh0035 & Worried About Own Health & 0.54 & 0.05 & 0.08 \\ 
+  soep & plh0041 & Worried About Introduction Of Euro & 0.51 & 0.04 & 0.06 \\ 
+  soep & plh0244 & Attitude towards future & 0.50 & 0.02 & 0.03 \\ 
+  soep & plj0046 & Worried About Immigration To Germany & 0.53 & 0.05 & 0.08 \\ 
+  soep & plc0115 & Social Security Contributions & 0.47 & 0.05 & 0.10 \\ 
+  soep & pld0043 & Freq. Lend Friends Pers. Belongings & 0.58 & 0.03 & 0.06 \\ 
+  soep & pld0044 & Freq. Lend Friends Money & 0.58 & 0.03 & 0.05 \\ 
+  soep & pld0045 & Freq. Leave Door Unlocked & 0.55 & 0.03 & 0.04 \\ 
+  soep & plh0192 & On The Whole Trust People & 0.53 & 0.01 & 0.01 \\ 
+  soep & plh0193 & Nowadays Can't Trust Anyone & 0.51 & 0.01 & 0.02 \\ 
+  soep & plh0194 & Caution Towards Foreigners & 0.48 & 0.03 & 0.05 \\ 
+  soep & plh0195 & Most People Are Exploitive, Fair & 0.53 & 0.03 & 0.05 \\ 
+  soep & plh0196 & Most People Are Helpful, Act In Own Interest & 0.47 & 0.03 & 0.06 \\ 
+  soep & plh0031 & Worried About Consequences Of EU- Enlargement & 0.56 & 0.03 & 0.06 \\ 
+  soep & plh0197 & Willingness To Take Risks While Driving & 0.67 & 0.02 & 0.03 \\ 
+  soep & plh0198 & Willingness To Take Risks In Financial Matters & 0.59 & 0.03 & 0.04 \\ 
+  soep & plh0199 & Willingness To Take Risks In Leisure And Sports & 0.65 & 0.01 & 0.01 \\ 
+  soep & plh0200 & Willingness To Take Risks In Occupation & 0.60 & 0.02 & 0.03 \\ 
+  soep & plh0201 & Willingness To Take Health Risks & 0.55 & 0.03 & 0.05 \\ 
+  soep & plh0202 & Willingness To Take Risks In Trusting Other People & 0.56 & 0.02 & 0.03 \\ 
+  soep & plh0204\_h & Self-evaluation: risk & 0.57 & 0.03 & 0.04 \\ 
+  soep & plh0004 & Political attitude & 0.64 & 0.02 & 0.04 \\ 
+  soep & plh0152\_v2 & Satisfaction with democracy [2005,2010,2016] & 0.67 & 0.05 & 0.07 \\ 
+  soep & plh0212 & Thorough worker & 0.56 & 0.03 & 0.06 \\ 
+  soep & plh0213 & Am communicative & 0.67 & 0.03 & 0.05 \\ 
+  soep & plh0214 & Am sometimes too coarse with others & 0.59 & 0.03 & 0.06 \\ 
+  soep & plh0215 & Am original & 0.59 & 0.03 & 0.05 \\ 
+  soep & plh0216 & Worry a lot & 0.60 & 0.04 & 0.06 \\ 
+  soep & plh0217 & Able to forgive & 0.51 & 0.03 & 0.06 \\ 
+  soep & plh0218 & Tend to be lazy & 0.60 & 0.03 & 0.05 \\ 
+  soep & plh0219 & Am sociable & 0.64 & 0.04 & 0.05 \\ 
+  soep & plh0220 & Value artistic experiences & 0.67 & 0.03 & 0.04 \\ 
+  soep & plh0221 & Somewhat nervous & 0.60 & 0.04 & 0.06 \\ 
+  soep & plh0222 & Carry out tasks efficiently & 0.51 & 0.03 & 0.06 \\ 
+  soep & plh0223 & Reserved & 0.58 & 0.02 & 0.04 \\ 
+  soep & plh0224 & Friendly with others & 0.51 & 0.03 & 0.06 \\ 
+  soep & plh0225 & Have lively imagination & 0.61 & 0.03 & 0.05 \\ 
+  soep & plh0226 & Deal well with stress & 0.58 & 0.03 & 0.05 \\ 
+  soep & plh0039 & Worried About global terrorism & 0.55 & 0.03 & 0.05 \\ 
+  soep & plh0253 & Personal Patience & 0.64 & 0.02 & 0.02 \\ 
+  soep & plh0254 & Personal Impulsivness & 0.58 & 0.03 & 0.05 \\ 
+  soep & plh0030 & Worried About Childcare & 0.49 & 0.07 & 0.13 \\ 
+  soep & plh0034 & worried about stability of financial markets & 0.50 & 0.05 & 0.08 \\ 
+  soep & plh0037 & worried about consequences from climate change & 0.55 & 0.04 & 0.07 \\ 
+  soep & plh0255 & inquisitive & 0.63 & 0.03 & 0.05 \\ 
+  soep & plj0043 & Ties To Local Area & 0.62 & 0.01 & 0.02 \\ 
+  soep & plh0335 & Worried About Own Retirement Pension & 0.63 & 0.04 & 0.05 \\ 
+  soep & plh0336 & Worried About Cohesion in Society & 0.47 & 0.03 & 0.05 \\ 
+  soep & plj0078 & Feel German & 0.74 & 0.04 & 0.05 \\ 
+  soep & plj0083 & Feel At Home in Country Of Origin & 0.52 & 0.04 & 0.08 \\ 
+  soep & plj0081 & Connected With Country Of Origin & 0.57 & 0.07 & 0.11 \\ 
+  soep & plj0082 & Feeling Of Not Belonging & 0.35 & 0.03 & 0.08 \\ 
+  soep & plh0332 & Concerns Child Health & 0.57 & 0.04 & 0.06 \\ 
+  soep & plb0528\_h & Priority in career choice: income & 0.58 & 0.02 & 0.03 \\ 
+  soep & plb0530\_h & Priority in career choice: status & 0.55 & 0.00 & 0.01 \\ 
+  soep & plb0531\_h & Priority in career choice: social contact & 0.63 & 0.01 & 0.01 \\ 
+  soep & plb0532\_h & Priority in career choice: compatibility of family and work & 0.52 & 0.02 & 0.03 \\ 
+  ukhls & oprlg & Whether belong to a religion & 0.80 & 0.03 & 0.04 \\ 
+  ukhls & oprlg3 & Religion makes a difference to life & 0.82 & 0.02 & 0.03 \\ 
+  ukhls & vote1 & Supports a particular political party & 0.56 & 0.05 & 0.09 \\ 
+  ukhls & vote2 & Closer to one political party than others & 0.48 & 0.05 & 0.09 \\ 
+  ukhls & vote5 & Strength of support for stated party & 0.55 & 0.06 & 0.09 \\ 
+  ukhls & vote6 & Level of interest in politics & 0.72 & 0.02 & 0.03 \\ 
+  ukhls & vote4\_1 & Party affinity: Conservatives & 0.88 & 0.04 & 0.04 \\ 
+  ukhls & vote4\_2 & Party affinity: Labour & 0.86 & 0.05 & 0.05 \\ 
+  ukhls & vote4\_3 & Party affinity: Liberal Democrat & 0.72 & 0.09 & 0.11 \\ 
+  ukhls & scfannoy & Friends get on my nerves & 0.48 & 0.01 & 0.03 \\ 
+  ukhls & scfcritic & Friends criticise me & 0.50 & 0.00 & 0.00 \\ 
+  ukhls & scrannoy & Family gets on my nerves & 0.55 & 0.03 & 0.05 \\ 
+  ukhls & scrcritic & Family criticises me & 0.53 & 0.01 & 0.02 \\ 
+  ukhls & scrletdwn & Family lets me down & 0.47 & 0.02 & 0.05 \\ 
+  ukhls & scrrely & Can rely on family & 0.56 & 0.06 & 0.09 \\ 
+  ukhls & civicduty & Sense of civic duty & 0.70 & 0.02 & 0.03 \\ 
+  ukhls & colbens1 & party sympathy: conservative & 0.73 & 0.09 & 0.12 \\ 
+  ukhls & colbens2 & party sympathy: labour & 0.71 & 0.07 & 0.09 \\ 
+  ukhls & colbens3 & party sympathy: liberal democrats & 0.61 & 0.06 & 0.09 \\ 
+  ukhls & demorient & Democratic orientation & 0.55 & 0.04 & 0.07 \\ 
+  ukhls & scopngbha & Belong to neighbourhood & 0.60 & 0.06 & 0.09 \\ 
+  ukhls & scopngbhb & Local friends mean a lot & 0.61 & 0.06 & 0.09 \\ 
+  ukhls & scopngbhc & Advice obtainable locally & 0.59 & 0.05 & 0.09 \\ 
+  ukhls & scopngbhd & Can borrow things from neighbours & 0.58 & 0.06 & 0.09 \\ 
+  ukhls & scopngbhe & Willing to improve neighbourhood & 0.50 & 0.04 & 0.07 \\ 
+  ukhls & scopngbhf & Plan to stay in neighbourhood & 0.55 & 0.06 & 0.09 \\ 
+  ukhls & scopngbhg & Am similar to others in neighbourhood & 0.58 & 0.05 & 0.08 \\ 
+  ukhls & scopngbhh & Talk regularly to neighbours & 0.62 & 0.06 & 0.08 \\ 
+  ukhls & voteintent & Voting intention & 0.73 & 0.03 & 0.04 \\ 
+  ukhls & votenorm & Voting as a social norm & 0.44 & 0.01 & 0.02 \\ 
+  ukhls & carbuy1 & Comfort & 0.42 & 0.03 & 0.07 \\ 
+  ukhls & carbuy10 & Safety & 0.42 & 0.04 & 0.08 \\ 
+  ukhls & carbuy11 & Speed/performance & 0.54 & 0.04 & 0.06 \\ 
+  ukhls & carbuy12 & Features - SAT-NAV, CD player, music system, power steering etc... & 0.50 & 0.05 & 0.09 \\ 
+  ukhls & carbuy2 & Costs - purchase/running/resale value/tax/insurance & 0.37 & 0.04 & 0.10 \\ 
+  ukhls & carbuy3 & Small engine & 0.52 & 0.05 & 0.09 \\ 
+  ukhls & carbuy4 & Large engine & 0.48 & 0.03 & 0.05 \\ 
+  ukhls & carbuy5 & Environmentally friendly/low CO2 emissions & 0.50 & 0.05 & 0.09 \\ 
+  ukhls & carbuy6 & Electric car/van - one that's plugged directly into an electricity supply & 0.28 & 0.09 & 0.23 \\ 
+  ukhls & carbuy7 & Style/design/image of brand/model & 0.54 & 0.04 & 0.06 \\ 
+  ukhls & carbuy8 & Interior space/functionality/boot size & 0.44 & 0.04 & 0.08 \\ 
+  ukhls & carbuy9 & Reliability & 0.31 & 0.03 & 0.08 \\ 
+  ukhls & eumem & Should UK remain a member of the EU & 0.84 & 0.07 & 0.07 \\ 
+  ukhls & scenv\_ftst & How feel about current lifestyle and the environment & 0.52 & 0.06 & 0.11 \\ 
+  ukhls & scenv\_grn & Being green is an alternative lifestyle & 0.55 & 0.00 & 0.01 \\ 
+  ukhls & scopecl200 & Affected by climate change next 200 years & 0.37 & 0.03 & 0.07 \\ 
+  ukhls & scopecl30 & Affected by climate change next 30 years & 0.45 & 0.02 & 0.05 \\ 
+  ukhls & scopfamb & Family suffers if mother works full-time & 0.67 & 0.03 & 0.04 \\ 
+  ukhls & scopfamd & Husband and wife should contribute to hh income & 0.51 & 0.01 & 0.03 \\ 
+  ukhls & scopfamf & Husband should earn, wife should stay at home & 0.66 & 0.01 & 0.02 \\ 
+  ukhls & scpundstnd & Spouse/partner understands way I feel & 0.59 & 0.05 & 0.07 \\ 
+  ukhls & vote3\_1 & Party support: Conservatives & 0.49 & 0.09 & 0.16 \\ 
+  ukhls & vote3\_2 & Party support: Labour & 0.51 & 0.06 & 0.11 \\ 
+  ukhls & vote3\_3 & Party support: Liberal Democrat & 0.42 & 0.09 & 0.18 \\ 
+  ukhls & oprlg1\_1 & Religion: Church of England/Anglican & 0.88 & 0.00 & 0.00 \\ 
+  ukhls & oprlg1\_2 & Religion: Roman Catholic & 0.95 & 0.00 & 0.00 \\ 
+  ukhls & oprlg1\_11 & Religion: Muslim/Islam & 0.98 & 0.00 & 0.00 \\ 
+  ukhls & ocimpa & Occupation: Important: Job Security & 0.48 & 0.03 & 0.05 \\ 
+  ukhls & ocimpb & Occupation: Important: High income & 0.60 & 0.04 & 0.06 \\ 
+  ukhls & ocimpe & Occupation: Important: Lot leisure time & 0.48 & 0.02 & 0.03 \\ 
+  ukhls & ocimpf & Occupation: Important: Interesting job & 0.48 & 0.01 & 0.01 \\ 
+  ukhls & ocimpi & Occupation: Important: Contribute to soc. & 0.61 & 0.05 & 0.07 \\ 
+  ukhls & ocimpk & Occupation: Important: Time for family & 0.50 & 0.05 & 0.10 \\ 
+  ukhls & ocimpl & Occupation: Important: Job help others & 0.63 & 0.04 & 0.05 \\ 
+  ukhls & ahvwell & Importance of doing well in quals & 0.48 & 0.04 & 0.07 \\ 
+  ukhls & apvocimp & Importance of Apprenticeship/Vocational & 0.51 & 0.09 & 0.15 \\ 
+   \hline
+\hline
+\caption{Table X} 
+\end{longtable}

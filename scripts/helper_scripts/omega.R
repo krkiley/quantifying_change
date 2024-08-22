@@ -1,0 +1,184 @@
+
+# - quantifying change ------------------------------------------------------- #
+# - omega -------------------------------------------------------------------- #
+
+### note: this script
+###       (a) processes the input data for omega calculation,
+###       (b) calculates within variance, between variance and omega from MLMs,
+###       (c) generates bootstrapped distributions for omega values.
+
+# ---------------------------------------------------------------------------- #
+
+# --- packages when the script is loaded
+pacman::p_load(glmmTMB,
+               lme4,
+               performance,
+               Matrix,
+               tidyverse)
+
+# --- function call
+calculate_omega <- 
+  
+  function(
+    
+    # dataframe
+    df,
+    # outcome variable
+    yname,
+    # time variable
+    tname,
+    # person identifier
+    pname,
+    # bootstrap
+    boot = TRUE,
+    # number of boots
+    nrep = 500) {
+    
+    # ----------------------------------------------------- #
+    # DATA PROCESSING                                       #
+    # ----------------------------------------------------- #
+    
+    df <- df |>
+      mutate(
+        # get person identifier
+        pid = {
+          {
+            pname
+          }
+        },
+        # get time identifier
+        time = {
+          {
+            tname
+          }
+        },
+        # get outcome identifier
+        y  = {
+          {
+            yname
+          }
+        }) |>
+      
+      # unique numeric identifier
+      mutate(id = cur_group_id(), .by = "pid") |>
+      
+      # drop missing values
+      select(id, time, y) |> drop_na() |>
+      
+      # drop respondents with only one observation
+      mutate(n = n(), .by = "id") |> dplyr::filter(n != 1) |> 
+      
+      # center time at respondent midpoint
+      mutate(
+        time = (time - (max(time) + min(time)) / 2),
+        .by = "id")
+    
+    # ----------------------------------------------------- #
+    # MODELING                                              #
+    # ----------------------------------------------------- #
+    
+    ## estimate LCAM
+    model <- glmmTMB(y ~ time + (1 + time | id), data = df)
+    
+    ## prior specification
+    prior_sd <- round(sd(df$y) * 10, 5) ## 10 times the observed slopes
+    prior_sd <- paste("normal(0, ", prior_sd, ")", sep = "")
+    
+    ## impose priors
+    priors <- data.frame(prior =
+                           prior_sd,
+                         class =
+                           "theta",
+                         coef = "")
+    model <- update(model, priors = priors)
+    
+    ## model information
+    var_corrs <- abs(attr(VarCorr(model)$cond$id, "correlation")[1, 2])
+    converged <- performance::check_convergence(model)
+
+    # ----------------------------------------------------- #
+    # DECOMPOSITION                                         #
+    # ----------------------------------------------------- #
+    
+    ## predictions
+    df <- df |>
+      mutate(
+        ## midpoint prediction
+        yhat_m = predict(model, df |> mutate(time = 0)),
+        ## incorporating varying slopes
+        yhat_s = predict(model))
+
+    ## components
+    vd <- 
+      1 - sum((df$y - df$yhat_m)^2)/sum((df$y - mean(df$y))^2)
+    vc <- 
+      1 - sum((df$y - df$yhat_s)^2)/sum((df$y - mean(df$y))^2) - vd
+    
+    omega <- vc/(vd + vc)
+    
+    if (boot == FALSE) {
+      output <- 
+        c(vd = vd,
+          vc = vc,
+          omega = omega,
+          converged = converged,
+          var_corrs = var_corrs)
+      return(output)
+    }
+    
+    # ----------------------------------------------------- #
+    # BOOTSTRAPS                                            #
+    # ----------------------------------------------------- #
+    
+    length <- length(unique(df$id))
+    bootstrap <- vector(mode = "numeric", length = nrep)
+    
+    for (bloop in 1:nrep) {
+      ## boot dataframe
+      boot_df <- df |>
+        nest(.by = "id") |>
+        slice_sample(n = length, replace = TRUE) |>
+        mutate(id = cur_group_rows()) |> # new ids
+        unnest("data")
+      ## boot model
+      boot_model <- glmmTMB(y ~ time + (1 + time | id), data = boot_df)
+      boot_prior_sd <- round(sd(boot_df$y) * 10, 5)
+      boot_prior_sd <- paste("normal(0, ", boot_prior_sd, ")", sep = "")
+      boot_priors <- data.frame(prior =
+                                  boot_prior_sd,
+                                class =
+                                  "theta",
+                                coef = "")
+      boot_model <- update(boot_model, priors = boot_priors)
+      ## predictions
+      boot_df <- boot_df |>
+        mutate(
+          ## midpoint prediction
+          yhat_m = predict(boot_model, boot_df |> mutate(time = 0)),
+          ## incorporating varying slopes
+          yhat_s = predict(boot_model))
+      ## components
+      boot_vd <-
+        1 - sum((boot_df$y - boot_df$yhat_m) ^ 2) /
+        sum((boot_df$y - mean(boot_df$y)) ^ 2)
+      boot_vc <-
+        1 - sum((boot_df$y - boot_df$yhat_s) ^ 2) /
+        sum((boot_df$y - mean(boot_df$y)) ^ 2) - boot_vd
+      boot_omega <- boot_vc / (boot_vd + boot_vc)
+      bootstrap[bloop] <- boot_omega
+    }
+    
+    output <-
+      c(
+        vd = vd,
+        vc = vc,
+        omega = omega,
+        converged = converged,
+        var_corrs = var_corrs,
+        boots = list(bootstrap)
+      )
+    return(output)
+    
+  }
+
+# ---------------------------------------------------------------------------- #

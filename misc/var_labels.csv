@@ -1,0 +1,611 @@
+surveys,variable,label,topic
+bhps,cohadv,Advantages in living as couple,Gender & Family
+bhps,cohdis,Disadvantages in living as couple,Gender & Family
+bhps,crwora,Worry about being affected by crime,"Social Life, Social Cohesion & Trust"
+bhps,crworb,Extent of concern about crime,"Social Life, Social Cohesion & Trust"
+bhps,dfwld,Different world in future for young,Gender & Family
+bhps,lfimpa,Importance of: Health,Health & Morale
+bhps,lfimpb,Importance of: Money,Health & Morale
+bhps,lfimpc,Importance of: Having children,Health & Morale
+bhps,lfimpd,Importance of: Having a good job,Health & Morale
+bhps,lfimpe,Importance of: Being independent,Health & Morale
+bhps,lfimpf,Importance of: Owning own home,Health & Morale
+bhps,lfimpg,Importance of: Good partnership,Health & Morale
+bhps,lfimph,Importance of: Good friends,Health & Morale
+bhps,opchd1_1,Quality best prep. child: well liked,Gender & Family
+bhps,opchd1_2,Quality best prep. child: think for self,Gender & Family
+bhps,opchd1_3,Quality best prep. child: work hard,Gender & Family
+bhps,opchd1_4,Quality best prep. child: help others,Gender & Family
+bhps,opchd1_5,Quality best prep. child: obey parents,Gender & Family
+bhps,opcls1,Sees self as belonging to social class,Subjective SES
+bhps,opcls2,Subjective social class membership,Subjective SES
+bhps,opcls3,Social class affects opportunities,Subjective SES
+bhps,opeur1,Opinion: UK membership of EU,"Politics, Government & Economy"
+bhps,opeur2,UK benefited from being in EU,"Politics, Government & Economy"
+bhps,opeur3,UK long term policy re. EU should be,"Politics, Government & Economy"
+bhps,opfama,Pre-school child suffers if mother works,Gender & Family
+bhps,opfamb,Family suffers if mother works full-time,Gender & Family
+bhps,opfamc,Woman and family happier if she works,Gender & Family
+bhps,opfamd,Husband and wife should both contribute,Gender & Family
+bhps,opfame,Full time job makes woman independent,Gender & Family
+bhps,opfamf,"Husband should earn, wife stay at home",Gender & Family
+bhps,opfamg,Children need father as much as mother,Gender & Family
+bhps,opfamh,Employers should help with childcare,Gender & Family
+bhps,opfami,Single parents are as good as couples,Gender & Family
+bhps,opfamj,Cohabiting is always wrong,Gender & Family
+bhps,opfamk,Adult children should care for parents,Gender & Family
+bhps,opfaml,Divorce better than unhappy marriage,Gender & Family
+bhps,opfamm,The man should be head of household,Gender & Family
+bhps,opfamn,Bible Gods word and true,Religion & Spirituality
+bhps,opfamo,Co-habiting is alright,Gender & Family
+bhps,opfamp,Parents ought stay together for children,Gender & Family
+bhps,opfamq,Marital status is irrelevant to children,Gender & Family
+bhps,opfamr,Homosexual relationships are wrong,Gender & Family
+bhps,ophla,All health care should be free,"Politics, Government & Economy"
+bhps,ophlb,Compulsory private insurance if can pay,"Politics, Government & Economy"
+bhps,ophlc,Unfair that wealth buys medical priority,"Politics, Government & Economy"
+bhps,opiss1,Rising prices are a cause for concern,"Politics, Government & Economy"
+bhps,opiss2,Ozone layer is a cause for concern,Environment & Climate
+bhps,opiss3,Unemployment is a cause for concern,"Politics, Government & Economy"
+bhps,opiss4,Threat to nature is a cause for concern,Environment & Climate
+bhps,opiss5,Moral standards are a cause for concern,Gender & Family
+bhps,opnata,Britain has much to learn,"Politics, Government & Economy"
+bhps,opnatb,British citizenship best,"Politics, Government & Economy"
+bhps,opnatc,Some shameful things about Britain,"Politics, Government & Economy"
+bhps,opnatd,People too ready to criticise Britain,"Politics, Government & Economy"
+bhps,opnate,Britain should stay single state,"Politics, Government & Economy"
+bhps,opnatf,Co-operation better than independence,"Politics, Government & Economy"
+bhps,opngbha,Belong to neighbourhood,"Social Life, Social Cohesion & Trust"
+bhps,opngbhb,Local friends mean a lot,"Social Life, Social Cohesion & Trust"
+bhps,opngbhc,Advice obtainable locally,"Social Life, Social Cohesion & Trust"
+bhps,opngbhd,Can borrow things from neighbours,"Social Life, Social Cohesion & Trust"
+bhps,opngbhe,Willing to improve neighbourhood,"Social Life, Social Cohesion & Trust"
+bhps,opngbhf,Plan to stay in neighbourhood,"Social Life, Social Cohesion & Trust"
+bhps,opngbhg,Am similar to others in neighbourhood,"Social Life, Social Cohesion & Trust"
+bhps,opngbhh,Talk regularly to neighbours,"Social Life, Social Cohesion & Trust"
+bhps,oppola,Government reflects people's wishes,"Politics, Government & Economy"
+bhps,oppolb,People can't influence govt. policy,"Politics, Government & Economy"
+bhps,oppolc,Should be max. limit on income,"Politics, Government & Economy"
+bhps,oppold,govt. puts nation's interests first,"Politics, Government & Economy"
+bhps,oprlg3,Religion makes difference to life,Religion & Spirituality
+bhps,opsoca,Ordinary people share nations wealth,"Politics, Government & Economy"
+bhps,opsocb,One law for rich and one for poor,"Politics, Government & Economy"
+bhps,opsocc,Private enterprise solves economic probs,"Politics, Government & Economy"
+bhps,opsocd,Public services ought to be state owned,"Politics, Government & Economy"
+bhps,opsoce,Govt. has obligation to provide jobs,"Politics, Government & Economy"
+bhps,opsocf,Strong trade unions protect employees,"Politics, Government & Economy"
+bhps,trust,Trustworthiness of others,"Social Life, Social Cohesion & Trust"
+bhps,vote1,Supports a particular political party,"Politics, Government & Economy"
+bhps,vote2,Closer to one political party than other,"Politics, Government & Economy"
+bhps,vote4_1,Party affinity: Conservative,"Politics, Government & Economy"
+bhps,vote4_2,Party affinity: Labour,"Politics, Government & Economy"
+bhps,vote4_3,Party affinity: Liberal Democrat/Lib/SDP,"Politics, Government & Economy"
+bhps,vote5,Strength of support for stated party,"Politics, Government & Economy"
+bhps,vote6,Level of interest in politics,"Politics, Government & Economy"
+gss,abany,Abortion: any reason,Gender & Family
+gss,abdefect,Abortion: birth defect,Gender & Family
+gss,abhlth,Abortion: mother's health,Gender & Family
+gss,abnomore,Abortion: birth control,Gender & Family
+gss,abpoor,Abortion: too poor,Gender & Family
+gss,abrape,Abortion: rape,Gender & Family
+gss,abscale6,Abortion scale (6 items),Gender & Family
+gss,abscale7,Abortion scale (7 items),Gender & Family
+gss,absingle,Abortion: unmarried,Gender & Family
+gss,affrmact,Hiring preferences,"National Identity, Ethnicity & Immigration"
+gss,aged,Seniors should live with family,Gender & Family
+gss,athscale,Athiest: scale,"Politics, Government & Economy"
+gss,attend,Attend religious services,Religion & Spirituality
+gss,bible,View of bible,Religion & Spirituality
+gss,cappun,Death penalty,"Politics, Government & Economy"
+gss,chldidel,Ideal # of children,Gender & Family
+gss,class,Social class,Subjective SES
+gss,closeblk,Feel close to blacks,"National Identity, Ethnicity & Immigration"
+gss,closewht,Feel close to whites,"National Identity, Ethnicity & Immigration"
+gss,colath,Athiest: Teach at college,"Politics, Government & Economy"
+gss,colcom,Red: Teach at college,"Politics, Government & Economy"
+gss,colhomo,Gay: Teach at college,"Politics, Government & Economy"
+gss,colmil,Militarist: Teach at college,"Politics, Government & Economy"
+gss,colmslm,Islamist: Teach at college,"Politics, Government & Economy"
+gss,colrac,Racist: Teach at college,"Politics, Government & Economy"
+gss,comscale,Red: scale,"Politics, Government & Economy"
+gss,conarmy,Military,"Social Life, Social Cohesion & Trust"
+gss,conbus,Major companies,"Social Life, Social Cohesion & Trust"
+gss,conclerg,Organized religion,"Social Life, Social Cohesion & Trust"
+gss,coneduc,Education,"Social Life, Social Cohesion & Trust"
+gss,confed,Executive branch,"Social Life, Social Cohesion & Trust"
+gss,confinan,Banks & finance,"Social Life, Social Cohesion & Trust"
+gss,conjudge,Supreme Court,"Social Life, Social Cohesion & Trust"
+gss,conlabor,Organized labor,"Social Life, Social Cohesion & Trust"
+gss,conlegis,Congress,"Social Life, Social Cohesion & Trust"
+gss,conmedia,TV & press,"Social Life, Social Cohesion & Trust"
+gss,conmedic,Medicine,"Social Life, Social Cohesion & Trust"
+gss,conpress,Press,"Social Life, Social Cohesion & Trust"
+gss,consci,Scientific community,"Social Life, Social Cohesion & Trust"
+gss,contv,Television,"Social Life, Social Cohesion & Trust"
+gss,courts,Courts deal with criminals,"Politics, Government & Economy"
+gss,discaff,Affirm. action hurt whites,"National Identity, Ethnicity & Immigration"
+gss,discaffm,Affirm. action hurt men,Gender & Family
+gss,discaffw,Affirm. action hurt women,Gender & Family
+gss,divlaw,Divorce laws too lenient,"Politics, Government & Economy"
+gss,eqwlth,Government reduce inequality,"Politics, Government & Economy"
+gss,fair,People try to be fair,"Social Life, Social Cohesion & Trust"
+gss,fear,Afraid to walk at night,"Politics, Government & Economy"
+gss,fechld,Working moms warm,Gender & Family
+gss,fefam,Better for man to work,Gender & Family
+gss,fehire,Hire & promote women,Gender & Family
+gss,fejobaff,Preferences for hiring women,Gender & Family
+gss,fepol,Men better for politics,Gender & Family
+gss,fepresch,Pre-Ks suffer if mom works,Gender & Family
+gss,finalter,Finances better or worse,Subjective SES
+gss,finrela,Relative income,Subjective SES
+gss,fund,Fundamentalist,Religion & Spirituality
+gss,genderscale,Scale of gender role attitudes,Gender & Family
+gss,getahead,Work to get ahead,Subjective SES
+gss,god,Belief about God,Religion & Spirituality
+gss,goodlife,Finances will improve,Subjective SES
+gss,grass,Legalize marijuana,"Politics, Government & Economy"
+gss,gunlaw,Require gun permits,"Politics, Government & Economy"
+gss,hapmar,Happiness: marriage,Health & Morale
+gss,happy,Happiness: general,Health & Morale
+gss,health,Health: self-rated,Health & Morale
+gss,helpblk,Government help blacks,"Politics, Government & Economy"
+gss,helpful,People try to be helpful,"Social Life, Social Cohesion & Trust"
+gss,helpnot,Government do more or less,"Politics, Government & Economy"
+gss,helpoth,Child should help others,Gender & Family
+gss,helppoor,Government help poor,"Politics, Government & Economy"
+gss,helpsick,Government pay medical,"Politics, Government & Economy"
+gss,homoscale,Gay: scale,"Politics, Government & Economy"
+gss,homosex,Morality: Same-sex sex,Gender & Family
+gss,intlblks,Blacks intelligent or not,"National Identity, Ethnicity & Immigration"
+gss,intlwhts,Whites intelligent or not,"National Identity, Ethnicity & Immigration"
+gss,jobfind,Find a good job,Subjective SES
+gss,joblose,Likely to lose job,Subjective SES
+gss,kidssol,Mobility next generation,Subjective SES
+gss,letdie1,Let die: incurable,Health & Morale
+gss,letin1a,How many immigrants?,"National Identity, Ethnicity & Immigration"
+gss,libath,Athiest: Library book,"Politics, Government & Economy"
+gss,libcom,Red: Library book,"Politics, Government & Economy"
+gss,libhomo,Gay: Library book,"Politics, Government & Economy"
+gss,libmil,Militarist: Library book,"Politics, Government & Economy"
+gss,libmslm,Islamist: Library book,"Politics, Government & Economy"
+gss,librac,Racist: Library book,"Politics, Government & Economy"
+gss,life,Life: exciting or dull,Health & Morale
+gss,liveblks,Neighborhood half black,"National Identity, Ethnicity & Immigration"
+gss,livewhts,Neighborhood half white,"National Identity, Ethnicity & Immigration"
+gss,marblk,Relative marry black,"National Identity, Ethnicity & Immigration"
+gss,marhomo,Gay marriage,Gender & Family
+gss,marwht,Relative marry white,"National Identity, Ethnicity & Immigration"
+gss,meovrwrk,Men hurt family when overwork,Gender & Family
+gss,milscale,Militarist: scale,"Politics, Government & Economy"
+gss,misanthropy,Misanthropy scale,"Social Life, Social Cohesion & Trust"
+gss,mslmscale,Islamist: Scale,"Politics, Government & Economy"
+gss,nataid,Foreign aid,"Politics, Government & Economy"
+gss,natarms,Defense,"Politics, Government & Economy"
+gss,natchld,Child care,"Politics, Government & Economy"
+gss,natcity,Problems of cities,"Politics, Government & Economy"
+gss,natcrime,Fighting crime,"Politics, Government & Economy"
+gss,natdrug,Dealing with drugs,"Politics, Government & Economy"
+gss,nateduc,Education,"Politics, Government & Economy"
+gss,natenvir,Protect environment,"Politics, Government & Economy"
+gss,natfare,Welfare,"Politics, Government & Economy"
+gss,natheal,Improving health,"Politics, Government & Economy"
+gss,natmass,Mass transit,"Politics, Government & Economy"
+gss,natpark,Parks & recreation,"Politics, Government & Economy"
+gss,natrace,Improve life for blacks,"Politics, Government & Economy"
+gss,natroad,Highways & bridges,"Politics, Government & Economy"
+gss,natsci,Scientific research,"Politics, Government & Economy"
+gss,natsoc,Social security,"Politics, Government & Economy"
+gss,natspac,Space exploration,"Politics, Government & Economy"
+gss,neverrelact,Never active in religion,Religion & Spirituality
+gss,news,Read newspaper,"Social Life, Social Cohesion & Trust"
+gss,obey,Child should obey,Gender & Family
+gss,owngun,Gun owner,"Politics, Government & Economy"
+gss,parsol,Mobility,Subjective SES
+gss,partyid,Political Party,"Politics, Government & Economy"
+gss,pillok,Birth control 14-16 year olds,Gender & Family
+gss,polabuse,Police hit person cursing,"Politics, Government & Economy"
+gss,polattak,Police hit person punching,"Politics, Government & Economy"
+gss,polescap,Police hit person fleeing,"Politics, Government & Economy"
+gss,polhitok,Police can hit citizens,"Politics, Government & Economy"
+gss,polmurdr,Police hit murder suspect,"Politics, Government & Economy"
+gss,polviews,Political views,"Politics, Government & Economy"
+gss,polviolent,Police hit: scale,"Politics, Government & Economy"
+gss,popespks,Pope infallible,Religion & Spirituality
+gss,popular,Child should be popular,Gender & Family
+gss,pornlaw,Restrict pornography,Gender & Family
+gss,postlife,Life after death,Religion & Spirituality
+gss,pray,Pray,Religion & Spirituality
+gss,prayer,Bible prayer in schools,"Politics, Government & Economy"
+gss,premarsx,Morality: Premarital sex,Gender & Family
+gss,racdif1,Racial diff.: discrimination,"National Identity, Ethnicity & Immigration"
+gss,racdif2,Racial diff.: inborn,"National Identity, Ethnicity & Immigration"
+gss,racdif3,Racial diff.: lack education,"National Identity, Ethnicity & Immigration"
+gss,racdif4,Racial diff.: lack will,"National Identity, Ethnicity & Immigration"
+gss,racopen,Open housing law,"National Identity, Ethnicity & Immigration"
+gss,racscale,Racist: scale,"Politics, Government & Economy"
+gss,reborn,Born again,Religion & Spirituality
+gss,relactiv,Do religious activities,Religion & Spirituality
+gss,relexp,Had religious experience,Religion & Spirituality
+gss,relexper,Religious turning point,Religion & Spirituality
+gss,reliten,Strength of affiliation,Religion & Spirituality
+gss,relpersn,Religious person,Religion & Spirituality
+gss,richwork,Would work if rich,Health & Morale
+gss,satfin,Satisfied with finances,Health & Morale
+gss,satjob,Satisfied with work,Health & Morale
+gss,selfhunt,Hunter: self,"Politics, Government & Economy"
+gss,sexeduc,Sex-ed. in public schools,Gender & Family
+gss,socbar,Meet friends at bar,"Social Life, Social Cohesion & Trust"
+gss,socfrend,Meet friends,"Social Life, Social Cohesion & Trust"
+gss,socialscale,Social life scale,"Social Life, Social Cohesion & Trust"
+gss,socommun,Meet neighbors,"Social Life, Social Cohesion & Trust"
+gss,socrel,Meet relatives,"Social Life, Social Cohesion & Trust"
+gss,spanking,Spank children,Gender & Family
+gss,spkath,Athiest: Make speech,"Politics, Government & Economy"
+gss,spkcom,Red: Make speech,"Politics, Government & Economy"
+gss,spkhomo,Gay: Make speech,"Politics, Government & Economy"
+gss,spkmil,Militarist: Make speech,"Politics, Government & Economy"
+gss,spkmslm,Islamist: Make speech,"Politics, Government & Economy"
+gss,spkrac,Racist: Make speech,"Politics, Government & Economy"
+gss,sprtprsn,Spiritual person,Religion & Spirituality
+gss,suicide1,Suicide: incurable,Health & Morale
+gss,suicide2,Suicide: bankruptcy,Health & Morale
+gss,suicide3,Suicide: dishonor,Health & Morale
+gss,suicide4,Suicide: tired of living,Health & Morale
+gss,suicidescale,Suicide scale,Health & Morale
+gss,teensex,Morality: Sex 14-16 year olds,Gender & Family
+gss,thnkself,Child should think for self,Gender & Family
+gss,trust,People can be trusted,"Social Life, Social Cohesion & Trust"
+gss,tvhours,Watch television,"Social Life, Social Cohesion & Trust"
+gss,uswary,US at war next 10 years,"Politics, Government & Economy"
+gss,wlthblks,Blacks rich or poor,"National Identity, Ethnicity & Immigration"
+gss,wlthwhts,Whites rich or poor,"National Identity, Ethnicity & Immigration"
+gss,workblks,Blacks work hard,"National Identity, Ethnicity & Immigration"
+gss,workhard,Child should work hard,Gender & Family
+gss,workwhts,Whites work hard,"National Identity, Ethnicity & Immigration"
+gss,wrkwayup,No racial favors,"National Identity, Ethnicity & Immigration"
+gss,xmarsex,Morality: Extramarital affair,Gender & Family
+gss,xmovie,Watch X-rated movie,"Social Life, Social Cohesion & Trust"
+hilda,atwkadc,Fine for child under 3 to be in all-day care,Gender & Family
+hilda,atwkbmw,"Better if man earns money, woman cares for children",Gender & Family
+hilda,atwkcdw,"As well for child if mother earns money, father cares for children",Gender & Family
+hilda,atwkcs,Children suffer bc father works too much,Gender & Family
+hilda,atwkdcm,Better for child to stay with mother in case of divorce,Gender & Family
+hilda,atwkfhi,Father should be as involved as mother,Gender & Family
+hilda,atwkmmf,Bad for relationship if woman earns more,Gender & Family
+hilda,atwkmpl,Men make better political leaders,Gender & Family
+hilda,atwkmrl,Most important role for men to be father,Gender & Family
+hilda,atwkmsw,Mothers who don't need money shouldn't work,Gender & Family
+hilda,atwkpsc,Pre-school child suffers if mother works FT,Gender & Family
+hilda,atwkseh,If both partners work they should share domestic tasks,Gender & Family
+hilda,atwkwfr,Working father can have as good relationship to child,Gender & Family
+hilda,atwkwfs,Working fathers care more about success than needs of children,Gender & Family
+hilda,atwkwmr,Working mother can have as good relationship to child,Gender & Family
+hilda,atwkwms,Working mothers care more about success than needs of children,Gender & Family
+hilda,atwkwrl,Most important role for women to be mother,Gender & Family
+hilda,lskeep,Most people you meet keep their word,"Social Life, Social Cohesion & Trust"
+hilda,lssop,Most people you meet succeed by stepping on others,"Social Life, Social Cohesion & Trust"
+hilda,mcchmf,Children happier with both father and mother,Gender & Family
+hilda,mcdef,Cohabitation alright even without marriage intention,Gender & Family
+hilda,mcdiv,Divorce alright even with children,Gender & Family
+hilda,mchscr,Same rights for homosexual couples,Gender & Family
+hilda,mcindpc,Child should start living independently by 18-20,Gender & Family
+hilda,mcmhc,A man has to have children in order to be fulfilled,Gender & Family
+hilda,mcmoi,Marriage is outdated,Gender & Family
+hilda,mcnodiv,Marriage should never be ended,Gender & Family
+hilda,mcsingp,Alright for woman to have children as single parent,Gender & Family
+hilda,mcwhc,A woman has to have children in order to be fulfilled,Gender & Family
+hilda,relimp,Importance of religion,Religion & Spirituality
+psid,cds_bothparentscare,Dad should be as involved as mom,Gender & Family
+psid,cds_daddevelopment,Dad large role in child development,Gender & Family
+psid,cds_dadoldkidbetter,Dad able to enjoy older children more,Gender & Family
+psid,cds_dadtooinvolved,Dad too involved if keeps from better job,Gender & Family
+psid,cds_daycareok,OK to have child under 3 in all-day care,Gender & Family
+psid,cds_fatherhoodfulfill,Dadhood most fulfilling experience,Gender & Family
+psid,cds_fatherinteractchild,Dads should interact with child,Gender & Family
+psid,cds_firstyears,First 4 years most import. in child's develop.,Gender & Family
+psid,cds_girlboyequal,Encourage as much independence in daughters and sons,Gender & Family
+psid,cds_husbandcareerimport,Better wife helps husband career,Gender & Family
+psid,cds_mostimportantchild_1,Importance for child: obey,Gender & Family
+psid,cds_mostimportantchild_3,Importance for child: think for herself,Gender & Family
+psid,cds_mostimportantchild_4,Importance for child: work hard,Gender & Family
+psid,cds_motherfatherequal,Dad and mom equally good meeting kid's needs,Gender & Family
+psid,cds_motherhoodfulfill,Momhood most fulfilling experience,Gender & Family
+psid,cds_mothernotft,Mom with child under 5 shouldn't work full-time,Gender & Family
+psid,cds_preschoolsuffer,Preschool child suffers if mom employed,Gender & Family
+psid,cds_sharehousehold,Husband and wife in both FT should share household,Gender & Family
+psid,cds_traditionalbest,Better if man earns living,Gender & Family
+psid,cds_workingmotherssame,Working mom as warm as nonworking mom,Gender & Family
+psid,gettingbetter,Life getting better,Health & Morale
+psid,lifesatis,Life satisfaction,Health & Morale
+psid,likejobormoney,Satisfaction about income important in job,Occupation & Education
+psid,opinionimport,How much does it matter what other people think about you?,"Social Life, Social Cohesion & Trust"
+psid,satisfiedself,Are you more often satisfied or dissatisfied with yourself?,Health & Morale
+psid,savingspending,Spend or save money,Health & Morale
+psid,tas_belongcommunity,Freq. of feeling belonging to communty,"Social Life, Social Cohesion & Trust"
+psid,tas_contributesociety,Freq. of feeling contrib to society,"Social Life, Social Cohesion & Trust"
+psid,tas_divorcehurts,Divorce hurts kids,Gender & Family
+psid,tas_divorcesuccess,Child from divorced family can be successful,Gender & Family
+psid,tas_fathertimeoff,Dads should take time with young child,Gender & Family
+psid,tas_importrel,Importance of religion,Religion & Spirituality
+psid,tas_importspirit,Importance of spirituality,Religion & Spirituality
+psid,tas_lifesatisfact,How satisfied with life as a whole,Health & Morale
+psid,tas_mothersnodemanding,Moms should have demandng job,Gender & Family
+psid,tas_peoplearegood,Freq. of feeling people basically good,"Social Life, Social Cohesion & Trust"
+psid,tas_religpref0509_2,Religion: Protestant [2005-09],Religion & Spirituality
+psid,tas_religpref0509_3,Religion: Catholic [2005-09],Religion & Spirituality
+psid,tas_religpref1115_2,Religion: Protestant [2011-15],Religion & Spirituality
+psid,tas_religpref1115_3,Religion: Catholic [2011-15],Religion & Spirituality
+psid,tas_singleparentsok,Child from single-parent family can do as well,Gender & Family
+psid,tas_singleparentsuffer,Single parent hurts kids,Gender & Family
+psid,tas_singlewomenkids,Single women should have kids,Gender & Family
+psid,tas_societybetter,Freq. of feeling society gettng better,"Social Life, Social Cohesion & Trust"
+psid,tas_societymakessense,Feeling way society works makes sense,"Social Life, Social Cohesion & Trust"
+psid,tas_spritual,Spiritual person,Religion & Spirituality
+psid,thinkfuture,Think about future,Health & Morale
+psid,trustothers,Trust most others,"Social Life, Social Cohesion & Trust"
+psid,undeserved,Are there a lot of people who have good things they don't deserve?,"Social Life, Social Cohesion & Trust"
+shp,pc70,Self-Perception : incapacity to make plans because of unpredictability,Health & Morale
+shp,pc71,Self-Perception : little influence on life events,Health & Morale
+shp,pc72,Self-Perception : capacity to overcome unexpected problems,Health & Morale
+shp,pc73,Self-Perception : capacity to choose between two possibilities,Health & Morale
+shp,pc74,Self-Perception : feeling of uselessness,Health & Morale
+shp,pc75,Self-Perception : feeling of selfsatisfaction,Health & Morale
+shp,pl101,Feeling of security (victimization),Health & Morale
+shp,pn56,Values: Lying in own interest,"Social Life, Social Cohesion & Trust"
+shp,pn57,Values: Cheating on tax declaration,"Social Life, Social Cohesion & Trust"
+shp,pn58,Values: Avoiding a fare on a public transport,"Social Life, Social Cohesion & Trust"
+shp,pn59,Values: Claiming state benefits not entitled to,"Social Life, Social Cohesion & Trust"
+shp,pn60,Values: Keeping found money,"Social Life, Social Cohesion & Trust"
+shp,pn61,Values: Failing to report damage to parked vehicle,"Social Life, Social Cohesion & Trust"
+shp,pp01,Interest in politics,"Politics, Government & Economy"
+shp,pp02,Overall satisfaction with democracy,"Politics, Government & Economy"
+shp,pp03,Feeling about political influence,"Politics, Government & Economy"
+shp,pp04,Trust in Federal Government,"Politics, Government & Economy"
+shp,pp07,Future: Active in boycott,"Politics, Government & Economy"
+shp,pp08,Future: Active in strike,"Politics, Government & Economy"
+shp,pp09,Future: Active in demonstration,"Politics, Government & Economy"
+shp,pp10,"Political position: Left, right","Politics, Government & Economy"
+shp,pp12,Opinion on Swiss army: Direction,"Politics, Government & Economy"
+shp,pp13,Opinion on social expenses: Direction,"Politics, Government & Economy"
+shp,pp14,Opinion on joining the EU: Direction,"Politics, Government & Economy"
+shp,pp15,Opinion on chances for foreigners: Direction,"National Identity, Ethnicity & Immigration"
+shp,pp16,Opinion on environmental protection: Direction,Environment & Climate
+shp,pp17,Opinion on taxes on high income: Direction,"Politics, Government & Economy"
+shp,pp18,Opinion on nuclear energy: Direction,Environment & Climate
+shp,pp19_1,Party support: Swiss Radical-Democratic Party,"Politics, Government & Economy"
+shp,pp19_3,Party support: PSS Swiss Socialist Party,"Politics, Government & Economy"
+shp,pp19_4,Party support: UDC Democratic Union of the Centre,"Politics, Government & Economy"
+shp,pp20,Gender: Women in general penalized,Gender & Family
+shp,pp21,Gender: Personnally penalized,Gender & Family
+shp,pp22,Gender: In favour of measures,Gender & Family
+shp,pp23,Gender: Personal action,Gender & Family
+shp,pp45,General trust in people,"Social Life, Social Cohesion & Trust"
+shp,pp50,Class identification: yes-no,Subjective SES
+shp,pp51,Class identification (spontanously): Which,Subjective SES
+shp,pp52,Class identification (non spontaneously): Which,Subjective SES
+shp,pp53,Public expenses: Protection of the environment,"Politics, Government & Economy"
+shp,pp54,Public expenses: Health,"Politics, Government & Economy"
+shp,pp55,Public expenses: Day nursery,"Politics, Government & Economy"
+shp,pp56,Public expenses: Police and public order,"Politics, Government & Economy"
+shp,pp57,Public expenses: Research and education,"Politics, Government & Economy"
+shp,pp58,Public expenses: Military and defense,"Politics, Government & Economy"
+shp,pp59,Public expenses: Retirement,"Politics, Government & Economy"
+shp,pp60,Public expenses: Culture and art,"Politics, Government & Economy"
+shp,pp61,Public expenses: Unemployment benefit,"Politics, Government & Economy"
+shp,pp62,Public expenses: Aid to developing countries,"Politics, Government & Economy"
+shp,pp63,Public expenses: Social aid,"Politics, Government & Economy"
+shp,pp64,Opinion on joining the EU: Joining or bilateral agreements,"Politics, Government & Economy"
+shp,pp65,Opinion on joining the EU: Continuation or dissolution of bilateral agreements,"Politics, Government & Economy"
+shp,pp66,Party identification: yes-no,"Politics, Government & Economy"
+shp,pp67_2,Party identification: Swiss Christian-Democrat Party,"Politics, Government & Economy"
+shp,pp67_3,Party identification: PSS Swiss Socialist Party,"Politics, Government & Economy"
+shp,pp67_4,Party identification: UDC Democratic Union of the Centre,"Politics, Government & Economy"
+shp,pp68,Party identification: Proximity,"Politics, Government & Economy"
+shp,pp69,Sympathy political party: Liberal party,"Politics, Government & Economy"
+shp,pp70,Sympathy political party: Christian democrats,"Politics, Government & Economy"
+shp,pp71,Sympathy political party: Social Democrats,"Politics, Government & Economy"
+shp,pp72,Sympathy political party: Swiss people's party,"Politics, Government & Economy"
+shp,pp73,Sympathy political party: Green party,"Politics, Government & Economy"
+shp,pp74,Opinion on federalism: Direction,"Politics, Government & Economy"
+shp,pp76,Protection of environment: Importance,Environment & Climate
+shp,pp77,Protection of environment: Recycling,Environment & Climate
+shp,pp78,Protection of environment: Bin bag fees,Environment & Climate
+shp,pp79,Protection of environment: Organic and ecological products,Environment & Climate
+shp,pp80,Protection of environment: Purchase of fruits and vegetables,Environment & Climate
+shp,pr16,Belief in God or something divine,Religion & Spirituality
+shp,pr20,Feeling of spirituality,Religion & Spirituality
+shp,pr21,Feeling of religiosity,Religion & Spirituality
+shp,pr23,Attitude towards Christianism,Religion & Spirituality
+shp,pr24,Attitude towards Islam,Religion & Spirituality
+shp,pr25,Attitude towards Hinduism,Religion & Spirituality
+shp,pr26,Attitude towards Buddhism,Religion & Spirituality
+shp,pr27,Attitude towards Judaism,Religion & Spirituality
+shp,pr28,Attitude towards atheism,Religion & Spirituality
+soep,plb0104_h,Importance of employment,Occupation & Education
+soep,plb0528_h,Priority in career choice: income,Occupation & Education
+soep,plb0530_h,Priority in career choice: status,Occupation & Education
+soep,plb0531_h,Priority in career choice: social contact,Occupation & Education
+soep,plb0532_h,Priority in career choice: compatibility of family and work,Occupation & Education
+soep,plc0115,Social Security Contributions,"Politics, Government & Economy"
+soep,pld0043,Freq. Lend Friends Pers. Belongings,"Social Life, Social Cohesion & Trust"
+soep,pld0044,Freq. Lend Friends Money,"Social Life, Social Cohesion & Trust"
+soep,pld0045,Freq. Leave Door Unlocked,"Social Life, Social Cohesion & Trust"
+soep,plh0001,Democratic Ideal,"Politics, Government & Economy"
+soep,plh0004,Political attitude,"Politics, Government & Economy"
+soep,plh0007,Interest in politics,"Politics, Government & Economy"
+soep,plh0011_h,Party preference: yes,"Politics, Government & Economy"
+soep,plh0012_h1,Party preference: SPD,"Politics, Government & Economy"
+soep,plh0012_h2,Party preference: CDU,"Politics, Government & Economy"
+soep,plh0012_h3,Party preference: CSU,"Politics, Government & Economy"
+soep,plh0012_h4,Party preference: FDP,"Politics, Government & Economy"
+soep,plh0012_h5,Party preference: The Greens,"Politics, Government & Economy"
+soep,plh0012_h6,Party preference: The Left,"Politics, Government & Economy"
+soep,plh0013_h,Party preference: intensity,"Politics, Government & Economy"
+soep,plh0014,Government Interference,"Politics, Government & Economy"
+soep,plh0015,Extent And Type Of State Powers,"Politics, Government & Economy"
+soep,plh0016,Financial Security For Family,"Politics, Government & Economy"
+soep,plh0017,Care For Pre-School Children,"Politics, Government & Economy"
+soep,plh0018,Care For School Children,"Politics, Government & Economy"
+soep,plh0019,Financial Security When Unemployed,"Politics, Government & Economy"
+soep,plh0020,Job Creation Schemes,"Politics, Government & Economy"
+soep,plh0021,Financial Security When Sick,"Politics, Government & Economy"
+soep,plh0022,Help For The Sick,"Politics, Government & Economy"
+soep,plh0023,Financial Security In Old-Age,"Politics, Government & Economy"
+soep,plh0024,Help For The Elderly,"Politics, Government & Economy"
+soep,plh0025,Financial Security When Requiring Care,"Politics, Government & Economy"
+soep,plh0026,Help For Those Requiring Care,"Politics, Government & Economy"
+soep,plh0030,Worried About Childcare,Gender & Family
+soep,plh0031,Worried About Consequences Of EU- Enlargement,"Politics, Government & Economy"
+soep,plh0032,Worried About Economic Development,"Politics, Government & Economy"
+soep,plh0033,Worried About Finances,Health & Morale
+soep,plh0034,worried about stability of financial markets,"Politics, Government & Economy"
+soep,plh0035,Worried About Own Health,Health & Morale
+soep,plh0036,Worried About Environment,Environment & Climate
+soep,plh0037,worried about consequences from climate change,Environment & Climate
+soep,plh0038,Worried About Peace,"Politics, Government & Economy"
+soep,plh0039,Worried About global terrorism,"Politics, Government & Economy"
+soep,plh0040,worried about crime in germany,"Politics, Government & Economy"
+soep,plh0041,Worried About Introduction Of Euro,"Politics, Government & Economy"
+soep,plh0042,Worried About Job Security,"Politics, Government & Economy"
+soep,plh0054,Peace And Order,"Politics, Government & Economy"
+soep,plh0054_1,Political goals: prority peace and order,"Politics, Government & Economy"
+soep,plh0056,Citizen Influence,"Politics, Government & Economy"
+soep,plh0056_1,Political goals: prority citizen influence,"Politics, Government & Economy"
+soep,plh0058,Fight Against Inflation,"Politics, Government & Economy"
+soep,plh0058_1,Political goals: prority rising prices,"Politics, Government & Economy"
+soep,plh0061,Freedom Of Speech,"Politics, Government & Economy"
+soep,plh0061_1,Political goals: prority freedom of speech,"Politics, Government & Economy"
+soep,plh0090,Importance Of Circle Of Friends,"Social Life, Social Cohesion & Trust"
+soep,plh0091_v2,Importance for satisfaction: work,Health & Morale
+soep,plh0092_v2,Importance for satisfaction: family,Health & Morale
+soep,plh0093_v2,Importance for satisfaction: friends,Health & Morale
+soep,plh0094_v2,Importance for satisfaction: income,Health & Morale
+soep,plh0095_v2,Importance for satisfaction: dwelling,Health & Morale
+soep,plh0096_v2,Importance for satisfaction: political influence,Health & Morale
+soep,plh0097_v2,Importance for satisfaction: professional success,Health & Morale
+soep,plh0098_v2,Importance for satisfaction: leisure,Health & Morale
+soep,plh0099_v2,Importance for satisfaction: health,Health & Morale
+soep,plh0100_v2,Importance for satisfaction: protection of environment,Health & Morale
+soep,plh0101,"Import.-Rlgion, Belief For Satisfaction",Health & Morale
+soep,plh0104,Importance: To Be Able To Afford Sth.,Subjective SES
+soep,plh0105,Importance: To help Others,"Social Life, Social Cohesion & Trust"
+soep,plh0106,Importance: To Fulfil Once Potential,Health & Morale
+soep,plh0107,Importance: To Have Success In The job,Occupation & Education
+soep,plh0108,Importance: To Have An Own House,Subjective SES
+soep,plh0109,Importance: To have a happy marriage,Gender & Family
+soep,plh0110,Importance: To have children,Gender & Family
+soep,plh0111,Importance: To be socially and politically active,"Social Life, Social Cohesion & Trust"
+soep,plh0112,Importance: To be able to travel and see the world,Health & Morale
+soep,plh0113,Entitlement Received Are Deserved,"Politics, Government & Economy"
+soep,plh0114,German Citizen Benefits Are Equitable,"Politics, Government & Economy"
+soep,plh0152_v1,Satisfaction with democracy [1987-1989],"Politics, Government & Economy"
+soep,plh0152_v2,"Satisfaction with democracy [2005,2010,2016]","Politics, Government & Economy"
+soep,plh0188,Confident About Future,Health & Morale
+soep,plh0192,On The Whole Trust People,"Social Life, Social Cohesion & Trust"
+soep,plh0193,Nowadays Can't Trust Anyone,"Social Life, Social Cohesion & Trust"
+soep,plh0194,Caution Towards Foreigners,"Social Life, Social Cohesion & Trust"
+soep,plh0195,"Most People Are Exploitive, Fair","Social Life, Social Cohesion & Trust"
+soep,plh0196,"Most People Are Helpful, Act In Own Interest","Social Life, Social Cohesion & Trust"
+soep,plh0197,Willingness To Take Risks While Driving,Health & Morale
+soep,plh0198,Willingness To Take Risks In Financial Matters,Health & Morale
+soep,plh0199,Willingness To Take Risks In Leisure And Sports,Health & Morale
+soep,plh0200,Willingness To Take Risks In Occupation,Occupation & Education
+soep,plh0201,Willingness To Take Health Risks,Health & Morale
+soep,plh0202,Willingness To Take Risks In Trusting Other People,"Social Life, Social Cohesion & Trust"
+soep,plh0204_h,Self-evaluation: risk,Health & Morale
+soep,plh0212,Thorough worker,Health & Morale
+soep,plh0213,Am communicative,Health & Morale
+soep,plh0214,Am sometimes too coarse with others,Health & Morale
+soep,plh0215,Am original,Health & Morale
+soep,plh0216,Worry a lot,Health & Morale
+soep,plh0217,Able to forgive,Health & Morale
+soep,plh0218,Tend to be lazy,Health & Morale
+soep,plh0219,Am sociable,Health & Morale
+soep,plh0220,Value artistic experiences,Health & Morale
+soep,plh0221,Somewhat nervous,Health & Morale
+soep,plh0222,Carry out tasks efficiently,Health & Morale
+soep,plh0223,Reserved,Health & Morale
+soep,plh0224,Friendly with others,Health & Morale
+soep,plh0225,Have lively imagination,Health & Morale
+soep,plh0226,Deal well with stress,Health & Morale
+soep,plh0244,Attitude towards future,Health & Morale
+soep,plh0253,Personal Patience,Health & Morale
+soep,plh0254,Personal Impulsivness,Health & Morale
+soep,plh0255,inquisitive,Health & Morale
+soep,plh0332,Concerns Child Health,Health & Morale
+soep,plh0335,Worried About Own Retirement Pension,"Politics, Government & Economy"
+soep,plh0336,Worried About Cohesion in Society,"Social Life, Social Cohesion & Trust"
+soep,plj0040,Ties To Local Area,"National Identity, Ethnicity & Immigration"
+soep,plj0043,Ties To Local Area,"National Identity, Ethnicity & Immigration"
+soep,plj0046,Worried About Immigration To Germany,"National Identity, Ethnicity & Immigration"
+soep,plj0047,Worried About Hostility To Foreigners,"National Identity, Ethnicity & Immigration"
+soep,plj0078,Feel German,"National Identity, Ethnicity & Immigration"
+soep,plj0081,Connected With Country Of Origin,"National Identity, Ethnicity & Immigration"
+soep,plj0082,Feeling Of Not Belonging,"National Identity, Ethnicity & Immigration"
+soep,plj0083,Feel At Home in Country Of Origin,"National Identity, Ethnicity & Immigration"
+ukhls,ahvwell,Importance of doing well in quals,Occupation & Education
+ukhls,apvocimp,Importance of Apprenticeship/Vocational,Occupation & Education
+ukhls,carbuy1,Comfort,Environment & Climate
+ukhls,carbuy10,Safety,Environment & Climate
+ukhls,carbuy11,Speed/performance,Environment & Climate
+ukhls,carbuy12,"Features - SAT-NAV, CD player, music system, power steering etc...",Environment & Climate
+ukhls,carbuy2,Costs - purchase/running/resale value/tax/insurance,Environment & Climate
+ukhls,carbuy3,Small engine,Environment & Climate
+ukhls,carbuy4,Large engine,Environment & Climate
+ukhls,carbuy5,Environmentally friendly/low CO2 emissions,Environment & Climate
+ukhls,carbuy6,Electric car/van - one that's plugged directly into an electricity supply,Environment & Climate
+ukhls,carbuy7,Style/design/image of brand/model,Environment & Climate
+ukhls,carbuy8,Interior space/functionality/boot size,Environment & Climate
+ukhls,carbuy9,Reliability,Environment & Climate
+ukhls,civicduty,Sense of civic duty,"Politics, Government & Economy"
+ukhls,colbens1,party sympathy: conservative,"Politics, Government & Economy"
+ukhls,colbens2,party sympathy: labour,"Politics, Government & Economy"
+ukhls,colbens3,party sympathy: liberal democrats,"Politics, Government & Economy"
+ukhls,demorient,Democratic orientation,"Politics, Government & Economy"
+ukhls,eumem,Should UK remain a member of the EU,"Politics, Government & Economy"
+ukhls,ocimpa,Occupation: Important: Job Security,Occupation & Education
+ukhls,ocimpb,Occupation: Important: High income,Occupation & Education
+ukhls,ocimpe,Occupation: Important: Lot leisure time,Occupation & Education
+ukhls,ocimpf,Occupation: Important: Interesting job,Occupation & Education
+ukhls,ocimpi,Occupation: Important: Contribute to soc.,Occupation & Education
+ukhls,ocimpk,Occupation: Important: Time for family,Occupation & Education
+ukhls,ocimpl,Occupation: Important: Job help others,Occupation & Education
+ukhls,oprlg,Whether belong to a religion,Religion & Spirituality
+ukhls,oprlg1_1,Religion: Church of England/Anglican,Religion & Spirituality
+ukhls,oprlg1_11,Religion: Muslim/Islam,Religion & Spirituality
+ukhls,oprlg1_2,Religion: Roman Catholic,Religion & Spirituality
+ukhls,oprlg3,Religion makes a difference to life,Religion & Spirituality
+ukhls,scenv_ftst,How feel about current lifestyle and the environment,Environment & Climate
+ukhls,scenv_grn,Being green is an alternative lifestyle,Environment & Climate
+ukhls,scfannoy,Friends get on my nerves,"Social Life, Social Cohesion & Trust"
+ukhls,scfcritic,Friends criticise me,"Social Life, Social Cohesion & Trust"
+ukhls,scopecl200,Affected by climate change next 200 years,Environment & Climate
+ukhls,scopecl30,Affected by climate change next 30 years,Environment & Climate
+ukhls,scopfamb,Family suffers if mother works full-time,Gender & Family
+ukhls,scopfamd,Husband and wife should contribute to hh income,Gender & Family
+ukhls,scopfamf,"Husband should earn, wife should stay at home",Gender & Family
+ukhls,scopngbha,Belong to neighbourhood,"Social Life, Social Cohesion & Trust"
+ukhls,scopngbhb,Local friends mean a lot,"Social Life, Social Cohesion & Trust"
+ukhls,scopngbhc,Advice obtainable locally,"Social Life, Social Cohesion & Trust"
+ukhls,scopngbhd,Can borrow things from neighbours,"Social Life, Social Cohesion & Trust"
+ukhls,scopngbhe,Willing to improve neighbourhood,"Social Life, Social Cohesion & Trust"
+ukhls,scopngbhf,Plan to stay in neighbourhood,"Social Life, Social Cohesion & Trust"
+ukhls,scopngbhg,Am similar to others in neighbourhood,"Social Life, Social Cohesion & Trust"
+ukhls,scopngbhh,Talk regularly to neighbours,"Social Life, Social Cohesion & Trust"
+ukhls,scpundstnd,Spouse/partner understands way I feel,Gender & Family
+ukhls,scrannoy,Family gets on my nerves,Gender & Family
+ukhls,scrcritic,Family criticises me,Gender & Family
+ukhls,scrletdwn,Family lets me down,Gender & Family
+ukhls,scrrely,Can rely on family,Gender & Family
+ukhls,vote1,Supports a particular political party,"Politics, Government & Economy"
+ukhls,vote2,Closer to one political party than others,"Politics, Government & Economy"
+ukhls,vote3_1,Party support: Conservatives,"Politics, Government & Economy"
+ukhls,vote3_2,Party support: Labour,"Politics, Government & Economy"
+ukhls,vote3_3,Party support: Liberal Democrat,"Politics, Government & Economy"
+ukhls,vote4_1,Party affinity: Conservatives,"Politics, Government & Economy"
+ukhls,vote4_2,Party affinity: Labour,"Politics, Government & Economy"
+ukhls,vote4_3,Party affinity: Liberal Democrat,"Politics, Government & Economy"
+ukhls,vote5,Strength of support for stated party,"Politics, Government & Economy"
+ukhls,vote6,Level of interest in politics,"Politics, Government & Economy"
+ukhls,voteintent,Voting intention,"Politics, Government & Economy"
+ukhls,votenorm,Voting as a social norm,"Politics, Government & Economy"
