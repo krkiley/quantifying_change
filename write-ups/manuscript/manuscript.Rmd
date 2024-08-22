@@ -1,42 +1,45 @@
 ---
-title: "Quantifying the Importance of Change for Understanding Differences in Personal Culture"
+title: |
+  | Quantifying the Importance of Change for Understanding 
+  | Differences in Personal Culture
 author: 
-  - Achim Edelmann^[médialab, Science Po]
-  - Kevin Kiley^[Department of Sociology and Anthropology, North Carolina State University]
+  - Achim Edelmann^[médialab, Science Po; equal authorship.]
+  - Kevin Kiley^[Department of Sociology and Anthropology, North Carolina State University; equal authorship.]
   - Turgut Keskintürk^[Department of Sociology, Duke University]
   - Isabella Bouklas^[Department of Sociology, Duke University]
   - Stephen Vaisey^[Department of Sociology, Duke University]
 output:
   pdf_document:
-    latex_engine: xelatex
     keep_tex: true
 geometry: margin=1in 
-fontsize: 12pt
+fontsize: 11pt
+fontfamily: mathpazo
 header-includes:
-  \usepackage{fontspec}
-  \setmainfont{Times New Roman}
-  \setlength{\parindent}{3em}
-  \usepackage{caption}
-  \usepackage{setspace}
-  \usepackage{endnotes}
-  \renewcommand{\enotesize}{\normalsize}
-  \let\footnote=\endnote
+- \usepackage{array}
+- \usepackage{longtable}
+- \usepackage{booktabs}
+- \usepackage{float}
+- \usepackage{caption}
+- \usepackage{amsmath}
+- \captionsetup{justification=raggedright,
+                singlelinecheck=false}
 bibliography: kileybib.bib
 csl: asa.csl
-abstract: "Work in the sociology of culture has converged on a general conclusion that while people sometimes make substantial shifts in their personal culture over time, most elements of personal culture are characterized by low rates of persistent change during adulthood. Recent developments have begun to quantify change over time and initial differences, but it is unclear how to use these components to understand the relative importance of change, especially when change is modeled non-linearly. To advance this debate, we introduce a measure for quantifying the proportion of systematic variance in panel data attributable to intrapersonal change. Applying this measure to 609 items from seven surveys in five countries, we find that although intrapersonal change is common, it does not explain a large share of systematic variance. As an extension of the theoretical debate, we demonstrate that this measure provides new insights when comparing social groups, showing that intrapersonal change is less common among U.S. college graduates than among those without a college degree. Our findings provide a new perspective on several important theoretical debates, as well as a tool to address new questions."
+abstract: "Work in the sociology of culture has converged on a general conclusion that while people sometimes make substantial shifts in their personal culture over time, most elements of personal culture are characterized by low rates of persistent change during adulthood. Recent developments have begun to quantify change over time and initial differences, but it is unclear how to use these components to understand the relative importance of change, especially when change is modeled non-linearly. To advance this debate, we introduce a measure for quantifying the proportion of systematic variance in panel data attributable to intrapersonal change. Applying this measure to 610 items from seven surveys in five countries, we find that although intrapersonal change is common, it does not explain a large share of systematic variance. As an extension of the theoretical debate, we demonstrate that this measure provides new insights when comparing social groups, showing that intrapersonal change is less common among U.S. college graduates than among those without a college degree. Our findings provide a new perspective on several important theoretical debates, as well as a tool to address new questions."
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = F, message = F, warning = F)
+knitr::opts_chunk$set(echo = F, 
+                      message = F, 
+                      warning = F)
+knitr::opts_chunk$set(fig.align = "center")
 ```
-
-\doublespacing
 
 # Introduction
 
 An important contemporary debate in sociology centers on the importance of individual change over time for understanding differences in "personal culture"---attitudes, beliefs, values, and practices [@lizardo2017; @kiley2020; @lersch2023; @underwood2022; @vaisey2016]. This question has deep roots in seemingly contradictory theoretical perspectives. For example, pragmatist theories of action claim that changes in social environments cause people to adapt their views and make new cultural meanings [@swidler2001; @gross2009], while Bourdieusian practice theories argue that the "past conditions of production" leave a mark on people's personal culture that lasts throughout their lives [@bourdieu1990]. Models of social influence assume that people adapt their culture in the face of new information [@goldberg2018], while the emphasis on cohort effects in models of aggregate social and cultural change requires them to be open to change while young but become fairly resistant to it as they age [@ryder1965]. Finally, life course theories posit important changes over time as people advance through important transitions in their lives, but that certain life stages have more lasting influence than others [@elder2003; @bardi2009].
 
-Recent work on this topic has converged on a general conclusion that people do sometimes make substantial shifts in their personal culture over time but that most elements of personal culture are characterized by low rates of persistent change during adulthood [@kiley2020; @lersch2023]. Work leading to this conclusion adopted a "tournament of models" approach to adjudicating different theoretical perspectives [@lersch2023: p. 228]. In this framework, researchers formalized different models of change over time and relied on model selection criteria---primarily the Bayesian Information Criterion [@raftery1995]---to classify different questions as demonstrating either "no change" or "any change." The size of these piles then serves as the primary evidence for the truth of different arguments [@kiley2020; @vaisey2021].
+Recent work on this topic has converged on a general conclusion that people do sometimes make substantial shifts in their personal culture over time but that most elements of personal culture are characterized by low rates of persistent change during adulthood [@kiley2020; @lersch2023]. Work leading to this conclusion adopted a "tournament of models" approach to adjudicating different theoretical perspectives [@lersch2023: p. 228]. In this framework, researchers formalized different models of change over time and relied on model selection criteria---primarily the Bayesian Information Criterion [@raftery1995]---to classify different questions as demonstrating either "no change" or "any change." The size of these piles then serves as the primary evidence for the truth of different arguments [@kiley2020; @vaisey2021; @lersch2023].
 
 However, as consensus in the overall picture emerges, researchers are now turning toward understanding the conditions that produce persistent change in personal culture, including age, education, and life-course transitions; whether certain kinds of people are more likely to make persistent changes in personal culture; and whether certain kinds of personal culture are more likely to be characterized by persistent change or stability. The tournament of models approach, useful for the broad question of whether change happens, is ill-suited to addressing these more theoretically grounded questions.
 
@@ -44,7 +47,7 @@ In a recent paper, Lersch [-@lersch2023] takes an important step forward by devi
 
 In this paper, we build on the LCAM by outlining a single metric that combines components of the LCAM to quantify the relative importance of intrapersonal change and interpersonal difference for explaining variation in a population for a variable over time. Our approach isolates the "systematic" components of variance (i.e., it removes random change and measurement error), to provide a single summary of how much systematic variation can reasonably be attributed to people making persistent changes over time. This quantity can then be used as a quick diagnostic to compare across questions, groups, periods, or samples to isolate where within-person change is more or less useful for explaining variation. We demonstrate the utility of this quantity in two ways. 
 
-First, we use 609 items from seven panel surveys from five countries to quantify the proportion of variance that is attributable to systematic intrapersonal change over the study period rather than to interpersonal differences at baseline. This allows us to generate an overall picture of how much of the total systematic variation in personal culture change tends to explain. These findings largely echo previous findings but enable clearer statements about the relative importance of change across questions, rather than binary claims about whether change "happens" or specific quantification of how much change occurs. 
+First, we use 610 items from seven panel surveys from five countries to quantify the proportion of variance that is attributable to systematic intrapersonal change over the study period rather than to interpersonal differences at baseline. This allows us to generate an overall picture of how much of the total systematic variation in personal culture change tends to explain. These findings largely echo previous findings but enable clearer statements about the relative importance of change across questions, rather than binary claims about whether change "happens" or specific quantification of how much change occurs. 
 
 Second, to illustrate how this quantity might be used by a researcher with a specific topical or theoretical interest, we investigate differences in the relative importance of intrapersonal change for people with and without a college degree. We find that change explains a smaller proportion of systematic variance among college-educated respondents, suggesting that college crystallizes one's personal culture rather than fostering an openness to new information. This offers a new empirical basis to theorize about the role of education in influencing personal culture.
 
@@ -62,7 +65,7 @@ Empirically comparing which of these models better fit a broad range of question
 
 On the other hand, the claim that change is a relatively infrequent phenomenon has been difficult to square with research identifying durable change as a result of social experiences across a number of cultural dimensions, such as morality [@brocic2021], trust [@mewes2021], and concerns about immigration [@kratz2021]. Similarly, there are longitudinal studies showing that cues from political elites can change an individual's position on specific policy issues [@slothuus2021; @zaller1992] and that changes in their close contacts and acquaintances can change individuals' attitudes on group-related politics [@gelman2021; @dellaposta2018]. Given how often we observe people change their personal culture, it is hard to accept that adults do not change.
 
-Drawing on these findings, Lersch [-@lersch2023] challenged the SDM and AUM as a "needless dichotomy," proposing the "Life Course Adaption Model" (LCAM) as an alternative. This model draws on the life course perspective to model personal culture as a different linear trajectory[^linear] over the duration of a panel for each respondent. In doing this, Lersch rectified three shortcomings of the AUM and SDM. First, the AUM, as described by Kiley and Vaisey, posits that changes follow a Markov process where responses at time $t$ are a function of responses at time $t-1$ but not earlier time points. However, earlier life experiences can (directly and indirectly) mold personal culture when transitioning to new social roles or into new environments, even if their initial impact is delayed. For example, childhood events might influence views on family structures later when individuals form their own families. Therefore, the LCAM considers influences from earlier than just $t-1$ on responses at time $t$.
+Drawing on these findings, Lersch [-@lersch2023] challenged the SDM and AUM as a "needless dichotomy," proposing the "Life Course Adaption Model" (LCAM) as an alternative. This model draws on the life course perspective to model personal culture as a linear trajectory[^linear] over the duration of a panel for each respondent. In doing this, Lersch rectified three shortcomings of the AUM and SDM. First, the AUM, as described by Kiley and Vaisey, posits that changes follow a Markov process where responses at time $t$ are a function of responses at time $t-1$ but not earlier time points. However, earlier life experiences can (directly and indirectly) mold personal culture when transitioning to new social roles or into new environments, even if their initial impact is delayed. For example, childhood events might influence views on family structures later when individuals form their own families. Therefore, the LCAM considers influences from earlier than just $t-1$ on responses at time $t$.
 
 [^linear]: In supplemental materials, Lersch models age using splines as well, with results generally showing the same conclusions.
 
@@ -146,9 +149,9 @@ We can think of $\omega$ as a type of Intraclass Correlation Coefficient focused
 
 Because this quotient summarizes variance proportions and therefore has no natural referent, it is hard to say at which values we observe "a lot" of intrapersonal change. But summarizing questions in this way allows us to compare the relative importance of our two broad processes across a range of questions that might have different levels of non-systematic variance. This gives us a sense of the relative prevalence of these two processes for each question, which is not achievable under the tournament of models approach. This also allows us to compare which kinds of questions show more or less intrapersonal change relative to interpersonal differences. While the tournament of models approach allowed researchers to say whether questions in general showed *any* evidence of updating, this approach allows us to make more specific claims about the prevalence of these theoretical processes for particular questions relative to each other.
 
-## Bootstrapping for Confidence Intervals
+## Bootstrapping for Quantifying Sampling Variability
 
-[Explain how we do that here]
+Of course, the $\omega$ measure is itself variable---most particularly due to sampling variability---such that the composition of durable changers and stable respondents in a particular sample might affect the systematic components $V(D)$ and $V(C)$. It is thus important to establish confidence intervals to reflect the uncertainty in the $\omega$. We achieve this by incorporating nonparametric bootstraps with case resampling. In doing this, we first resample the respondents with replacement and assign a new identifier to the set of new *respondents*, allowing us to change the composition of level-2 units in our data. Second, we estimate the LCAM in this slightly perturbed sample, and calculate the $\omega$. We then replicate this procedure $N$ times and establish confidence intervals using the distribution of bootstrapped omega values.
 
 # Example 1: Cross-Question Comparisons
 
@@ -160,10 +163,29 @@ We use data from seven nationally representative panel surveys from Australia, G
 
 [^1]: For more information on these data sources, see [@data_gss; @data_hilda; @data_bhps; @data_ukhls; @data_soep; @data_shp; @data_psid].
 
-```{=tex}
-\begin{center}
-<Table 1 about here>
-\end{center}
+```{r, message = FALSE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+table <- tibble(
+  Country = c("Australia", "Germany", "Great Britian", "Great Britian", "Switzerland", "United States", "United States"),
+  Survey = c("Household, Income and Labor Dynamics in Australia (HILDA)",
+             "Socio-Economic Panel Study (SOEP)",
+             "British Household Panel Survey (BHPS)",
+             "Understanding Society/UK Household Longitudinal Study (UKHLS)",
+             "Swiss Household Panel (SHP)",
+             "General Social Survey (GSS)",
+             "Panel Study of Income Dynamics (PSID)"),
+  Period = c("2001-2021", "1984-2020", "1991-2008", "2009-2020", "1999-2019", "2006-2012", "1968-2019"),
+  Outcomes = c(30, 122, 83, 66, 77, 183, 49)
+)
+kableExtra::kable(table,
+                  booktabs = TRUE,
+                  format = "latex",
+                  align = "llcc",
+                  caption = "The Description of the Data Sources") |> 
+  kable_styling(latex_options = c("scale_down", "HOLD_position"))
+
 ```
 
 ## Analysis
@@ -174,10 +196,18 @@ As a first step in our analysis, we fit this LCAM to each of the 609 measures of
 
 Figure 1 plots the proportion of systematic variance attributable to interpersonal differences and intrapersonal change for each of the 609 questions, plotted separately by panel. To broadly summarize the results, all panels show a similar range of the proportion of systematic variance attributable to intrapersonal change. Across panels, the median value of $\omega$ is 0.094 (mean of 0.098), with an interquartile range of 0.053 to 0.139. All panels include questions where $\omega$ is essentially 0, and all panels include questions with $\omega$ values greater than 0.20. The maximum $\omega$ value is 0.26.
 
-```{=tex}
+```{=latex}
+\begin{figure}[ht]
 \begin{center}
-<Figure 1 about here>
+\caption{Proportions of Systematic Variance in Personal Culture}
+```
+```{r fig1, out.width = "100%", fig.pos = "H"}
+knitr::include_graphics("../../figures/omegas.png")
+```
+```{=latex}
 \end{center}
+\footnotesize{\textit{Notes:} The figure shows $\omega$ and 1 - $\omega$ as the proportion of systematic variance attributable to intrapersonal change and interpersonal differences. See Supplemental Materials A for the full set of item values.}
+\end{figure}
 ```
 
 Across all questions, interpersonal differences account for a much larger share of the systematic variance in responses than intrapersonal change. Again, this is to be expected. Interpersonal differences capture not just pre-adult socialization, but all accumulated experiences up to the start of the panel that might influence personal culture.
@@ -228,10 +258,18 @@ To compare these competing propositions, we calculate $\omega$ values separately
 
 Figure 3 plots the distribution of differences in $\omega$ values between people with at least a bachelor's degree and people with less than a bachelor's degree at wave 1 of the panel for 183 GSS items. Values greater than 0 indicate that intrapersonal change accounts for more systematic variance among college graduates than among those without a college degree, while values less than 0 indicate the opposite.
 
-```{=tex}
+```{=latex}
+\begin{figure}[ht]
 \begin{center}
-<Figure 3 about here>
+\caption{Difference in $\omega$ Across College Graduates and Non-Graduates}
+```
+```{r fig3}
+knitr::include_graphics("../../figures/colleges.png")
+```
+```{=latex}
 \end{center}
+\footnotesize{\textit{Notes:} The figure shows the difference in $\omega$ values across college graduates and college non-graduates. Values above (below) 0 means that those with college degree have higher (lower) variance of intrapersonal change. The dashed red line marks 0 difference.}
+\end{figure}
 ```
 
 There is a clear pattern in Figure 3: for more than 80 percent of these GSS items, intrapersonal change is a larger component of systematic variance for people without a college degree. While most of these differences are small in absolute terms (less than 2 percentage points), several are greater than 5 percentage points. Given the distribution observed in Figure 1 showing that the systematic variance attributable to intrapersonal change averages around 0.09, a 5 percentage point difference between groups is quite substantial.
@@ -304,165 +342,7 @@ We believe the approach we outlined here can push past the "needless dichotomy" 
 
 This paper uses unit record data from Household, Income and Labour Dynamics in Australia Survey [HILDA] conducted by the Australian Government Department of Social Services (DSS). The findings and views reported in this paper, however, are those of the authors and should not be attributed to the Australian Government, DSS, or any of DSS’ contractors or partners. DOI: 10.26193/0LPD4U. The SOEP is administered at the German Institute for Economic Research (DIW Berlin) and funded by the Federal Ministry for Education and Research (BMBF) and the state governments under the umbrella of the Leibniz Association. The BHPS data were made available through the UK data archive. The data were originally collected by the ESRC research center on micro-social change at the University of Essex, now incorporated within the Institute for Social and Economic Research. The authors bear full responsibility for the analyses and interpretation of the data presented in this article. Understanding Society is an initiative funded by the Economic and Social Research Council and various Government Departments, with scientific leadership by the Institute for Social and Economic Research, University of Essex, and survey delivery by NatCen Social Research and Kantar Public. The research data are distributed by the UK Data Service. This study has been realized using data collected by the Swiss Household Panel (SHP), which is based at the Swiss Centre of Expertise in the Social Sciences FORS. The project is supported by the Swiss National Science Foundation. This study also uses data from The General Social Survey (GSS), which is a project of the independent research organization NORC at the University of Chicago, with principal funding from the National Science Foundation. The collection of data used in the PSID was partly supported by the National Institutes of Health under grant number R01 HD069609 and R01 AG040213, and the National Science Foundation under award numbers SES 1157698 and 1623684.
 
-\theendnotes
-
-\singlespace
-
 # References
 
 ::: {#refs}
 :::
-
-\newpage
-
-# Appendix
-
-## Appendix A: The Distribution of Variation Components
-
-Figure A1 shows the distribution of $V(D)$ and $V(C)$ across all panels.
-
-```{=tex}
-\begin{center}
-<Figure A1 about here>
-\end{center}
-```
-
-## Appendix B: $\omega$ Values When the Last Wave Removed
-
-Figure A2 presents the alternative strategy we used to understand the effects of duration on intraindividual change. First, we removed the last wave from all the observations and fitted the Life Course Adaption models. This effectively reduced the number of items to 249. We then refitted the model for all participants in this sample using the unrestricted data. In the final step, we calculated the $\omega$ values for each item. The Figure A2 shows a scatterplot for these two sets of observations.
-
-```{=tex}
-\begin{center}
-<Figure B1 about here>
-\end{center}
-```
-
-\newpage
-
-# Tables and Figures
-
-```{r, message = FALSE}
-
-library(tidyverse)
-library(knitr)
-library(kableExtra)
-
-table <- tibble(
-  Country = c("Australia", "Germany", "Great Britian", "Great Britian", "Switzerland", "United States", "United States"),
-  Survey = c("Household, Income and Labor Dynamics in Australia (HILDA)",
-             "Socio-Economic Panel Study (SOEP)",
-             "British Household Panel Survey (BHPS)",
-             "Understanding Society/UK Household Longitudinal Study (UKHLS)",
-             "Swiss Household Panel (SHP)",
-             "General Social Survey (GSS)",
-             "Panel Study of Income Dynamics (PSID)"),
-  Period = c("2001-2021", "1984-2020", "1991-2008", "2009-2020", "1999-2019", "2006-2012", "1968-2019"),
-  Outcomes = c(30, 122, 83, 66, 77, 183, 48)
-)
-
-kableExtra::kable(table,
-                  booktabs = TRUE,
-                  format = "latex",
-                  align = "llcc",
-                  caption = "The Description of the Data Sources") |> 
-  kable_styling(latex_options = c("scale_down", "HOLD_position"))
-
-```
-
-\newpage
-
-```{=latex}
-\begin{figure}[ht]
-\begin{center}
-\caption{Proportions of Systematic Variance in Personal Culture}
-```
-```{r fig1, out.width = "100%", fig.pos = "H"}
-knitr::include_graphics("../figures/figure_1.png")
-```
-
-```{=latex}
-\end{center}
-\footnotesize{\textit{Notes:} The figure shows $\omega$ and 1 - $\omega$ as the proportion of systematic variance attributable to intrapersonal change and interpersonal differences. See Supplemental Materials A for the full set of item values.}
-\end{figure}
-```
-
-\newpage
-
-```{=latex}
-\begin{figure}[ht]
-\begin{center}
-\caption{Regression Model Estimating $\omega$}
-```
-```{r fig2}
-knitr::include_graphics("../figures/figure_2.png")
-```
-
-```{=latex}
-\end{center}
-\footnotesize{\textit{Notes:} The model estimates the proportion of systematic variance attributable to intrapersonal change. It includes the log of the number of participants, the number of waves the variable was asked (capped at t = 10 for each item), the date of the first wave (measured as the year minus 1968 divided by 10), number of waves the question was asked averaged across participants, duration in years per item averaged across participants, and panel and topic fixed effects. Coefficients are estimated from suppressed intercept model based on predictions at participants' wave mid-point. Survey indicators and item topics not shown. See Supplemental Materials B for the full set of coefficients.}
-\end{figure}
-```
-
-\newpage
-
-```{=latex}
-\begin{figure}[ht]
-\begin{center}
-\caption{Difference in $\omega$ Across College Graduates and Non-Graduates}
-```
-```{r fig3}
-knitr::include_graphics("../figures/figure_3.png")
-```
-
-```{=latex}
-\end{center}
-\footnotesize{\textit{Notes:} The figure shows the difference in $\omega$ values across college graduates and college non-graduates. Values above (below) 0 means that those with college degree have higher (lower) variance of intrapersonal change. The dashed red line marks 0 difference.}
-\end{figure}
-```
-
-\newpage
-
-```{=latex}
-\begin{figure}[ht]
-\begin{center}
-\caption{Difference in $\omega$ Across College Graduates and Non-Graduates on Political Culture}
-```
-```{r fig4}
-knitr::include_graphics("../figures/figure_4.png")
-```
-
-```{=latex}
-\end{center}
-\footnotesize{\textit{Notes:} $\omega$ values across college graduates and college non-graduates on 8 political culture items from the General Social Survey (2006-2014).}
-\end{figure}
-```
-
-\newpage
-
-```{=latex}
-\begin{figure}[htp]
-\begin{center}
-\caption*{Figure A1: The Distribution of V(D) and V(C)}
-```
-```{r figA1}
-knitr::include_graphics("../figures/figure_A1.png")
-```
-```{=latex}
-\end{center}
-\end{figure}
-```
-
-\newpage
-
-```{=latex}
-\begin{figure}[htp]
-\begin{center}
-\caption*{Figure A2: Difference in $\omega$ Across Two Sample Specifications} 
-```
-```{r figA2}
-knitr::include_graphics("../figures/figure_A2.png")
-```
-```{=latex}
-\end{center}
-\end{figure}
-```

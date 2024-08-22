@@ -3,7 +3,7 @@
 \PassOptionsToPackage{hyphens}{url}
 %
 \documentclass[
-  12pt,
+  11pt,
 ]{article}
 \usepackage{amsmath,amssymb}
 \usepackage{iftex}
@@ -16,7 +16,7 @@
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
-\usepackage{lmodern}
+\usepackage[]{mathpazo}
 \ifPDFTeX\else
   % xetex/luatex font selection
 \fi
@@ -55,30 +55,46 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
 \newlength{\cslhangindent}
 \setlength{\cslhangindent}{1.5em}
 \newlength{\csllabelwidth}
 \setlength{\csllabelwidth}{3em}
-\newlength{\cslentryspacingunit} % times entry-spacing
-\setlength{\cslentryspacingunit}{\parskip}
-\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
- {% don't indent paragraphs
-  \setlength{\parindent}{0pt}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
   % turn on hanging indent if param 1 is 1
   \ifodd #1
-  \let\oldpar\par
-  \def\par{\hangindent=\cslhangindent\oldpar}
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
   \fi
   % set entry spacing
-  \setlength{\parskip}{#2\cslentryspacingunit}
- }%
- {}
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
 \usepackage{calc}
-\newcommand{\CSLBlock}[1]{#1\hfill\break}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
-\usepackage{fontspec} \setmainfont{Times New Roman} \setlength{\parindent}{3em} \usepackage{caption} \usepackage{setspace} \usepackage{endnotes} \renewcommand{\enotesize}{\normalsize} \let\footnote=\endnote
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{amsmath}
+\captionsetup{justification=raggedright, singlelinecheck=false}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -96,21 +112,20 @@
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
-  pdftitle={Quantifying the Importance of Change for Understanding Differences in Personal Culture},
   pdfauthor={Achim Edelmann; Kevin Kiley; Turgut Keskintürk; Isabella Bouklas; Stephen Vaisey},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
-\title{Quantifying the Importance of Change for Understanding
+\title{Quantifying the Importance of Change for Understanding\\
 Differences in Personal Culture}
-\author{Achim Edelmann\footnote{médialab, Science Po} \and Kevin
+\author{Achim Edelmann\footnote{médialab, Science Po; equal authorship.} \and Kevin
 Kiley\footnote{Department of Sociology and Anthropology, North Carolina
-  State University} \and Turgut Keskintürk\footnote{Department of
-  Sociology, Duke University} \and Isabella
+  State University; equal authorship.} \and Turgut
+Keskintürk\footnote{Department of Sociology, Duke University} \and Isabella
 Bouklas\footnote{Department of Sociology, Duke University} \and Stephen
 Vaisey\footnote{Department of Sociology, Duke University}}
 \date{}
@@ -127,7 +142,7 @@ is unclear how to use these components to understand the relative
 importance of change, especially when change is modeled non-linearly. To
 advance this debate, we introduce a measure for quantifying the
 proportion of systematic variance in panel data attributable to
-intrapersonal change. Applying this measure to 609 items from seven
+intrapersonal change. Applying this measure to 610 items from seven
 surveys in five countries, we find that although intrapersonal change is
 common, it does not explain a large share of systematic variance. As an
 extension of the theoretical debate, we demonstrate that this measure
@@ -138,10 +153,7 @@ perspective on several important theoretical debates, as well as a tool
 to address new questions.
 \end{abstract}
 
-\doublespacing
-
-\hypertarget{introduction}{%
-\section{Introduction}\label{introduction}}
+\section{Introduction}\label{introduction}
 
 An important contemporary debate in sociology centers on the importance
 of individual change over time for understanding differences in
@@ -175,7 +187,7 @@ selection criteria---primarily the Bayesian Information Criterion
 (Raftery 1995)---to classify different questions as demonstrating either
 ``no change'' or ``any change.'' The size of these piles then serves as
 the primary evidence for the truth of different arguments (Kiley and
-Vaisey 2020; Vaisey and Kiley 2021).
+Vaisey 2020; Lersch 2023; Vaisey and Kiley 2021).
 
 However, as consensus in the overall picture emerges, researchers are
 now turning toward understanding the conditions that produce persistent
@@ -204,15 +216,14 @@ combines components of the LCAM to quantify the relative importance of
 intrapersonal change and interpersonal difference for explaining
 variation in a population for a variable over time. Our approach
 isolates the ``systematic'' components of variance (i.e., it removes
-random change and measurement error), to provide a single succinct
-summary of how much systematic variation can reasonably be attributed to
-people making persistent changes over time. This quantity can then be
-used as a quick diagnostic to compare across questions, groups, periods,
-or samples to isolate where within-person change is more or less useful
-for explaining variation. We demonstrate the utility of this quantity in
-two ways.
+random change and measurement error), to provide a single summary of how
+much systematic variation can reasonably be attributed to people making
+persistent changes over time. This quantity can then be used as a quick
+diagnostic to compare across questions, groups, periods, or samples to
+isolate where within-person change is more or less useful for explaining
+variation. We demonstrate the utility of this quantity in two ways.
 
-First, we use 609 items from seven panel surveys from five countries to
+First, we use 610 items from seven panel surveys from five countries to
 quantify the proportion of variance that is attributable to systematic
 intrapersonal change over the study period rather than to interpersonal
 differences at baseline. This allows us to generate an overall picture
@@ -223,20 +234,19 @@ questions, rather than binary claims about whether change ``happens'' or
 specific quantification of how much change occurs.
 
 Second, to illustrate how this quantity might be used by a researcher
-with a specific topical interest, we investigate differences in the
-relative importance of intrapersonal change for people with and without
-a college degree. We find that change explains a smaller proportion of
-systematic variance among college-educated respondents, suggesting that
-college crystallizes one's personal culture rather than fostering an
-openness to new information. This offers a new empirical basis to
-theorize about the role of education in influencing personal culture.
+with a specific topical or theoretical interest, we investigate
+differences in the relative importance of intrapersonal change for
+people with and without a college degree. We find that change explains a
+smaller proportion of systematic variance among college-educated
+respondents, suggesting that college crystallizes one's personal culture
+rather than fostering an openness to new information. This offers a new
+empirical basis to theorize about the role of education in influencing
+personal culture.
 
-\hypertarget{background}{%
-\section{Background}\label{background}}
+\section{Background}\label{background}
 
-\hypertarget{stability-and-change-in-personal-culture}{%
 \subsection{Stability and Change in Personal
-Culture}\label{stability-and-change-in-personal-culture}}
+Culture}\label{stability-and-change-in-personal-culture}
 
 Recent debates about whether adults undergo intrapersonal cultural
 change emerged in part because theories of cultural change at the
@@ -319,20 +329,20 @@ hard to accept that adults do not change.
 Drawing on these findings, Lersch (2023) challenged the SDM and AUM as a
 ``needless dichotomy,'' proposing the ``Life Course Adaption Model''
 (LCAM) as an alternative. This model draws on the life course
-perspective to model personal culture as a different linear
-trajectory\footnote{In supplemental materials, Lersch models age using
-  splines as well, with results generally showing the same conclusions.}
-over the duration of a panel for each respondent. In doing this, Lersch
-rectified three shortcomings of the AUM and SDM. First, the AUM, as
-described by Kiley and Vaisey, posits that changes follow a Markov
-process where responses at time \(t\) are a function of responses at
-time \(t-1\) but not earlier time points. However, earlier life
-experiences can (directly and indirectly) mold personal culture when
-transitioning to new social roles or into new environments, even if
-their initial impact is delayed. For example, childhood events might
-influence views on family structures later when individuals form their
-own families. Therefore, the LCAM considers influences from earlier than
-just \(t-1\) on responses at time \(t\).
+perspective to model personal culture as a linear trajectory\footnote{In
+  supplemental materials, Lersch models age using splines as well, with
+  results generally showing the same conclusions.} over the duration of
+a panel for each respondent. In doing this, Lersch rectified three
+shortcomings of the AUM and SDM. First, the AUM, as described by Kiley
+and Vaisey, posits that changes follow a Markov process where responses
+at time \(t\) are a function of responses at time \(t-1\) but not
+earlier time points. However, earlier life experiences can (directly and
+indirectly) mold personal culture when transitioning to new social roles
+or into new environments, even if their initial impact is delayed. For
+example, childhood events might influence views on family structures
+later when individuals form their own families. Therefore, the LCAM
+considers influences from earlier than just \(t-1\) on responses at time
+\(t\).
 
 Second, Kiley and Vaisey's conclusions about the AUM and SDM were based
 on examining three-wave panel data over four years, which might not be
@@ -383,9 +393,8 @@ evidence that some people change over time (Vaisey and Lizardo 2016). In
 other words, despite different interpretations, the results of previous
 work are in many ways highly consonant.
 
-\hypertarget{quantification-not-adjudication}{%
 \subsection{Quantification, Not
-Adjudication}\label{quantification-not-adjudication}}
+Adjudication}\label{quantification-not-adjudication}
 
 To this point, the debate has broadly centered on drawing conclusions
 about whether people \emph{ever} change. But this is rarely the right
@@ -487,8 +496,7 @@ relative importance in explaining differences among survey items,
 between groups within a given population, across time, and across
 societies.
 
-\hypertarget{formalization}{%
-\subsection{Formalization}\label{formalization}}
+\subsection{Formalization}\label{formalization}
 
 The starting point for our quantity is Lersch's (2023) Life Course
 Adaption Model, which formalizes survey responses at time \(t\) as a
@@ -597,22 +605,31 @@ showed \emph{any} evidence of updating, this approach allows us to make
 more specific claims about the prevalence of these theoretical processes
 for particular questions relative to each other.
 
-\hypertarget{bootstrapping-for-confidence-intervals}{%
-\subsection{Bootstrapping for Confidence
-Intervals}\label{bootstrapping-for-confidence-intervals}}
+\subsection{Bootstrapping for Quantifying Sampling
+Variability}\label{bootstrapping-for-quantifying-sampling-variability}
 
-{[}Explain how we do that here{]}
+Of course, the \(\omega\) measure is itself variable---most particularly
+due to sampling variability---such that the composition of durable
+changers and stable respondents in a particular sample might affect the
+systematic components \(V(D)\) and \(V(C)\). It is thus important to
+establish confidence intervals to reflect the uncertainty in the
+\(\omega\). We achieve this by incorporating nonparametric bootstraps
+with case resampling. In doing this, we first resample the respondents
+with replacement and assign a new identifier to the set of new
+\emph{respondents}, allowing us to change the composition of level-2
+units in our data. Second, we estimate the LCAM in this slightly
+perturbed sample, and calculate the \(\omega\). We then replicate this
+procedure \(N\) times and establish confidence intervals using the
+distribution of bootstrapped omega values.
 
-\hypertarget{example-1-cross-question-comparisons}{%
 \section{Example 1: Cross-Question
-Comparisons}\label{example-1-cross-question-comparisons}}
+Comparisons}\label{example-1-cross-question-comparisons}
 
 To demonstrate the utility of this metric, we provide two examples. In
 the first, we compare the proportion of systematic variance explained by
 intrapersonal change across a broad array of questions.
 
-\hypertarget{data}{%
-\subsection{Data}\label{data}}
+\subsection{Data}\label{data}
 
 We use data from seven nationally representative panel surveys from
 Australia, Germany, Great Britain, Switzerland, and the United States
@@ -632,12 +649,28 @@ cross-domain set of items to capture a broad range of individual
 personal culture. Supplemental Materials A documents the list of all
 variables used in the upcoming analyses.
 
-\begin{center}
-<Table 1 about here>
-\end{center}
+\begin{table}[H]
+\centering
+\caption{\label{tab:unnamed-chunk-1}The Description of the Data Sources}
+\centering
+\resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{
+\begin{tabular}[t]{llcc}
+\toprule
+Country & Survey & Period & Outcomes\\
+\midrule
+Australia & Household, Income and Labor Dynamics in Australia (HILDA) & 2001-2021 & 30\\
+Germany & Socio-Economic Panel Study (SOEP) & 1984-2020 & 122\\
+Great Britian & British Household Panel Survey (BHPS) & 1991-2008 & 83\\
+Great Britian & Understanding Society/UK Household Longitudinal Study (UKHLS) & 2009-2020 & 66\\
+Switzerland & Swiss Household Panel (SHP) & 1999-2019 & 77\\
+\addlinespace
+United States & General Social Survey (GSS) & 2006-2012 & 183\\
+United States & Panel Study of Income Dynamics (PSID) & 1968-2019 & 49\\
+\bottomrule
+\end{tabular}}
+\end{table}
 
-\hypertarget{analysis}{%
-\subsection{Analysis}\label{analysis}}
+\subsection{Analysis}\label{analysis}
 
 As a first step in our analysis, we fit this LCAM to each of the 609
 measures of personal culture outlined above. We then derive \(\omega\)
@@ -650,8 +683,7 @@ survey, the log of the number of participants, the number of waves
 observed, the time period (i.e., decade) the question was first asked,
 and the total duration of time the question was asked.
 
-\hypertarget{results}{%
-\subsection{Results}\label{results}}
+\subsection{Results}\label{results}
 
 Figure 1 plots the proportion of systematic variance attributable to
 interpersonal differences and intrapersonal change for each of the 609
@@ -663,9 +695,15 @@ range of 0.053 to 0.139. All panels include questions where \(\omega\)
 is essentially 0, and all panels include questions with \(\omega\)
 values greater than 0.20. The maximum \(\omega\) value is 0.26.
 
+\begin{figure}[ht]
 \begin{center}
-<Figure 1 about here>
+\caption{Proportions of Systematic Variance in Personal Culture}
+
+\begin{center}\includegraphics[width=1\linewidth]{../../figures/omegas} \end{center}
+
 \end{center}
+\footnotesize{\textit{Notes:} The figure shows $\omega$ and 1 - $\omega$ as the proportion of systematic variance attributable to intrapersonal change and interpersonal differences. See Supplemental Materials A for the full set of item values.}
+\end{figure}
 
 Across all questions, interpersonal differences account for a much
 larger share of the systematic variance in responses than intrapersonal
@@ -786,9 +824,8 @@ asked over shorter periods, rather than a true function of time. This
 supports the conclusion that the GSS shows less intrapersonal change
 because of its shorter duration.
 
-\hypertarget{example-2-college-and-change-in-political-culture}{%
 \section{Example 2: College and Change in Political
-Culture}\label{example-2-college-and-change-in-political-culture}}
+Culture}\label{example-2-college-and-change-in-political-culture}
 
 These results mostly re-frame and align previous findings, but the value
 of our approach lies in its ability to extend the debate to a broader
@@ -839,8 +876,7 @@ life experiences might prove more important in forming or changing
 personal culture, as these experiences potentially provide information
 that college-educated peers have already received.
 
-\hypertarget{data-1}{%
-\subsection{Data}\label{data-1}}
+\subsection{Data}\label{data-1}
 
 To compare these competing propositions, we calculate \(\omega\) values
 separately for people with at least a bachelor's degree and people with
@@ -862,8 +898,7 @@ of the federal government in the health care sector, the emergence of
 the Tea Party, and political realignment and clarification on the issue
 of gay marriage, among other topics.
 
-\hypertarget{results-1}{%
-\subsection{Results}\label{results-1}}
+\subsection{Results}\label{results-1}
 
 Figure 3 plots the distribution of differences in \(\omega\) values
 between people with at least a bachelor's degree and people with less
@@ -873,9 +908,15 @@ more systematic variance among college graduates than among those
 without a college degree, while values less than 0 indicate the
 opposite.
 
+\begin{figure}[ht]
 \begin{center}
-<Figure 3 about here>
+\caption{Difference in $\omega$ Across College Graduates and Non-Graduates}
+
+\begin{center}\includegraphics[width=62.5in]{../../figures/colleges} \end{center}
+
 \end{center}
+\footnotesize{\textit{Notes:} The figure shows the difference in $\omega$ values across college graduates and college non-graduates. Values above (below) 0 means that those with college degree have higher (lower) variance of intrapersonal change. The dashed red line marks 0 difference.}
+\end{figure}
 
 There is a clear pattern in Figure 3: for more than 80 percent of these
 GSS items, intrapersonal change is a larger component of systematic
@@ -951,8 +992,7 @@ potentially confounded by age, social class, race, gender, and other
 factors that explain selection into higher education -- they open up a
 set of new questions and dynamics to explore.
 
-\hypertarget{discussion-and-conclusion}{%
-\section{Discussion and Conclusion}\label{discussion-and-conclusion}}
+\section{Discussion and Conclusion}\label{discussion-and-conclusion}
 
 The primary objective of this paper is to introduce a new quantity that
 can advance debate on whether people change their personal culture --
@@ -1007,8 +1047,7 @@ crystallize personal culture to an extent that renders later adult
 experiences on political dispositions less influential in explaining
 overall differences.
 
-\hypertarget{limitations}{%
-\subsection{Limitations}\label{limitations}}
+\subsection{Limitations}\label{limitations}
 
 Although we believe the approach we outline here advances previous work,
 it has important limitations. We allocate all systematic variance to one
@@ -1063,9 +1102,8 @@ we have no reason to believe results to be different, our findings do
 not directly speak to other dimensions of culture such as artistic
 tastes, leisure activities, and time use.
 
-\hypertarget{implications-for-cultural-sociology}{%
 \subsection{Implications for Cultural
-Sociology}\label{implications-for-cultural-sociology}}
+Sociology}\label{implications-for-cultural-sociology}
 
 Despite these limitations, we believe our method and findings have
 implications for social science research. Sociologists interested in
@@ -1133,9 +1171,8 @@ personal culture, sociologists should therefore pay more attention to
 the heterogeneous effects that various factors including social events,
 encounters, and situations can have.
 
-\hypertarget{implications-for-survey-research}{%
 \subsection{Implications for Survey
-Research}\label{implications-for-survey-research}}
+Research}\label{implications-for-survey-research}
 
 Our findings underscore the value of extended panel surveys to advance
 theories of culture. On average, non-systematic fluctuations in
@@ -1164,8 +1201,7 @@ inadvertently concentrate on topics and questions that, while important,
 might not be able to help explain major cultural differences in adult
 populations.
 
-\hypertarget{conclusion}{%
-\subsection{Conclusion}\label{conclusion}}
+\subsection{Conclusion}\label{conclusion}
 
 We believe the approach we outlined here can push past the ``needless
 dichotomy'' implicit in the question of whether people change or not.
@@ -1176,8 +1212,7 @@ characterized by more stability than others, has the potential to weigh
 in on a broader range of theoretical debates. We hope researchers find
 our approach useful as they investigate these questions.
 
-\hypertarget{data-note}{%
-\section{Data Note}\label{data-note}}
+\section{Data Note}\label{data-note}
 
 This paper uses unit record data from Household, Income and Labour
 Dynamics in Australia Survey {[}HILDA{]} conducted by the Australian
@@ -1209,32 +1244,27 @@ PSID was partly supported by the National Institutes of Health under
 grant number R01 HD069609 and R01 AG040213, and the National Science
 Foundation under award numbers SES 1157698 and 1623684.
 
-\theendnotes
+\section{References}\label{references}
 
-\singlespace
-
-\hypertarget{references}{%
-\section{References}\label{references}}
-
-\hypertarget{refs}{}
-\begin{CSLReferences}{1}{0}
-\leavevmode\vadjust pre{\hypertarget{ref-alvarez2002}{}}%
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{1}
+\bibitem[\citeproctext]{ref-alvarez2002}
 Alvarez, R. Michael, and John Brehm. 2002. \emph{Hard Choices, Easy
 Answers: Values, Information, and {American} Public Opinion}. Princeton,
 N.J: Princeton University Press.
 
-\leavevmode\vadjust pre{\hypertarget{ref-alwin2007}{}}%
+\bibitem[\citeproctext]{ref-alwin2007}
 Alwin, Duane F. 2007. \emph{Margins of {Error}: {A} {Study} of
 {Reliability} in {Survey} {Measurement}}. Hoboken, N.J.: John Wiley \&
 Sons.
 
-\leavevmode\vadjust pre{\hypertarget{ref-alwin1991}{}}%
+\bibitem[\citeproctext]{ref-alwin1991}
 Alwin, Duane F., and Jon A. Krosnick. 1991.
 {``\href{https://www.jstor.org/stable/2781642}{Aging, {Cohorts}, and the
 {Stability} of {Sociopolitical} {Orientations} {Over} the {Life}
 {Span}}.''} \emph{American Journal of Sociology} 97(1):169--95.
 
-\leavevmode\vadjust pre{\hypertarget{ref-bail2018}{}}%
+\bibitem[\citeproctext]{ref-bail2018}
 Bail, Christopher A., Lisa P. Argyle, Taylor W. Brown, John P. Bumpus,
 Haohan Chen, M. B. Fallin Hunzaker, Jaemin Lee, Marcus Mann, Friedolin
 Merhout, and Alexander Volfovsky. 2018. {``Exposure to Opposing Views on
@@ -1242,65 +1272,65 @@ Social Media Can Increase Political Polarization.''} \emph{Proceedings
 of the National Academy of Sciences} 115(37):9216--21. doi:
 \href{https://doi.org/10.1073/pnas.1804840115}{10.1073/pnas.1804840115}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-bardi2009}{}}%
+\bibitem[\citeproctext]{ref-bardi2009}
 Bardi, Anat, Julie Anne Lee, Nadi Hofmann-Towfigh, and Geoffrey Soutar.
 2009. {``The Structure of Intraindividual Value Change.''} \emph{Journal
 of Personality and Social Psychology} 97(5):913--29.
 
-\leavevmode\vadjust pre{\hypertarget{ref-bourdieu1990}{}}%
+\bibitem[\citeproctext]{ref-bourdieu1990}
 Bourdieu, Pierre. 1990. \emph{The Logic of Practice}. Stanford, Calif. :
 Stanford University Press, 1990.
 
-\leavevmode\vadjust pre{\hypertarget{ref-boutyline2017}{}}%
+\bibitem[\citeproctext]{ref-boutyline2017}
 Boutyline, Andrei, and Stephen Vaisey. 2017. {``Belief {Network}
 {Analysis}: {A} {Relational} {Approach} to {Understanding} the
 {Structure} of {Attitudes}.''} \emph{American Journal of Sociology}
 122(5):1371--1447. doi:
 \href{https://doi.org/10.1086/691274}{10.1086/691274}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-brett2021}{}}%
+\bibitem[\citeproctext]{ref-brett2021}
 Brett, Gordon, and Andrew Miles. 2021. {``Who {Thinks} {How}? {Social}
 {Patterns} in {Reliance} on {Automatic} and {Deliberate} {Cognition}.''}
 \emph{Sociological Science} 8.
 
-\leavevmode\vadjust pre{\hypertarget{ref-brocic2021}{}}%
+\bibitem[\citeproctext]{ref-brocic2021}
 Broćić, Miloš, and Andrew Miles. 2021. {``College and the {`{Culture}
 {War}'}: {Assessing} {Higher} {Education}'s {Influence} on {Moral}
 {Attitudes}.''} \emph{American Sociological Review} 00031224211041094.
 doi:
 \href{https://doi.org/10.1177/00031224211041094}{10.1177/00031224211041094}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-campbell2016}{}}%
+\bibitem[\citeproctext]{ref-campbell2016}
 Campbell, Colin, and Jonathan Horowitz. 2016. {``Does {College}
 {Influence} {Sociopolitical} {Attitudes}?''} \emph{Sociology of
 Education} 89(1):40--58. doi:
 \href{https://doi.org/10.1177/0038040715617224}{10.1177/0038040715617224}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-christakis2010}{}}%
+\bibitem[\citeproctext]{ref-christakis2010}
 Christakis, Nicholas, and James Fowler. 2010. \emph{Connected: {The}
 {Amazing} {Power} of {Social} {Networks} and {How} {They} {Shape} {Our}
 {Lives}}. HarperCollins Publishers.
 
-\leavevmode\vadjust pre{\hypertarget{ref-dellaposta2018}{}}%
+\bibitem[\citeproctext]{ref-dellaposta2018}
 DellaPosta, Daniel. 2018. {``Gay {Acquaintanceship} and {Attitudes}
 Toward {Homosexuality}: {A} {Conservative} {Test}.''} \emph{Socius}
 4:2378023118798959. doi:
 \href{https://doi.org/10.1177/2378023118798959}{10.1177/2378023118798959}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-dellaposta2020}{}}%
+\bibitem[\citeproctext]{ref-dellaposta2020}
 DellaPosta, Daniel. 2020. {``Pluralistic {Collapse}: {The} {`{Oil}
 {Spill}'} {Model} of {Mass} {Opinion} {Polarization}.''} \emph{American
 Sociological Review} 85(3):507--36. doi:
 \href{https://doi.org/10.1177/0003122420922989}{10.1177/0003122420922989}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-eaton2009}{}}%
+\bibitem[\citeproctext]{ref-eaton2009}
 Eaton, Asia A., Penny S. Visser, Jon A. Krosnick, and Sowmya Anand.
 2009. {``Social {Power} and {Attitude} {Strength} {Over} the {Life}
 {Course}.''} \emph{Personality and Social Psychology Bulletin}
 35(12):1646--60. doi:
 \href{https://doi.org/10.1177/0146167209349114}{10.1177/0146167209349114}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-elder2003}{}}%
+\bibitem[\citeproctext]{ref-elder2003}
 Elder, Glen H., Monica Kirkpatrick Johnson, and Robert Crosnoe. 2003.
 {``\href{https://doi.org/10.1007/978-0-306-48247-2_1}{The {Emergence}
 and {Development} of {Life} {Course} {Theory}}.''} Pp. 3--19 in
@@ -1308,101 +1338,101 @@ and {Development} of {Life} {Course} {Theory}}.''} Pp. 3--19 in
 and {Social} {Research}}, edited by J. T. Mortimer and M. J. Shanahan.
 Boston, MA: Springer US.
 
-\leavevmode\vadjust pre{\hypertarget{ref-feldman1992}{}}%
+\bibitem[\citeproctext]{ref-feldman1992}
 Feldman, Stanley, and John Zaller. 1992. {``The {Political} {Culture} of
 {Ambivalence}: {Ideological} {Responses} to the {Welfare} {State}.''}
 \emph{American Journal of Political Science} 36(1):268--307. doi:
 \href{https://doi.org/10.2307/2111433}{10.2307/2111433}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-gelman2021}{}}%
+\bibitem[\citeproctext]{ref-gelman2021}
 Gelman, Andrew, and Yotam Margalit. 2021. {``Social Penumbras Predict
 Political Attitudes.''} \emph{Proceedings of the National Academy of
 Sciences} 118(6):e2019375118. doi:
 \href{https://doi.org/10.1073/pnas.2019375118}{10.1073/pnas.2019375118}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-data_soep}{}}%
+\bibitem[\citeproctext]{ref-data_soep}
 Goebel, Jan, Markus M. Grabka, Stefan Liebig, Martin Kroh, David
 Richter, Carsten Schröder, and Jürgen Schupp. 2019. {``The German
 Socio-Economic Panel (SOEP).''} \emph{Jahrb{ü}cher f{ü}r
 National{ö}konomie Und Statistik} 239(2):345--60.
 
-\leavevmode\vadjust pre{\hypertarget{ref-goldberg2018}{}}%
+\bibitem[\citeproctext]{ref-goldberg2018}
 Goldberg, Amir, and Sarah K. Stein. 2018. {``Beyond {Social}
 {Contagion}: {Associative} {Diffusion} and the {Emergence} of {Cultural}
 {Variation}.''} \emph{American Sociological Review} 83(5):897--932. doi:
 \href{https://doi.org/10.1177/0003122418797576}{10.1177/0003122418797576}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-gross2009}{}}%
+\bibitem[\citeproctext]{ref-gross2009}
 Gross, Neil. 2009. {``A {Pragmatist} {Theory} of {Social}
 {Mechanisms}.''} \emph{American Sociological Review} 74(3):358--79. doi:
 \href{https://doi.org/10.1177/000312240907400302}{10.1177/000312240907400302}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-guhin2020}{}}%
+\bibitem[\citeproctext]{ref-guhin2020}
 Guhin, Jeffrey, Jessica McCrory Calarco, and Cynthia Miller-Idriss.
 2020. \emph{Whatever {Happened} to {Socialization}?} \emph{preprint}.
 SocArXiv. doi:
 \href{https://doi.org/10.31235/osf.io/zp2wy}{10.31235/osf.io/zp2wy}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-hout2016}{}}%
+\bibitem[\citeproctext]{ref-hout2016}
 Hout, Michael, and Orestes P. Hastings. 2016. {``Reliability of the
 {Core} {Items} in the {General} {Social} {Survey}: {Estimates} from the
 {Three}-{Wave} {Panels}, 2006--2014.''} \emph{Sociological Science}
 3:971--1002. doi:
 \href{https://doi.org/10.15195/v3.a43}{10.15195/v3.a43}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-data_psid}{}}%
+\bibitem[\citeproctext]{ref-data_psid}
 Income Dynamics, Panel Study of. 2013. {``Public Use Dataset.''}
 \emph{The Survey Research Center Institute for Social Research,
 University of Michgan}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-kiley2020}{}}%
+\bibitem[\citeproctext]{ref-kiley2020}
 Kiley, Kevin, and Stephen Vaisey. 2020. {``Measuring {Stability} and
 {Change} in {Personal} {Culture} {Using} {Panel} {Data}.''}
 \emph{American Sociological Review} 85(3):477--506. doi:
 \href{https://doi.org/10.1177/0003122420921538}{10.1177/0003122420921538}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-kratz2021}{}}%
+\bibitem[\citeproctext]{ref-kratz2021}
 Kratz, Fabian. 2021. {``Do Concerns about Immigration Change After
 Adolescence? How Education and Critical Life Events Affect Concerns
 about Immigration.''} \emph{European Sociological Review}
 37(6):987--1003.
 
-\leavevmode\vadjust pre{\hypertarget{ref-krosnick1989}{}}%
+\bibitem[\citeproctext]{ref-krosnick1989}
 Krosnick, Jon, and Duane F. Alwin. 1989. {``Aging and {Susceptibility}
 to {Attitude} {Change}.''} \emph{Journal of Personality and Social
 Psychology} 57:416--25. doi:
 \href{https://doi.org/10.1037//0022-3514.57.3.416}{10.1037//0022-3514.57.3.416}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-lersch2023}{}}%
+\bibitem[\citeproctext]{ref-lersch2023}
 Lersch, Philipp M. 2023. {``Change in {Personal} {Culture} over the
 {Life} {Course}.''} \emph{American Sociological Review} 88(2):220--51.
 doi:
 \href{https://doi.org/10.1177/00031224231156456}{10.1177/00031224231156456}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-lizardo2017}{}}%
+\bibitem[\citeproctext]{ref-lizardo2017}
 Lizardo, Omar. 2017. {``Improving {Cultural} {Analysis}: {Considering}
 {Personal} {Culture} in Its {Declarative} and {Nondeclarative}
 {Modes}.''} \emph{American Sociological Review} 82(1):88--115. doi:
 \href{https://doi.org/10.1177/0003122416675175}{10.1177/0003122416675175}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-longest2013}{}}%
+\bibitem[\citeproctext]{ref-longest2013}
 Longest, K. C., S. Hitlin, and S. Vaisey. 2013. {``Position and
 {Disposition}: {The} {Contextual} {Development} of {Human} {Values}.''}
 \emph{Social Forces} 91(4):1499--1528. doi:
 \href{https://doi.org/10.1093/sf/sot045}{10.1093/sf/sot045}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-mannheim1952}{}}%
+\bibitem[\citeproctext]{ref-mannheim1952}
 Mannheim, Karl. 1952. {``The {Problem} of {Generations}.''} Pp. 276--322
 in \emph{Essays on the {Sociology} of {Knowledge}}. New York: Oxford
 University Press.
 
-\leavevmode\vadjust pre{\hypertarget{ref-mewes2021}{}}%
+\bibitem[\citeproctext]{ref-mewes2021}
 Mewes, Jan, Malcolm Fairbrother, Giuseppe Nicola Giordano, Cary Wu, and
 Rima Wilkes. 2021. {``Experiences Matter: A Longitudinal Study of
 Individual-Level Sources of Declining Social Trust in the United
 States.''} \emph{Social Science Research} 95:102537.
 
-\leavevmode\vadjust pre{\hypertarget{ref-quinn2024}{}}%
+\bibitem[\citeproctext]{ref-quinn2024}
 Quinn, Joseph M., Robert E. Freeland, E. K. Maloney, Kimberly B. Rogers,
 and Lynn Smith-Lovin. 2024. {``Meaning {Change} in {U}.{S}.
 {Occupational} {Identities} During the {COVID}-19 {Pandemic}: {Was} {It}
@@ -1410,257 +1440,127 @@ and Lynn Smith-Lovin. 2024. {``Meaning {Change} in {U}.{S}.
 01902725241228529. doi:
 \href{https://doi.org/10.1177/01902725241228529}{10.1177/01902725241228529}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-quinn2023}{}}%
+\bibitem[\citeproctext]{ref-quinn2023}
 Quinn, Joseph M., Robert E. Freeland, Kimberly B. Rogers, Jesse Hoey,
 and Lynn Smith-Lovin. 2023. {``How Cultural Meanings of Occupations in
 the u.s. Changed During the Covid-19 Pandemic.''} \emph{American
 Behavioral Scientist} 67(1):125--47.
 
-\leavevmode\vadjust pre{\hypertarget{ref-raftery1995}{}}%
+\bibitem[\citeproctext]{ref-raftery1995}
 Raftery, Adrian E. 1995. {``Bayesian {Model} {Selection} in {Social}
 {Research}.''} \emph{Sociological Methodology} 25:111--63. doi:
 \href{https://doi.org/10.2307/271063}{10.2307/271063}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-robinson2007}{}}%
+\bibitem[\citeproctext]{ref-robinson2007}
 Robinson, Dawn T. 2007. {``Control {Theories} in {Sociology}.''}
 \emph{Annual Review of Sociology} 33(1):157--74. doi:
 \href{https://doi.org/10.1146/annurev.soc.32.061604.123110}{10.1146/annurev.soc.32.061604.123110}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-ryder1965}{}}%
+\bibitem[\citeproctext]{ref-ryder1965}
 Ryder, Norman B. 1965. {``The {Cohort} as a {Concept} in the {Study} of
 {Social} {Change}.''} \emph{American Sociological Review} 30(6):843--61.
 doi: \href{https://doi.org/10.2307/2090964}{10.2307/2090964}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-scoville2022}{}}%
+\bibitem[\citeproctext]{ref-scoville2022}
 Scoville, Caleb, Andrew McCumber, Razvan Amironesei, and June Jeon.
 2022. {``Mask {Refusal} {Backlash}: {The} {Politicization} of {Face}
 {Masks} in the {American} {Public} {Sphere} During the {Early} {Stages}
 of the {COVID}-19 {Pandemic}.''} \emph{Socius: Sociological Research for
 a Dynamic World} 8:22.
 
-\leavevmode\vadjust pre{\hypertarget{ref-slothuus2021}{}}%
+\bibitem[\citeproctext]{ref-slothuus2021}
 Slothuus, Rune, and Martin Bisgaard. 2021. {``How {Political} {Parties}
 {Shape} {Public} {Opinion} in the {Real} {World}.''} \emph{American
 Journal of Political Science} 65(4):896--911. doi:
 \href{https://doi.org/10.1111/AJPS.12550}{10.1111/AJPS.12550}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-data_gss}{}}%
+\bibitem[\citeproctext]{ref-data_gss}
 Smith, Tom W., Michael Davern, Jeremy Freese, and Stephen L. Morgan.
 2022. {``General Social Surveys, 1972-2022: Cumulative Codebook /
 Principal Investigator, Tom w. Smith; Co-Principal Investigators,
 Michael Davern, Jeremy Freese and Stephen l. Morgan.''} \emph{Chicago:
 NORC}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-smith-lovin1988}{}}%
+\bibitem[\citeproctext]{ref-smith-lovin1988}
 Smith-Lovin, Lynn, and David R. Heise. 1988. \emph{Analyzing {Social}
 {Interaction}: {Advances} in {Affect} {Control} {Theory}}. New York:
 Gordon; Breach Sciences Publishers.
 
-\leavevmode\vadjust pre{\hypertarget{ref-stewart2023}{}}%
+\bibitem[\citeproctext]{ref-stewart2023}
 Stewart, Evan, and Diane Berkman. 2023. {``Shifting or Settled? Tracking
 Racial Animus During COVID-19.''} \emph{Social Psychology Quarterly}
 86(3):312--33.
 
-\leavevmode\vadjust pre{\hypertarget{ref-data_hilda}{}}%
+\bibitem[\citeproctext]{ref-data_hilda}
 Summerfield, Michelle, Ross Dunn, Simon Freidin, Markus Hahn, Peter
 Ittak, Milica Kecmanovic, Ning Li, Ninette Macalalad, Nicole Watson,
 Roger Wilkins, and others. 2011. {``HILDA User Manual -- Release 10.''}
 \emph{Melbourne Institute of Applied Economic and Social Research,
 University of Melbourne}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-swidler2001}{}}%
+\bibitem[\citeproctext]{ref-swidler2001}
 Swidler, Ann. 2001. \emph{Talk of {Love}: {How} {Culture} {Matters}}.
 Chicago: University of Chicago Press.
 
-\leavevmode\vadjust pre{\hypertarget{ref-data_bhps}{}}%
+\bibitem[\citeproctext]{ref-data_bhps}
 Taylor, Marcia Freed. 1996. {``British Household Panel Survey User
 Manual: Volume a-Introduction, Technical Report and Appendices.''}
 
-\leavevmode\vadjust pre{\hypertarget{ref-tourangeau2000}{}}%
+\bibitem[\citeproctext]{ref-tourangeau2000}
 Tourangeau, Roger, Lance J. Rips, and Kenneth A. Rasinski. 2000.
 \emph{The Psychology of Survey Response}. Cambridge, U.K. ; New York:
 Cambridge University Press.
 
-\leavevmode\vadjust pre{\hypertarget{ref-underwood2022}{}}%
+\bibitem[\citeproctext]{ref-underwood2022}
 Underwoood, Ted, Kevin Kiley, Wenyi Shang, and Stephen Vaisey. 2022.
 {``Cohort Succession Explains Most Change in Literary Culture.''}
 \emph{Sociological Science} 9:184--205.
 
-\leavevmode\vadjust pre{\hypertarget{ref-data_ukhls}{}}%
+\bibitem[\citeproctext]{ref-data_ukhls}
 University of Essex, Institute for Social, and Economic Research. 2019.
 {``Understanding Society: Waves 1--9, 2009--2018 and Harmonised BHPS:
 Waves 1--18, 1991--2009.''} \emph{UK Data Service}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-vaisey2021}{}}%
+\bibitem[\citeproctext]{ref-vaisey2021}
 Vaisey, Stephen, and Kevin Kiley. 2021. {``A {Model}-{Based} {Method}
 for {Detecting} {Persistent} {Cultural} {Change} {Using} {Panel}
 {Data}.''} \emph{Sociological Science} 8:83--95. doi:
 \href{https://doi.org/10.15195/v8.a5}{10.15195/v8.a5}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-vaisey2016}{}}%
+\bibitem[\citeproctext]{ref-vaisey2016}
 Vaisey, Stephen, and Omar Lizardo. 2016. {``Cultural {Fragmentation} or
 {Acquired} {Dispositions}? {A} {New} {Approach} to {Accounting} for
 {Patterns} of {Cultural} {Change}.''} \emph{Socius} 2:2378023116669726.
 doi:
 \href{https://doi.org/10.1177/2378023116669726}{10.1177/2378023116669726}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-visser2004}{}}%
+\bibitem[\citeproctext]{ref-visser2004}
 Visser, Penny S., and Robert R. Mirabile. 2004. {``Attitudes in the
 Social Context: {The} Impact of Social Network Composition on
 Individual-Level Attitude Strength.''} \emph{Journal of Personality and
 Social Psychology} 779--95.
 
-\leavevmode\vadjust pre{\hypertarget{ref-data_shp}{}}%
+\bibitem[\citeproctext]{ref-data_shp}
 Voorpostel, Marieke, Robin Tillmann, Florence Lebert, Ursina Kuhn,
 Oliver Lipps, Valérie-Anne Ryser, and B. Wernli. 2016. {``Swiss
 Household Panel User Guide (1999--2015).''} \emph{Lausanne: FORS}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-weeden2005}{}}%
+\bibitem[\citeproctext]{ref-weeden2005}
 Weeden, Kim A., and David B. Grusky. 2005. {``The {Case} for a {New}
 {Class} {Map}.''} \emph{American Journal of Sociology} 111(1):141--212.
 doi: \href{https://doi.org/10.1086/428815}{10.1086/428815}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-wodtke2018}{}}%
+\bibitem[\citeproctext]{ref-wodtke2018}
 Wodtke, Geoffrey T. 2018. {``The {Effects} of {Education} on {Beliefs}
 about {Racial} {Inequality}.''} \emph{Social Psychology Quarterly}
 81(4):273--94. doi:
 \href{https://doi.org/10.1177/0190272518804145}{10.1177/0190272518804145}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-zaller1992}{}}%
+\bibitem[\citeproctext]{ref-zaller1992}
 Zaller, John. 1992.
 \emph{\href{https://doi.org/10.1017/CBO9780511818691}{The {Nature} and
 {Origins} of {Mass} {Opinion}}}. Cambridge: Cambridge University Press.
 
 \end{CSLReferences}
-
-\newpage
-
-\hypertarget{appendix}{%
-\section{Appendix}\label{appendix}}
-
-\hypertarget{appendix-a-the-distribution-of-variation-components}{%
-\subsection{Appendix A: The Distribution of Variation
-Components}\label{appendix-a-the-distribution-of-variation-components}}
-
-Figure A1 shows the distribution of \(V(D)\) and \(V(C)\) across all
-panels.
-
-\begin{center}
-<Figure A1 about here>
-\end{center}
-
-\hypertarget{appendix-b-omega-values-when-the-last-wave-removed}{%
-\subsection{\texorpdfstring{Appendix B: \(\omega\) Values When the Last
-Wave
-Removed}{Appendix B: \textbackslash omega Values When the Last Wave Removed}}\label{appendix-b-omega-values-when-the-last-wave-removed}}
-
-Figure A2 presents the alternative strategy we used to understand the
-effects of duration on intraindividual change. First, we removed the
-last wave from all the observations and fitted the Life Course Adaption
-models. This effectively reduced the number of items to 249. We then
-refitted the model for all participants in this sample using the
-unrestricted data. In the final step, we calculated the \(\omega\)
-values for each item. The Figure A2 shows a scatterplot for these two
-sets of observations.
-
-\begin{center}
-<Figure B1 about here>
-\end{center}
-
-\newpage
-
-\hypertarget{tables-and-figures}{%
-\section{Tables and Figures}\label{tables-and-figures}}
-
-\begin{table}[H]
-\centering
-\caption{\label{tab:unnamed-chunk-1}The Description of the Data Sources}
-\centering
-\resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{
-\begin{tabular}[t]{llcc}
-\toprule
-Country & Survey & Period & Outcomes\\
-\midrule
-Australia & Household, Income and Labor Dynamics in Australia (HILDA) & 2001-2021 & 30\\
-Germany & Socio-Economic Panel Study (SOEP) & 1984-2020 & 122\\
-Great Britian & British Household Panel Survey (BHPS) & 1991-2008 & 83\\
-Great Britian & Understanding Society/UK Household Longitudinal Study (UKHLS) & 2009-2020 & 66\\
-Switzerland & Swiss Household Panel (SHP) & 1999-2019 & 77\\
-\addlinespace
-United States & General Social Survey (GSS) & 2006-2012 & 183\\
-United States & Panel Study of Income Dynamics (PSID) & 1968-2019 & 48\\
-\bottomrule
-\end{tabular}}
-\end{table}
-
-\newpage
-
-\begin{figure}[ht]
-\begin{center}
-\caption{Proportions of Systematic Variance in Personal Culture}
-
-\includegraphics[width=1\linewidth]{../figures/figure_1}
-
-\end{center}
-\footnotesize{\textit{Notes:} The figure shows $\omega$ and 1 - $\omega$ as the proportion of systematic variance attributable to intrapersonal change and interpersonal differences. See Supplemental Materials A for the full set of item values.}
-\end{figure}
-
-\newpage
-
-\begin{figure}[ht]
-\begin{center}
-\caption{Regression Model Estimating $\omega$}
-
-\includegraphics{../figures/figure_2.png}
-
-\end{center}
-\footnotesize{\textit{Notes:} The model estimates the proportion of systematic variance attributable to intrapersonal change. It includes the log of the number of participants, the number of waves the variable was asked (capped at t = 10 for each item), the date of the first wave (measured as the year minus 1968 divided by 10), number of waves the question was asked averaged across participants, duration in years per item averaged across participants, and panel and topic fixed effects. Coefficients are estimated from suppressed intercept model based on predictions at participants' wave mid-point. Survey indicators and item topics not shown. See Supplemental Materials B for the full set of coefficients.}
-\end{figure}
-
-\newpage
-
-\begin{figure}[ht]
-\begin{center}
-\caption{Difference in $\omega$ Across College Graduates and Non-Graduates}
-
-\includegraphics{../figures/figure_3.png}
-
-\end{center}
-\footnotesize{\textit{Notes:} The figure shows the difference in $\omega$ values across college graduates and college non-graduates. Values above (below) 0 means that those with college degree have higher (lower) variance of intrapersonal change. The dashed red line marks 0 difference.}
-\end{figure}
-
-\newpage
-
-\begin{figure}[ht]
-\begin{center}
-\caption{Difference in $\omega$ Across College Graduates and Non-Graduates on Political Culture}
-
-\includegraphics{../figures/figure_4.png}
-
-\end{center}
-\footnotesize{\textit{Notes:} $\omega$ values across college graduates and college non-graduates on 8 political culture items from the General Social Survey (2006-2014).}
-\end{figure}
-
-\newpage
-
-\begin{figure}[htp]
-\begin{center}
-\caption*{Figure A1: The Distribution of V(D) and V(C)}
-
-\includegraphics{../figures/figure_A1.png}
-
-\end{center}
-\end{figure}
-
-\newpage
-
-\begin{figure}[htp]
-\begin{center}
-\caption*{Figure A2: Difference in $\omega$ Across Two Sample Specifications} 
-
-\includegraphics{../figures/figure_A2.png}
-
-\end{center}
-\end{figure}
 
 \end{document}
