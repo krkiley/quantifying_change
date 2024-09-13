@@ -1,5 +1,5 @@
 
-# - quantifying change ------------------------------------------------------- #
+# - quantifying the importance of change ------------------------------------- #
 # - omega calculations ------------------------------------------------------- #
 
 ### note: this script
@@ -30,14 +30,13 @@ theme_set(theme_ipsum_rc())
 
 # --- scripts
 suppressMessages(
-  source("./scripts/helper_scripts/omega.R"))
+  source("./scripts/omega.R"))
 
 # --- data
 d <- readRDS("./data/data.rds") # nested survey x item panels
 
 # --- parallel sessions
-plan(multisession); 
-set.seed(11235) # set seed for simulation protocol
+plan(multisession)
 options(future.globals.maxSize=5000*1024^2)
 
 # ---------------------------------------------------------------------------- #

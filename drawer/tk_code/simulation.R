@@ -1,5 +1,5 @@
 
-# - quantifying change ------------------------------------------------------- #
+# - quantifying the importance of change ------------------------------------- #
 # - simulations -------------------------------------------------------------- #
 
 ### note: this script
@@ -97,7 +97,7 @@ d1 <- d1 |>
 # --- STEP 4: DRAW THE RESULTS
 
 png(
-  "./figures/simulation01.png",
+  "./figures/simulation.png",
   w = 8,
   h = 4,
   units = "in",
