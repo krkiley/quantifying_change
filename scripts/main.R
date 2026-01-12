@@ -29,11 +29,10 @@ theme_set(theme_ipsum_rc())
 `%nin%` = Negate(`%in%`)
 
 # --- scripts
-suppressMessages(
-  source("./scripts/omega.R"))
+suppressMessages(source("./scripts/helpers/omega.R"))
 
 # --- data
-d <- readRDS("./data/data.rds") # nested survey x item panels
+d <- readRDS("./data/source_files/data.rds") # nested survey x item panels
 
 # --- parallel sessions
 plan(multisession)
@@ -116,10 +115,12 @@ d |>
       )
     )
   ) +
-  labs(title = "",
-       x = "Proportion of Systematic Variance",
-       y = "Survey Items",
-       fill = "") +
+  labs(
+    title = "",
+    x = "Proportion of Systematic Variance",
+    y = "Survey Items",
+    fill = ""
+  ) +
   scale_x_continuous(expand = c(0, 0)) +
   theme_ipsum_rc(
     axis_title_size = 12,
@@ -127,8 +128,8 @@ d |>
   ) +
   theme(
     legend.position = "top",
-    axis.text.y  = element_blank(),
-    strip.text   = element_text(),
+    axis.text.y = element_blank(),
+    strip.text = element_text(),
     axis.ticks.y = element_blank(),
     strip.text.y = element_text(hjust = 1)
   ) +

@@ -1,5 +1,5 @@
-% latex table generated in R 4.4.1 by xtable 1.8-4 package
-% Wed Sep 11 19:01:00 2024
+% latex table generated in R 4.5.2 by xtable 1.8-4 package
+% Wed Jan  7 12:17:04 2026
 \begin{longtable}{lllrrr}
   \hline
 Survey & Item & Label & VD & VC & Omega \\ 

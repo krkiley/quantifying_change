@@ -1,4 +1,5 @@
 %%% files
+.Rproj.user
 *.Rhistory
 *.Rproj.user
 *.RData
@@ -8,4 +9,3 @@
 
 %%% gated data
 data.rds
-.Rproj.user
